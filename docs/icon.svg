@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#ff7040"/>
+      <stop offset="100%" stop-color="#e03e00"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded square background (iOS-style) -->
+  <rect width="512" height="512" rx="110" ry="110" fill="url(#bg)"/>
+
+  <!-- Runner silhouette — mid-stride, facing right, knee up -->
+  <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Head -->
+    <circle cx="295" cy="90" r="44" fill="white" stroke="none"/>
+
+    <!-- Torso (forward lean) -->
+    <line x1="288" y1="132" x2="250" y2="295" stroke-width="40"/>
+
+    <!-- Left arm — swinging forward/up -->
+    <line x1="275" y1="192" x2="358" y2="148" stroke-width="32"/>
+
+    <!-- Right arm — swinging back/down -->
+    <line x1="275" y1="192" x2="200" y2="260" stroke-width="32"/>
+
+    <!-- Right leg — knee lifted (forward stride) -->
+    <!-- Thigh -->
+    <line x1="250" y1="292" x2="326" y2="378" stroke-width="36"/>
+    <!-- Shin tucked behind (foot off ground) -->
+    <line x1="326" y1="378" x2="310" y2="462" stroke-width="36"/>
+
+    <!-- Left leg — extended behind (push-off) -->
+    <!-- Thigh + shin -->
+    <line x1="250" y1="292" x2="158" y2="408" stroke-width="36"/>
+    <!-- Foot -->
+    <line x1="158" y1="408" x2="128" y2="450" stroke-width="36"/>
+
+  </g>
+</svg>

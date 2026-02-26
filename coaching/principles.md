@@ -1,0 +1,211 @@
+# Coaching Principles
+
+Reference document for how Claude approaches 5K training plans.
+
+---
+
+## Training Philosophy
+
+### 80/20 Easy/Hard Split
+- Approximately 80% of weekly volume at easy/conversational pace (Zone 2)
+- 20% at harder intensities (tempo, intervals, strides)
+- Easy runs should feel genuinely easy — if you can't hold a conversation, slow down
+- Most recreational runners run too hard on easy days, which impairs recovery
+
+### Progressive Overload
+- Increase weekly volume by no more than 10% per week
+- After every 3 weeks of building, schedule a recovery week (~70% of peak volume)
+- Intensity increases separately from volume — don't increase both in the same week
+
+---
+
+## 5K Training Plan Structure
+
+### Typical 8–12 Week Plan Phases
+
+**Base Phase (weeks 1–3)**
+- Goal: establish aerobic base, build consistent habit
+- All runs at easy pace
+- Total weekly volume modest and achievable
+
+**Build Phase (weeks 4–8)**
+- Introduce one quality session per week (tempo or intervals)
+- Gradually increase long run distance
+- Monitor fatigue — back off if needed
+
+**Peak Phase (weeks 9–10)**
+- Highest volume week
+- One or two tune-up races or time trials if available
+
+**Taper Phase (final 1–2 weeks)**
+- Reduce volume by 30–40%
+- Maintain some intensity to stay sharp
+- Prioritize sleep, nutrition, rest
+
+---
+
+## Key Workout Types
+
+### Easy Run
+- Pace: comfortable, conversational
+- Purpose: aerobic development, recovery, building volume
+- How to tell: you could recite a sentence without gasping
+
+### Long Run
+- Longest run of the week, at easy pace
+- For 5K training: typically 6–10km depending on current fitness
+- Builds aerobic capacity and mental toughness
+
+### Tempo Run
+- "Comfortably hard" — you can speak a few words but not hold a conversation
+- Typically 20–40 minutes at threshold pace
+- Builds lactate threshold, the key to faster 5K times
+
+### Intervals
+- Short, fast efforts with recovery jogs between
+- e.g. 6 × 400m at faster than 5K pace, 90s jog recovery
+- Builds VO2max and running economy
+- Don't add intervals until base is established (4+ weeks in)
+
+### Strides
+- 4–6 × 20-second relaxed accelerations at the end of an easy run
+- Maintains leg turnover without adding significant fatigue
+- Good during taper weeks
+
+---
+
+## Reading Strava Data
+
+When analyzing activity JSON files, look for:
+
+- **`average_speed`** (m/s) → convert to min/km: `1000 / (speed * 60)`
+- **`average_heartrate`** / **`max_heartrate`**: effort indicator
+- **`suffer_score`**: Strava's relative effort metric
+- **`perceived_exertion`**: athlete's RPE (1–10) if logged
+- **`workout_type`**: 0=default, 1=race, 2=long run, 3=workout
+- **`start_date_local`**: when the run happened
+- **`distance`** (meters), **`moving_time`** (seconds), **`elapsed_time`** (seconds)
+- **`total_elevation_gain`** (meters)
+- **`splits_metric`**: per-km pace breakdown — great for seeing even vs uneven pacing
+- **`laps`**: per-lap breakdown — essential for interval sessions (see below)
+
+### Always Check Laps Before Interpreting a Run
+
+**Never draw conclusions from average pace or average HR alone.** These are meaningless for any session with variable effort — intervals, fartlek, walk recoveries. A pyramid session with walking recoveries can show an "average pace" of 4:30/km and "average HR" of 160 that looks like a threshold run but is nothing of the sort.
+
+**Before assessing effort or fitness, check whether `laps` data exists and read it.**
+
+#### Reading the laps array
+
+Each lap has: `distance` (m), `moving_time` (s), `average_speed` (m/s), `average_heartrate`, `pace_zone`.
+
+Convert speed to pace: `1000 / (speed × 60)` = min/km.
+
+#### Identifying session type from laps
+
+| Pattern | Session type |
+|---------|-------------|
+| One long lap, steady pace/HR | Continuous easy or tempo run |
+| Alternating fast/slow laps | Interval session |
+| Durations 60s→120s→180s→... | Pyramid session |
+| First lap slow, last lap slow, fast in between | Warmup/interval/cooldown structure |
+
+#### Extracting fitness data from interval laps
+
+- **Longest fast rep** gives the best estimate of sustained VO2max-range effort
+- **Shortest fast reps** show top-end speed (anaerobic / R-pace)
+- Use the longest rep pace to anchor training zones; don't use average pace across the whole session
+- Recovery laps (slow pace, pace zone 1) confirm it's an interval session, not a tempo run
+
+### Patterns to Notice
+- Paces much faster than easy threshold: runner going too hard on recovery days
+- High HR on easy runs: accumulated fatigue or poor heat/hydration conditions
+- Declining pace over weeks at same HR: improving fitness
+- Missed workouts or gaps: ask about what happened, adjust plan
+
+---
+
+## Functional Strength Training
+
+### Purpose
+
+Strength work for Freddie is injury prevention first, performance second. Given his Achilles tendinopathy history, the priority is building the posterior chain (calf, soleus, glutes, hamstrings) and single-leg stability. Full gym access available.
+
+### Schedule
+
+Two sessions per week, on easy running days (Tuesday and Thursday). Run first, strength after. Keep well away from quality running sessions (intervals, tempo, race).
+
+During taper: drop to one session in Week 4, very light. Race week: one light session Tuesday only, nothing after.
+
+### Session A — Posterior Chain & Achilles (Tuesday)
+
+| Exercise | Sets × Reps | Notes |
+|----------|-------------|-------|
+| Barbell Romanian Deadlift | 3 × 8 | Hip hinge, flat back, feel hamstrings load |
+| Barbell Hip Thrust | 3 × 10 | Full hip extension at top, squeeze glutes |
+| Nordic Hamstring Curl | 3 × 6 | Eccentric focus — lower slowly, use hands to return |
+| Seated Calf Raise (machine) | 3 × 15 | 3s down, 1s up — targets soleus directly |
+| Eccentric Heel Drop (single leg, on step) | 3 × 15 each | 3s down off step edge — Achilles rehab gold standard |
+
+~35 min. Rest 90s between sets.
+
+### Session B — Single-Leg Stability & Hip (Thursday)
+
+| Exercise | Sets × Reps | Notes |
+|----------|-------------|-------|
+| Bulgarian Split Squat (dumbbells) | 3 × 8 each | Rear foot elevated, knee tracks over toes |
+| Single-Leg RDL (dumbbell) | 3 × 8 each | Balance + posterior chain; controls asymmetry |
+| Copenhagen Adduction | 2 × 10 each | Side plank variation, inside leg on bench |
+| Standing Calf Raise (machine) | 3 × 15 | Targets gastrocnemius; 3s eccentric |
+| Dead Bug | 2 × 12 each | Press lower back into floor throughout |
+
+~35 min. Rest 90s between sets.
+
+### Periodisation
+
+| Phase | Load | Change |
+|-------|------|--------|
+| Weeks 1–2 (Build) | Moderate | Form focus, 3 sets, controlled tempo |
+| Week 3 (Peak) | Heavier | Progress main lifts 5–10%, keep calf/Achilles work same |
+| Week 4 (Taper) | Light | Session A only, drop to 2 sets, reduce weight 20% |
+| Race week | Very light | Session A Tuesday only, 1 set each, no DOMS risk |
+
+### Key rules
+
+- **Never train strength the day before a quality run** — sore legs compromise intervals and tempos
+- **Eccentric heel drops are non-negotiable** — maintain these through taper and race week; they are the Achilles protocol
+- **If Achilles feels tight after a session**, drop the calf work volume next session, not the running
+- Strength sessions should leave Freddie feeling worked but not wrecked — reduce load if soreness persists >48h
+
+---
+
+## Recovery Signals
+
+### Signs of Good Recovery
+- Resting HR stable or trending down
+- Easy runs feel easier over time
+- Sleep quality good
+- Mood positive, motivated
+
+### Warning Signs (back off training)
+- Persistent muscle soreness > 48h after easy runs
+- Elevated resting HR (>5–7 bpm above baseline)
+- Declining performance despite consistent training
+- Loss of motivation, heavy legs, frequent illness
+- User reports feeling "off" or overly tired
+
+### Response to Fatigue
+- Swap a workout for an easy run
+- Add an extra rest day
+- Reduce weekly volume by 20–30% for one week
+- Never push through fatigue to hit a planned session
+
+---
+
+## Coaching Communication Style
+
+- Be specific: give exact paces or effort levels for each workout
+- Be encouraging but honest about what the data shows
+- When adapting the plan, explain *why* so Freddie learns
+- Keep plans realistic — a plan that gets followed beats a perfect plan that doesn't
+- Ask questions when data is ambiguous rather than assuming

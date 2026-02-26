@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Strava data — personal info, never commit
+data/activities/
+data/athlete.json
+data/sync_log.json

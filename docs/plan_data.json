@@ -1,0 +1,652 @@
+{
+  "generated": "2026-02-25",
+  "goal": "sub-17:00 5K — Battersea Park Run, 28 March 2026",
+  "weeks": [
+    {
+      "label": "Week 1 — Back in London, Finish Strong",
+      "phase": "Base Phase",
+      "days": [
+        {
+          "date": "2026-02-23",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest. Recovery from travel."
+        },
+        {
+          "date": "2026-02-24",
+          "type": "easy",
+          "name": "Easy Run",
+          "description": "~6 km @ 5:00–5:15/km. Conversational pace, HR below 145.",
+          "distance_km": 6.0
+        },
+        {
+          "date": "2026-02-25",
+          "type": "intervals",
+          "name": "Pyramid Intervals ✓ Done",
+          "description": "1-2-3-4-5-4-3-2-1 min intervals with 2 min walk recoveries. Reps ranged from 3:16/km (1 min) to 3:41/km (5 min). 13.3 km total.",
+          "distance_km": 13.3
+        },
+        {
+          "date": "2026-02-26",
+          "type": "strength",
+          "name": "Easy Run + Strength B",
+          "description": "6 km easy @ 5:00–5:15/km, HR below 145. Then Session B in the gym.",
+          "distance_km": 6.0,
+          "exercises": [
+            {
+              "name": "Bulgarian Split Squat",
+              "sets": 3,
+              "reps": "8 each",
+              "how_to": "Rear foot elevated on a bench, front foot forward. Lower your back knee toward the floor, keeping your front knee tracking over your toes. Dumbbells in each hand. This exposes any left-right imbalance — fix it now, not on race day."
+            },
+            {
+              "name": "Single-Leg RDL",
+              "sets": 3,
+              "reps": "8 each",
+              "how_to": "Stand on one leg, hinge forward at the hip while extending the free leg behind you (T-shape). Dumbbell in the opposite hand. Challenges balance and posterior chain simultaneously. Keep hips level — don't let the free hip drop."
+            },
+            {
+              "name": "Copenhagen Adduction",
+              "sets": 2,
+              "reps": "10 each",
+              "how_to": "Side plank with your top foot resting on a bench. Lift your bottom leg to meet it, hold briefly, lower slowly. Targets the adductors — often neglected, important for pelvis stability during running."
+            },
+            {
+              "name": "Standing Calf Raise (machine)",
+              "sets": 3,
+              "reps": "15",
+              "how_to": "Shoulders under the pads, balls of feet on the platform edge. Lower heels as far as possible into a full stretch, then rise to full extension. 3 seconds down, 1 up. Targets gastrocnemius — the outer calf."
+            },
+            {
+              "name": "Dead Bug",
+              "sets": 2,
+              "reps": "12 each side",
+              "how_to": "Lie on your back, arms straight up, knees at 90°. Press your lower back firmly into the floor and keep it there throughout. Lower one arm and the opposite leg toward the floor, return, alternate. If your back lifts off, reduce the range."
+            }
+          ]
+        },
+        {
+          "date": "2026-02-27",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-02-28",
+          "type": "tempo",
+          "name": "Tempo Run",
+          "description": "~8 km total. First quality session back in London — keep it honest.",
+          "distance_km": 8.0,
+          "exercises": [
+            {
+              "name": "Warmup",
+              "detail": "2 km",
+              "how_to": "Easy @ 5:10/km. Let the legs wake up gradually. Don't skip this."
+            },
+            {
+              "name": "Tempo",
+              "detail": "20 min",
+              "how_to": "3:45–3:50/km. Comfortably hard — you can say a few words but not hold a conversation. HR around 155–165. This is threshold work, the main driver of 5K improvement. Keep the pace even; don't go out hard and fade."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km",
+              "how_to": "Easy jog @ 5:10/km. Don't stop dead after the tempo — keep moving to flush the legs."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-01",
+          "type": "long",
+          "name": "Easy Long Run",
+          "description": "10 km. Aerobic base building — nothing more.",
+          "distance_km": 10.0,
+          "exercises": [
+            {
+              "name": "Long Run",
+              "detail": "10 km",
+              "how_to": "5:00–5:15/km throughout. The benefit comes from time on feet at low intensity, not from going hard. If you drift faster, pull it back. You should feel like you could run another 5 km at the end. If you can't hold a sentence, you're going too fast."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Week 2 — Quality Introduction",
+      "phase": "Build Phase",
+      "days": [
+        {
+          "date": "2026-03-02",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-03-03",
+          "type": "strength",
+          "name": "Easy + Strides + Strength A",
+          "description": "6 km easy + 6 × 20s strides @ 3:24/km. Then Session A in the gym.",
+          "distance_km": 6.5,
+          "exercises": [
+            {
+              "name": "Barbell Romanian Deadlift",
+              "sets": 3,
+              "reps": "8",
+              "how_to": "Stand hip-width, grip bar just outside your legs. Push hips back (not down), keeping your back flat and the bar close to your legs. Lower until you feel the hamstrings load — usually mid-shin. Drive hips forward to stand. It's a hinge, not a squat."
+            },
+            {
+              "name": "Barbell Hip Thrust",
+              "sets": 3,
+              "reps": "10",
+              "how_to": "Upper back resting on a bench, barbell across your hips. Drive through your heels, squeeze your glutes, and push hips to full extension. Hold 1 second at the top. Lower slowly. Don't hyperextend your lower back at the top — stop when hips are level."
+            },
+            {
+              "name": "Nordic Hamstring Curl",
+              "sets": 3,
+              "reps": "6",
+              "how_to": "Kneel on a mat with feet anchored (under a heavy bar or a partner holds them). Lower your body forward as slowly as possible, arms ready to catch yourself. Use your hands to push back up — your hamstrings can't do it yet. This is brutal; that's the point."
+            },
+            {
+              "name": "Seated Calf Raise (machine)",
+              "sets": 3,
+              "reps": "15",
+              "how_to": "Sit with knees at 90°, balls of feet on the platform edge. Lower heels as far as possible into a full stretch, then rise to full extension. 3 seconds down, 1 up. Targets the soleus — the deep calf muscle that matters most for Achilles health."
+            },
+            {
+              "name": "Eccentric Heel Drop (single leg)",
+              "sets": 3,
+              "reps": "15 each",
+              "how_to": "Stand on the edge of a step on both feet, rise up on to tiptoes, then shift all weight to one leg. Lower that heel slowly over 3 seconds until it drops below the step. Use both feet to rise again. This is the Alfredson protocol — the evidence-based fix for Achilles tendinopathy. Never skip it."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-04",
+          "type": "intervals",
+          "name": "800m Intervals",
+          "description": "~8 km total. First interval session of the plan — set the benchmark.",
+          "distance_km": 8.0,
+          "exercises": [
+            {
+              "name": "Warmup",
+              "detail": "2 km",
+              "how_to": "Easy @ 5:10/km. Include a few light strides in the final 400m to prime the legs."
+            },
+            {
+              "name": "5 × 800m",
+              "detail": "5 reps",
+              "how_to": "3:25–3:30/km per rep. 90s jog recovery between each. Start the first rep feeling almost too controlled — if rep 1 feels hard you've gone out too fast. Watch for Achilles tightness on the first rep. Rep 5 should be your fastest."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km",
+              "how_to": "Easy jog. Shake the legs out."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-05",
+          "type": "strength",
+          "name": "Easy Run + Strength B",
+          "description": "7 km easy @ 5:00–5:15/km. Then Session B in the gym.",
+          "distance_km": 7.0,
+          "exercises": [
+            {
+              "name": "Bulgarian Split Squat",
+              "sets": 3,
+              "reps": "8 each",
+              "how_to": "Rear foot elevated on a bench, front foot forward. Lower your back knee toward the floor, keeping your front knee tracking over your toes. Dumbbells in each hand. This exposes any left-right imbalance — fix it now, not on race day."
+            },
+            {
+              "name": "Single-Leg RDL",
+              "sets": 3,
+              "reps": "8 each",
+              "how_to": "Stand on one leg, hinge forward at the hip while extending the free leg behind you (T-shape). Dumbbell in the opposite hand. Challenges balance and posterior chain simultaneously. Keep hips level — don't let the free hip drop."
+            },
+            {
+              "name": "Copenhagen Adduction",
+              "sets": 2,
+              "reps": "10 each",
+              "how_to": "Side plank with your top foot resting on a bench. Lift your bottom leg to meet it, hold briefly, lower slowly. Targets the adductors — often neglected, important for pelvis stability during running."
+            },
+            {
+              "name": "Standing Calf Raise (machine)",
+              "sets": 3,
+              "reps": "15",
+              "how_to": "Shoulders under the pads, balls of feet on the platform edge. Lower heels as far as possible into a full stretch, then rise to full extension. 3 seconds down, 1 up. Targets gastrocnemius — the outer calf."
+            },
+            {
+              "name": "Dead Bug",
+              "sets": 2,
+              "reps": "12 each side",
+              "how_to": "Lie on your back, arms straight up, knees at 90°. Press your lower back firmly into the floor and keep it there throughout. Lower one arm and the opposite leg toward the floor, return, alternate. If your back lifts off, reduce the range."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-06",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-03-07",
+          "type": "race",
+          "name": "5K Time Trial (Recommended) or Tempo",
+          "description": "Recommended: Battersea parkrun as a time trial. Good race practice and tells us where we stand 3 weeks out.",
+          "distance_km": 9.0,
+          "exercises": [
+            {
+              "name": "Warmup",
+              "detail": "2 km",
+              "how_to": "Easy jog + drills. Get to the start line warm but not tired."
+            },
+            {
+              "name": "5K Time Trial",
+              "detail": "5 km",
+              "how_to": "All out. Target 3:24/km. Start slightly controlled (3:22–3:26 for km 1), then settle. Whatever you run gives us real data to calibrate the remaining plan. If you skip this, do 25 min tempo @ 3:40–3:45/km instead."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km",
+              "how_to": "Easy jog. Let the HR come down before you stop."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-08",
+          "type": "long",
+          "name": "Easy Long Run",
+          "description": "12 km. Longest long run of the plan.",
+          "distance_km": 12.0,
+          "exercises": [
+            {
+              "name": "Long Run",
+              "detail": "12 km",
+              "how_to": "5:00–5:15/km throughout. After yesterday's time trial your legs might feel heavy early on — that's fine, just keep the pace honest. The aerobic benefit is in the time on feet, not the speed. Conversational pace all the way."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Week 3 — Peak Quality",
+      "phase": "Peak Phase",
+      "days": [
+        {
+          "date": "2026-03-09",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-03-10",
+          "type": "strength",
+          "name": "Easy + Strides + Strength A",
+          "description": "6 km easy + 6 × 20s strides @ 3:24/km. Then Session A in the gym — consider adding 5kg to the main lifts if last week felt comfortable.",
+          "distance_km": 6.5,
+          "exercises": [
+            {
+              "name": "Barbell Romanian Deadlift",
+              "sets": 3,
+              "reps": "8",
+              "how_to": "Stand hip-width, grip bar just outside your legs. Push hips back (not down), keeping your back flat and the bar close to your legs. Lower until you feel the hamstrings load — usually mid-shin. Drive hips forward to stand. It's a hinge, not a squat."
+            },
+            {
+              "name": "Barbell Hip Thrust",
+              "sets": 3,
+              "reps": "10",
+              "how_to": "Upper back resting on a bench, barbell across your hips. Drive through your heels, squeeze your glutes, and push hips to full extension. Hold 1 second at the top. Lower slowly. Don't hyperextend your lower back at the top — stop when hips are level."
+            },
+            {
+              "name": "Nordic Hamstring Curl",
+              "sets": 3,
+              "reps": "6",
+              "how_to": "Kneel on a mat with feet anchored (under a heavy bar or a partner holds them). Lower your body forward as slowly as possible, arms ready to catch yourself. Use your hands to push back up — your hamstrings can't do it yet. This is brutal; that's the point."
+            },
+            {
+              "name": "Seated Calf Raise (machine)",
+              "sets": 3,
+              "reps": "15",
+              "how_to": "Sit with knees at 90°, balls of feet on the platform edge. Lower heels as far as possible into a full stretch, then rise to full extension. 3 seconds down, 1 up. Targets the soleus — the deep calf muscle that matters most for Achilles health."
+            },
+            {
+              "name": "Eccentric Heel Drop (single leg)",
+              "sets": 3,
+              "reps": "15 each",
+              "how_to": "Stand on the edge of a step on both feet, rise up on to tiptoes, then shift all weight to one leg. Lower that heel slowly over 3 seconds until it drops below the step. Use both feet to rise again. This is the Alfredson protocol — the evidence-based fix for Achilles tendinopathy. Never skip it."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-11",
+          "type": "intervals",
+          "name": "1km Intervals",
+          "description": "~9 km total. Hardest session of the plan.",
+          "distance_km": 9.0,
+          "exercises": [
+            {
+              "name": "Warmup",
+              "detail": "2 km",
+              "how_to": "Easy @ 5:10/km + strides in the final 400m."
+            },
+            {
+              "name": "5 × 1000m",
+              "detail": "5 reps",
+              "how_to": "3:25–3:30/km per rep. 90s jog recovery. If you can hold this for 5 reps, race day at 3:24/km for 5 km is well within reach. Stay relaxed — tight shoulders and a clenched jaw cost you pace. Rep 5 should feel like a controlled fight, not a collapse."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km",
+              "how_to": "Easy jog. You've earned it."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-12",
+          "type": "strength",
+          "name": "Easy Run + Strength B",
+          "description": "7 km easy @ 5:00–5:15/km. Then Session B in the gym.",
+          "distance_km": 7.0,
+          "exercises": [
+            {
+              "name": "Bulgarian Split Squat",
+              "sets": 3,
+              "reps": "8 each",
+              "how_to": "Rear foot elevated on a bench, front foot forward. Lower your back knee toward the floor, keeping your front knee tracking over your toes. Dumbbells in each hand. This exposes any left-right imbalance — fix it now, not on race day."
+            },
+            {
+              "name": "Single-Leg RDL",
+              "sets": 3,
+              "reps": "8 each",
+              "how_to": "Stand on one leg, hinge forward at the hip while extending the free leg behind you (T-shape). Dumbbell in the opposite hand. Challenges balance and posterior chain simultaneously. Keep hips level — don't let the free hip drop."
+            },
+            {
+              "name": "Copenhagen Adduction",
+              "sets": 2,
+              "reps": "10 each",
+              "how_to": "Side plank with your top foot resting on a bench. Lift your bottom leg to meet it, hold briefly, lower slowly. Targets the adductors — often neglected, important for pelvis stability during running."
+            },
+            {
+              "name": "Standing Calf Raise (machine)",
+              "sets": 3,
+              "reps": "15",
+              "how_to": "Shoulders under the pads, balls of feet on the platform edge. Lower heels as far as possible into a full stretch, then rise to full extension. 3 seconds down, 1 up. Targets gastrocnemius — the outer calf."
+            },
+            {
+              "name": "Dead Bug",
+              "sets": 2,
+              "reps": "12 each side",
+              "how_to": "Lie on your back, arms straight up, knees at 90°. Press your lower back firmly into the floor and keep it there throughout. Lower one arm and the opposite leg toward the floor, return, alternate. If your back lifts off, reduce the range."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-13",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-03-14",
+          "type": "tempo",
+          "name": "Tempo Run",
+          "description": "~8 km total. Peak week — this should feel controlled and strong.",
+          "distance_km": 8.0,
+          "exercises": [
+            {
+              "name": "Warmup",
+              "detail": "2 km",
+              "how_to": "Easy @ 5:10/km."
+            },
+            {
+              "name": "Tempo",
+              "detail": "20 min",
+              "how_to": "3:40/km — slightly sharper than the first tempo. Comfortably hard. You're 2 weeks out from race day; this is the session that builds confidence. Even splits matter more than the exact pace."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km",
+              "how_to": "Easy jog."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-15",
+          "type": "easy",
+          "name": "Easy Run",
+          "description": "8 km. Volume starts dropping from here.",
+          "distance_km": 8.0,
+          "exercises": [
+            {
+              "name": "Easy Run",
+              "detail": "8 km",
+              "how_to": "5:00–5:15/km. After yesterday's tempo your legs need to flush out. Keep HR below 145. This is the last longer easy run before the taper — enjoy it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Week 4 — Taper",
+      "phase": "Taper Phase",
+      "days": [
+        {
+          "date": "2026-03-16",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-03-17",
+          "type": "strength",
+          "name": "Easy + Strides + Strength A (light)",
+          "description": "5 km easy + 4 × 20s strides. Taper week — reduce load by 20%, drop to 2 sets. Keep the eccentric heel drops.",
+          "distance_km": 5.5,
+          "exercises": [
+            {
+              "name": "Barbell Romanian Deadlift",
+              "sets": 2,
+              "reps": "8",
+              "how_to": "Same as always — hip hinge, flat back, feel the hamstrings. Lighter weight this week. You're maintaining, not building."
+            },
+            {
+              "name": "Barbell Hip Thrust",
+              "sets": 2,
+              "reps": "10",
+              "how_to": "Full hip extension, squeeze glutes at the top. Reduce weight by 20% from last week."
+            },
+            {
+              "name": "Nordic Hamstring Curl",
+              "sets": 2,
+              "reps": "6",
+              "how_to": "Lower as slowly as possible. If anything feels strained, stop — race is 11 days away."
+            },
+            {
+              "name": "Seated Calf Raise (machine)",
+              "sets": 2,
+              "reps": "15",
+              "how_to": "Full range, 3s eccentric. Lighter load than last week."
+            },
+            {
+              "name": "Eccentric Heel Drop (single leg)",
+              "sets": 3,
+              "reps": "15 each",
+              "how_to": "These stay at full volume even in taper — they're Achilles maintenance, not a training load. 3 seconds down off the step, controlled."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-18",
+          "type": "intervals",
+          "name": "Sharpener Intervals",
+          "description": "~8 km total. Taper week — volume down, legs should feel fast.",
+          "distance_km": 8.0,
+          "exercises": [
+            {
+              "name": "Warmup",
+              "detail": "2 km",
+              "how_to": "Easy @ 5:10/km."
+            },
+            {
+              "name": "4 × 800m",
+              "detail": "4 reps",
+              "how_to": "3:22–3:28/km. 2 min jog recovery. Your legs are fresher now — these should feel controlled and powerful, not a grind. The goal is to remind your body what race pace feels like, not to build fitness."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km",
+              "how_to": "Easy jog."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-19",
+          "type": "easy",
+          "name": "Easy Run",
+          "description": "5 km. No strength this week — legs fresh for race.",
+          "distance_km": 5.0,
+          "exercises": [
+            {
+              "name": "Easy Run",
+              "detail": "5 km",
+              "how_to": "5:00–5:15/km. Nothing to prove today. Keep HR below 145, stay loose. Race is 9 days away."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-20",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-03-21",
+          "type": "strides",
+          "name": "Easy + Strides",
+          "description": "5 km. Keep it short and fresh — one week to go.",
+          "distance_km": 5.5,
+          "exercises": [
+            {
+              "name": "Easy Run",
+              "detail": "5 km",
+              "how_to": "5:00–5:15/km. Relaxed, loose. Your legs should be starting to feel fresh from the taper."
+            },
+            {
+              "name": "Strides",
+              "detail": "4 × 20s",
+              "how_to": "At the end of your run, find a flat stretch. Accelerate smoothly to race pace feel (3:24/km), hold for 20 seconds, decelerate. 60s walk between each. These are not sprints — just a reminder to your legs what fast feels like. You should finish feeling sharper, not tired."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest. Legs up."
+        }
+      ]
+    },
+    {
+      "label": "Race Week — Arrive Fresh",
+      "phase": "Race Week",
+      "days": [
+        {
+          "date": "2026-03-23",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-03-24",
+          "type": "strength",
+          "name": "Easy + Strides + Strength A (minimal)",
+          "description": "4 km easy + 4 × 20s strides. One light set of each — just Achilles maintenance. Nothing that causes soreness 4 days before race day.",
+          "distance_km": 4.5,
+          "exercises": [
+            {
+              "name": "Barbell Romanian Deadlift",
+              "sets": 1,
+              "reps": "8",
+              "how_to": "Light weight. Movement pattern only. If anything pulls or aches, skip it — race is Saturday."
+            },
+            {
+              "name": "Barbell Hip Thrust",
+              "sets": 1,
+              "reps": "10",
+              "how_to": "Very light. Keep glutes active. In and out."
+            },
+            {
+              "name": "Seated Calf Raise (machine)",
+              "sets": 1,
+              "reps": "15",
+              "how_to": "Slow eccentric. Light load."
+            },
+            {
+              "name": "Eccentric Heel Drop (single leg)",
+              "sets": 2,
+              "reps": "15 each",
+              "how_to": "3 seconds down. This is the one exercise you do every week regardless — keep the Achilles tendon happy going into race day."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-25",
+          "type": "easy",
+          "name": "Shakeout Run",
+          "description": "3 km. Just moving the legs.",
+          "distance_km": 3.0,
+          "exercises": [
+            {
+              "name": "Shakeout",
+              "detail": "3 km",
+              "how_to": "Very easy — slower than you think you need to go. Don't look at pace. The goal is just to stay loose and keep the routine. 3 days to race day."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "type": "rest",
+          "name": "Rest Day",
+          "description": "Full rest. Sleep, hydrate, eat well."
+        },
+        {
+          "date": "2026-03-27",
+          "type": "rest",
+          "name": "Rest / Prep Day",
+          "description": "Optional 15 min very easy jog. Prep race kit, pin number on. Early night.",
+          "distance_km": 1.5
+        },
+        {
+          "date": "2026-03-28",
+          "type": "race",
+          "name": "RACE — Battersea Park Run",
+          "description": "Sub 17:00. Vaporflys on. Go.",
+          "distance_km": 5.0,
+          "exercises": [
+            {
+              "name": "Warmup",
+              "detail": "10 min",
+              "how_to": "Easy jog + drills (leg swings, high knees, A-skips). Get to the start line warm, not tired. Do your eccentric heel drops as part of warmup."
+            },
+            {
+              "name": "Km 1",
+              "detail": "3:22–3:26/km",
+              "how_to": "Controlled. The first km should feel surprisingly easy — if it doesn't, you've gone out too fast. Let people go. You'll come back to them."
+            },
+            {
+              "name": "Km 2–4",
+              "detail": "3:24/km",
+              "how_to": "Settle into goal pace. Relax the shoulders, keep cadence quick. Focus on smooth breathing. Check your watch at each km marker — minor corrections are easier than big ones."
+            },
+            {
+              "name": "Km 5",
+              "detail": "Everything left",
+              "how_to": "At the 4km mark, take stock. If you have anything left, give it now. Don't wait until 4.5 km — by then it's too late to matter. Lean forward, drive the arms, and empty the tank."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
