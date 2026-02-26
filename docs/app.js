@@ -157,7 +157,8 @@ function renderWeek() {
 
   const prevDisabled = currentWeekIndex === 0 ? 'disabled' : '';
   const nextDisabled = currentWeekIndex === weeks.length - 1 ? 'disabled' : '';
-  const weekLabel = week.label || `Week ${currentWeekIndex + 1}`;
+  const weekLabel = (week.label || `Week ${currentWeekIndex + 1}`)
+    .replace(/^Week \d+/, `Week ${currentWeekIndex + 1}/${weeks.length}`);
   const phase = week.phase ? `<div class="phase-label">${week.phase}</div>` : '';
 
   // Calculate week stats
