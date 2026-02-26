@@ -280,39 +280,91 @@ function showTab(name) {
 
 // ── Plan overview ───────────────────────────────────────────────────────────
 
+function phaseGroup(phaseName) {
+  if (!phaseName) return 'Training';
+  const p = phaseName.toLowerCase();
+  if (p.includes('base') || p.includes('build')) return 'Foundation';
+  if (p.includes('peak')) return 'Peak';
+  if (p.includes('taper') || p.includes('race')) return 'Race Prep';
+  return phaseName;
+}
+
 function renderPlan() {
   const section = document.getElementById('plan-section');
   const weeks = planData.weeks;
   const t = today();
 
-  const rows = weeks.map((week, i) => {
-    const totalKm = (week.days || []).reduce((sum, d) => sum + (d.distance_km || 0), 0);
-    const isCurrentWeek = i === currentWeekIndex;
+  // Group consecutive weeks by broad phase category
+  const groups = [];
+  let currentGroup = null;
+  weeks.forEach((week, i) => {
+    const groupName = phaseGroup(week.phase);
+    if (!currentGroup || currentGroup.name !== groupName) {
+      currentGroup = { name: groupName, weeks: [] };
+      groups.push(currentGroup);
+    }
+    currentGroup.weeks.push({ week, index: i });
+  });
 
-    const dots = (week.days || []).map(day => {
-      const dotClass = WORKOUT_COLORS[day.type] || 'dot-rest';
-      const isToday = day.date === t;
-      return `<div class="plan-dot ${dotClass}${isToday ? ' plan-dot-today' : ''}"
-                   onclick="openModal('${day.date}')"></div>`;
+  const groupsHtml = groups.map(group => {
+    const rowsHtml = group.weeks.map(({ week, index: i }) => {
+      const totalKm = (week.days || []).reduce((sum, d) => sum + (d.distance_km || 0), 0);
+      const isCurrentWeek = i === currentWeekIndex;
+
+      // Date range from first/last day
+      const days = (week.days || []).filter(d => d.date);
+      let dateRange = '';
+      if (days.length) {
+        const s = parseDate(days[0].date);
+        const e = parseDate(days[days.length - 1].date);
+        dateRange = `${s.getDate()} ${MONTH_NAMES[s.getMonth()]} – ${e.getDate()} ${MONTH_NAMES[e.getMonth()]}`;
+      }
+
+      const dots = (week.days || []).map(day => {
+        const dotClass = WORKOUT_COLORS[day.type] || 'dot-rest';
+        const isToday = day.date === t;
+        return `<div class="plan-dot ${dotClass}${isToday ? ' plan-dot-today' : ''}"
+                     onclick="openModal('${day.date}')"></div>`;
+      }).join('');
+
+      const kmText = totalKm > 0
+        ? `<span class="plan-week-km">${totalKm.toFixed(0)} km</span>`
+        : '';
+
+      return `
+        <div class="plan-week-row${isCurrentWeek ? ' current-week' : ''}">
+          <div class="plan-week-info">
+            <div class="plan-week-label">${week.label || `Week ${i + 1}`}</div>
+            ${dateRange ? `<div class="plan-week-dates">${dateRange}</div>` : ''}
+          </div>
+          <div class="plan-week-dots">${dots}</div>
+          ${kmText}
+        </div>
+      `;
     }).join('');
 
-    const kmText = totalKm > 0
-      ? `<span class="plan-week-km">${totalKm.toFixed(0)} km</span>`
-      : '';
-
     return `
-      <div class="plan-week-row${isCurrentWeek ? ' current-week' : ''}">
-        <div class="plan-week-info">
-          <div class="plan-week-label">${week.label || `Week ${i + 1}`}</div>
-          ${week.phase ? `<div class="plan-week-phase">${week.phase}</div>` : ''}
+      <div class="plan-phase-group">
+        <div class="plan-phase-group-header">
+          <span class="plan-phase-group-label">${group.name}</span>
         </div>
-        <div class="plan-week-dots">${dots}</div>
-        ${kmText}
+        ${rowsHtml}
       </div>
     `;
   }).join('');
 
-  section.innerHTML = `<div class="plan-list">${rows}</div>`;
+  const legend = `
+    <div class="plan-legend">
+      <span class="legend-item"><span class="legend-dot dot-run"></span>Easy</span>
+      <span class="legend-item"><span class="legend-dot dot-long"></span>Long</span>
+      <span class="legend-item"><span class="legend-dot dot-tempo"></span>Tempo</span>
+      <span class="legend-item"><span class="legend-dot dot-intervals"></span>Intervals</span>
+      <span class="legend-item"><span class="legend-dot dot-strength"></span>Strength</span>
+      <span class="legend-item"><span class="legend-dot dot-rest"></span>Rest</span>
+    </div>
+  `;
+
+  section.innerHTML = `<div class="plan-list">${legend}${groupsHtml}</div>`;
 }
 
 // ── Init ───────────────────────────────────────────────────────────────────
