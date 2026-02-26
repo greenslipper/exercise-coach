@@ -91,8 +91,10 @@ function render() {
     renderEmpty();
     return;
   }
+  document.getElementById('tab-nav').style.display = '';
   renderToday();
   renderWeek();
+  renderPlan();
 }
 
 function renderHeader() {
@@ -104,7 +106,7 @@ function renderHeader() {
 
 function renderEmpty() {
   document.getElementById('today-section').innerHTML = '';
-  document.getElementById('week-section').innerHTML = '';
+  document.getElementById('tab-nav').style.display = 'none';
   document.getElementById('main-content').innerHTML = `
     <div class="empty-state">
       <h2>No training plan yet</h2>
@@ -134,7 +136,8 @@ function renderToday() {
   const isRest = !todayWorkout || todayWorkout.type === 'rest' || !todayWorkout.type;
 
   section.innerHTML = `
-    <div class="today-card ${isRest ? 'rest-day' : ''}">
+    <div class="today-card ${isRest ? 'rest-day' : ''} ${todayWorkout ? 'today-card-tappable' : ''}"
+         ${todayWorkout ? `onclick="openModal('${t}')"` : ''}>
       <div class="today-label">Today</div>
       <div class="today-workout-name">${
         todayWorkout ? (todayWorkout.name || titleCase(todayWorkout.type) || 'Rest Day') : 'Rest Day'
@@ -142,6 +145,7 @@ function renderToday() {
       <div class="today-workout-desc">${
         todayWorkout ? (todayWorkout.description || '') : 'No workout scheduled — recover and recharge.'
       }</div>
+      ${todayWorkout ? '<div class="today-arrow">›</div>' : ''}
     </div>
   `;
 }
@@ -263,6 +267,52 @@ function changeWeek(delta) {
 function titleCase(str) {
   if (!str) return '';
   return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// ── Tab switching ──────────────────────────────────────────────────────────
+
+function showTab(name) {
+  document.getElementById('week-section').style.display = name === 'week' ? '' : 'none';
+  document.getElementById('plan-section').style.display = name === 'plan' ? '' : 'none';
+  document.getElementById('tab-week').classList.toggle('active', name === 'week');
+  document.getElementById('tab-plan').classList.toggle('active', name === 'plan');
+}
+
+// ── Plan overview ───────────────────────────────────────────────────────────
+
+function renderPlan() {
+  const section = document.getElementById('plan-section');
+  const weeks = planData.weeks;
+  const t = today();
+
+  const rows = weeks.map((week, i) => {
+    const totalKm = (week.days || []).reduce((sum, d) => sum + (d.distance_km || 0), 0);
+    const isCurrentWeek = i === currentWeekIndex;
+
+    const dots = (week.days || []).map(day => {
+      const dotClass = WORKOUT_COLORS[day.type] || 'dot-rest';
+      const isToday = day.date === t;
+      return `<div class="plan-dot ${dotClass}${isToday ? ' plan-dot-today' : ''}"
+                   onclick="openModal('${day.date}')"></div>`;
+    }).join('');
+
+    const kmText = totalKm > 0
+      ? `<span class="plan-week-km">${totalKm.toFixed(0)} km</span>`
+      : '';
+
+    return `
+      <div class="plan-week-row${isCurrentWeek ? ' current-week' : ''}">
+        <div class="plan-week-info">
+          <div class="plan-week-label">${week.label || `Week ${i + 1}`}</div>
+          ${week.phase ? `<div class="plan-week-phase">${week.phase}</div>` : ''}
+        </div>
+        <div class="plan-week-dots">${dots}</div>
+        ${kmText}
+      </div>
+    `;
+  }).join('');
+
+  section.innerHTML = `<div class="plan-list">${rows}</div>`;
 }
 
 // ── Init ───────────────────────────────────────────────────────────────────

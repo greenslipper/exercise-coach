@@ -447,6 +447,133 @@ body {
   border: 1px solid rgba(252,76,2,0.15);
 }
 
+/* Tab nav */
+.tab-nav {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.tab-btn {
+  flex: 1;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--mid);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.tab-btn.active {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+}
+
+.tab-btn:hover:not(.active) {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+/* Today card — tappable */
+.today-card-tappable {
+  cursor: pointer;
+  position: relative;
+}
+
+.today-card-tappable:active {
+  opacity: 0.82;
+}
+
+.today-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: var(--light);
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Plan overview list */
+.plan-list {
+  padding: 0.5rem 0 1rem;
+}
+
+.plan-week-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  margin: 0 1rem 0.5rem;
+  box-shadow: var(--shadow);
+  border: 2px solid transparent;
+}
+
+.plan-week-row.current-week {
+  border-color: var(--orange);
+}
+
+.plan-week-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.plan-week-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.plan-week-phase {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--light);
+  margin-top: 0.1rem;
+}
+
+.plan-week-dots {
+  display: flex;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.plan-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.plan-dot:hover {
+  transform: scale(1.4);
+}
+
+.plan-dot-today {
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 3.5px var(--orange);
+}
+
+.plan-week-km {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--mid);
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 2.5rem;
+  text-align: right;
+}
+
 /* Utility */
 .sr-only {
   position: absolute;
