@@ -2,70 +2,47 @@
 
 **Athlete:** Freddie
 **Goal:** sub-17:00 5K — Battersea Park Run
-**Race Date:** Saturday 28 March 2026
-**Generated:** 2026-02-25
-**Weeks remaining:** 4.5
+**Race Date:** Saturday 25 April 2026
+**Generated:** 2026-03-09
+**Weeks remaining:** 7
 
 ---
 
 ## Coaching Assessment
 
-### Recent Training (last 2 weeks)
+### Plan Revision (2026-03-09)
 
-You've been busy — travel, skiing, treadmill runs, hiking in Japan — and you're back in London now. Here's what the data shows:
+Race moved from 28 March to **25 April 2026** due to bilateral calf tightness with Achilles risk.
 
-| Date | Activity | Distance | Pace (avg) | HR Avg | Notes |
-|------|----------|----------|------------|--------|-------|
-| Feb 25 | Pyramid intervals (London) | 13.3 km | 4:30/km avg | 161 | 1-2-3-4-5-4-3-2-1 min reps, 2 min walk recoveries |
-| Feb 22 | Afternoon Run (London) | 13.9 km | 4:49/km | 141 | Moderate, suffer 40 |
-| Feb 21 | Treadmill Run | 5.95 km | 4:54/km | 112 | Very easy |
-| Feb 20 | Alpine Ski (Japan) | — | — | — | Cross-training |
-| Feb 18 | Treadmill Run | 13.8 km | 4:35/km | 146 | Moderate |
-| Feb 12 | Morning Run (Japan) | 11.2 km | 4:24/km | — | Solid effort |
+The fitness for sub-17 is already proven — the February pyramid session (3:41/km for 5 minutes mid-session) makes that clear. The smart move is one week of recovery, a proper rebuild, and arriving at the April start line healthy and sharp rather than limping to March.
 
-Volume: ~30–40 km/week consistently. Good base to work with.
+### Calf Issue
 
-### Today's session (Feb 25): pyramid intervals
+Both calves showing tightness and soreness — not yet Achilles, but heading that way under continued load. Physio Yasmin Palfrey (Complete Physio, 03/03/2026) has assigned the Ankle & Hips program which **replaces Session A and B entirely**. No eccentric heel drops, no Nordic curls — Yasmin's program is the strength work from now.
 
-The lap data tells the full story — this was a structured **1-2-3-4-5-4-3-2-1 minute pyramid** with 2-minute walk recoveries. Interval paces by rep duration:
+Running is not banned (5km tested fine) but quality sessions were held in Week 1 while calves settle. Quality resumes Week 2.
 
-| Rep | Duration | Pace | HR |
-|-----|----------|------|----|
-| 1st 1 min | 1 min | 3:16/km | 148 |
-| 1st 2 min | 2 min | 3:26/km | 164 |
-| 3 min | 3 min | 3:33/km | 166 |
-| 4 min | 4 min | 3:39/km | 175 |
-| **5 min (peak)** | **5 min** | **3:41/km** | **169** |
-| 4 min | 4 min | 3:46/km | 170 |
-| 3 min | 3 min | 3:39/km | 168 |
-| 2nd 2 min | 2 min | 3:31/km | 171 |
-| 2nd 1 min | 1 min | 3:25/km | 164 |
+No tennis while calves are irritable.
 
-This is very useful data. You're sustaining **3:41/km for 5 minutes** mid-session, and hitting **3:16–3:25/km on the short reps**. Sub-17 (3:24/km) is a realistic target — the speed is clearly there.
+### Strength — Yasmin's Ankle & Hips Program
 
-### Sub-17 goal: assessment
+Two sessions per week, Tuesday and Thursday, after the easy run. Same program both days.
 
-The data supports it. Your 5-minute rep at 3:41/km (with walk recovery either side) is the most telling number — that's harder than 5K race pace for a continuous 5-minute effort in the middle of a long session. With a proper taper and race adrenaline over 5K, 3:24/km is well within reach.
+| Exercise | Sets × Reps | Weight | Notes |
+|----------|-------------|--------|-------|
+| Leg press | 4 × 8 | 80 kg | Full extension; controlled return |
+| Calf press (Gastrocnemius) | 3 × 8 | 25 kg | Balls of feet on weight plate; barbell on back |
+| Single-leg seated calf raise | 3 × 12 | 50 kg+ | On leg extension machine — should feel hard |
+| Cable hip abduction | 3 × 8 each | 4 kg | Ankle cuff, lower cable; outer leg to 45° |
+| Seated hamstring curl | 3 × 8 + 1s hold | 18 kg | Slow controlled release |
+| Leg extension (single leg) | 3 × 12 | 30 kg | One leg at a time |
+| Bulgarian split squat (Smith) | 3 × 8 each | Build from light | Rear foot on box; knee tracks toes |
+| Pogo jumps (two-footed) | 2 × 20 | — | Minimal ground contact; light and springy |
+| Pogo hops (single-leg) | 3 × 10 | — | Build gradually to 30+; stop if calf pain increases |
 
-The time trial in Week 2 is still worth doing for race practice and pacing confidence, but it's no longer needed to validate the goal.
+Note: Yasmin prescribed pogo hops "on alternate days" — clarify with her whether these should also be done as a standalone drill outside gym sessions.
 
-### Achilles note
-
-With your history of Achilles tendinopathy, intervals and strides carry some risk. I've kept speed work sensible and progressive. If you feel any tightening in the tendon, swap the session for an easy run and tell me.
-
----
-
-## Strength Sessions
-
-Two sessions per week, Tuesday and Thursday, after the easy run.
-
-**Session A (Tuesday) — Posterior Chain & Achilles**
-Barbell RDL 3×8 · Barbell Hip Thrust 3×10 · Nordic Hamstring Curl 3×6 · Seated Calf Raise 3×15 (3s eccentric) · Eccentric Heel Drop single-leg 3×15 (3s down off step)
-
-**Session B (Thursday) — Single-Leg Stability & Hip**
-Bulgarian Split Squat 3×8 each · Single-Leg RDL 3×8 each · Copenhagen Adduction 2×10 each · Standing Calf Raise 3×15 (3s eccentric) · Dead Bug 2×12 each
-
-Taper: Week 4 drop to Session A only, 2 sets. Race week: Session A Tuesday only, 1 set each.
+Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + pogos only, 1 set. Race week: Tuesday only, 1 set each.
 
 ---
 
@@ -77,107 +54,144 @@ Taper: Week 4 drop to Session A only, 2 sets. Race week: Session A Tuesday only,
 | Tempo | 3:45–3:55/km | "Comfortably hard"; HR ~155–165 |
 | Intervals (800m–1200m) | 3:25–3:35/km | Hard; HR 165–175 |
 | Short reps / strides | 3:10–3:20/km | Near-max; 20–60 sec only |
-| Race | 3:24/km | All-out — Battersea, Mar 28 |
+| Race | 3:24/km | All-out — Battersea, Apr 25 |
 
 ---
 
-## Week 1: Feb 23–Mar 1 — Back in London, Finish Strong
+## Week 1: Mar 9–15 — Calf Recovery
 
-*Focus: Recover from travel, complete the week with quality, don't overdo it after today's hard run.*
-
-| Day | Date | Session | Detail |
-|-----|------|---------|--------|
-| Mon | Feb 23 | Rest ✓ | — |
-| Tue | Feb 24 | Easy run | ~6 km @ 5:00–5:15/km (untracked — assume done or rest) |
-| **Wed** | **Feb 25** | **✓ Done** | **Pyramid intervals: 1-2-3-4-5-4-3-2-1 min @ 3:16–3:41/km. 13.3 km total.** |
-| Thu | Feb 26 | Easy + Strength B | 6 km @ 5:00–5:15/km easy. Then Session B: Bulgarian split squat, single-leg RDL, Copenhagen adduction, standing calf raise, dead bug. |
-| Fri | Feb 27 | Rest | — |
-| Sat | Feb 28 | Tempo run | 2 km warmup @ 5:10/km → 20 min @ 3:45–3:50/km → 2 km cooldown. ~8 km total. |
-| Sun | Mar 1 | Easy long run | 10 km @ 5:00–5:15/km. Conversational throughout. |
-
-**Week target: ~37 km (including today's 13.3 km already done)**
-
----
-
-## Week 2: Mar 2–8 — Quality Introduction
-
-*Focus: Introduce intervals; tempo work. Consider a time trial Sat to calibrate goal pace.*
-
-| Day | Date | Session | Detail |
-|-----|------|---------|--------|
-| Mon | Mar 2 | Rest | — |
-| Tue | Mar 3 | Easy + Strides + Strength A | 6 km easy @ 5:00–5:15/km + 6 × 20s strides @ 3:24/km. Then Session A: barbell RDL, hip thrust, Nordic curl, seated calf raise, eccentric heel drops. |
-| Wed | Mar 4 | Intervals | 2 km warmup + 5 × 800 m @ 3:25–3:30/km (90s jog recovery) + 2 km cooldown. ~8 km total. Watch Achilles on first rep. |
-| Thu | Mar 5 | Easy + Strength B | 7 km @ 5:00–5:15/km easy. Then Session B: Bulgarian split squat, single-leg RDL, Copenhagen adduction, standing calf raise, dead bug. |
-| Fri | Mar 6 | Rest | — |
-| Sat | Mar 7 | **Time trial OR tempo** | Option A: 5 km time trial at Battersea parkrun — good race practice and confidence builder. Option B: 2 km warmup + 25 min @ 3:45–3:50/km + 2 km cooldown. |
-| Sun | Mar 8 | Easy long run | 12 km @ 5:00–5:15/km. |
-
-**Week target: ~40–43 km**
-
----
-
-## Week 3: Mar 9–15 — Peak Quality
-
-*Focus: Highest quality week. One km-repeat session, one tempo, good long run.*
+*Focus: Let calves settle. Easy running only. Start Yasmin's program.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Mar 9 | Rest | — |
-| Tue | Mar 10 | Easy + Strides + Strength A | 6 km easy + 6 × 20s strides @ 3:24/km. Then Session A: barbell RDL, hip thrust, Nordic curl, seated calf raise, eccentric heel drops. |
-| Wed | Mar 11 | Intervals | 2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km total. Hardest session of the plan. |
-| Thu | Mar 12 | Easy + Strength B | 7 km @ 5:00–5:15/km easy. Then Session B: Bulgarian split squat, single-leg RDL, Copenhagen adduction, standing calf raise, dead bug. |
+| Tue | Mar 10 | Easy + Yasmin's program | 5 km @ 5:00–5:15/km. Then full Ankle & Hips program. |
+| Wed | Mar 11 | Easy run | 5 km @ 5:00–5:15/km. Note how calves feel. |
+| Thu | Mar 12 | Easy + Yasmin's program | 5 km @ 5:00–5:15/km. Then full Ankle & Hips program. |
 | Fri | Mar 13 | Rest | — |
-| Sat | Mar 14 | Tempo run | 2 km warmup + 20 min @ 3:40/km + 2 km cooldown. ~8 km. |
-| Sun | Mar 15 | Easy run | 8 km @ 5:00–5:15/km (volume starts dropping) |
+| Sat | Mar 14 | Easy run | 5 km @ 5:00–5:15/km. |
+| Sun | Mar 15 | Easy run | 5 km @ 5:00–5:15/km. |
 
-**Week target: ~38 km**
+**Week target: ~25 km**
 
 ---
 
-## Week 4: Mar 16–22 — Taper
+## Week 2: Mar 16–22 — Rebuild
 
-*Focus: Stay sharp, drop volume. Trust the work you've done.*
+*Focus: Reintroduce quality. Test calf response to hard running. One interval session, one tempo.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Mar 16 | Rest | — |
-| Tue | Mar 17 | Easy + Strides + Strength A (light) | 5 km easy + 4 × 20s strides. Then Session A light: 2 sets each, reduce weight 20%. Keep eccentric heel drops. |
-| Wed | Mar 18 | Sharpener | 2 km warmup + 4 × 800 m @ 3:22–3:28/km (2 min jog) + 2 km cooldown. ~8 km. Legs should feel fast. |
-| Thu | Mar 19 | Easy only | 5 km @ 5:00–5:15/km. No strength this week — legs fresh for race. |
+| Tue | Mar 17 | Easy + Strides + Yasmin's program | 6 km @ 5:00–5:15/km + 4 × 20s strides @ 3:24/km. Then Ankle & Hips program. |
+| Wed | Mar 18 | Intervals | 2 km warmup + 4 × 800 m @ 3:25–3:30/km (90s jog recovery) + 2 km cooldown. ~8 km. Stop if calf tightness builds during session. |
+| Thu | Mar 19 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
 | Fri | Mar 20 | Rest | — |
-| Sat | Mar 21 | Easy + strides | 5 km easy + 4 × 20s strides @ race pace. Stay loose. |
-| Sun | Mar 22 | Rest | Full rest. Legs up. |
+| Sat | Mar 21 | Tempo | 2 km warmup + 18 min @ 3:45–3:50/km + 2 km cooldown. ~7 km. |
+| Sun | Mar 22 | Easy long run | 10 km @ 5:00–5:15/km. |
 
-**Week target: ~23 km**
+**Week target: ~37 km**
 
 ---
 
-## Race Week: Mar 23–28 — Arrive Fresh
+## Week 3: Mar 23–29 — Quality
 
-*Focus: Sleep, nutrition, relax. Don't add fitness this week — it's already done.*
+*Focus: Full quality sessions — this is the peak week of the revised plan.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Mar 23 | Rest | — |
-| Tue | Mar 24 | Easy + Strides + Strength A (minimal) | 4 km easy + 4 × 20s strides. Then 1 set each of Session A — just to maintain Achilles habit. Nothing that causes soreness. |
-| Wed | Mar 25 | Shakeout | 3 km very easy. Just moving the legs. |
-| Thu | Mar 26 | Rest | — |
-| Fri | Mar 27 | Rest | Optional 15 min walk/jog to loosen up. Prep race kit. Pin number on. |
-| **Sat** | **Mar 28** | **RACE 🏁** | **Battersea Park Run — sub 17:00. Target 3:24/km. Go get it.** |
+| Tue | Mar 24 | Easy + Strides + Yasmin's program | 6 km easy + 6 × 20s strides @ 3:24/km. Then Ankle & Hips program. |
+| Wed | Mar 25 | Intervals | 2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km. |
+| Thu | Mar 26 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
+| Fri | Mar 27 | Rest | — |
+| Sat | Mar 28 | Tempo | 2 km warmup + 20 min @ 3:40–3:45/km + 2 km cooldown. ~8 km. |
+| Sun | Mar 29 | Easy long run | 10 km @ 5:00–5:15/km. |
+
+**Week target: ~39 km**
+
+---
+
+## Week 4: Mar 30–Apr 5 — Peak
+
+*Focus: Last hard week. Final interval session. Body is done with serious work after this.*
+
+| Day | Date | Session | Detail |
+|-----|------|---------|--------|
+| Mon | Mar 30 | Rest | — |
+| Tue | Mar 31 | Easy + Strides + Yasmin's program | 6 km easy + 6 × 20s strides @ 3:24/km. Then Ankle & Hips program. |
+| Wed | Apr 1 | Intervals | 2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km. Last big interval session. |
+| Thu | Apr 2 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
+| Fri | Apr 3 | Rest | — |
+| Sat | Apr 4 | Tempo | 2 km warmup + 20 min @ 3:40/km + 2 km cooldown. ~8 km. |
+| Sun | Apr 5 | Easy run | 8 km @ 5:00–5:15/km. Volume starts dropping. |
+
+**Week target: ~37 km**
+
+---
+
+## Week 5: Apr 6–12 — Taper
+
+*Focus: Stay sharp. Drop volume. Trust the work.*
+
+| Day | Date | Session | Detail |
+|-----|------|---------|--------|
+| Mon | Apr 6 | Rest | — |
+| Tue | Apr 7 | Easy + Strides + Yasmin's (light) | 5 km easy + 4 × 20s strides. Then Ankle & Hips: 2 sets each, weight -20%. |
+| Wed | Apr 8 | Sharpener | 2 km warmup + 4 × 800 m @ 3:22–3:28/km (2 min jog) + 2 km cooldown. ~8 km. Legs should feel fast. |
+| Thu | Apr 9 | Easy + Yasmin's (light) | 5 km easy. Then Ankle & Hips: 2 sets each, weight -20%. |
+| Fri | Apr 10 | Rest | — |
+| Sat | Apr 11 | Easy + strides | 4 km easy + 4 × 20s strides @ race pace. Stay loose. |
+| Sun | Apr 12 | Rest | Full rest. |
+
+**Week target: ~24 km**
+
+---
+
+## Week 6: Apr 13–19 — Arrive Fresh
+
+*Focus: Almost nothing. Sleep, nutrition, legs up.*
+
+| Day | Date | Session | Detail |
+|-----|------|---------|--------|
+| Mon | Apr 13 | Rest | — |
+| Tue | Apr 14 | Easy + Strides + Yasmin's (minimal) | 4 km easy + 4 × 20s strides. Then 1 set each of calf press, single-leg calf raise, and pogos only. |
+| Wed | Apr 15 | Shakeout | 3 km very easy. Just moving the legs. |
+| Thu | Apr 16 | Rest | — |
+| Fri | Apr 17 | Rest | Optional 15 min walk/jog. |
+| Sat | Apr 18 | Easy + strides | 3 km easy + 4 × 20s strides @ race pace. |
+| Sun | Apr 19 | Rest | — |
+
+**Week target: ~10 km**
+
+---
+
+## Race Week: Apr 20–25 — Go Get It
+
+*Focus: Show up fresh. Don't add fitness — it's already done.*
+
+| Day | Date | Session | Detail |
+|-----|------|---------|--------|
+| Mon | Apr 20 | Rest | — |
+| Tue | Apr 21 | Easy + Strides + Yasmin's (1 set) | 4 km easy + 4 × 20s strides. Then 1 set each — calf work and pogos only. Nothing that causes soreness. |
+| Wed | Apr 22 | Shakeout | 3 km very easy. |
+| Thu | Apr 23 | Rest | — |
+| Fri | Apr 24 | Rest | Prep race kit. Pin number on. Vaporflys out. |
+| **Sat** | **Apr 25** | **RACE 🏁** | **Battersea Park Run — sub 17:00. Target 3:24/km. Go get it.** |
 
 ---
 
 ## Race Day Strategy
 
-**Pacing:** Don't go out too fast. In a 5K, the first km should feel surprisingly easy. Aim for 3:22–3:25 for km 1, then settle into 3:24. If you have anything left after km 4, empty the tank.
+**Pacing:** First km should feel surprisingly easy. Aim 3:22–3:25 for km 1, then settle into 3:24. If you have anything left after km 4, empty the tank.
 
-**Achilles:** Warm up with 10 min easy jog + drills before the start. Don't sprint the first 200m.
+**Calves/Achilles:** Warm up with 10 min easy jog + drills before the start. Don't sprint the first 200m.
 
-**Kit:** Vaporflys out. Race day.
+**Kit:** Vaporflys. Race day.
 
 ---
 
 ## Notes & Adjustments
 
-- **2026-02-25:** Plan created. Pyramid interval session (1-2-3-4-5-4-3-2-1 min) analysed from lap data — intervals at 3:16–3:41/km confirm sub-17 is a realistic target. Training paces updated accordingly. Time trial on Mar 7 optional but recommended for race practice.
+- **2026-02-25:** Plan created. Pyramid intervals confirmed sub-17 is realistic.
+- **2026-03-09:** Race moved to 25 April. Bilateral calf tightness — Achilles risk. Yasmin Palfrey (Complete Physio) assigned Ankle & Hips program replacing all existing strength sessions. Week 1 easy only; quality resumes Week 2.

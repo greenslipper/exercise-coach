@@ -8,7 +8,7 @@
 ## Target Race
 
 - **Event**: Battersea Park Run
-- **Date**: 28th March
+- **Date**: 25th April 2026 (moved from 28 March due to bilateral calf tightness)
 - **Target Time**: sub 17:00
 
 ## Current Fitness
