@@ -60,19 +60,19 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 ## Week 1: Mar 9–15 — Calf Recovery
 
-*Focus: Let calves settle. Easy running only. Start Yasmin's program.*
+*Focus: Yasmin's advice — no speed/tempo. Short easy runs Wed & Fri. Long run Sunday. Gym Tue (evening) + Thu (morning), no run on gym days.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Mar 9 | Rest | — |
-| Tue | Mar 10 | Easy + Yasmin's program | 5 km @ 5:00–5:15/km. Then full Ankle & Hips program. |
-| Wed | Mar 11 | Easy run | 5 km @ 5:00–5:15/km. Note how calves feel. |
-| Thu | Mar 12 | Easy + Yasmin's program | 5 km @ 5:00–5:15/km. Then full Ankle & Hips program. |
-| Fri | Mar 13 | Rest | — |
-| Sat | Mar 14 | Easy run | 5 km @ 5:00–5:15/km. |
-| Sun | Mar 15 | Easy run | 5 km @ 5:00–5:15/km. |
+| Tue | Mar 10 | Yasmin's program (evening) | Full Ankle & Hips program. No run today. |
+| Wed | Mar 11 | Easy run | 4 km @ 5:00–5:15/km. Short and easy. |
+| Thu | Mar 12 | Yasmin's program (morning) | Full Ankle & Hips program. No run today. |
+| Fri | Mar 13 | Easy run | 4 km @ 5:00–5:15/km. |
+| Sat | Mar 14 | Rest | — |
+| Sun | Mar 15 | Long run | 8 km @ 5:00–5:15/km. Conversational throughout. |
 
-**Week target: ~25 km**
+**Week target: ~16 km**
 
 ---
 
@@ -82,8 +82,8 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Mar 16 | Rest | — |
-| Tue | Mar 17 | Easy + Strides + Yasmin's program | 6 km @ 5:00–5:15/km + 4 × 20s strides @ 3:24/km. Then Ankle & Hips program. |
+| Mon | Mar 16 | Yasmin's program (evening) | Full Ankle & Hips program. No run. |
+| Tue | Mar 17 | Easy + Strides | 6 km @ 5:00–5:15/km + 4 × 20s strides @ 3:24/km. |
 | Wed | Mar 18 | Intervals | 2 km warmup + 4 × 800 m @ 3:25–3:30/km (90s jog recovery) + 2 km cooldown. ~8 km. Stop if calf tightness builds during session. |
 | Thu | Mar 19 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
 | Fri | Mar 20 | Rest | — |
@@ -100,8 +100,8 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Mar 23 | Rest | — |
-| Tue | Mar 24 | Easy + Strides + Yasmin's program | 6 km easy + 6 × 20s strides @ 3:24/km. Then Ankle & Hips program. |
+| Mon | Mar 23 | Yasmin's program (evening) | Full Ankle & Hips program. No run. |
+| Tue | Mar 24 | Easy + Strides | 6 km easy + 6 × 20s strides @ 3:24/km. |
 | Wed | Mar 25 | Intervals | 2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km. |
 | Thu | Mar 26 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
 | Fri | Mar 27 | Rest | — |
@@ -118,8 +118,8 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Mar 30 | Rest | — |
-| Tue | Mar 31 | Easy + Strides + Yasmin's program | 6 km easy + 6 × 20s strides @ 3:24/km. Then Ankle & Hips program. |
+| Mon | Mar 30 | Yasmin's program (evening) | Full Ankle & Hips program. No run. |
+| Tue | Mar 31 | Easy + Strides | 6 km easy + 6 × 20s strides @ 3:24/km. |
 | Wed | Apr 1 | Intervals | 2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km. Last big interval session. |
 | Thu | Apr 2 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
 | Fri | Apr 3 | Rest | — |
@@ -136,8 +136,8 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 6 | Rest | — |
-| Tue | Apr 7 | Easy + Strides + Yasmin's program | 6 km easy + 4 × 20s strides. Then full Ankle & Hips program. |
+| Mon | Apr 6 | Yasmin's program (light, evening) | Ankle & Hips: 2 sets each, weight -20%. No run. |
+| Tue | Apr 7 | Easy + Strides | 6 km easy + 4 × 20s strides. |
 | Wed | Apr 8 | Sharpener | 2 km warmup + 4 × 800 m @ 3:22–3:28/km (2 min jog) + 2 km cooldown. ~8 km. Legs should feel fast. |
 | Thu | Apr 9 | Easy + Yasmin's program | 6 km easy. Then full Ankle & Hips program. |
 | Fri | Apr 10 | Rest | — |
@@ -154,8 +154,8 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 13 | Rest | — |
-| Tue | Apr 14 | Easy + Strides + Yasmin's (light) | 5 km easy + 4 × 20s strides. Then Ankle & Hips: 2 sets each, weight -20%. |
+| Mon | Apr 13 | Yasmin's program (light, evening) | Ankle & Hips: 2 sets each, weight -20%. No run. |
+| Tue | Apr 14 | Easy + Strides | 5 km easy + 4 × 20s strides. |
 | Wed | Apr 15 | Easy run | 4 km easy. |
 | Thu | Apr 16 | Rest | — |
 | Fri | Apr 17 | Rest | Optional 15 min walk/jog. |
