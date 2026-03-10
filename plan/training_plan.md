@@ -78,73 +78,73 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 ## Week 2: Mar 16–22 — Rebuild
 
-*Focus: Reintroduce quality. Test calf response to hard running. One interval session, one tempo.*
+*Focus: Reintroduce quality. Test calf response to hard running. Easy Tuesday, intervals Wednesday, long Sunday.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Mar 16 | Yasmin's program (evening) | Full Ankle & Hips program. No run. |
 | Tue | Mar 17 | Easy + Strides | 6 km @ 5:00–5:15/km + 4 × 20s strides @ 3:24/km. |
 | Wed | Mar 18 | Intervals | 2 km warmup + 4 × 800 m @ 3:25–3:30/km (90s jog recovery) + 2 km cooldown. ~8 km. Stop if calf tightness builds during session. |
-| Thu | Mar 19 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
+| Thu | Mar 19 | Yasmin's program | Full Ankle & Hips program. No run. |
 | Fri | Mar 20 | Rest | — |
-| Sat | Mar 21 | Tempo | 2 km warmup + 18 min @ 3:45–3:50/km + 2 km cooldown. ~7 km. |
-| Sun | Mar 22 | Easy long run | 10 km @ 5:00–5:15/km. |
+| Sat | Mar 21 | Rest | — |
+| Sun | Mar 22 | Long run | 10 km @ 5:00–5:15/km. |
 
-**Week target: ~37 km**
+**Week target: ~24 km**
 
 ---
 
 ## Week 3: Mar 23–29 — Quality
 
-*Focus: Full quality sessions — this is the peak week of the revised plan.*
+*Focus: Biggest interval session of the plan. Easy Tuesday, 5×1000m Wednesday, long Sunday.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Mar 23 | Yasmin's program (evening) | Full Ankle & Hips program. No run. |
 | Tue | Mar 24 | Easy + Strides | 6 km easy + 6 × 20s strides @ 3:24/km. |
 | Wed | Mar 25 | Intervals | 2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km. |
-| Thu | Mar 26 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
+| Thu | Mar 26 | Yasmin's program | Full Ankle & Hips program. No run. |
 | Fri | Mar 27 | Rest | — |
-| Sat | Mar 28 | Tempo | 2 km warmup + 20 min @ 3:40–3:45/km + 2 km cooldown. ~8 km. |
-| Sun | Mar 29 | Easy long run | 10 km @ 5:00–5:15/km. |
+| Sat | Mar 28 | Rest | — |
+| Sun | Mar 29 | Long run | 10 km @ 5:00–5:15/km. |
 
-**Week target: ~39 km**
+**Week target: ~25 km**
 
 ---
 
 ## Week 4: Mar 30–Apr 5 — Peak
 
-*Focus: Last hard week. Final interval session. Body is done with serious work after this.*
+*Focus: Last hard week. Tempo on Wednesday for a change of stimulus. Body is done with serious work after this.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Mar 30 | Yasmin's program (evening) | Full Ankle & Hips program. No run. |
 | Tue | Mar 31 | Easy + Strides | 6 km easy + 6 × 20s strides @ 3:24/km. |
-| Wed | Apr 1 | Intervals | 2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km. Last big interval session. |
-| Thu | Apr 2 | Easy + Yasmin's program | 6 km @ 5:00–5:15/km. Then Ankle & Hips program. |
+| Wed | Apr 1 | Tempo | 2 km warmup + 20 min @ 3:40–3:45/km + 2 km cooldown. ~8 km. |
+| Thu | Apr 2 | Yasmin's program | Full Ankle & Hips program. No run. |
 | Fri | Apr 3 | Rest | — |
-| Sat | Apr 4 | Tempo | 2 km warmup + 20 min @ 3:40/km + 2 km cooldown. ~8 km. |
+| Sat | Apr 4 | Rest | — |
 | Sun | Apr 5 | Easy run | 8 km @ 5:00–5:15/km. Volume starts dropping. |
 
-**Week target: ~37 km**
+**Week target: ~22 km**
 
 ---
 
 ## Week 5: Apr 6–12 — Sharpener
 
-*Focus: Still proper training. Sharpener intervals + short tempo. Full Yasmin's program.*
+*Focus: Last proper quality session. Sharpener intervals Wednesday. Legs should feel fast.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Apr 6 | Yasmin's program (light, evening) | Ankle & Hips: 2 sets each, weight -20%. No run. |
 | Tue | Apr 7 | Easy + Strides | 6 km easy + 4 × 20s strides. |
 | Wed | Apr 8 | Sharpener | 2 km warmup + 4 × 800 m @ 3:22–3:28/km (2 min jog) + 2 km cooldown. ~8 km. Legs should feel fast. |
-| Thu | Apr 9 | Easy + Yasmin's program | 6 km easy. Then full Ankle & Hips program. |
+| Thu | Apr 9 | Yasmin's program | Full Ankle & Hips program. No run. |
 | Fri | Apr 10 | Rest | — |
-| Sat | Apr 11 | Short tempo | 2 km warmup + 15 min @ 3:40/km + 2 km cooldown. ~7 km. |
+| Sat | Apr 11 | Rest | — |
 | Sun | Apr 12 | Easy run | 6 km @ 5:00–5:15/km. |
 
-**Week target: ~33 km**
+**Week target: ~20 km**
 
 ---
 
@@ -195,3 +195,4 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 - **2026-02-25:** Plan created. Pyramid intervals confirmed sub-17 is realistic.
 - **2026-03-09:** Race moved to 25 April. Bilateral calf tightness — Achilles risk. Yasmin Palfrey (Complete Physio) assigned Ankle & Hips program replacing all existing strength sessions. Week 1 easy only; quality resumes Week 2.
+- **2026-03-10:** Revised to 3 runs per week. Template: Tue easy+strides · Wed quality · Sun long/easy. Thu gym-only (no run), Sat rest. Reduces weekly volume but maintains quality stimulus.

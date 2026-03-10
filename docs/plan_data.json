@@ -130,12 +130,10 @@
         },
         {
           "date": "2026-03-19",
-          "type": "easy",
-          "name": "Easy + Yasmin's Program",
-          "description": "6 km easy, then Ankle & Hips program.",
-          "distance_km": 6,
+          "type": "strength",
+          "name": "Yasmin's Program",
+          "description": "Full Ankle & Hips program. Gym only — no run today.",
           "exercises": [
-            { "name": "Easy Run", "detail": "6 km @ 5:00–5:15/km", "how_to": "Conversational pace. Recovery from yesterday's intervals." },
             { "name": "Leg Press", "detail": "4 × 8 @ 80 kg", "how_to": "Full extension; controlled return." },
             { "name": "Calf Press (Gastrocnemius)", "detail": "3 × 8 @ 25 kg", "how_to": "Rise to toes; controlled descent." },
             { "name": "Single-Leg Seated Calf Raise", "detail": "3 × 12 @ 50 kg+", "how_to": "Should feel hard. Both legs." },
@@ -155,15 +153,9 @@
         },
         {
           "date": "2026-03-21",
-          "type": "tempo",
-          "name": "Tempo Run",
-          "description": "2 km warmup + 18 min @ 3:45–3:50/km + 2 km cooldown. ~7 km.",
-          "distance_km": 7,
-          "exercises": [
-            { "name": "Warmup", "detail": "2 km @ 5:10/km", "how_to": "Easy jog to loosen up." },
-            { "name": "Tempo", "detail": "18 min @ 3:45–3:50/km", "how_to": "Comfortably hard — you can speak a few words but not hold a conversation. HR ~155–165." },
-            { "name": "Cooldown", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." }
-          ]
+          "type": "rest",
+          "name": "Rest",
+          "description": "Full rest."
         },
         {
           "date": "2026-03-22",
@@ -223,12 +215,10 @@
         },
         {
           "date": "2026-03-26",
-          "type": "easy",
-          "name": "Easy + Yasmin's Program",
-          "description": "6 km easy, then Ankle & Hips program.",
-          "distance_km": 6,
+          "type": "strength",
+          "name": "Yasmin's Program",
+          "description": "Full Ankle & Hips program. Gym only — no run today.",
           "exercises": [
-            { "name": "Easy Run", "detail": "6 km @ 5:00–5:15/km", "how_to": "Easy recovery run after yesterday's hard session." },
             { "name": "Leg Press", "detail": "4 × 8 @ 80 kg", "how_to": "Full extension; controlled return." },
             { "name": "Calf Press (Gastrocnemius)", "detail": "3 × 8 @ 25 kg", "how_to": "Rise to toes; controlled descent." },
             { "name": "Single-Leg Seated Calf Raise", "detail": "3 × 12 @ 50 kg+", "how_to": "Should feel hard." },
@@ -248,15 +238,9 @@
         },
         {
           "date": "2026-03-28",
-          "type": "tempo",
-          "name": "Tempo Run",
-          "description": "2 km warmup + 20 min @ 3:40–3:45/km + 2 km cooldown. ~8 km.",
-          "distance_km": 8,
-          "exercises": [
-            { "name": "Warmup", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." },
-            { "name": "Tempo", "detail": "20 min @ 3:40–3:45/km", "how_to": "Comfortably hard. A touch faster than Week 2. HR ~155–165." },
-            { "name": "Cooldown", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." }
-          ]
+          "type": "rest",
+          "name": "Rest",
+          "description": "Full rest."
         },
         {
           "date": "2026-03-29",
@@ -304,24 +288,22 @@
         },
         {
           "date": "2026-04-01",
-          "type": "intervals",
-          "name": "Intervals — 5 × 1000 m",
-          "description": "2 km warmup + 5 × 1000 m @ 3:25–3:30/km (90s jog) + 2 km cooldown. ~9 km. Last big interval session.",
-          "distance_km": 9,
+          "type": "tempo",
+          "name": "Tempo Run",
+          "description": "2 km warmup + 20 min @ 3:40–3:45/km + 2 km cooldown. Change of stimulus in the last hard week.",
+          "distance_km": 8,
           "exercises": [
-            { "name": "Warmup", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." },
-            { "name": "5 × 1000 m", "detail": "@ 3:25–3:30/km", "how_to": "Hard. This is the last big interval session before the race — make it count. 90s jog recovery." },
-            { "name": "Cooldown", "detail": "2 km @ 5:10/km", "how_to": "Easy jog. That's the hard work done." }
+            { "name": "Warmup", "detail": "2 km", "how_to": "Easy jog @ 5:10/km. Calves and legs loosening up." },
+            { "name": "Tempo", "detail": "20 min", "how_to": "@ 3:40–3:45/km — comfortably hard, HR ~155–165. Controlled and steady." },
+            { "name": "Cooldown", "detail": "2 km", "how_to": "Easy jog back to base. Let the heart rate drop." }
           ]
         },
         {
           "date": "2026-04-02",
-          "type": "easy",
-          "name": "Easy + Yasmin's Program",
-          "description": "6 km easy, then Ankle & Hips program.",
-          "distance_km": 6,
+          "type": "strength",
+          "name": "Yasmin's Program",
+          "description": "Full Ankle & Hips program. Gym only — no run today.",
           "exercises": [
-            { "name": "Easy Run", "detail": "6 km @ 5:00–5:15/km", "how_to": "Easy recovery run." },
             { "name": "Leg Press", "detail": "4 × 8 @ 80 kg", "how_to": "Full extension; controlled return." },
             { "name": "Calf Press (Gastrocnemius)", "detail": "3 × 8 @ 25 kg", "how_to": "Rise to toes; controlled descent." },
             { "name": "Single-Leg Seated Calf Raise", "detail": "3 × 12 @ 50 kg+", "how_to": "Should feel hard." },
@@ -341,15 +323,9 @@
         },
         {
           "date": "2026-04-04",
-          "type": "tempo",
-          "name": "Tempo Run",
-          "description": "2 km warmup + 20 min @ 3:40/km + 2 km cooldown. ~8 km.",
-          "distance_km": 8,
-          "exercises": [
-            { "name": "Warmup", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." },
-            { "name": "Tempo", "detail": "20 min @ 3:40/km", "how_to": "This is the sharpest tempo of the block. Comfortably hard — HR ~160–165." },
-            { "name": "Cooldown", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." }
-          ]
+          "type": "rest",
+          "name": "Rest",
+          "description": "Full rest."
         },
         {
           "date": "2026-04-05",
@@ -409,12 +385,10 @@
         },
         {
           "date": "2026-04-09",
-          "type": "easy",
-          "name": "Easy + Yasmin's Program",
-          "description": "6 km easy, then full Ankle & Hips program.",
-          "distance_km": 6,
+          "type": "strength",
+          "name": "Yasmin's Program",
+          "description": "Full Ankle & Hips program. Gym only — no run today.",
           "exercises": [
-            { "name": "Easy Run", "detail": "6 km @ 5:00–5:15/km", "how_to": "Easy recovery run." },
             { "name": "Leg Press", "detail": "4 × 8 @ 80 kg", "how_to": "Full extension; controlled return." },
             { "name": "Calf Press (Gastrocnemius)", "detail": "3 × 8 @ 25 kg", "how_to": "Rise to toes; controlled descent." },
             { "name": "Single-Leg Seated Calf Raise", "detail": "3 × 12 @ 50 kg+", "how_to": "Should feel hard." },
@@ -434,15 +408,9 @@
         },
         {
           "date": "2026-04-11",
-          "type": "tempo",
-          "name": "Short Tempo",
-          "description": "2 km warmup + 15 min @ 3:40/km + 2 km cooldown. ~7 km.",
-          "distance_km": 7,
-          "exercises": [
-            { "name": "Warmup", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." },
-            { "name": "Tempo", "detail": "15 min @ 3:40/km", "how_to": "Comfortably hard. Shorter than the build phase tempos — keep it controlled." },
-            { "name": "Cooldown", "detail": "2 km @ 5:10/km", "how_to": "Easy jog." }
-          ]
+          "type": "rest",
+          "name": "Rest",
+          "description": "Full rest."
         },
         {
           "date": "2026-04-12",
