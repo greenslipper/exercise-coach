@@ -130,39 +130,39 @@ Taper: Week 5 drop to 2 sets each, weight -20%. Week 6: essential calf work + po
 
 ---
 
-## Week 5: Apr 6–12 — Taper
+## Week 5: Apr 6–12 — Sharpener
 
-*Focus: Stay sharp. Drop volume. Trust the work.*
+*Focus: Still proper training. Sharpener intervals + short tempo. Full Yasmin's program.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Apr 6 | Rest | — |
-| Tue | Apr 7 | Easy + Strides + Yasmin's (light) | 5 km easy + 4 × 20s strides. Then Ankle & Hips: 2 sets each, weight -20%. |
+| Tue | Apr 7 | Easy + Strides + Yasmin's program | 6 km easy + 4 × 20s strides. Then full Ankle & Hips program. |
 | Wed | Apr 8 | Sharpener | 2 km warmup + 4 × 800 m @ 3:22–3:28/km (2 min jog) + 2 km cooldown. ~8 km. Legs should feel fast. |
-| Thu | Apr 9 | Easy + Yasmin's (light) | 5 km easy. Then Ankle & Hips: 2 sets each, weight -20%. |
+| Thu | Apr 9 | Easy + Yasmin's program | 6 km easy. Then full Ankle & Hips program. |
 | Fri | Apr 10 | Rest | — |
-| Sat | Apr 11 | Easy + strides | 4 km easy + 4 × 20s strides @ race pace. Stay loose. |
-| Sun | Apr 12 | Rest | Full rest. |
+| Sat | Apr 11 | Short tempo | 2 km warmup + 15 min @ 3:40/km + 2 km cooldown. ~7 km. |
+| Sun | Apr 12 | Easy run | 6 km @ 5:00–5:15/km. |
 
-**Week target: ~24 km**
+**Week target: ~33 km**
 
 ---
 
-## Week 6: Apr 13–19 — Arrive Fresh
+## Week 6: Apr 13–19 — Taper
 
-*Focus: Almost nothing. Sleep, nutrition, legs up.*
+*Focus: Drop volume, keep freshness. One week out from race.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | Apr 13 | Rest | — |
-| Tue | Apr 14 | Easy + Strides + Yasmin's (minimal) | 4 km easy + 4 × 20s strides. Then 1 set each of calf press, single-leg calf raise, and pogos only. |
-| Wed | Apr 15 | Shakeout | 3 km very easy. Just moving the legs. |
+| Tue | Apr 14 | Easy + Strides + Yasmin's (light) | 5 km easy + 4 × 20s strides. Then Ankle & Hips: 2 sets each, weight -20%. |
+| Wed | Apr 15 | Easy run | 4 km easy. |
 | Thu | Apr 16 | Rest | — |
 | Fri | Apr 17 | Rest | Optional 15 min walk/jog. |
 | Sat | Apr 18 | Easy + strides | 3 km easy + 4 × 20s strides @ race pace. |
 | Sun | Apr 19 | Rest | — |
 
-**Week target: ~10 km**
+**Week target: ~12 km**
 
 ---
 
