@@ -76,8 +76,13 @@
       </div>
       <div class="log-field">
         <label class="log-label">Notes</label>
+        <div class="quick-notes">
+          <button class="quick-note-btn" data-note="Felt easy" onclick="setQuickNote(this, 'Felt easy')">Felt easy</button>
+          <button class="quick-note-btn" data-note="Felt hard" onclick="setQuickNote(this, 'Felt hard')">Felt hard</button>
+          <button class="quick-note-btn" data-note="Didn't complete" onclick="setQuickNote(this, 'Didn\'t complete')">Didn't complete</button>
+        </div>
         <textarea id="log-notes-field" class="log-notes-input"
-                  placeholder="e.g. felt easy, form cue to remember" rows="3"></textarea>
+                  placeholder="or type your own note…" rows="2"></textarea>
       </div>
       <div class="log-save-wrap">
         <button class="log-save-btn" id="log-save-btn">Save</button>

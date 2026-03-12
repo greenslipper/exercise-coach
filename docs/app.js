@@ -427,14 +427,41 @@ function renderPlan() {
 
 // ── Gym logging ─────────────────────────────────────────────────────────────
 
+// Prescribed weights from Yasmin's plan — used as default when no prior log exists
+const PRESCRIBED_WEIGHTS = {
+  'Leg press': 80,
+  'Calf press (Gastrocnemius)': 25,
+  'Single-leg seated calf raise': 50,
+  'Cable hip abduction': 4,
+  'Seated hamstring curl': 18,
+  'Leg extension (single leg)': 30,
+  'Bulgarian split squat (Smith)': null,  // build from light
+  'Pogo jumps (two-footed)': null,
+  'Pogo hops (single-leg)': null,
+};
+
 function openExerciseLog(dateStr, exName, target) {
   const session = gymLog.find(s => s.date === dateStr);
   const existing = session ? session.exercises.find(e => e.name === exName) : null;
+  const last = getLastLogged(exName);
+  const prescribed = PRESCRIBED_WEIGHTS[exName];
+
+  const defaultWeight = existing && existing.weight != null ? existing.weight
+    : last ? last.weight
+    : (prescribed != null ? prescribed : '');
 
   document.getElementById('log-modal-date').textContent = target;
   document.getElementById('log-modal-title').textContent = exName;
-  document.getElementById('log-weight-field').value = existing && existing.weight != null ? existing.weight : '';
+  document.getElementById('log-weight-field').value = defaultWeight;
   document.getElementById('log-notes-field').value = existing ? (existing.note || '') : '';
+
+  // Reset quick-note pill selection
+  document.querySelectorAll('.quick-note-btn').forEach(b => b.classList.remove('selected'));
+  if (existing && existing.note) {
+    document.querySelectorAll('.quick-note-btn').forEach(b => {
+      if (b.dataset.note === existing.note) b.classList.add('selected');
+    });
+  }
 
   document.getElementById('log-save-btn').onclick = () => {
     const weight = document.getElementById('log-weight-field').value;
@@ -446,6 +473,18 @@ function openExerciseLog(dateStr, exName, target) {
   logOverlay.classList.add('open');
   logOverlay.onclick = (e) => { if (e.target === logOverlay) closeLogModal(); };
   setTimeout(() => document.getElementById('log-weight-field').focus(), 150);
+}
+
+function setQuickNote(btn, text) {
+  const notesField = document.getElementById('log-notes-field');
+  const isSelected = btn.classList.contains('selected');
+  document.querySelectorAll('.quick-note-btn').forEach(b => b.classList.remove('selected'));
+  if (isSelected) {
+    notesField.value = '';
+  } else {
+    btn.classList.add('selected');
+    notesField.value = text;
+  }
 }
 
 function saveExerciseLog(dateStr, exName, rawWeight, note) {
