@@ -25,9 +25,14 @@ let selectedDay = null;
 // ── Gym log ────────────────────────────────────────────────────────────────
 
 let gymLog = JSON.parse(localStorage.getItem('gymLog') || '[]');
+let weightLog = JSON.parse(localStorage.getItem('weightLog') || '[]');
 
 function saveGymLog() {
   localStorage.setItem('gymLog', JSON.stringify(gymLog));
+}
+
+function saveWeightLog() {
+  localStorage.setItem('weightLog', JSON.stringify(weightLog));
 }
 
 function getLastLogged(exerciseName) {
@@ -462,19 +467,72 @@ function closeLogModal() {
   document.getElementById('log-overlay').classList.remove('open');
 }
 
+function renderWeightCard() {
+  const latest = weightLog.length ? weightLog[weightLog.length - 1] : null;
+  const first = weightLog.length ? weightLog[0] : null;
+
+  let trendHtml = '';
+  if (latest && first && weightLog.length > 1) {
+    const diff = (latest.weight - first.weight).toFixed(1);
+    const sign = diff >= 0 ? '+' : '';
+    const arrow = diff >= 0 ? '↑' : '↓';
+    trendHtml = `<div class="weight-trend">${arrow} ${sign}${diff} kg since ${formatDayLabel(first.date)}</div>`;
+  } else if (latest) {
+    trendHtml = `<div class="weight-trend">Baseline set</div>`;
+  }
+
+  const recentHtml = [...weightLog].reverse().slice(0, 5).map(e =>
+    `<div class="weight-entry">
+      <span class="weight-entry-date">${formatDayLabel(e.date)}</span>
+      <span class="weight-entry-val">${e.weight} kg</span>
+    </div>`
+  ).join('');
+
+  return `
+    <div class="weight-card">
+      <div class="weight-card-header">
+        <div class="weight-card-title">Body Weight</div>
+        <button class="weight-log-btn" onclick="toggleWeightForm()">+ Log</button>
+      </div>
+      <div id="weight-form" class="weight-form" style="display:none">
+        <input type="number" id="weight-input" class="weight-input"
+               placeholder="kg" step="0.1" min="30" max="200" inputmode="decimal">
+        <button class="weight-save-btn" onclick="saveBodyWeight()">Save</button>
+      </div>
+      ${latest
+        ? `<div class="weight-current">${latest.weight} <span class="weight-unit">kg</span></div>${trendHtml}`
+        : `<div class="weight-empty">No data yet — tap + Log to start</div>`
+      }
+      ${recentHtml ? `<div class="weight-history">${recentHtml}</div>` : ''}
+    </div>
+  `;
+}
+
+function toggleWeightForm() {
+  const form = document.getElementById('weight-form');
+  if (!form) return;
+  const showing = form.style.display !== 'none';
+  form.style.display = showing ? 'none' : 'flex';
+  if (!showing) document.getElementById('weight-input').focus();
+}
+
+function saveBodyWeight() {
+  const input = document.getElementById('weight-input');
+  const val = parseFloat(input.value);
+  if (!val || val < 30 || val > 200) return;
+  const t = today();
+  weightLog = weightLog.filter(e => e.date !== t);
+  weightLog.push({ date: t, weight: val });
+  weightLog.sort((a, b) => a.date.localeCompare(b.date));
+  saveWeightLog();
+  renderGym();
+}
+
 function renderGym() {
   const section = document.getElementById('gym-section');
   if (!section) return;
 
-  if (gymLog.length === 0) {
-    section.innerHTML = `
-      <div class="gym-empty">
-        <p>No sessions logged yet.</p>
-        <p>Tap a strength day, then tap <strong>+ Log Session</strong>.</p>
-      </div>
-    `;
-    return;
-  }
+  const weightCard = renderWeightCard();
 
   const sessionsHtml = [...gymLog].reverse().map(session => {
     const exRows = session.exercises
@@ -498,16 +556,28 @@ function renderGym() {
     `;
   }).join('');
 
-  section.innerHTML = `
+  const sessionsSection = gymLog.length > 0 ? `
     <div class="gym-toolbar">
       <button class="export-btn" onclick="exportForClaude()">Export for Claude</button>
     </div>
     <div class="gym-log-list">${sessionsHtml}</div>
+  ` : `
+    <div class="gym-empty">
+      <p>No sessions logged yet.</p>
+      <p>Tap a strength day, then tap <strong>+ Log Session</strong>.</p>
+    </div>
   `;
+
+  section.innerHTML = weightCard + sessionsSection;
 }
 
 function exportForClaude() {
-  if (gymLog.length === 0) return;
+  if (gymLog.length === 0 && weightLog.length === 0) return;
+
+  const weightSection = weightLog.length > 0
+    ? 'Body Weight\n' + '─'.repeat(40) + '\n' +
+      weightLog.map(e => `${e.date}  ${e.weight} kg`).join('\n') + '\n\n'
+    : '';
 
   const lines = gymLog.map(session => {
     const exLines = session.exercises.map(ex => {
@@ -517,7 +587,11 @@ function exportForClaude() {
     return `${session.date}  ${session.name}\n${exLines}`;
   });
 
-  const text = 'Gym Log\n' + '─'.repeat(40) + '\n\n' + lines.join('\n\n');
+  const gymSection = lines.length > 0
+    ? 'Gym Log\n' + '─'.repeat(40) + '\n\n' + lines.join('\n\n')
+    : '';
+
+  const text = weightSection + gymSection;
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text).then(() => {
