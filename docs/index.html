@@ -39,9 +39,11 @@
       <nav class="tab-nav" id="tab-nav">
         <button class="tab-btn active" id="tab-week" onclick="showTab('week')">This Week</button>
         <button class="tab-btn" id="tab-plan" onclick="showTab('plan')">Full Plan</button>
+        <button class="tab-btn" id="tab-gym" onclick="showTab('gym')">Gym Log</button>
       </nav>
       <section id="week-section"></section>
       <section id="plan-section" style="display:none"></section>
+      <section id="gym-section" style="display:none"></section>
     </main>
 
   </div>
@@ -54,6 +56,20 @@
       <div class="modal-date" id="modal-date"></div>
       <div class="modal-title" id="modal-title"></div>
       <div class="modal-desc" id="modal-desc"></div>
+    </div>
+  </div>
+
+  <!-- Log session modal -->
+  <div class="modal-overlay" id="log-overlay" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-handle"></div>
+      <button class="modal-close" onclick="closeLogModal()" aria-label="Close">&#x2715;</button>
+      <div class="modal-date" id="log-modal-date"></div>
+      <div class="modal-title" id="log-modal-title">Log Session</div>
+      <div id="log-exercises"></div>
+      <div class="log-save-wrap">
+        <button class="log-save-btn" id="log-save-btn">Save Session</button>
+      </div>
     </div>
   </div>
 

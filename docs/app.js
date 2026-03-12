@@ -22,6 +22,22 @@ let planData = null;
 let currentWeekIndex = 0;
 let selectedDay = null;
 
+// ── Gym log ────────────────────────────────────────────────────────────────
+
+let gymLog = JSON.parse(localStorage.getItem('gymLog') || '[]');
+
+function saveGymLog() {
+  localStorage.setItem('gymLog', JSON.stringify(gymLog));
+}
+
+function getLastLogged(exerciseName) {
+  for (let i = gymLog.length - 1; i >= 0; i--) {
+    const ex = gymLog[i].exercises.find(e => e.name === exerciseName);
+    if (ex && ex.weight != null) return ex;
+  }
+  return null;
+}
+
 // ── Data loading ───────────────────────────────────────────────────────────
 
 async function loadPlan() {
@@ -95,6 +111,7 @@ function render() {
   renderToday();
   renderWeek();
   renderPlan();
+  renderGym();
 }
 
 function renderHeader() {
@@ -227,25 +244,36 @@ function openModal(dateStr) {
   if (workout.exercises && workout.exercises.length > 0) {
     const items = workout.exercises.map(ex => {
       const metric = ex.detail !== undefined ? ex.detail : (ex.sets + ' × ' + ex.reps);
+      const last = getLastLogged(ex.name);
+      const lastBadge = last
+        ? `<span class="exercise-last">${last.weight > 0 ? 'Last: ' + last.weight + ' kg' : 'Last: BW'}</span>`
+        : '';
       return `
         <li class="exercise-item">
           <div class="exercise-header">
             <span class="exercise-name">${ex.name}</span>
             <span class="exercise-sets">${metric}</span>
           </div>
+          ${lastBadge}
           ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
         </li>
       `;
     }).join('');
-    descEl.innerHTML = `<p class="modal-desc-text">${descText}</p><ul class="exercise-list">${items}</ul>`;
+    const alreadyLogged = gymLog.some(s => s.date === dateStr);
+    const logBtn = workout.type === 'strength' ? `
+      <div class="log-section">
+        <button class="log-btn" onclick="openLogSession('${dateStr}')">
+          ${alreadyLogged ? '✓ Update Log' : '+ Log Session'}
+        </button>
+      </div>
+    ` : '';
+    descEl.innerHTML = `<p class="modal-desc-text">${descText}</p><ul class="exercise-list">${items}</ul>${logBtn}`;
   } else {
     descEl.textContent = descText;
   }
 
   overlay.classList.add('open');
   selectedDay = dateStr;
-
-  // Close on backdrop click
   overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
 }
 
@@ -275,8 +303,10 @@ function titleCase(str) {
 function showTab(name) {
   document.getElementById('week-section').style.display = name === 'week' ? '' : 'none';
   document.getElementById('plan-section').style.display = name === 'plan' ? '' : 'none';
+  document.getElementById('gym-section').style.display = name === 'gym' ? '' : 'none';
   document.getElementById('tab-week').classList.toggle('active', name === 'week');
   document.getElementById('tab-plan').classList.toggle('active', name === 'plan');
+  document.getElementById('tab-gym').classList.toggle('active', name === 'gym');
 }
 
 // ── Plan overview ───────────────────────────────────────────────────────────
@@ -366,6 +396,140 @@ function renderPlan() {
   `;
 
   section.innerHTML = `<div class="plan-list">${legend}${groupsHtml}</div>`;
+}
+
+// ── Gym logging ─────────────────────────────────────────────────────────────
+
+function openLogSession(dateStr) {
+  closeModal();
+
+  let workout = null;
+  for (const week of planData.weeks) {
+    if (!week.days) continue;
+    const found = week.days.find(d => d.date === dateStr);
+    if (found) { workout = found; break; }
+  }
+  if (!workout || !workout.exercises) return;
+
+  const existing = gymLog.find(s => s.date === dateStr);
+
+  const exercises = workout.exercises.map(ex => {
+    const last = getLastLogged(ex.name);
+    const existingEx = existing ? existing.exercises.find(e => e.name === ex.name) : null;
+    const weight = existingEx != null ? existingEx.weight : (last ? last.weight : null);
+    const metric = ex.detail !== undefined ? ex.detail : (ex.sets + ' × ' + ex.reps);
+    return { name: ex.name, target: metric, weight };
+  });
+
+  document.getElementById('log-modal-date').textContent = formatDayLabel(dateStr);
+  document.getElementById('log-modal-title').textContent = workout.name;
+
+  document.getElementById('log-exercises').innerHTML = exercises.map((ex, i) => `
+    <div class="log-exercise-row">
+      <div class="log-ex-info">
+        <div class="log-ex-name">${ex.name}</div>
+        <div class="log-ex-target">${ex.target}</div>
+      </div>
+      <div class="log-ex-weight">
+        <input type="number" class="log-weight-input" id="log-w-${i}"
+               value="${ex.weight != null ? ex.weight : ''}"
+               placeholder="—" step="2.5" min="0" inputmode="decimal">
+        <span class="log-weight-unit">kg</span>
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('log-save-btn').onclick = () => {
+    const saved = exercises.map((ex, i) => {
+      const val = document.getElementById('log-w-' + i).value;
+      return { name: ex.name, target: ex.target, weight: val !== '' ? parseFloat(val) : null };
+    });
+    gymLog = gymLog.filter(s => s.date !== dateStr);
+    gymLog.push({ date: dateStr, name: workout.name, exercises: saved });
+    gymLog.sort((a, b) => a.date.localeCompare(b.date));
+    saveGymLog();
+    closeLogModal();
+    renderGym();
+    showTab('gym');
+  };
+
+  const logOverlay = document.getElementById('log-overlay');
+  logOverlay.classList.add('open');
+  logOverlay.onclick = (e) => { if (e.target === logOverlay) closeLogModal(); };
+}
+
+function closeLogModal() {
+  document.getElementById('log-overlay').classList.remove('open');
+}
+
+function renderGym() {
+  const section = document.getElementById('gym-section');
+  if (!section) return;
+
+  if (gymLog.length === 0) {
+    section.innerHTML = `
+      <div class="gym-empty">
+        <p>No sessions logged yet.</p>
+        <p>Tap a strength day, then tap <strong>+ Log Session</strong>.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const sessionsHtml = [...gymLog].reverse().map(session => {
+    const exRows = session.exercises
+      .filter(ex => ex.weight != null)
+      .map(ex => `
+        <div class="gym-log-ex">
+          <span class="gym-log-ex-name">${ex.name}</span>
+          <span class="gym-log-ex-weight">${ex.weight > 0 ? ex.weight + ' kg' : 'BW'}</span>
+        </div>
+      `).join('');
+    const skipped = session.exercises.filter(ex => ex.weight == null).length;
+    const skipNote = skipped > 0 ? `<div class="gym-log-skip">${skipped} exercise${skipped > 1 ? 's' : ''} not logged</div>` : '';
+    return `
+      <div class="gym-log-card">
+        <div class="gym-log-header">
+          <div class="gym-log-name">${session.name}</div>
+          <div class="gym-log-date">${formatDayLabel(session.date)}</div>
+        </div>
+        <div class="gym-log-exercises">${exRows}${skipNote}</div>
+      </div>
+    `;
+  }).join('');
+
+  section.innerHTML = `
+    <div class="gym-toolbar">
+      <button class="export-btn" onclick="exportForClaude()">Export for Claude</button>
+    </div>
+    <div class="gym-log-list">${sessionsHtml}</div>
+  `;
+}
+
+function exportForClaude() {
+  if (gymLog.length === 0) return;
+
+  const lines = gymLog.map(session => {
+    const exLines = session.exercises.map(ex => {
+      const w = ex.weight != null ? (ex.weight > 0 ? ex.weight + ' kg' : 'BW') : 'not logged';
+      return `  - ${ex.name}: ${w} (target: ${ex.target})`;
+    }).join('\n');
+    return `${session.date}  ${session.name}\n${exLines}`;
+  });
+
+  const text = 'Gym Log\n' + '─'.repeat(40) + '\n\n' + lines.join('\n\n');
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.querySelector('.export-btn');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.style.background = 'var(--green)';
+      setTimeout(() => { btn.textContent = orig; btn.style.background = ''; }, 2000);
+    });
+  } else {
+    prompt('Copy this and paste into Claude:', text);
+  }
 }
 
 // ── Init ───────────────────────────────────────────────────────────────────
