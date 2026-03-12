@@ -246,33 +246,51 @@ function openModal(dateStr) {
 
   const descEl = document.getElementById('modal-desc');
   const descText = workout.description || (workout.type === 'rest' ? 'Rest and recover.' : '');
+
   if (workout.exercises && workout.exercises.length > 0) {
+    const isStrength = workout.type === 'strength';
+    const sessionForDate = isStrength ? gymLog.find(s => s.date === dateStr) : null;
+
     const items = workout.exercises.map(ex => {
       const metric = ex.detail !== undefined ? ex.detail : (ex.sets + ' × ' + ex.reps);
-      const last = getLastLogged(ex.name);
-      const lastBadge = last
-        ? `<span class="exercise-last">${last.weight > 0 ? 'Last: ' + last.weight + ' kg' : 'Last: BW'}</span>`
-        : '';
-      return `
-        <li class="exercise-item">
-          <div class="exercise-header">
-            <span class="exercise-name">${ex.name}</span>
-            <span class="exercise-sets">${metric}</span>
-          </div>
-          ${lastBadge}
-          ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
-        </li>
-      `;
+
+      if (isStrength) {
+        const last = getLastLogged(ex.name);
+        const sessionEx = sessionForDate ? sessionForDate.exercises.find(e => e.name === ex.name) : null;
+        const currentVal = sessionEx != null ? sessionEx.weight : (last ? last.weight : '');
+        const lastLabel = last ? (last.weight > 0 ? 'Last: ' + last.weight + ' kg' : 'Last: BW') : '';
+        const safeExName = ex.name.replace(/'/g, "\\'");
+        return `
+          <li class="exercise-item">
+            <div class="exercise-header">
+              <span class="exercise-name">${ex.name}</span>
+              <span class="exercise-sets">${metric}</span>
+            </div>
+            <div class="exercise-log-row">
+              <input type="number" class="ex-weight-input"
+                     value="${currentVal}"
+                     placeholder="kg" step="2.5" min="0" inputmode="decimal"
+                     onchange="saveExerciseWeight('${dateStr}', '${safeExName}', this.value)">
+              <span class="ex-weight-unit">kg</span>
+              ${lastLabel ? `<span class="ex-last-tag">${lastLabel}</span>` : ''}
+            </div>
+            ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
+          </li>
+        `;
+      } else {
+        return `
+          <li class="exercise-item">
+            <div class="exercise-header">
+              <span class="exercise-name">${ex.name}</span>
+              <span class="exercise-sets">${metric}</span>
+            </div>
+            ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
+          </li>
+        `;
+      }
     }).join('');
-    const alreadyLogged = gymLog.some(s => s.date === dateStr);
-    const logBtn = workout.type === 'strength' ? `
-      <div class="log-section">
-        <button class="log-btn" onclick="openLogSession('${dateStr}')">
-          ${alreadyLogged ? '✓ Update Log' : '+ Log Session'}
-        </button>
-      </div>
-    ` : '';
-    descEl.innerHTML = `<p class="modal-desc-text">${descText}</p><ul class="exercise-list">${items}</ul>${logBtn}`;
+
+    descEl.innerHTML = `<p class="modal-desc-text">${descText}</p><ul class="exercise-list">${items}</ul>`;
   } else {
     descEl.textContent = descText;
   }
@@ -401,6 +419,30 @@ function renderPlan() {
   `;
 
   section.innerHTML = `<div class="plan-list">${legend}${groupsHtml}</div>`;
+}
+
+function saveExerciseWeight(dateStr, exName, rawValue) {
+  const value = rawValue !== '' ? parseFloat(rawValue) : null;
+  let session = gymLog.find(s => s.date === dateStr);
+  if (!session) {
+    let workoutName = 'Strength Session';
+    for (const week of planData.weeks) {
+      if (!week.days) continue;
+      const found = week.days.find(d => d.date === dateStr);
+      if (found) { workoutName = found.name; break; }
+    }
+    session = { date: dateStr, name: workoutName, exercises: [] };
+    gymLog.push(session);
+    gymLog.sort((a, b) => a.date.localeCompare(b.date));
+  }
+  const existing = session.exercises.find(e => e.name === exName);
+  if (existing) {
+    existing.weight = value;
+  } else {
+    session.exercises.push({ name: exName, target: '', weight: value });
+  }
+  saveGymLog();
+  renderGym();
 }
 
 // ── Gym logging ─────────────────────────────────────────────────────────────

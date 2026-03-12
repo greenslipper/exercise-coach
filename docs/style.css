@@ -730,6 +730,47 @@ body {
   margin-top: 0.2rem;
 }
 
+/* Inline exercise weight logging */
+.exercise-log-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.4rem 0 0.3rem;
+}
+
+.ex-weight-input {
+  width: 3.5rem;
+  padding: 0.35rem 0.4rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--dark);
+  background: var(--white);
+  -moz-appearance: textfield;
+}
+
+.ex-weight-input::-webkit-outer-spin-button,
+.ex-weight-input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+.ex-weight-input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+.ex-weight-unit {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.ex-last-tag {
+  font-size: 0.72rem;
+  color: var(--light);
+  margin-left: auto;
+}
+
 /* Exercise last-session badge */
 .exercise-last {
   display: inline-block;
