@@ -730,46 +730,6 @@ body {
   margin-top: 0.2rem;
 }
 
-/* Inline exercise weight logging */
-.exercise-log-row {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin: 0.4rem 0 0.3rem;
-}
-
-.ex-weight-input {
-  width: 3.5rem;
-  padding: 0.35rem 0.4rem;
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-align: center;
-  color: var(--dark);
-  background: var(--white);
-  -moz-appearance: textfield;
-}
-
-.ex-weight-input::-webkit-outer-spin-button,
-.ex-weight-input::-webkit-inner-spin-button { -webkit-appearance: none; }
-
-.ex-weight-input:focus {
-  outline: none;
-  border-color: var(--purple);
-}
-
-.ex-weight-unit {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--light);
-}
-
-.ex-last-tag {
-  font-size: 0.72rem;
-  color: var(--light);
-  margin-left: auto;
-}
 
 /* Exercise last-session badge */
 .exercise-last {
@@ -849,7 +809,7 @@ body {
 }
 
 .log-weight-input {
-  width: 4rem;
+  width: 5rem;
   padding: 0.4rem 0.5rem;
   border: 1.5px solid var(--border);
   border-radius: var(--radius-sm);
@@ -900,6 +860,110 @@ body {
 
 .log-save-btn:hover {
   opacity: 0.88;
+}
+
+/* Per-exercise log button */
+.ex-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.ex-log-btn {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  color: var(--mid);
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.ex-log-btn:hover {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+.ex-log-btn.logged {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: var(--purple);
+  color: var(--purple);
+  font-size: 0.65rem;
+  width: auto;
+  padding: 0 0.45rem;
+  white-space: nowrap;
+}
+
+.ex-last-hint {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--light);
+  margin-top: 0.15rem;
+}
+
+.ex-logged-note {
+  font-size: 0.75rem;
+  color: var(--mid);
+  font-style: italic;
+  margin-top: 0.25rem;
+  padding: 0.3rem 0.5rem;
+  background: rgba(139, 92, 246, 0.06);
+  border-radius: 4px;
+}
+
+/* Exercise log modal fields */
+.log-field {
+  margin-bottom: 1rem;
+}
+
+.log-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--light);
+  margin-bottom: 0.4rem;
+}
+
+.log-weight-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.log-notes-input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--dark);
+  font-family: inherit;
+  resize: none;
+  line-height: 1.5;
+}
+
+.log-notes-input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+/* Gym log card — note line */
+.gym-log-ex-note {
+  font-size: 0.72rem;
+  color: var(--mid);
+  font-style: italic;
+  padding-left: 0.5rem;
+  margin-bottom: 0.15rem;
 }
 
 /* Body weight card */

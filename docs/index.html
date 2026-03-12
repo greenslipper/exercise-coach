@@ -59,16 +59,28 @@
     </div>
   </div>
 
-  <!-- Log session modal -->
+  <!-- Log exercise modal -->
   <div class="modal-overlay" id="log-overlay" role="dialog" aria-modal="true">
     <div class="modal">
       <div class="modal-handle"></div>
-      <button class="modal-close" onclick="closeLogModal()" aria-label="Close">&#x2715;</button>
+      <button class="modal-close" onclick="closeLogModal()" aria-label="Close">✕</button>
       <div class="modal-date" id="log-modal-date"></div>
-      <div class="modal-title" id="log-modal-title">Log Session</div>
-      <div id="log-exercises"></div>
+      <div class="modal-title" id="log-modal-title"></div>
+      <div class="log-field">
+        <label class="log-label">Weight</label>
+        <div class="log-weight-row">
+          <input type="number" id="log-weight-field" class="log-weight-input"
+                 placeholder="—" step="2.5" min="0" inputmode="decimal">
+          <span class="log-weight-unit">kg</span>
+        </div>
+      </div>
+      <div class="log-field">
+        <label class="log-label">Notes</label>
+        <textarea id="log-notes-field" class="log-notes-input"
+                  placeholder="e.g. felt easy, form cue to remember" rows="3"></textarea>
+      </div>
       <div class="log-save-wrap">
-        <button class="log-save-btn" id="log-save-btn">Save Session</button>
+        <button class="log-save-btn" id="log-save-btn">Save</button>
       </div>
     </div>
   </div>
