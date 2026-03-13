@@ -24,6 +24,7 @@ DATA_DIR = REPO_ROOT / "data"
 ACTIVITIES_DIR = DATA_DIR / "activities"
 ATHLETE_FILE = DATA_DIR / "athlete.json"
 SYNC_LOG_FILE = DATA_DIR / "sync_log.json"
+STRAVA_RUNS_FILE = REPO_ROOT / "docs" / "strava_runs.json"
 
 BASE_URL = "https://www.strava.com/api/v3"
 TOKEN_URL = "https://www.strava.com/oauth/token"
@@ -178,10 +179,28 @@ def main():
     sync_log["total_activities"] = existing_count
     save_sync_log(sync_log)
 
+    # Build strava_runs.json from all activity files
+    run_dates = set()
+    for activity_file in ACTIVITIES_DIR.glob("*.json"):
+        try:
+            activity = json.loads(activity_file.read_text())
+            if activity.get("type") == "Run" or activity.get("sport_type") == "Run":
+                date_str = activity.get("start_date_local", "")[:10]
+                if date_str:
+                    run_dates.add(date_str)
+        except (json.JSONDecodeError, KeyError):
+            pass
+    strava_summary = {
+        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "run_dates": sorted(run_dates),
+    }
+    STRAVA_RUNS_FILE.write_text(json.dumps(strava_summary, indent=2))
+
     print(f"\nSync complete.")
     print(f"  Fetched this run: {len(to_fetch)}")
     print(f"  Total on disk: {existing_count}")
     print(f"  Sync time: {sync_log['last_sync_human']}")
+    print(f"  Run dates indexed: {len(run_dates)}")
 
 
 if __name__ == "__main__":

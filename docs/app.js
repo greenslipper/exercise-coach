@@ -27,6 +27,7 @@ let selectedDay = null;
 let gymLog = JSON.parse(localStorage.getItem('gymLog') || '[]');
 let weightLog = JSON.parse(localStorage.getItem('weightLog') || '[]');
 let runLog = JSON.parse(localStorage.getItem('runLog') || '[]');
+let stravaRunDates = [];
 
 function saveGymLog() {
   localStorage.setItem('gymLog', JSON.stringify(gymLog));
@@ -40,8 +41,12 @@ function saveRunLog() {
   localStorage.setItem('runLog', JSON.stringify(runLog));
 }
 
+function isRunDoneViaStrava(dateStr) {
+  return stravaRunDates.includes(dateStr);
+}
+
 function isRunDone(dateStr) {
-  return runLog.includes(dateStr);
+  return isRunDoneViaStrava(dateStr) || runLog.includes(dateStr);
 }
 
 function isGymDone(dateStr) {
@@ -74,6 +79,15 @@ async function loadPlan() {
   } catch (e) {
     console.warn('Could not load plan_data.json:', e);
     planData = { generated: null, goal: null, weeks: [] };
+  }
+  try {
+    const res = await fetch('strava_runs.json?v=' + Date.now());
+    if (res.ok) {
+      const data = await res.json();
+      stravaRunDates = data.run_dates || [];
+    }
+  } catch (e) {
+    console.warn('Could not load strava_runs.json:', e);
   }
 }
 
@@ -328,12 +342,18 @@ function openModal(dateStr) {
   }
 
   if (isRunDay) {
-    const isDone = isRunDone(dateStr);
-    descEl.innerHTML += `<div class="run-done-wrap">
-      <button class="run-done-btn${isDone ? ' done' : ''}" onclick="toggleRunDone('${dateStr}')">
-        ${isDone ? '✓ Completed' : 'Mark as done'}
-      </button>
-    </div>`;
+    if (isRunDoneViaStrava(dateStr)) {
+      descEl.innerHTML += `<div class="run-done-wrap">
+        <span class="run-done-strava">✓ Completed — synced from Strava</span>
+      </div>`;
+    } else {
+      const isDone = runLog.includes(dateStr);
+      descEl.innerHTML += `<div class="run-done-wrap">
+        <button class="run-done-btn${isDone ? ' done' : ''}" onclick="toggleRunDone('${dateStr}')">
+          ${isDone ? '✓ Completed' : 'Mark as done'}
+        </button>
+      </div>`;
+    }
   }
 
   overlay.classList.add('open');
