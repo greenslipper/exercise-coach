@@ -238,6 +238,36 @@ body {
 .dot-rest { background: var(--border); }
 .dot-strength { background: var(--purple); }
 
+.done-tick {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1;
+}
+
+.run-done-wrap {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.run-done-btn {
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--mid);
+  cursor: pointer;
+  width: 100%;
+}
+
+.run-done-btn.done {
+  background: #f0fdf4;
+  border-color: var(--green);
+  color: var(--green);
+}
+
 .day-type-label {
   font-size: 0.55rem;
   font-weight: 600;

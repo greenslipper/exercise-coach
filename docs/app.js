@@ -26,6 +26,7 @@ let selectedDay = null;
 
 let gymLog = JSON.parse(localStorage.getItem('gymLog') || '[]');
 let weightLog = JSON.parse(localStorage.getItem('weightLog') || '[]');
+let runLog = JSON.parse(localStorage.getItem('runLog') || '[]');
 
 function saveGymLog() {
   localStorage.setItem('gymLog', JSON.stringify(gymLog));
@@ -33,6 +34,26 @@ function saveGymLog() {
 
 function saveWeightLog() {
   localStorage.setItem('weightLog', JSON.stringify(weightLog));
+}
+
+function saveRunLog() {
+  localStorage.setItem('runLog', JSON.stringify(runLog));
+}
+
+function isRunDone(dateStr) {
+  return runLog.includes(dateStr);
+}
+
+function isGymDone(dateStr) {
+  return gymLog.some(s => s.date === dateStr && s.exercises && s.exercises.length > 0);
+}
+
+function toggleRunDone(dateStr) {
+  const idx = runLog.indexOf(dateStr);
+  if (idx >= 0) runLog.splice(idx, 1); else runLog.push(dateStr);
+  saveRunLog();
+  renderWeek();
+  openModal(dateStr);
 }
 
 function getLastLogged(exerciseName) {
@@ -194,6 +215,10 @@ function renderWeek() {
     const dotClass = WORKOUT_COLORS[day.type] || 'dot-rest';
     const typeLabel = day.type && day.type !== 'rest'
       ? `<div class="day-type-label">${day.type}</div>` : '';
+    const isStrengthDay = day.type === 'strength';
+    const isRunDay = day.type && day.type !== 'rest' && day.type !== 'strength';
+    const isDone = isStrengthDay ? isGymDone(day.date) : (isRunDay ? isRunDone(day.date) : false);
+    const doneTick = isDone ? '<span class="done-tick">✓</span>' : '';
 
     return `
       <div class="day-cell ${isToday ? 'today' : ''} ${day.type === 'rest' ? 'rest' : ''} ${isPast && !isToday ? 'completed' : ''}"
@@ -203,6 +228,7 @@ function renderWeek() {
         <div class="day-date">${day.date ? parseDate(day.date).getDate() : ''}</div>
         ${typeLabel}
         <div class="day-dot ${dotClass}"></div>
+        ${doneTick}
       </div>
     `;
   }).join('');
@@ -246,6 +272,8 @@ function openModal(dateStr) {
 
   const descEl = document.getElementById('modal-desc');
   const descText = workout.description || (workout.type === 'rest' ? 'Rest and recover.' : '');
+
+  const isRunDay = workout.type && workout.type !== 'rest' && workout.type !== 'strength';
 
   if (workout.exercises && workout.exercises.length > 0) {
     const isStrength = workout.type === 'strength';
@@ -296,7 +324,16 @@ function openModal(dateStr) {
 
     descEl.innerHTML = `<p class="modal-desc-text">${descText}</p><ul class="exercise-list">${items}</ul>`;
   } else {
-    descEl.textContent = descText;
+    descEl.innerHTML = `<p class="modal-desc-text">${descText}</p>`;
+  }
+
+  if (isRunDay) {
+    const isDone = isRunDone(dateStr);
+    descEl.innerHTML += `<div class="run-done-wrap">
+      <button class="run-done-btn${isDone ? ' done' : ''}" onclick="toggleRunDone('${dateStr}')">
+        ${isDone ? '✓ Completed' : 'Mark as done'}
+      </button>
+    </div>`;
   }
 
   overlay.classList.add('open');
