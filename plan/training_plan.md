@@ -30,13 +30,13 @@ Two sessions per week, Tuesday and Thursday, after the easy run. Same program bo
 
 | Exercise | Sets × Reps | Weight | Notes |
 |----------|-------------|--------|-------|
-| Leg press | 4 × 8 | 80 kg | Full extension; controlled return |
+| Leg press | 4 × 8 | 90 kg | Full extension; controlled return |
 | Calf press (Gastrocnemius) | 3 × 8 | 25 kg | Balls of feet on weight plate; barbell on back |
-| Single-leg seated calf raise | 3 × 12 | 50 kg+ | On leg extension machine — should feel hard |
-| Cable hip abduction | 3 × 8 each | 4 kg | Ankle cuff, lower cable; outer leg to 45° |
-| Seated hamstring curl | 3 × 8 + 1s hold | 18 kg | Slow controlled release |
+| Single-leg seated calf raise | 3 × 12 | 65 kg | On leg extension machine — should feel hard |
+| Cable hip abduction | 3 × 8 each | 5 kg | Ankle cuff, lower cable; outer leg to 45° |
+| Seated hamstring curl | 3 × 8 + 1s hold | 30 kg | Slow controlled release — check with Yasmin if this feels above expectation |
 | Leg extension (single leg) | 3 × 12 | 30 kg | One leg at a time |
-| Bulgarian split squat (Smith) | 3 × 8 each | Build from light | Rear foot on box; knee tracks toes |
+| Bulgarian split squat (Smith) | 3 × 8 each | 30 kg | Rear foot on box; knee tracks toes — hit 6 reps on 2026-03-12, target full 8 |
 | Pogo jumps (two-footed) | 2 × 20 | — | Minimal ground contact; light and springy |
 | Pogo hops (single-leg) | 3 × 10 | — | Build gradually to 30+; stop if calf pain increases |
 

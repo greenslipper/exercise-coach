@@ -486,13 +486,13 @@ function renderPlan() {
 
 // Prescribed weights from Yasmin's plan — used as default when no prior log exists
 const PRESCRIBED_WEIGHTS = {
-  'Leg Press': 80,
+  'Leg Press': 90,
   'Calf Press (Gastrocnemius)': 25,
-  'Single-Leg Seated Calf Raise': 50,
-  'Cable Hip Abduction': 4,
-  'Seated Hamstring Curl': 18,
+  'Single-Leg Seated Calf Raise': 65,
+  'Cable Hip Abduction': 5,
+  'Seated Hamstring Curl': 30,
   'Leg Extension (Single Leg)': 30,
-  'Bulgarian Split Squat (Smith)': null,  // build from light
+  'Bulgarian Split Squat (Smith)': 30,
   'Pogo Jumps': null,
   'Pogo Hops (Single-Leg)': null,
 };
