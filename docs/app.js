@@ -429,15 +429,15 @@ function renderPlan() {
 
 // Prescribed weights from Yasmin's plan — used as default when no prior log exists
 const PRESCRIBED_WEIGHTS = {
-  'Leg press': 80,
-  'Calf press (Gastrocnemius)': 25,
-  'Single-leg seated calf raise': 50,
-  'Cable hip abduction': 4,
-  'Seated hamstring curl': 18,
-  'Leg extension (single leg)': 30,
-  'Bulgarian split squat (Smith)': null,  // build from light
-  'Pogo jumps (two-footed)': null,
-  'Pogo hops (single-leg)': null,
+  'Leg Press': 80,
+  'Calf Press (Gastrocnemius)': 25,
+  'Single-Leg Seated Calf Raise': 50,
+  'Cable Hip Abduction': 4,
+  'Seated Hamstring Curl': 18,
+  'Leg Extension (Single Leg)': 30,
+  'Bulgarian Split Squat (Smith)': null,  // build from light
+  'Pogo Jumps': null,
+  'Pogo Hops (Single-Leg)': null,
 };
 
 function openExerciseLog(dateStr, exName, target) {
