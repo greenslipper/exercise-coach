@@ -14,23 +14,27 @@ When Freddie corrects a mistake or has to prompt you to do something you should 
 
 **This checklist is mandatory. Execute it silently before your first response, every session without exception.**
 
-At the start of every session, read these files before saying anything:
+At the start of every session, in this order:
 
-1. `athlete/profile.md` — Freddie's goals, preferences, injury history, notes
-2. `plan/training_plan.md` — the current training plan
-3. `data/sync_log.json` — when data was last synced
-4. Recent activities in `data/activities/` — scan the last 2 weeks
+1. Read `athlete/profile.md` — Freddie's goals, preferences, injury history, notes
+2. Read `plan/training_plan.md` — the current training plan
+3. Read `data/sync_log.json` — check sync status
+4. **Run the Strava sync** — always, every session, using `.venv/bin/python scripts/sync_strava.py` (incremental, fast, safe to run every time)
+   - Exception: if `last_sync: 0` or `"never"`, OAuth isn't set up — tell Freddie to run `python scripts/setup_strava.py` first
+5. Read recent activities in `data/activities/` — scan the last 2 weeks after syncing
 
-If `sync_log.json` shows `last_sync: 0` or `last_sync_human: "never"`, tell Freddie to run:
-```
-python scripts/setup_strava.py   # (first time only)
-python scripts/sync_strava.py
+---
+
+## Cache Busting — IMPORTANT
+
+Whenever you edit `docs/app.js` or `docs/style.css`, you **must** also update the version strings in `docs/index.html`:
+
+```html
+<link rel="stylesheet" href="style.css?v=YYYYMMDD">
+<script src="app.js?v=YYYYMMDD"></script>
 ```
 
-If the last sync was more than 3 days ago, remind Freddie to sync before coaching:
-```
-python scripts/sync_strava.py
-```
+Use today's date. If two deploys happen on the same day, append a letter: `?v=20260313b`. Without this, users' browsers cache the old file and won't see updates.
 
 ---
 
