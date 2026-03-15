@@ -209,3 +209,39 @@ During taper: drop to one session in Week 4, very light. Race week: one light se
 - When adapting the plan, explain *why* so Freddie learns
 - Keep plans realistic — a plan that gets followed beats a perfect plan that doesn't
 - Ask questions when data is ambiguous rather than assuming
+
+---
+
+## 5K-Specific Learnings (from Runna plan comparison, 2026-03-14)
+
+### Long Runs Should Be Longer Than You Think
+
+For an experienced runner targeting sub-17:00 5K, the long run should peak at **14–16 km**, not 8–10 km. The long run builds the aerobic engine that makes the last kilometre of a 5K possible. Undercooking it leaves aerobic capacity as a limiter, even if the speed work is dialled in.
+
+### Structure Long Runs With Race Pace Sections
+
+In the build phase, the long run shouldn't just be easy throughout. Embedding a **race pace section in the middle** (e.g. 5 km aerobic → 2–3 km @ race pace → 5 km aerobic) is more specific preparation than an easy long run. The athlete arrives at race pace fatigued, which is exactly the training stimulus — learning to sustain goal pace when not fresh.
+
+### VO2max Intervals Must Be Genuinely Above Race Pace
+
+If race pace is 3:24/km, running 1km reps at 3:25–3:30/km provides almost no VO2max stimulus — it's barely harder than race pace. **VO2max reps should be at 3:14–3:18/km** (10 sec/km above race pace). The discomfort of truly supramaximal running is where VO2max adaptations happen. Use generous recovery (3 min jog) between reps so each one can be run at full quality.
+
+### Short Speed Reps (400m) With Walk Recovery
+
+**Repetition-pace training** (400m reps at well above race pace, e.g. 2:53/km with 90s walk recovery) develops neuromuscular power and running economy. Walk recovery — not jog — between reps allows full recovery so each rep can be run at the same quality. This format is actually less calf-stressing than sustained tempo because each rep is only ~70 seconds. Goal is identical splits across all reps, not a fast early rep.
+
+### Keep One Quality Session in the Taper Week
+
+Removing all quality in the taper risks leaving legs flat and slow on race day. A short tune-up session in the taper week — e.g. **3 × 1 km at race pace** — maintains neuromuscular sharpness without accumulating meaningful fatigue. It should feel controlled, not hard. If legs feel flat during it, that's normal taper tiredness; they'll be sharp on race day.
+
+### Race Week: Keep Legs Firing With Short Structured Reps
+
+Easy running alone in race week is not enough to keep the legs primed. A short structured session on Tuesday (e.g. **8 × 90s at race pace**, 4 days before the race) maintains the legs' ability to fire at speed. The format is low fatigue (short warmup/cooldown, short reps, adequate recovery) but high specificity. The subsequent rest days fully compensate.
+
+### Add Strides the Day Before a Race
+
+A very easy 20-minute jog + 4 strides the day before the race (not just total rest) activates the nervous system and prevents legs from feeling heavy at the start. It should feel effortless — if it doesn't, back off.
+
+### Cruise Interval Progressions (Ladder Format)
+
+Sessions that layer progressively shorter reps at progressively faster paces (e.g. 4 min @ 3:42 → 2 × 3 min @ 3:32 → 3 × 2 min @ 3:24) build lactate threshold while teaching the body to sustain effort through pace transitions. More sophisticated than flat-pace intervals of the same rep length. Good for the first quality session back after injury/recovery.

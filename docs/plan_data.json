@@ -211,7 +211,7 @@
             {
               "name": "Bulgarian Split Squat (Smith)",
               "detail": "3 \u00d7 8 each @ 30 kg",
-              "how_to": "Rear foot on box; front knee tracks over toes. Progress weight each session."
+              "how_to": "Rear foot on box; front knee tracks over toes."
             },
             {
               "name": "Pogo Jumps",
@@ -293,7 +293,7 @@
             },
             {
               "name": "Bulgarian Split Squat (Smith)",
-              "detail": "3 \u00d7 8 each",
+              "detail": "3 \u00d7 8 each @ 30 kg",
               "how_to": "Rear foot on box."
             },
             {
@@ -336,14 +336,14 @@
         {
           "date": "2026-03-22",
           "type": "long",
-          "name": "Easy Long Run",
-          "description": "10 km @ 5:00\u20135:15/km. Conversational throughout.",
-          "distance_km": 10,
+          "name": "Long Run",
+          "description": "13 km @ 4:25/km. Comfortable aerobic effort throughout \u2014 not shuffling, not racing.",
+          "distance_km": 13,
           "exercises": [
             {
               "name": "Long Run",
-              "detail": "10 km @ 5:00\u20135:15/km",
-              "how_to": "Conversational pace the whole way. This builds aerobic base \u2014 don't push it."
+              "detail": "13 km @ 4:25/km",
+              "how_to": "Comfortable aerobic effort. HR ~145\u2013155. Not shuffling easy, not racing \u2014 a purposeful aerobic pace. This is the biggest aerobic builder of the week."
             }
           ]
         }
@@ -392,7 +392,7 @@
             {
               "name": "Bulgarian Split Squat (Smith)",
               "detail": "3 \u00d7 8 each @ 30 kg",
-              "how_to": "Rear foot on box; front knee tracks over toes. Progress weight each session."
+              "how_to": "Rear foot on box; front knee tracks over toes."
             },
             {
               "name": "Pogo Jumps",
@@ -415,24 +415,24 @@
         {
           "date": "2026-03-25",
           "type": "intervals",
-          "name": "Intervals \u2014 5 \u00d7 1000 m",
-          "description": "2 km warmup + 5 \u00d7 1000 m @ 3:25\u20133:30/km (90s jog) + 2 km cooldown. ~9 km. Hardest session of the plan.",
-          "distance_km": 9,
+          "name": "VO2max Intervals \u2014 4 \u00d7 1000 m",
+          "description": "2 km warmup + 4 \u00d7 1000 m @ 3:14\u20133:18/km (3 min jog recovery) + 2 km cooldown. ~10 km. Reps well above race pace \u2014 this is where the real adaptation happens.",
+          "distance_km": 10,
           "exercises": [
             {
               "name": "Warmup",
               "detail": "2 km @ 5:10/km",
-              "how_to": "Easy jog. Take your time warming up."
+              "how_to": "Easy jog. Take the full warmup \u2014 these reps are hard."
             },
             {
-              "name": "5 \u00d7 1000 m",
-              "detail": "@ 3:25\u20133:30/km",
-              "how_to": "Hard effort \u2014 HR 165\u2013175. 90s jog recovery. These are 1000m reps so pace yourself; don't go out too fast on rep 1."
+              "name": "4 \u00d7 1000 m @ 3:14\u20133:18/km",
+              "detail": "3 min jog recovery between",
+              "how_to": "Genuinely hard \u2014 10 sec/km faster than race pace. HR ~170\u2013180. The 3 min recovery is generous; use it. Consistent splits across all 4 reps matter more than going hard early. Rep 1 should feel controlled."
             },
             {
               "name": "Cooldown",
               "detail": "2 km @ 5:10/km",
-              "how_to": "Easy jog. Well done."
+              "how_to": "Easy jog. Hard session done."
             }
           ]
         },
@@ -474,7 +474,7 @@
             },
             {
               "name": "Bulgarian Split Squat (Smith)",
-              "detail": "3 \u00d7 8 each",
+              "detail": "3 \u00d7 8 each @ 30 kg",
               "how_to": "Rear foot on box."
             },
             {
@@ -517,14 +517,24 @@
         {
           "date": "2026-03-29",
           "type": "long",
-          "name": "Easy Long Run",
-          "description": "10 km @ 5:00\u20135:15/km. Conversational throughout.",
-          "distance_km": 10,
+          "name": "Structured Long Run",
+          "description": "5 km @ 4:25/km + 2 km @ 3:24/km (race pace) + 5 km @ 4:25/km. ~12 km. First time running race pace on tired legs.",
+          "distance_km": 12,
           "exercises": [
             {
-              "name": "Long Run",
-              "detail": "10 km @ 5:00\u20135:15/km",
-              "how_to": "Conversational pace the whole way."
+              "name": "Section 1",
+              "detail": "5 km @ 4:25/km",
+              "how_to": "Comfortable aerobic effort. HR ~145\u2013155. Arrive at the race pace section feeling good, not spent."
+            },
+            {
+              "name": "Section 2 \u2014 Race Pace",
+              "detail": "2 km @ 3:24/km",
+              "how_to": "Target race pace on tired legs. This is the key stimulus \u2014 learning to sustain 3:24 when not fresh. Hard but manageable."
+            },
+            {
+              "name": "Section 3",
+              "detail": "5 km @ 4:25/km",
+              "how_to": "Back to aerobic pace. Don't push to compensate for the hard section \u2014 just settle back in."
             }
           ]
         }
@@ -573,7 +583,7 @@
             {
               "name": "Bulgarian Split Squat (Smith)",
               "detail": "3 \u00d7 8 each @ 30 kg",
-              "how_to": "Rear foot on box; front knee tracks over toes. Progress weight each session."
+              "how_to": "Rear foot on box; front knee tracks over toes."
             },
             {
               "name": "Pogo Jumps",
@@ -595,25 +605,25 @@
         },
         {
           "date": "2026-04-01",
-          "type": "tempo",
-          "name": "Tempo Run",
-          "description": "2 km warmup + 20 min @ 3:40\u20133:45/km + 2 km cooldown. Change of stimulus in the last hard week.",
-          "distance_km": 8,
+          "type": "intervals",
+          "name": "Speed Reps \u2014 10 \u00d7 400 m",
+          "description": "2 km warmup + 10 \u00d7 400 m @ 2:53/km (90s walk recovery) + 2 km cooldown. ~9.5 km. Pure speed \u2014 each rep is only 69 seconds, walk recovery is full recovery.",
+          "distance_km": 9.5,
           "exercises": [
             {
               "name": "Warmup",
-              "detail": "2 km",
-              "how_to": "Easy jog @ 5:10/km. Calves and legs loosening up."
+              "detail": "2 km @ 5:10/km",
+              "how_to": "Easy jog. Let the legs loosen properly before these fast reps."
             },
             {
-              "name": "Tempo",
-              "detail": "20 min",
-              "how_to": "@ 3:40\u20133:45/km \u2014 comfortably hard, HR ~155\u2013165. Controlled and steady."
+              "name": "10 \u00d7 400 m @ 2:53/km",
+              "detail": "90s walk recovery between each",
+              "how_to": "Near-max effort \u2014 each rep is ~69 seconds. Walk (don't jog) the recovery: the point is full neuromuscular recovery so every rep is quality. Aim for identical splits. Rep 10 should be as fast as rep 1."
             },
             {
               "name": "Cooldown",
-              "detail": "2 km",
-              "how_to": "Easy jog back to base. Let the heart rate drop."
+              "detail": "2 km @ 5:10/km",
+              "how_to": "Easy jog. Legs will feel heavy \u2014 that's expected."
             }
           ]
         },
@@ -655,7 +665,7 @@
             },
             {
               "name": "Bulgarian Split Squat (Smith)",
-              "detail": "3 \u00d7 8 each",
+              "detail": "3 \u00d7 8 each @ 30 kg",
               "how_to": "Rear foot on box."
             },
             {
@@ -697,15 +707,25 @@
         },
         {
           "date": "2026-04-05",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "8 km @ 5:00\u20135:15/km. Volume starts dropping from here.",
-          "distance_km": 8,
+          "type": "long",
+          "name": "Structured Long Run",
+          "description": "5 km @ 4:25/km + 3 km @ 3:24/km (race pace) + 5 km @ 4:25/km. ~13 km. Race pace section extends to 3 km.",
+          "distance_km": 13,
           "exercises": [
             {
-              "name": "Easy Run",
-              "detail": "8 km @ 5:00\u20135:15/km",
-              "how_to": "Conversational. Last longer easy run before the taper."
+              "name": "Section 1",
+              "detail": "5 km @ 4:25/km",
+              "how_to": "Comfortable aerobic effort. HR ~145\u2013155. Arrive at the race pace section ready."
+            },
+            {
+              "name": "Section 2 \u2014 Race Pace",
+              "detail": "3 km @ 3:24/km",
+              "how_to": "3 km at race pace on tired legs. This is the most specific training you can do. Hard but controlled."
+            },
+            {
+              "name": "Section 3",
+              "detail": "5 km @ 4:25/km",
+              "how_to": "Back to aerobic pace. Proud finish."
             }
           ]
         }
@@ -836,7 +856,7 @@
             },
             {
               "name": "Bulgarian Split Squat (Smith)",
-              "detail": "3 \u00d7 8 each",
+              "detail": "3 \u00d7 8 each @ 30 kg",
               "how_to": "Rear foot on box."
             },
             {
@@ -878,15 +898,15 @@
         },
         {
           "date": "2026-04-12",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 5:00\u20135:15/km.",
-          "distance_km": 6,
+          "type": "long",
+          "name": "Long Run",
+          "description": "14 km @ 4:25/km. Sustained aerobic effort \u2014 biggest run of the plan. No walking, no surges.",
+          "distance_km": 14,
           "exercises": [
             {
-              "name": "Easy Run",
-              "detail": "6 km @ 5:00\u20135:15/km",
-              "how_to": "Conversational pace."
+              "name": "Long Run",
+              "detail": "14 km @ 4:25/km",
+              "how_to": "Sustained aerobic effort throughout. HR ~145\u2013155. No walking, no surges. This builds the aerobic engine that makes the last km of the race possible. Just run."
             }
           ]
         }
@@ -970,15 +990,25 @@
         },
         {
           "date": "2026-04-15",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "4 km easy @ 5:00\u20135:15/km.",
-          "distance_km": 4,
+          "type": "intervals",
+          "name": "Tune-Up Reps",
+          "description": "2 km warmup + 3 \u00d7 1 km @ 3:20\u20133:24/km (2 min jog recovery) + 2 km cooldown. ~7 km. Keeps legs sharp mid-taper \u2014 controlled, not all-out.",
+          "distance_km": 7,
           "exercises": [
             {
-              "name": "Easy Run",
-              "detail": "4 km @ 5:00\u20135:15/km",
-              "how_to": "Easy and relaxed. No effort."
+              "name": "Warmup",
+              "detail": "2 km @ 5:10/km",
+              "how_to": "Easy jog."
+            },
+            {
+              "name": "3 \u00d7 1 km @ 3:20\u20133:24/km",
+              "detail": "2 min jog recovery between",
+              "how_to": "Race pace feel \u2014 not all-out. These should feel controlled and sharp. Just a tune-up. If legs feel flat, that's normal taper tiredness \u2014 they'll be sharp on race day."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km @ 5:10/km",
+              "how_to": "Easy jog."
             }
           ]
         },
@@ -1033,35 +1063,25 @@
         },
         {
           "date": "2026-04-21",
-          "type": "strides",
-          "name": "Easy + Strides + Yasmin's (1 set)",
-          "description": "4 km easy + 4 \u00d7 20s strides, then 1 set of calf press and pogos only. Nothing that causes soreness.",
-          "distance_km": 4.5,
+          "type": "intervals",
+          "name": "Taper Run \u2014 8 \u00d7 90s",
+          "description": "5 min easy warmup + 8 \u00d7 90s @ 3:24/km (90s jog recovery) + 5 min easy cooldown. ~6 km. Keeps legs firing without fatigue.",
+          "distance_km": 6,
           "exercises": [
             {
-              "name": "Easy Run",
-              "detail": "4 km @ 5:00\u20135:15/km",
-              "how_to": "Very easy."
+              "name": "Warmup",
+              "detail": "5 min @ 5:10/km",
+              "how_to": "Easy jog. ~1 km."
             },
             {
-              "name": "Strides",
-              "detail": "4 \u00d7 20s @ 3:24/km",
-              "how_to": "Race pace. Relaxed."
+              "name": "8 \u00d7 90s @ 3:24/km",
+              "detail": "90s jog recovery between",
+              "how_to": "Race pace \u2014 not all-out. These should feel controlled and familiar. This is maintenance, not fitness. Four days to the race."
             },
             {
-              "name": "Calf Press (Gastrocnemius)",
-              "detail": "1 \u00d7 8 @ 25 kg",
-              "how_to": "Maintain the habit. Nothing heavy."
-            },
-            {
-              "name": "Pogo Jumps",
-              "detail": "1 \u00d7 20",
-              "how_to": "Light and springy."
-            },
-            {
-              "name": "Pogo Hops (Single-Leg)",
-              "detail": "1 \u00d7 10",
-              "how_to": "Keep calves responsive."
+              "name": "Cooldown",
+              "detail": "5 min @ 5:10/km",
+              "how_to": "Easy jog. Done."
             }
           ]
         },
@@ -1087,9 +1107,22 @@
         },
         {
           "date": "2026-04-24",
-          "type": "rest",
-          "name": "Rest Day",
-          "description": "Prep race kit. Pin number on. Vaporflys out."
+          "type": "strides",
+          "name": "Easy + Strides",
+          "description": "20 min easy @ 5:10/km + 4 \u00d7 20s strides @ 3:24/km. ~4 km. Prep race kit tonight \u2014 pin number on, Vaporflys out.",
+          "distance_km": 4,
+          "exercises": [
+            {
+              "name": "Easy Jog",
+              "detail": "20 min @ 5:10/km",
+              "how_to": "Very easy. Just keep the legs from stiffening up."
+            },
+            {
+              "name": "Strides",
+              "detail": "4 \u00d7 20s @ 3:24/km",
+              "how_to": "Race pace. Should feel effortless today."
+            }
+          ]
         },
         {
           "date": "2026-04-25",
