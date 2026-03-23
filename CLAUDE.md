@@ -206,6 +206,7 @@ Activity files are at `data/activities/{id}.json`. Key fields:
 - `average_heartrate` / `max_heartrate` — effort indicator
 - `total_elevation_gain` — metres of climb
 - `suffer_score` — Strava's relative effort (higher = harder session)
-- `splits_metric` — per-km breakdown (great for seeing pacing consistency)
+- `laps` — **always check this first for structured sessions** (intervals, tempo, strides). Laps reflect actual Garmin lap button presses — they show real rep distances and paces. `splits_metric` is per-km only and will mix rep + recovery into one km, making intervals look slower than they were.
+- `splits_metric` — per-km breakdown (useful for easy/long runs where pace should be consistent)
 
 To list recent runs: look at `data/sync_log.json` for total count, then read the most recently modified files in `data/activities/`.
