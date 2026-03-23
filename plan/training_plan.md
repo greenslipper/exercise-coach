@@ -106,8 +106,8 @@ Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf 
 | Tue | Mar 24 | Tennis / cycling | — |
 | Wed | Mar 25 | Rest | Full rest — fresh legs for Thursday intervals. |
 | Thu | Mar 26 | VO2max intervals | 2 km warmup + 4 × 1000 m @ 3:14–3:18/km (3 min jog recovery) + 2 km cooldown. ~10 km. Reps are genuinely hard — 10 sec/km above race pace. Consistent splits matter. |
-| Fri | Mar 27 | Easy + Strides | 6 km easy + 6 × 20s strides @ 3:24/km. |
-| Sat | Mar 28 | Rest | — |
+| Fri | Mar 27 | Yasmin's program | Full Ankle & Hips program. No run. Strides dropped — gym takes priority given one session already missed. |
+| Sat | Mar 28 | Tennis | Keep it controlled — structured long run tomorrow has race pace section. |
 | Sun | Mar 29 | Structured long run | 5 km @ 4:25/km + 2 km @ 3:24/km (race pace) + 5 km @ 4:25/km. ~12 km. |
 
 **Week target: ~27 km**

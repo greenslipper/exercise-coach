@@ -444,28 +444,62 @@
         },
         {
           "date": "2026-03-27",
-          "type": "strides",
-          "name": "Easy + Strides",
-          "description": "6 km easy with 6 × 20s strides.",
-          "distance_km": 6.5,
+          "type": "strength",
+          "name": "Yasmin's Program",
+          "description": "Full Ankle & Hips program. No run today — gym only.",
           "exercises": [
             {
-              "name": "Easy Run",
-              "detail": "6 km @ 5:00–5:15/km",
-              "how_to": "Conversational pace."
+              "name": "Leg Press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension at the top; slow controlled return."
             },
             {
-              "name": "Strides",
-              "detail": "6 × 20s @ 3:24/km",
-              "how_to": "Relaxed accelerations. Full recovery walk between each."
+              "name": "Calf Press (Gastrocnemius)",
+              "detail": "3 × 8 @ 25 kg",
+              "how_to": "Balls of feet on weight plate edge, barbell on upper back. Rise to toes; controlled descent."
+            },
+            {
+              "name": "Single-Leg Seated Calf Raise",
+              "detail": "3 × 8 @ 70 kg",
+              "how_to": "Heavy load — each rep should be demanding. Both legs."
+            },
+            {
+              "name": "Cable Hip Abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Drive outer leg to ~45°; slow return. Both sides."
+            },
+            {
+              "name": "Seated Hamstring Curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Curl to buttocks; 1-second pause at top; slow controlled release."
+            },
+            {
+              "name": "Leg Extension (Single Leg)",
+              "detail": "3 × 8 @ 30 kg",
+              "how_to": "One leg at a time. Full controlled extension."
+            },
+            {
+              "name": "Bulgarian Split Squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; front knee tracks over toes."
+            },
+            {
+              "name": "Pogo Jumps",
+              "detail": "3 × 20",
+              "how_to": "Two-footed jumps on the spot. Minimal ground contact — light and springy on balls of feet."
+            },
+            {
+              "name": "Pogo Hops (Single-Leg)",
+              "detail": "3 × 15",
+              "how_to": "Building load on single-leg hops. Stop if calf pain increases."
             }
           ]
         },
         {
           "date": "2026-03-28",
           "type": "rest",
-          "name": "Rest",
-          "description": "Full rest."
+          "name": "Tennis",
+          "description": "Tennis — keep it controlled. Structured long run tomorrow has a race-pace section."
         },
         {
           "date": "2026-03-29",
