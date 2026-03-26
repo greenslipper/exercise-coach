@@ -28,6 +28,7 @@ let gymLog = JSON.parse(localStorage.getItem('gymLog') || '[]');
 let weightLog = JSON.parse(localStorage.getItem('weightLog') || '[]');
 let runLog = JSON.parse(localStorage.getItem('runLog') || '[]');
 let stravaRunDates = [];
+let stravaRunStats = {};
 
 function saveGymLog() {
   localStorage.setItem('gymLog', JSON.stringify(gymLog));
@@ -85,6 +86,7 @@ async function loadPlan() {
     if (res.ok) {
       const data = await res.json();
       stravaRunDates = data.run_dates || [];
+      stravaRunStats = data.runs || {};
     }
   } catch (e) {
     console.warn('Could not load strava_runs.json:', e);
@@ -343,8 +345,12 @@ function openModal(dateStr) {
 
   if (isRunDay) {
     if (isRunDoneViaStrava(dateStr)) {
+      const stats = stravaRunStats[dateStr];
+      const statsHtml = stats
+        ? `<span class="run-stats">${stats.distance_km} km &middot; ${stats.moving_time_min} min${stats.avg_pace ? ' &middot; ' + stats.avg_pace + '/km' : ''}</span>`
+        : '';
       descEl.innerHTML += `<div class="run-done-wrap">
-        <span class="run-done-strava">✓ Completed — synced from Strava</span>
+        <span class="run-done-strava">✓ Strava ${statsHtml}</span>
       </div>`;
     } else {
       const isDone = runLog.includes(dateStr);

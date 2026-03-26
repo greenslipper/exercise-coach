@@ -276,6 +276,12 @@ body {
   color: var(--green);
 }
 
+.run-stats {
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 0.3rem;
+}
+
 .day-type-label {
   font-size: 0.55rem;
   font-weight: 600;

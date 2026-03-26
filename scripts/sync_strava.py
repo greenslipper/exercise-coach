@@ -181,18 +181,39 @@ def main():
 
     # Build strava_runs.json from all activity files
     run_dates = set()
+    runs = {}
     for activity_file in ACTIVITIES_DIR.glob("*.json"):
         try:
             activity = json.loads(activity_file.read_text())
             if activity.get("type") == "Run" or activity.get("sport_type") == "Run":
                 date_str = activity.get("start_date_local", "")[:10]
-                if date_str:
-                    run_dates.add(date_str)
+                if not date_str:
+                    continue
+                run_dates.add(date_str)
+                distance_km = round(activity.get("distance", 0) / 1000, 2)
+                moving_time_s = activity.get("moving_time", 0)
+                moving_time_min = round(moving_time_s / 60, 1)
+                avg_speed = activity.get("average_speed", 0)
+                if avg_speed > 0:
+                    pace_sec = 1000 / avg_speed
+                    pace_min = int(pace_sec // 60)
+                    pace_s = int(pace_sec % 60)
+                    avg_pace = f"{pace_min}:{pace_s:02d}"
+                else:
+                    avg_pace = None
+                # If multiple runs on same day, keep the longest
+                if date_str not in runs or distance_km > runs[date_str]["distance_km"]:
+                    runs[date_str] = {
+                        "distance_km": distance_km,
+                        "moving_time_min": moving_time_min,
+                        "avg_pace": avg_pace,
+                    }
         except (json.JSONDecodeError, KeyError):
             pass
     strava_summary = {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "run_dates": sorted(run_dates),
+        "runs": runs,
     }
     STRAVA_RUNS_FILE.write_text(json.dumps(strava_summary, indent=2))
 
