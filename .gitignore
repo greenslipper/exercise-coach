@@ -8,3 +8,8 @@ __pycache__/
 data/activities/
 data/athlete.json
 data/sync_log.json
+
+# Google Calendar credentials — never commit
+data/calendar_credentials.json
+data/calendar_token.json
+data/calendar.json

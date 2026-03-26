@@ -21,7 +21,10 @@ At the start of every session, in this order:
 3. Read `data/sync_log.json` — check sync status
 4. **Run the Strava sync** — always, every session, using `.venv/bin/python scripts/sync_strava.py` (incremental, fast, safe to run every time)
    - Exception: if `last_sync: 0` or `"never"`, OAuth isn't set up — tell Freddie to run `python scripts/setup_strava.py` first
-5. Read recent activities in `data/activities/` — scan the last 2 weeks after syncing
+5. **Run the calendar sync** — always, every session, using `.venv/bin/python scripts/sync_calendar.py`
+   - Exception: if `data/calendar_token.json` doesn't exist, tell Freddie to run `python scripts/setup_calendar.py` first
+6. Read `data/calendar.json` — upcoming events for the next 6 weeks. Use this to flag scheduling conflicts, tennis/sport days that affect training load, and busy periods near the race.
+7. Read recent activities in `data/activities/` — scan the last 2 weeks after syncing
 
 ---
 
