@@ -22,7 +22,7 @@ REPO_ROOT = Path(__file__).parent.parent
 CREDENTIALS_FILE = REPO_ROOT / "data" / "calendar_credentials.json"
 TOKEN_FILE = REPO_ROOT / "data" / "calendar_token.json"
 
-SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
+SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
 
 def main():

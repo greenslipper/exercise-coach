@@ -19,7 +19,7 @@ CREDENTIALS_FILE = REPO_ROOT / "data" / "calendar_credentials.json"
 TOKEN_FILE = REPO_ROOT / "data" / "calendar_token.json"
 CALENDAR_FILE = REPO_ROOT / "data" / "calendar.json"
 
-SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
+SCOPES = ["https://www.googleapis.com/auth/calendar"]
 WEEKS_AHEAD = 6
 
 
@@ -46,6 +46,9 @@ def parse_event(event, calendar_name):
     end = event.get("end", {})
     title = event.get("summary", "(no title)")
 
+    event_id = event.get("id")
+    cal_id = event.get("organizer", {}).get("email", calendar_name)
+
     # All-day events use 'date', timed events use 'dateTime'
     if "date" in start:
         return {
@@ -55,6 +58,8 @@ def parse_event(event, calendar_name):
             "title": title,
             "calendar": calendar_name,
             "all_day": True,
+            "event_id": event_id,
+            "calendar_id": cal_id,
         }
     else:
         dt_start = datetime.fromisoformat(start["dateTime"])
@@ -66,6 +71,8 @@ def parse_event(event, calendar_name):
             "title": title,
             "calendar": calendar_name,
             "all_day": False,
+            "event_id": event_id,
+            "calendar_id": cal_id,
         }
 
 
