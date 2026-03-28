@@ -11,7 +11,7 @@
   <link rel="icon" type="image/jpeg" href="icon.jpg">
   <link rel="apple-touch-icon" href="icon.jpg">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=20260326">
+  <link rel="stylesheet" href="style.css?v=20260328">
 </head>
 <body>
   <div class="app">
@@ -91,6 +91,32 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260326"></script>
+  <!-- Settings modal -->
+  <div class="modal-overlay" id="settings-overlay" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-handle"></div>
+      <button class="modal-close" onclick="closeSettings()" aria-label="Close">✕</button>
+      <div class="modal-title">Cloud Sync</div>
+      <p class="modal-desc" style="margin-bottom:1rem;font-size:0.85rem">
+        Connect to your Cloudflare Worker so Claude can read your gym logs automatically.
+      </p>
+      <div class="log-field">
+        <label class="log-label" for="settings-url">Worker URL</label>
+        <input type="url" id="settings-url" class="settings-input"
+               placeholder="https://exercise-coach.greenfgm.workers.dev"
+               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </div>
+      <div class="log-field">
+        <label class="log-label" for="settings-secret">Secret</label>
+        <input type="password" id="settings-secret" class="settings-input"
+               placeholder="your auth secret" autocomplete="off">
+      </div>
+      <div class="log-save-wrap">
+        <button class="log-save-btn" onclick="saveSettings()">Save &amp; Sync</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=20260328"></script>
 </body>
 </html>

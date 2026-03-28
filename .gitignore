@@ -13,3 +13,7 @@ data/sync_log.json
 data/calendar_credentials.json
 data/calendar_token.json
 data/calendar.json
+
+# Worker sync cache — personal data, never commit
+data/gym_log.json
+data/weight_log.json

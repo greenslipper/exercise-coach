@@ -23,8 +23,11 @@ At the start of every session, in this order:
    - Exception: if `last_sync: 0` or `"never"`, OAuth isn't set up — tell Freddie to run `python scripts/setup_strava.py` first
 5. **Run the calendar sync** — always, every session, using `.venv/bin/python scripts/sync_calendar.py`
    - Exception: if `data/calendar_token.json` doesn't exist, tell Freddie to run `python scripts/setup_calendar.py` first
-6. Read `data/calendar.json` — upcoming events for the next 6 weeks. Use this to flag scheduling conflicts, tennis/sport days that affect training load, and busy periods near the race.
-7. Read recent activities in `data/activities/` — scan the last 2 weeks after syncing
+6. **Run the worker sync** — always, every session, using `.venv/bin/python scripts/sync_worker.py`
+   - This pulls gym logs and weight entries from the Cloudflare Worker into `data/gym_log.json` and `data/weight_log.json`
+7. Read `data/calendar.json` — upcoming events for the next 6 weeks. Use this to flag scheduling conflicts, tennis/sport days that affect training load, and busy periods near the race.
+8. Read `data/gym_log.json` and `data/weight_log.json` — actual logged gym sessions and weight entries from the app
+9. Read recent activities in `data/activities/` — scan the last 2 weeks after syncing
 
 ---
 

@@ -1,0 +1,10 @@
+name = "exercise-coach"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+kv_namespaces = [
+  { binding = "COACH_DATA", id = "964164bd25eb4945930fcb623e56c366" }
+]
+
+[vars]
+ALLOWED_ORIGIN = "https://freddiegreen.github.io"

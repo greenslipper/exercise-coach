@@ -42,6 +42,86 @@ function saveRunLog() {
   localStorage.setItem('runLog', JSON.stringify(runLog));
 }
 
+// ── Worker sync ─────────────────────────────────────────────────────────────
+
+function getWorkerConfig() {
+  try { return JSON.parse(localStorage.getItem('workerConfig')) || {}; }
+  catch { return {}; }
+}
+
+function isWorkerConfigured() {
+  const { url, secret } = getWorkerConfig();
+  return !!(url && secret);
+}
+
+async function workerPost(path, body) {
+  const { url, secret } = getWorkerConfig();
+  if (!url || !secret) return;
+  try {
+    await fetch(url + path, {
+      method: 'POST',
+      headers: { 'Authorization': 'Bearer ' + secret, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+  } catch (e) {
+    console.warn('Worker sync failed:', e);
+  }
+}
+
+async function loadFromWorker() {
+  const { url, secret } = getWorkerConfig();
+  if (!url || !secret) return;
+  try {
+    const headers = { 'Authorization': 'Bearer ' + secret };
+    const [gymRes, weightRes] = await Promise.all([
+      fetch(url + '/gym-log', { headers }),
+      fetch(url + '/weight', { headers }),
+    ]);
+    if (gymRes.ok) {
+      const logs = await gymRes.json();
+      gymLog = logs.map(s => {
+        let name = s.session_type || 'Strength Session';
+        for (const week of (planData ? planData.weeks || [] : [])) {
+          const day = (week.days || []).find(d => d.date === s.date);
+          if (day && day.name) { name = day.name; break; }
+        }
+        return { date: s.date, name, exercises: s.exercises || [] };
+      });
+      saveGymLog();
+    }
+    if (weightRes.ok) {
+      const entries = await weightRes.json();
+      weightLog = entries.map(e => ({ date: e.date, weight: e.weight_kg }));
+      saveWeightLog();
+    }
+  } catch (e) {
+    console.warn('Worker load failed:', e);
+  }
+}
+
+function openSettings() {
+  const cfg = getWorkerConfig();
+  document.getElementById('settings-url').value = cfg.url || '';
+  document.getElementById('settings-secret').value = cfg.secret || '';
+  const overlay = document.getElementById('settings-overlay');
+  overlay.classList.add('open');
+  overlay.onclick = (e) => { if (e.target === overlay) closeSettings(); };
+}
+
+function closeSettings() {
+  document.getElementById('settings-overlay').classList.remove('open');
+}
+
+async function saveSettings() {
+  const url = document.getElementById('settings-url').value.trim().replace(/\/$/, '');
+  const secret = document.getElementById('settings-secret').value.trim();
+  if (!url || !secret) return;
+  localStorage.setItem('workerConfig', JSON.stringify({ url, secret }));
+  closeSettings();
+  await loadFromWorker();
+  renderGym();
+}
+
 function isRunDoneViaStrava(dateStr) {
   return stravaRunDates.includes(dateStr);
 }
@@ -572,6 +652,10 @@ function saveExerciseLog(dateStr, exName, rawWeight, note) {
     session.exercises.push({ name: exName, weight: value, note: note || null });
   }
   saveGymLog();
+  const updatedSession = gymLog.find(s => s.date === dateStr);
+  if (updatedSession) {
+    workerPost('/gym-log', { date: updatedSession.date, session_type: 'strength', exercises: updatedSession.exercises });
+  }
   closeLogModal();
   openModal(dateStr);
   renderGym();
@@ -639,6 +723,7 @@ function saveBodyWeight() {
   weightLog.push({ date: t, weight: val });
   weightLog.sort((a, b) => a.date.localeCompare(b.date));
   saveWeightLog();
+  workerPost('/weight', { date: t, weight_kg: val });
   renderGym();
 }
 
@@ -671,19 +756,28 @@ function renderGym() {
     `;
   }).join('');
 
-  const sessionsSection = gymLog.length > 0 ? `
-    <div class="gym-toolbar">
-      <button class="export-btn" onclick="exportForClaude()">Export for Claude</button>
+  const configured = isWorkerConfigured();
+  const syncBar = `
+    <div class="worker-status">
+      <span class="worker-badge${configured ? ' connected' : ''}">
+        ${configured ? '☁ Cloud sync active' : '☁ Cloud sync'}
+      </span>
+      <button class="worker-settings-btn" onclick="openSettings()">
+        ${configured ? '⚙' : 'Configure →'}
+      </button>
     </div>
+  `;
+
+  const sessionsSection = gymLog.length > 0 ? `
     <div class="gym-log-list">${sessionsHtml}</div>
   ` : `
     <div class="gym-empty">
       <p>No sessions logged yet.</p>
-      <p>Tap a strength day, then tap <strong>+ Log Session</strong>.</p>
+      <p>Tap a strength day, then log each exercise.</p>
     </div>
   `;
 
-  section.innerHTML = weightCard + sessionsSection;
+  section.innerHTML = weightCard + syncBar + sessionsSection;
 }
 
 function exportForClaude() {
@@ -727,7 +821,9 @@ function exportForClaude() {
 async function init() {
   await loadPlan();
   currentWeekIndex = findCurrentWeek(planData.weeks);
-  render();
+  render(); // render immediately with cached localStorage data
+  await loadFromWorker(); // silently refresh from cloud
+  render(); // re-render with latest cloud data
 }
 
 document.addEventListener('DOMContentLoaded', init);

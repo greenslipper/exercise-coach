@@ -1031,6 +1031,57 @@ body {
   border-color: var(--purple);
 }
 
+/* Cloud sync status bar */
+.worker-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 1rem 0.1rem;
+}
+
+.worker-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.worker-badge.connected {
+  color: var(--green);
+}
+
+.worker-settings-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--mid);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  cursor: pointer;
+}
+
+.worker-settings-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+/* Settings modal inputs */
+.settings-input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--dark);
+  font-family: inherit;
+  background: var(--bg);
+}
+
+.settings-input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
 /* Gym log card — note line */
 .gym-log-ex-note {
   font-size: 0.72rem;
