@@ -120,7 +120,7 @@ Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf 
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Mar 30 | Yasmin's program (modified) | Ankle & Hips — skip all calf work (no calf press, no single-leg calf raise, no pogo jumps/hops). Do: leg press, hip abduction, hamstring curl, leg extension, split squats. |
+| Mon | Mar 30 | Yasmin's program + chest/back | Ankle & Hips — skip all calf work (no calf press, no single-leg calf raise, no pogo jumps/hops). Do: leg press, hip abduction, hamstring curl, leg extension, split squats. Add chest & back: bench press 3×10, lat pulldown 3×10, seated cable row 3×10. |
 | Tue | Mar 31 | Physio — Yasmin 08:30 | Tell her: bilateral tightness, pattern of calves tightening after intervals (two weeks running), worse after tennis Sat. Ask whether to continue Week 4 quality or hold. |
 | Wed | Apr 1 | Speed reps — DEFERRED | Holding 10×400m pending Yasmin's clearance Tuesday. Will reschedule. |
 | Thu | Apr 2 | Yasmin's program | Full Ankle & Hips program. No run. |

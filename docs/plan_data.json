@@ -524,8 +524,8 @@
         {
           "date": "2026-03-30",
           "type": "strength",
-          "name": "Yasmin's Program",
-          "description": "Ankle & Hips program \u2014 calf exercises and plyometrics skipped due to bilateral calf tightness. Yasmin assessment tomorrow (Tue 08:30).",
+          "name": "Yasmin's Program + Chest/Back",
+          "description": "Ankle & Hips with calf work removed \u2014 calves resting. Chest and back added to fill the gap.",
           "exercises": [
             {
               "name": "Leg Press",
@@ -551,6 +551,21 @@
               "name": "Bulgarian Split Squat (Smith)",
               "detail": "3 \u00d7 8 each @ 30 kg",
               "how_to": "Rear foot on box; front knee tracks over toes."
+            },
+            {
+              "name": "Bench Press",
+              "detail": "3 \u00d7 10",
+              "how_to": "Pick a moderate weight \u2014 this is accessory work, not a max effort. Controlled descent to chest, full press up."
+            },
+            {
+              "name": "Lat Pulldown",
+              "detail": "3 \u00d7 10",
+              "how_to": "Pull bar to upper chest; slow controlled return. Keep chest up and shoulders back."
+            },
+            {
+              "name": "Seated Cable Row",
+              "detail": "3 \u00d7 10",
+              "how_to": "Drive elbows back to squeeze shoulder blades together. Slow return \u2014 don't let the weight yank you forward."
             }
           ]
         },
