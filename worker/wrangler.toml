@@ -8,4 +8,4 @@ kv_namespaces = [
 ]
 
 [vars]
-ALLOWED_ORIGIN = "https://freddiegreen.github.io"
+ALLOWED_ORIGIN = "https://greenslipper.github.io"
