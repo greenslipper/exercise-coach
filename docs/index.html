@@ -11,7 +11,7 @@
   <link rel="icon" type="image/jpeg" href="icon.jpg">
   <link rel="apple-touch-icon" href="icon.jpg">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=20260328">
+  <link rel="stylesheet" href="style.css?v=20260401">
 </head>
 <body>
   <div class="app">
@@ -114,9 +114,13 @@
       <div class="log-save-wrap">
         <button class="log-save-btn" onclick="saveSettings()">Save &amp; Sync</button>
       </div>
+      <div class="log-save-wrap" style="margin-top:0.5rem">
+        <button class="log-save-btn" id="push-to-worker-btn" onclick="pushLocalDataToWorker()"
+                style="background:#555">Push local data to cloud</button>
+      </div>
     </div>
   </div>
 
-  <script src="app.js?v=20260328"></script>
+  <script src="app.js?v=20260401"></script>
 </body>
 </html>

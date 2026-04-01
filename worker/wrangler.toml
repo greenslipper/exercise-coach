@@ -1,6 +1,7 @@
 name = "exercise-coach"
 main = "src/index.js"
 compatibility_date = "2024-01-01"
+account_id = "982f745466481e07827a8c153828d391"
 
 kv_namespaces = [
   { binding = "COACH_DATA", id = "964164bd25eb4945930fcb623e56c366" }

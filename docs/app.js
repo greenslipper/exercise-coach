@@ -79,20 +79,24 @@ async function loadFromWorker() {
     ]);
     if (gymRes.ok) {
       const logs = await gymRes.json();
-      gymLog = logs.map(s => {
-        let name = s.session_type || 'Strength Session';
-        for (const week of (planData ? planData.weeks || [] : [])) {
-          const day = (week.days || []).find(d => d.date === s.date);
-          if (day && day.name) { name = day.name; break; }
-        }
-        return { date: s.date, name, exercises: s.exercises || [] };
-      });
-      saveGymLog();
+      if (logs.length > 0) {
+        gymLog = logs.map(s => {
+          let name = s.session_type || 'Strength Session';
+          for (const week of (planData ? planData.weeks || [] : [])) {
+            const day = (week.days || []).find(d => d.date === s.date);
+            if (day && day.name) { name = day.name; break; }
+          }
+          return { date: s.date, name, exercises: s.exercises || [] };
+        });
+        saveGymLog();
+      }
     }
     if (weightRes.ok) {
       const entries = await weightRes.json();
-      weightLog = entries.map(e => ({ date: e.date, weight: e.weight_kg }));
-      saveWeightLog();
+      if (entries.length > 0) {
+        weightLog = entries.map(e => ({ date: e.date, weight: e.weight_kg }));
+        saveWeightLog();
+      }
     }
   } catch (e) {
     console.warn('Worker load failed:', e);
@@ -120,6 +124,44 @@ async function saveSettings() {
   closeSettings();
   await loadFromWorker();
   renderGym();
+}
+
+async function pushLocalDataToWorker() {
+  const { url, secret } = getWorkerConfig();
+  if (!url || !secret) return;
+
+  const btn = document.getElementById('push-to-worker-btn');
+  btn.disabled = true;
+  btn.textContent = 'Uploading…';
+
+  const headers = { 'Authorization': 'Bearer ' + secret, 'Content-Type': 'application/json' };
+  let ok = 0, fail = 0;
+
+  for (const session of gymLog) {
+    if (!session.exercises || session.exercises.length === 0) continue;
+    try {
+      const res = await fetch(url + '/gym-log', {
+        method: 'POST', headers,
+        body: JSON.stringify({ date: session.date, session_type: 'strength', exercises: session.exercises }),
+      });
+      res.ok ? ok++ : fail++;
+    } catch { fail++; }
+  }
+
+  for (const entry of weightLog) {
+    try {
+      const res = await fetch(url + '/weight', {
+        method: 'POST', headers,
+        body: JSON.stringify({ date: entry.date, weight_kg: entry.weight }),
+      });
+      res.ok ? ok++ : fail++;
+    } catch { fail++; }
+  }
+
+  btn.disabled = false;
+  btn.textContent = fail === 0
+    ? `Done — ${ok} record${ok !== 1 ? 's' : ''} uploaded`
+    : `${ok} uploaded, ${fail} failed`;
 }
 
 function isRunDoneViaStrava(dateStr) {

@@ -3,17 +3,19 @@
  * Persistent storage for gym logs and weight entries.
  *
  * Routes:
- *   POST /gym-log          Save a gym session
- *   GET  /gym-log          Get all gym sessions
- *   POST /weight           Save a weight entry
- *   GET  /weight           Get all weight entries
+ *   POST   /gym-log          Save a gym session
+ *   GET    /gym-log          Get all gym sessions
+ *   DELETE /gym-log?date=    Delete session for a date (and optional session_type)
+ *   POST   /weight           Save a weight entry
+ *   GET    /weight           Get all weight entries
+ *   DELETE /weight?date=     Delete weight entry for a date
  *
  * Auth: Authorization: Bearer <secret>
  */
 
 const CORS_HEADERS = (origin) => ({
   "Access-Control-Allow-Origin": origin,
-  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+  "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type, Authorization",
 });
 
@@ -80,11 +82,37 @@ async function postGymLog(request, env, origin) {
     logs.push(entry);
   }
 
-  // Keep sorted by date desc
   logs.sort((a, b) => b.date.localeCompare(a.date));
 
   await env.COACH_DATA.put("gym_logs", JSON.stringify(logs));
   return jsonResponse({ ok: true, entry }, 200, origin);
+}
+
+async function deleteGymLog(request, env, origin) {
+  const url = new URL(request.url);
+  const date = url.searchParams.get("date");
+  const session_type = url.searchParams.get("session_type");
+
+  if (!date) {
+    return jsonResponse({ error: "date query param is required" }, 400, origin);
+  }
+
+  const value = await env.COACH_DATA.get("gym_logs");
+  const logs = value ? JSON.parse(value) : [];
+
+  const before = logs.length;
+  const filtered = logs.filter((l) => {
+    if (l.date !== date) return true;
+    if (session_type && l.session_type !== session_type) return true;
+    return false;
+  });
+
+  if (filtered.length === before) {
+    return jsonResponse({ ok: false, error: "No matching entry found" }, 404, origin);
+  }
+
+  await env.COACH_DATA.put("gym_logs", JSON.stringify(filtered));
+  return jsonResponse({ ok: true, deleted: before - filtered.length }, 200, origin);
 }
 
 // --- Weight handlers ---
@@ -126,6 +154,28 @@ async function postWeightEntry(request, env, origin) {
   return jsonResponse({ ok: true, entry }, 200, origin);
 }
 
+async function deleteWeightEntry(request, env, origin) {
+  const url = new URL(request.url);
+  const date = url.searchParams.get("date");
+
+  if (!date) {
+    return jsonResponse({ error: "date query param is required" }, 400, origin);
+  }
+
+  const value = await env.COACH_DATA.get("weight_entries");
+  const entries = value ? JSON.parse(value) : [];
+
+  const before = entries.length;
+  const filtered = entries.filter((e) => e.date !== date);
+
+  if (filtered.length === before) {
+    return jsonResponse({ ok: false, error: "No matching entry found" }, 404, origin);
+  }
+
+  await env.COACH_DATA.put("weight_entries", JSON.stringify(filtered));
+  return jsonResponse({ ok: true, deleted: before - filtered.length }, 200, origin);
+}
+
 // --- Main handler ---
 
 export default {
@@ -147,11 +197,13 @@ export default {
     if (url.pathname === "/gym-log") {
       if (method === "GET") return getGymLogs(env, origin);
       if (method === "POST") return postGymLog(request, env, origin);
+      if (method === "DELETE") return deleteGymLog(request, env, origin);
     }
 
     if (url.pathname === "/weight") {
       if (method === "GET") return getWeightEntries(env, origin);
       if (method === "POST") return postWeightEntry(request, env, origin);
+      if (method === "DELETE") return deleteWeightEntry(request, env, origin);
     }
 
     return jsonResponse({ error: "Not found" }, 404, origin);
