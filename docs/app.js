@@ -707,19 +707,18 @@ function closeLogModal() {
   document.getElementById('log-overlay').classList.remove('open');
 }
 
-function buildWeightChart(log, target) {
+function buildWeightChart(log) {
   const W = 320, H = 120, PL = 32, PR = 12, PT = 10, PB = 24;
   const iW = W - PL - PR, iH = H - PT - PB;
 
   const sorted = [...log].sort((a, b) => a.date.localeCompare(b.date));
   const vals = sorted.map(e => e.weight);
-  const minV = Math.min(...vals, target) - 1;
-  const maxV = Math.max(...vals, target) + 1;
+  const minV = Math.min(...vals) - 1;
+  const maxV = Math.max(...vals) + 1;
 
   const toX = i => PL + (i / (sorted.length - 1)) * iW;
   const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
 
-  const targetY = toY(target);
   const points = sorted.map((e, i) => `${toX(i)},${toY(e.weight)}`).join(' ');
   const areaPoints = `${PL},${PT + iH} ${points} ${toX(sorted.length - 1)},${PT + iH}`;
 
@@ -741,9 +740,6 @@ function buildWeightChart(log, target) {
   return `<svg viewBox="0 0 ${W} ${H}" width="100%" class="weight-chart-svg">
     <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.08"/>
     <polyline points="${points}" fill="none" stroke="#4fc3f7" stroke-width="2"/>
-    <line x1="${PL}" y1="${targetY}" x2="${W - PR}" y2="${targetY}"
-          stroke="#fc4c02" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <text x="${W - PR - 2}" y="${targetY - 4}" fill="#fc4c02" font-size="9" text-anchor="end">target ${target} kg</text>
     ${dots}
     ${tickHtml}
   </svg>`;
@@ -763,8 +759,7 @@ function renderWeightCard() {
     trendHtml = `<div class="weight-trend">Baseline set</div>`;
   }
 
-  const TARGET_WEIGHT = 83;
-  const chartSvg = weightLog.length >= 2 ? buildWeightChart(weightLog, TARGET_WEIGHT) : '';
+  const chartSvg = weightLog.length >= 2 ? buildWeightChart(weightLog) : '';
 
   return `
     <div class="weight-card">
