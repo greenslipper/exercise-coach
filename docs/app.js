@@ -711,35 +711,47 @@ function buildWeightChart(log) {
   const W = 320, H = 120, PL = 32, PR = 12, PT = 10, PB = 24;
   const iW = W - PL - PR, iH = H - PT - PB;
 
-  const sorted = [...log].sort((a, b) => a.date.localeCompare(b.date));
+  const all = [...log].sort((a, b) => a.date.localeCompare(b.date));
+  const sorted = all.slice(-6);
+  const n = sorted.length;
+  if (n < 2) return '';
+
+  // 3-reading rolling average (undefined for first 2 points)
+  const rolling = sorted.map((_, i) =>
+    i < 2 ? null : (sorted[i].weight + sorted[i-1].weight + sorted[i-2].weight) / 3
+  );
+
   const vals = sorted.map(e => e.weight);
   const minV = Math.min(...vals) - 1;
   const maxV = Math.max(...vals) + 1;
 
-  const toX = i => PL + (i / (sorted.length - 1)) * iW;
+  const toX = i => PL + (i / (n - 1)) * iW;
   const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
 
   const points = sorted.map((e, i) => `${toX(i)},${toY(e.weight)}`).join(' ');
-  const areaPoints = `${PL},${PT + iH} ${points} ${toX(sorted.length - 1)},${PT + iH}`;
+  const areaPoints = `${PL},${PT + iH} ${points} ${toX(n - 1)},${PT + iH}`;
+
+  const avgPoints = rolling
+    .map((v, i) => v !== null ? `${toX(i)},${toY(v)}` : null)
+    .filter(Boolean).join(' ');
 
   const dots = sorted.map((e, i) => {
     const x = toX(i), y = toY(e.weight);
-    const label = i === 0 || i === sorted.length - 1 ? e.weight + ' kg' : '';
+    const label = i === 0 || i === n - 1 ? e.weight + ' kg' : '';
     const anchor = i === 0 ? 'start' : 'end';
-    return `<circle cx="${x}" cy="${y}" r="3.5" fill="#4fc3f7" stroke="white" stroke-width="1"/>
+    return `<circle cx="${x}" cy="${y}" r="3" fill="#4fc3f7" stroke="white" stroke-width="1"/>
       ${label ? `<text x="${x}" y="${y - 7}" fill="#ccc" font-size="9" text-anchor="${anchor}">${label}</text>` : ''}`;
   }).join('');
 
-  const tickDates = sorted.filter((_, i) => i === 0 || i === sorted.length - 1);
-  const tickHtml = tickDates.map((e, i) => {
-    const idx = i === 0 ? 0 : sorted.length - 1;
+  const tickHtml = [0, n - 1].map(i => {
     const anchor = i === 0 ? 'start' : 'end';
-    return `<text x="${toX(idx)}" y="${H - 4}" fill="#888" font-size="9" text-anchor="${anchor}">${e.date.slice(5).replace('-', '/')}</text>`;
+    return `<text x="${toX(i)}" y="${H - 4}" fill="#888" font-size="9" text-anchor="${anchor}">${sorted[i].date.slice(5).replace('-', '/')}</text>`;
   }).join('');
 
   return `<svg viewBox="0 0 ${W} ${H}" width="100%" class="weight-chart-svg">
     <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.08"/>
-    <polyline points="${points}" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <polyline points="${points}" fill="none" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity="0.5"/>
+    ${avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5"/>` : ''}
     ${dots}
     ${tickHtml}
   </svg>`;
