@@ -707,6 +707,48 @@ function closeLogModal() {
   document.getElementById('log-overlay').classList.remove('open');
 }
 
+function buildWeightChart(log, target) {
+  const W = 320, H = 120, PL = 32, PR = 12, PT = 10, PB = 24;
+  const iW = W - PL - PR, iH = H - PT - PB;
+
+  const sorted = [...log].sort((a, b) => a.date.localeCompare(b.date));
+  const vals = sorted.map(e => e.weight);
+  const minV = Math.min(...vals, target) - 1;
+  const maxV = Math.max(...vals, target) + 1;
+
+  const toX = i => PL + (i / (sorted.length - 1)) * iW;
+  const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
+
+  const targetY = toY(target);
+  const points = sorted.map((e, i) => `${toX(i)},${toY(e.weight)}`).join(' ');
+  const areaPoints = `${PL},${PT + iH} ${points} ${toX(sorted.length - 1)},${PT + iH}`;
+
+  const dots = sorted.map((e, i) => {
+    const x = toX(i), y = toY(e.weight);
+    const label = i === 0 || i === sorted.length - 1 ? e.weight + ' kg' : '';
+    const anchor = i === 0 ? 'start' : 'end';
+    return `<circle cx="${x}" cy="${y}" r="3.5" fill="#4fc3f7" stroke="white" stroke-width="1"/>
+      ${label ? `<text x="${x}" y="${y - 7}" fill="#ccc" font-size="9" text-anchor="${anchor}">${label}</text>` : ''}`;
+  }).join('');
+
+  const tickDates = sorted.filter((_, i) => i === 0 || i === sorted.length - 1);
+  const tickHtml = tickDates.map((e, i) => {
+    const idx = i === 0 ? 0 : sorted.length - 1;
+    const anchor = i === 0 ? 'start' : 'end';
+    return `<text x="${toX(idx)}" y="${H - 4}" fill="#888" font-size="9" text-anchor="${anchor}">${e.date.slice(5).replace('-', '/')}</text>`;
+  }).join('');
+
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" class="weight-chart-svg">
+    <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.08"/>
+    <polyline points="${points}" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <line x1="${PL}" y1="${targetY}" x2="${W - PR}" y2="${targetY}"
+          stroke="#fc4c02" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="${W - PR - 2}" y="${targetY - 4}" fill="#fc4c02" font-size="9" text-anchor="end">target ${target} kg</text>
+    ${dots}
+    ${tickHtml}
+  </svg>`;
+}
+
 function renderWeightCard() {
   const latest = weightLog.length ? weightLog[weightLog.length - 1] : null;
   const first = weightLog.length ? weightLog[0] : null;
@@ -721,12 +763,8 @@ function renderWeightCard() {
     trendHtml = `<div class="weight-trend">Baseline set</div>`;
   }
 
-  const recentHtml = [...weightLog].reverse().slice(0, 5).map(e =>
-    `<div class="weight-entry">
-      <span class="weight-entry-date">${formatDayLabel(e.date)}</span>
-      <span class="weight-entry-val">${e.weight} kg</span>
-    </div>`
-  ).join('');
+  const TARGET_WEIGHT = 83;
+  const chartSvg = weightLog.length >= 2 ? buildWeightChart(weightLog, TARGET_WEIGHT) : '';
 
   return `
     <div class="weight-card">
@@ -743,7 +781,7 @@ function renderWeightCard() {
         ? `<div class="weight-current">${latest.weight} <span class="weight-unit">kg</span></div>${trendHtml}`
         : `<div class="weight-empty">No data yet — tap + Log to start</div>`
       }
-      ${recentHtml ? `<div class="weight-history">${recentHtml}</div>` : ''}
+      ${chartSvg}
     </div>
   `;
 }
