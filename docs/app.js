@@ -722,11 +722,28 @@ function buildWeightChart(log) {
   );
 
   const vals = sorted.map(e => e.weight);
-  const minV = Math.min(...vals) - 1;
-  const maxV = Math.max(...vals) + 1;
+  const rawMin = Math.min(...vals);
+  const rawMax = Math.max(...vals);
+  // Round grid to nearest 0.5 kg
+  const minV = Math.floor(rawMin * 2) / 2 - 0.5;
+  const maxV = Math.ceil(rawMax * 2) / 2 + 0.5;
 
   const toX = i => PL + (i / (n - 1)) * iW;
   const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
+
+  // Horizontal gridlines every 0.5 kg
+  const gridStep = 0.5;
+  const gridVals = [];
+  for (let v = Math.ceil(minV / gridStep) * gridStep; v <= maxV; v = Math.round((v + gridStep) * 10) / 10) {
+    gridVals.push(v);
+  }
+  const gridHtml = gridVals.map(v => {
+    const y = toY(v);
+    const isWhole = Number.isInteger(v);
+    return `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}"
+        stroke="#333355" stroke-width="${isWhole ? 1 : 0.5}"/>
+      <text x="${PL - 3}" y="${y + 3.5}" fill="${isWhole ? '#888' : '#555'}" font-size="8" text-anchor="end">${v % 1 === 0 ? v : ''}</text>`;
+  }).join('');
 
   const points = sorted.map((e, i) => `${toX(i)},${toY(e.weight)}`).join(' ');
   const areaPoints = `${PL},${PT + iH} ${points} ${toX(n - 1)},${PT + iH}`;
@@ -749,6 +766,7 @@ function buildWeightChart(log) {
   }).join('');
 
   return `<svg viewBox="0 0 ${W} ${H}" width="100%" class="weight-chart-svg">
+    ${gridHtml}
     <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.08"/>
     <polyline points="${points}" fill="none" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity="0.5"/>
     ${avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5"/>` : ''}
