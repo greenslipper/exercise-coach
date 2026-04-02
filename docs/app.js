@@ -44,6 +44,26 @@ function saveRunLog() {
 
 // ── Worker sync ─────────────────────────────────────────────────────────────
 
+let gymSyncTimer = null;
+let weightSyncTimer = null;
+
+function scheduleGymSync(dateStr) {
+  if (gymSyncTimer) clearTimeout(gymSyncTimer);
+  gymSyncTimer = setTimeout(() => {
+    const session = gymLog.find(s => s.date === dateStr);
+    if (session) workerPost('/gym-log', { date: session.date, session_type: 'strength', exercises: session.exercises });
+    gymSyncTimer = null;
+  }, 30 * 60 * 1000);
+}
+
+function scheduleWeightSync(date, weight_kg) {
+  if (weightSyncTimer) clearTimeout(weightSyncTimer);
+  weightSyncTimer = setTimeout(() => {
+    workerPost('/weight', { date, weight_kg });
+    weightSyncTimer = null;
+  }, 3 * 60 * 1000);
+}
+
 function getWorkerConfig() {
   try { return JSON.parse(localStorage.getItem('workerConfig')) || {}; }
   catch { return {}; }
@@ -695,9 +715,7 @@ function saveExerciseLog(dateStr, exName, rawWeight, note) {
   }
   saveGymLog();
   const updatedSession = gymLog.find(s => s.date === dateStr);
-  if (updatedSession) {
-    workerPost('/gym-log', { date: updatedSession.date, session_type: 'strength', exercises: updatedSession.exercises });
-  }
+  if (updatedSession) scheduleGymSync(dateStr);
   closeLogModal();
   openModal(dateStr);
   renderGym();
@@ -828,7 +846,7 @@ function saveBodyWeight() {
   weightLog.push({ date: t, weight: val });
   weightLog.sort((a, b) => a.date.localeCompare(b.date));
   saveWeightLog();
-  workerPost('/weight', { date: t, weight_kg: val });
+  scheduleWeightSync(t, val);
   renderGym();
 }
 
