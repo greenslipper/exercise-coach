@@ -38,9 +38,9 @@ Two sessions per week, Tuesday and Thursday, after the easy run. Same program bo
 | Leg extension (single leg) | 3 × 8 | 30 kg | One leg at a time. Confirmed x8 per set (Yasmin's prescription). |
 | Bulgarian split squat (Smith) | 3 × 8 each | 30 kg | Rear foot on box; knee tracks toes. |
 | Pogo jumps (two-footed) | 3 × 20 | — | Minimal ground contact; light and springy |
-| Pogo hops (single-leg) | 3 × 15 | — | Building load. Stop if calf pain increases. Confirm further progression with Yasmin (31 Mar). |
+| Pogo hops (single-leg) | 3 × 15 | — | Building load. Stop if calf pain increases. |
 
-Note: Yasmin prescribed pogo hops "on alternate days" — clarify with her whether these should also be done as a standalone drill outside gym sessions.
+**Progressive loading rule (Yasmin, 31 Mar 2026):** For calf exercises (calf press + single-leg seated calf raise), increase weight by 1.25–2.5 kg every session you complete all 3 × 8. Failing to reach 8 reps is fine — 4–6 per set is acceptable. If a set drops below 6 reps, reduce weight for the next set in that session. Weights should creep up each session. Current baseline: calf press 25 kg → target 27.5 kg from Apr 2; single-leg calf raise last logged 65 kg → target 67.5 kg from Apr 2.
 
 Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf raise → 56 kg, hamstring curl → 32 kg). Week 5 Thu full session. Week 6 Mon light. Race week: Tuesday only, 1 set each.
 
@@ -53,8 +53,9 @@ Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf 
 | Easy | 5:00–5:15/km | Conversational; HR < 145 |
 | Long easy | 4:25/km | Comfortable aerobic; HR ~145–155 |
 | Tempo | 3:40–3:50/km | "Comfortably hard"; HR ~155–165 |
-| VO2max reps (1km) | 3:14–3:18/km | Hard; HR 170–180 |
-| Speed reps (400m) | 2:53/km | Near-max; full walk recovery |
+| VO2max reps (1km) | 3:14–3:18/km | Hard; HR 170–180 — benchmark only, not in current plan |
+| Interval reps — current | 3:48–3:55/km | Reduced per Yasmin (31 Mar) — building back from 25–30s/km below benchmark |
+| Speed reps (400m) | 2:53/km | Near-max; full walk recovery — not in current plan |
 | Short reps / strides | 3:10–3:20/km | Sharp; 20–90 sec only |
 | Race | 3:24/km | All-out — Battersea, Apr 25 |
 
@@ -122,11 +123,11 @@ Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf 
 |-----|------|---------|--------|
 | Mon | Mar 30 | Yasmin's program + chest/back | Ankle & Hips — skip all calf work (no calf press, no single-leg calf raise, no pogo jumps/hops). Do: leg press, hip abduction, hamstring curl, leg extension, split squats. Add chest & back: bench press 3×10, lat pulldown 3×10, seated cable row 3×10. |
 | Tue | Mar 31 | Physio — Yasmin 08:30 | Tell her: bilateral tightness, pattern of calves tightening after intervals (two weeks running), worse after tennis Sat. Ask whether to continue Week 4 quality or hold. |
-| Wed | Apr 1 | Speed reps — DEFERRED | Holding 10×400m pending Yasmin's clearance Tuesday. Will reschedule. |
-| Thu | Apr 2 | Yasmin's program | Full Ankle & Hips program. No run. |
-| Fri | Apr 3 | Easy + Strides | 6 km easy + 6 × 20s strides @ 3:24/km. |
-| Sat | Apr 4 | Rest | — |
-| Sun | Apr 5 | Structured long run | 5 km @ 4:25/km + 3 km @ 3:24/km (race pace) + 5 km @ 4:25/km. ~13 km. |
+| Wed | Apr 1 | ~~Speed reps~~ → Aerobic run ✓ | Speed work cancelled per Yasmin. Did 10.65 km @ 4:36/km instead. |
+| Thu | Apr 2 | Yasmin's program | Full Ankle & Hips including calf work — Yasmin cleared. Progressive weights: calf press → 27.5 kg, single-leg calf raise → 67.5 kg. No run. |
+| Fri | Apr 3 | ~~Easy + Strides~~ → Kiting | Netherlands kiting trip starts. Session missed. |
+| Sat | Apr 4 | Kiting / Rest | — |
+| Sun | Apr 5 | Structured long run — at risk | Likely missed (kiting). If back: 5 km @ 4:25/km + 3 km @ 3:24/km + 5 km @ 4:25/km. |
 
 **Week target: ~29 km**
 
@@ -140,11 +141,11 @@ Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf 
 |-----|------|---------|--------|
 | Mon | Apr 6 | Yasmin's program (light, evening) | Ankle & Hips: 2 sets each, weight -20%. No run. |
 | Tue | Apr 7 | Rest | — |
-| Wed | Apr 8 | Sharpener | 2 km warmup + 4 × 800 m @ 3:22–3:28/km (2 min jog) + 2 km cooldown. ~8 km. Legs should feel fast. |
+| Wed | Apr 8 | Sharpener | 2 km warmup + 4 × 800 m @ 3:48–3:55/km (2 min jog) + 2 km cooldown. ~8 km. Reduced pace per Yasmin — 25–30s/km below benchmark. Building back up. |
 | Thu | Apr 9 | Yasmin's program | Full Ankle & Hips program. No run. |
 | Fri | Apr 10 | Easy + Strides | 6 km easy + 4 × 20s strides. |
 | Sat | Apr 11 | Rest | — |
-| Sun | Apr 12 | Long run | 14 km @ 4:25/km. Sustained aerobic effort — biggest run of the plan. No walking, no surges. |
+| Sun | Apr 12 | Long run | 14 km @ 4:25/km with 4 × 200 m @ 3:24/km inserted every 3 km. Yasmin: short faster bursts in long runs are fine, keep them brief. |
 
 **Week target: ~27 km**
 
@@ -158,7 +159,7 @@ Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf 
 |-----|------|---------|--------|
 | Mon | Apr 13 | Yasmin's program (light, evening) | Ankle & Hips: 2 sets each, weight -20%. No run. |
 | Tue | Apr 14 | Easy + Strides | 5 km easy + 4 × 20s strides. |
-| Wed | Apr 15 | Tune-up reps | 2 km warmup + 3 × 1 km @ 3:20–3:24/km (2 min jog recovery) + 2 km cooldown. ~7 km. Race pace feel — controlled and sharp, not all-out. |
+| Wed | Apr 15 | Tune-up reps | 2 km warmup + 3 × 1 km @ 3:45–3:50/km (2 min jog recovery) + 2 km cooldown. ~7 km. Reduced pace per Yasmin — tempo feel, controlled. |
 | Thu | Apr 16 | Rest | — |
 | Fri | Apr 17 | Rest | Optional 15 min walk/jog. |
 | Sat | Apr 18 | Easy + strides | 3 km easy + 4 × 20s strides @ race pace. |
@@ -203,4 +204,5 @@ Taper: Week 5 Mon light — 2 sets each, weight -20% (leg press → 80 kg, calf 
 - **2026-03-16:** Hamstring curl updated 30 kg → 40 kg (30 kg felt easy on Mar 12; jumped to 40 kg today). Taper weight adjusts to ~32 kg (-20%). Single-leg calf raise confirmed 65 kg (felt easy — monitor for progression). Pogo jumps/hops now completing full sessions and feeling easy. Cable hip abduction still hard at 5 kg — hold weight. Bulgarian split squat completed at 30 kg with no issue noted (improved from 6 reps on Mar 12). Weight: 77.5 kg.
 - **2026-03-20:** Leg press → 100 kg (90 kg felt easy). Single-leg calf raise → 70 kg × 8 (65 kg × 12 getting very hard on last set). Leg extension corrected to 3 × 8 (Yasmin's prescription). Pogo jumps → 3 × 20; hops → 3 × 15 (both feeling easy). Calf press holds at 25 kg. Taper weights updated accordingly. Check plyos with Yasmin on 31 March. Weight: 77.8 kg.
 - **2026-03-23:** Week 3 intervals moved Wed → Thu (Tue tennis/cycling). Thu gym dropped — one gym session this week only. Mon gym at reduced volume (2 sets) due to soreness after Sun 22 tennis + 13 km day.
+- **2026-04-02:** Yasmin (31 Mar) — two key changes: (1) Speed work reduced 25–30s/km below benchmark (4×1000m @ 3:14–3:18 was the reference); rebuild gradually, short faster bursts in long runs are fine, intervals build slowly. (2) Calf muscle loading to be more aggressive — increase weight by 1.25–2.5 kg whenever 3×8 is completed; 4–6 reps per set is acceptable; drop weight mid-session if below 6. Wed Apr 1 speed reps cancelled — replaced with 10.65 km aerobic run. Kiting Fri Apr 3 onwards — Fri easy+strides and Sun structured long run likely missed.
 - **2026-03-28:** Bilateral calf tightness returning. Left calf tight before Sat tennis, worse after; right also flaring. Pattern: calves tight after intervals two weeks running. Sun 29 long run → easy 5km or rest. Mon 30 gym → no calf work. Wed Apr 1 speed reps deferred pending Yasmin assessment Tue 31 Mar 08:30. Tell Yasmin the full pattern.

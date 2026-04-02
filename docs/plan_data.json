@@ -577,9 +577,17 @@
         },
         {
           "date": "2026-04-01",
-          "type": "rest",
-          "name": "Speed Reps \u2014 Deferred",
-          "description": "Speed reps deferred pending Yasmin assessment (Tue 31 Mar). Bilateral calf tightness two weeks running. Will reschedule once cleared."
+          "type": "easy",
+          "name": "Aerobic Run",
+          "description": "Speed reps cancelled per Yasmin \u2014 replaced with 10.65 km aerobic run @ 4:36/km. \u2713 Done.",
+          "distance_km": 10.65,
+          "exercises": [
+            {
+              "name": "Aerobic Run",
+              "detail": "10.65 km @ 4:36/km",
+              "how_to": "Steady aerobic effort. Speed work stood down per Yasmin \u2014 building interval pace back gradually from a lower base."
+            }
+          ]
         },
         {
           "date": "2026-04-02",
@@ -594,13 +602,13 @@
             },
             {
               "name": "Calf Press (Gastrocnemius)",
-              "detail": "3 \u00d7 8 @ 25 kg",
-              "how_to": "Rise to toes; controlled descent."
+              "detail": "3 \u00d7 8 @ 27.5 kg",
+              "how_to": "Rise to toes; controlled descent. Progressive load per Yasmin \u2014 increase 1.25\u20132.5 kg whenever you complete 3\u00d78. Aim for 4\u20136 reps minimum; drop weight next set if below 6."
             },
             {
               "name": "Single-Leg Seated Calf Raise",
-              "detail": "3 \u00d7 8 @ 70 kg",
-              "how_to": "Heavy load \u2014 each rep should be demanding. Both legs."
+              "detail": "3 \u00d7 8 @ 67.5 kg",
+              "how_to": "Each rep should be demanding. Progressive load per Yasmin. Last logged 65 kg \u2014 up 2.5 kg today. Adjust if needed."
             },
             {
               "name": "Cable Hip Abduction",
@@ -636,9 +644,9 @@
         },
         {
           "date": "2026-04-03",
-          "type": "strides",
-          "name": "Easy + Strides",
-          "description": "6 km easy with 6 \u00d7 20s strides.",
+          "type": "rest",
+          "name": "Kiting \u2014 Netherlands",
+          "description": "Kiting trip starts. Easy + strides session missed.",
           "distance_km": 6.5,
           "exercises": [
             {
@@ -663,7 +671,7 @@
           "date": "2026-04-05",
           "type": "long",
           "name": "Structured Long Run",
-          "description": "5 km @ 4:25/km + 3 km @ 3:24/km (race pace) + 5 km @ 4:25/km. ~13 km. Race pace section extends to 3 km.",
+          "description": "Likely missed \u2014 kiting trip. If back: 5 km @ 4:25/km + 3 km @ 3:24/km + 5 km @ 4:25/km. ~13 km.",
           "distance_km": 13,
           "exercises": [
             {
@@ -752,7 +760,7 @@
           "date": "2026-04-08",
           "type": "intervals",
           "name": "Sharpener \u2014 4 \u00d7 800 m",
-          "description": "2 km warmup + 4 \u00d7 800 m @ 3:22\u20133:28/km (2 min jog) + 2 km cooldown. ~8 km. Legs should feel fast.",
+          "description": "2 km warmup + 4 \u00d7 800 m @ 3:48\u20133:55/km (2 min jog) + 2 km cooldown. ~8 km. Reduced pace per Yasmin \u2014 25\u201330s/km below benchmark, building back gradually.",
           "distance_km": 8,
           "exercises": [
             {
@@ -762,8 +770,8 @@
             },
             {
               "name": "4 \u00d7 800 m",
-              "detail": "@ 3:22\u20133:28/km",
-              "how_to": "Sharpener pace \u2014 slightly faster than the build phase. 2 min jog recovery. Legs should feel quick."
+              "detail": "@ 3:48\u20133:55/km",
+              "how_to": "Comfortably hard \u2014 tempo feel, not a maximal effort. 2 min jog recovery. This is the starting point; pace builds back up over coming weeks."
             },
             {
               "name": "Cooldown",
@@ -854,13 +862,18 @@
           "date": "2026-04-12",
           "type": "long",
           "name": "Long Run",
-          "description": "14 km @ 4:25/km. Sustained aerobic effort \u2014 biggest run of the plan. No walking, no surges.",
+          "description": "14 km @ 4:25/km with 4 \u00d7 200 m @ 3:24/km inserted every 3 km. Yasmin: short faster bursts in long runs are fine.",
           "distance_km": 14,
           "exercises": [
             {
               "name": "Long Run",
               "detail": "14 km @ 4:25/km",
-              "how_to": "Sustained aerobic effort throughout. HR ~145\u2013155. No walking, no surges. This builds the aerobic engine that makes the last km of the race possible. Just run."
+              "how_to": "Sustained aerobic effort. HR ~145\u2013155."
+            },
+            {
+              "name": "4 \u00d7 200 m strides",
+              "detail": "@ 3:24/km, every ~3 km",
+              "how_to": "After km 3, 6, 9 and 12 \u2014 accelerate to race pace for 200 m then ease back to aerobic. Brief and sharp. Yasmin cleared short faster work within long runs."
             }
           ]
         }
@@ -946,7 +959,7 @@
           "date": "2026-04-15",
           "type": "intervals",
           "name": "Tune-Up Reps",
-          "description": "2 km warmup + 3 \u00d7 1 km @ 3:20\u20133:24/km (2 min jog recovery) + 2 km cooldown. ~7 km. Keeps legs sharp mid-taper \u2014 controlled, not all-out.",
+          "description": "2 km warmup + 3 \u00d7 1 km @ 3:45\u20133:50/km (2 min jog recovery) + 2 km cooldown. ~7 km. Reduced pace per Yasmin \u2014 tempo feel, controlled.",
           "distance_km": 7,
           "exercises": [
             {
@@ -955,9 +968,9 @@
               "how_to": "Easy jog."
             },
             {
-              "name": "3 \u00d7 1 km @ 3:20\u20133:24/km",
-              "detail": "2 min jog recovery between",
-              "how_to": "Race pace feel \u2014 not all-out. These should feel controlled and sharp. Just a tune-up. If legs feel flat, that's normal taper tiredness \u2014 they'll be sharp on race day."
+              "name": "3 \u00d7 1 km",
+              "detail": "@ 3:45\u20133:50/km, 2 min jog recovery",
+              "how_to": "Comfortably hard \u2014 tempo effort, not race pace. The point is to keep legs sharp without calf stress. Controlled throughout."
             },
             {
               "name": "Cooldown",
