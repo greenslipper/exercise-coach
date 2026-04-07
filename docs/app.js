@@ -794,8 +794,9 @@ function buildWeightChart(log) {
 }
 
 function renderWeightCard() {
-  const latest = weightLog.length ? weightLog[weightLog.length - 1] : null;
-  const first = weightLog.length ? weightLog[0] : null;
+  const sorted = [...weightLog].sort((a, b) => a.date < b.date ? -1 : 1);
+  const latest = sorted.length ? sorted[sorted.length - 1] : null;
+  const first = sorted.length ? sorted[0] : null;
 
   let trendHtml = '';
   if (latest && first && weightLog.length > 1) {
