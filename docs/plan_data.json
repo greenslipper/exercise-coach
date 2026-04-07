@@ -8,29 +8,29 @@
       "days": [
         {
           "date": "2026-04-06",
-          "type": "strength",
-          "name": "Yasmin's Program",
-          "description": "Full Ankle & Hips program. No run.",
+          "type": "easy",
+          "name": "Easy Run ✓",
+          "description": "6 km @ 4:42/km. Done — first run back after kiting.",
+          "distance_km": 6,
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25–2.5 kg when you complete all 3 × 8. Baseline ~27.5 kg from Apr 2."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "On leg extension machine. Same progressive rule — increase 1.25–2.5 kg when 3 × 8 completed. Baseline ~67.5 kg from Apr 2."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Lift outer leg to 45°. Controlled both ways."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release. Hold the contraction for 1 second at peak."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "One leg at a time. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes. Controlled descent."},
-            {"name": "Pogo jumps (two-footed)", "detail": "3 × 20", "how_to": "Minimal ground contact. Stay light and springy — ankle stiffness, not jump height."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop immediately if calf pain increases."}
+            {"name": "Easy run", "detail": "6 km @ 4:42/km", "how_to": "Completed. Splits 5:01 → 4:34 — started easy, loosened up nicely."}
           ]
         },
         {
           "date": "2026-04-07",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km. Conversational. First run back after the kiting break.",
-          "distance_km": 6,
+          "type": "strength",
+          "name": "Yasmin's Program",
+          "description": "Full Ankle & Hips program. No run. Calf press → 30 kg, calf raise → 72.5 kg, leg press → 100 kg.",
           "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:45/km", "how_to": "Fully conversational — HR < 145. If you can't talk comfortably, slow down. Notice how the calves feel; this is the diagnostic run."}
+            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Back to 100 kg — felt easy at 90 on Apr 2."},
+            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ 30 kg", "how_to": "Step up from 27.5 kg — you noted it felt easy and you were ready. Increase again next session if all 3 × 8 completed."},
+            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ 72.5 kg", "how_to": "Up from 70 kg. Yasmin's rule is +1.25–2.5 kg per session (not +5). 72.5 kg today, 75 kg next if completed."},
+            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 7.5 kg", "how_to": "Holding at 7.5 kg from Apr 2."},
+            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release. 1-second hold at peak."},
+            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "One leg at a time — not double leg."},
+            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes. Controlled descent."},
+            {"name": "Pogo jumps (two-footed)", "detail": "3 × 20", "how_to": "Minimal ground contact. Stay light and springy."},
+            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop immediately if calf pain increases."}
           ]
         },
         {

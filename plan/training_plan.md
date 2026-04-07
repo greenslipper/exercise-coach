@@ -74,8 +74,8 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 6 | Yasmin's program | Full Ankle & Hips program. No run. |
-| Tue | Apr 7 | Easy run | 6 km @ 4:45/km. Conversational throughout. |
+| Mon | Apr 6 | Easy run ✓ | 6 km @ 4:42/km. Done. |
+| Tue | Apr 7 | Yasmin's program | Full Ankle & Hips program. No run. |
 | Wed | Apr 8 | Rest | — |
 | Thu | Apr 9 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
 | Fri | Apr 10 | Rest | — |
