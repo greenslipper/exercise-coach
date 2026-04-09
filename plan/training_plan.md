@@ -42,9 +42,9 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 | Single-leg seated calf raise | 3 × 8 | Progressive | On leg extension machine. Baseline ~67.5 kg from Apr 2. |
 | Cable hip abduction | 3 × 8 each | 5 kg | Ankle cuff, lower cable; outer leg to 45° |
 | Seated hamstring curl | 3 × 8 + 1s hold | 40 kg | Slow controlled release |
-| Leg extension (single leg) | 3 × 8 | 30 kg | One leg at a time |
+| Leg extension (single leg) | 3 × 8 | 30 kg | Single leg only — not double |
 | Bulgarian split squat (Smith) | 3 × 8 each | 30 kg | Rear foot on box; knee tracks toes |
-| Pogo jumps (two-footed) | 3 × 20 | — | Minimal ground contact; light and springy |
+| Single-leg calf hops | 3 × 20 each | — | Front foot on bench; minimal ground contact |
 | Pogo hops (single-leg) | 3 × 15 | — | Stop if calf pain increases |
 
 **Calf progressive loading rule (Yasmin, 31 Mar):** Increase weight by 1.25–2.5 kg every session you complete all 3 × 8. Failing to reach 8 reps is fine — 4–6 per set is acceptable. If a set drops below 6 reps, reduce weight for the next set in that session.
@@ -94,10 +94,10 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 |-----|------|---------|--------|
 | Mon | Apr 13 | Yasmin's program | Full Ankle & Hips program. No run. |
 | Tue | Apr 14 | Easy run | 6 km @ 4:45/km. |
-| Wed | Apr 15 | Rest | — |
+| Wed | Apr 15 | Easy run | 6 km @ 4:45/km. |
 | Thu | Apr 16 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
 | Fri | Apr 17 | Rest | — |
-| Sat | Apr 18 | Easy run | 6 km @ 4:45/km. |
+| Sat | Apr 18 | Rest | — |
 | Sun | Apr 19 | Long run | 12 km @ 4:45/km + 6 × 20s strides @ 3:24/km (every 2 km). |
 
 **Week target: ~24 km**
@@ -189,4 +189,5 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 - **2026-03-09:** Race moved to 25 April. Bilateral calf tightness — Achilles risk. Yasmin Palfrey (Complete Physio) assigned Ankle & Hips program replacing all existing strength sessions.
 - **2026-03-28:** Bilateral calf tightness returning. Left calf tight before Sat tennis, worse after; right also flaring.
 - **2026-03-31:** Yasmin guidance: speed work reduced 25–30s/km below benchmark; rebuild gradually. Calf progressive loading: +1.25–2.5 kg per session when 3 × 8 completed.
+- **2026-04-09:** Leg extension confirmed single leg only (30 kg). Pogo jumps replaced with single-leg calf hops (front foot on bench, 3 × 20 each). Week 2 Sat easy run moved to Wed for better pre-long-run spacing.
 - **2026-04-07:** Race reset to 16 May 2026. Apr 25 plan retired — calf recovery + kiting Apr 3–6 disrupted final prep. New 6-week plan from Apr 6. Base pace 4:45/km per Yasmin. Intervals from Week 3 at 3:45/km stepping to 3:35/km. Long runs 10→12→8→13→14 km. Gym Mon+Thu throughout.
