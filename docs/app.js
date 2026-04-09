@@ -46,23 +46,42 @@ function saveRunLog() {
 
 let gymSyncTimer = null;
 let weightSyncTimer = null;
+let pendingGymDate = null;
+let pendingWeightSync = null;
 
 function scheduleGymSync(dateStr) {
+  pendingGymDate = dateStr;
   if (gymSyncTimer) clearTimeout(gymSyncTimer);
-  gymSyncTimer = setTimeout(() => {
-    const session = gymLog.find(s => s.date === dateStr);
-    if (session) workerPost('/gym-log', { date: session.date, session_type: 'strength', exercises: session.exercises });
-    gymSyncTimer = null;
-  }, 30 * 60 * 1000);
+  gymSyncTimer = setTimeout(flushGymSync, 30 * 1000);
+}
+
+function flushGymSync() {
+  if (!pendingGymDate) return;
+  const session = gymLog.find(s => s.date === pendingGymDate);
+  if (session) workerPost('/gym-log', { date: session.date, session_type: 'strength', exercises: session.exercises });
+  pendingGymDate = null;
+  gymSyncTimer = null;
 }
 
 function scheduleWeightSync(date, weight_kg) {
+  pendingWeightSync = { date, weight_kg };
   if (weightSyncTimer) clearTimeout(weightSyncTimer);
-  weightSyncTimer = setTimeout(() => {
-    workerPost('/weight', { date, weight_kg });
-    weightSyncTimer = null;
-  }, 3 * 60 * 1000);
+  weightSyncTimer = setTimeout(flushWeightSync, 3 * 60 * 1000);
 }
+
+function flushWeightSync() {
+  if (!pendingWeightSync) return;
+  workerPost('/weight', pendingWeightSync);
+  pendingWeightSync = null;
+  weightSyncTimer = null;
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') {
+    if (gymSyncTimer) { clearTimeout(gymSyncTimer); flushGymSync(); }
+    if (weightSyncTimer) { clearTimeout(weightSyncTimer); flushWeightSync(); }
+  }
+});
 
 function getWorkerConfig() {
   try { return JSON.parse(localStorage.getItem('workerConfig')) || {}; }
@@ -100,7 +119,7 @@ async function loadFromWorker() {
     if (gymRes.ok) {
       const logs = await gymRes.json();
       if (logs.length > 0) {
-        gymLog = logs.map(s => {
+        const serverLogs = logs.map(s => {
           let name = s.session_type || 'Strength Session';
           for (const week of (planData ? planData.weeks || [] : [])) {
             const day = (week.days || []).find(d => d.date === s.date);
@@ -108,6 +127,12 @@ async function loadFromWorker() {
           }
           return { date: s.date, name, exercises: s.exercises || [] };
         });
+        // Preserve local-only sessions not yet synced to worker
+        for (const local of gymLog) {
+          if (!serverLogs.find(s => s.date === local.date)) serverLogs.push(local);
+        }
+        serverLogs.sort((a, b) => b.date.localeCompare(a.date));
+        gymLog = serverLogs;
         saveGymLog();
       }
     }
@@ -632,28 +657,42 @@ function renderPlan() {
 
 // ── Gym logging ─────────────────────────────────────────────────────────────
 
-// Prescribed weights from Yasmin's plan — used as default when no prior log exists
+// Prescribed weights — fallback when plan detail has no target weight
 const PRESCRIBED_WEIGHTS = {
-  'Leg Press': 90,
-  'Calf Press (Gastrocnemius)': 25,
-  'Single-Leg Seated Calf Raise': 65,
+  'Leg Press': 100,
+  'Calf Press (Gastrocnemius)': 30,
+  'Single-Leg Seated Calf Raise': 70,
   'Cable Hip Abduction': 5,
-  'Seated Hamstring Curl': 30,
+  'Seated Hamstring Curl': 40,
   'Leg Extension (Single Leg)': 30,
   'Bulgarian Split Squat (Smith)': 30,
-  'Pogo Jumps': null,
-  'Pogo Hops (Single-Leg)': null,
 };
 
 function openExerciseLog(dateStr, exName, target) {
+  const isBodyweight = !target.includes('kg');
   const session = gymLog.find(s => s.date === dateStr);
   const existing = session ? session.exercises.find(e => e.name === exName) : null;
+
+  // Bodyweight/plyo: one tap marks done, second tap opens modal to add note or unlog
+  if (isBodyweight && !existing) {
+    saveExerciseLog(dateStr, exName, '', 'Done');
+    return;
+  }
+
   const last = getLastLogged(exName);
   const prescribed = PRESCRIBED_WEIGHTS[exName];
+  const planWeightMatch = target.match(/@\s*([\d.]+)\s*kg/i);
+  const planWeight = planWeightMatch ? parseFloat(planWeightMatch[1]) : null;
 
   const defaultWeight = existing && existing.weight != null ? existing.weight
+    : planWeight != null ? planWeight
+    : prescribed != null ? prescribed
     : last ? last.weight
-    : (prescribed != null ? prescribed : '');
+    : '';
+
+  // Show/hide weight row for bodyweight exercises
+  const weightField = document.getElementById('log-weight-field').closest('.log-field');
+  weightField.style.display = isBodyweight ? 'none' : '';
 
   document.getElementById('log-modal-date').textContent = target;
   document.getElementById('log-modal-title').textContent = exName;
@@ -677,7 +716,10 @@ function openExerciseLog(dateStr, exName, target) {
   const logOverlay = document.getElementById('log-overlay');
   logOverlay.classList.add('open');
   logOverlay.onclick = (e) => { if (e.target === logOverlay) closeLogModal(); };
-  setTimeout(() => document.getElementById('log-weight-field').focus(), 150);
+  setTimeout(() => {
+    if (isBodyweight) document.getElementById('log-notes-field').focus();
+    else document.getElementById('log-weight-field').focus();
+  }, 150);
 }
 
 function setQuickNote(btn, text) {
@@ -695,6 +737,23 @@ function setQuickNote(btn, text) {
 function saveExerciseLog(dateStr, exName, rawWeight, note) {
   const value = rawWeight !== '' ? parseFloat(rawWeight) : null;
   let session = gymLog.find(s => s.date === dateStr);
+
+  // Empty weight + empty note: remove the exercise entry (unlog)
+  if (value == null && !note) {
+    if (session) {
+      const existing = session.exercises.find(e => e.name === exName);
+      if (existing && existing.weight == null) {
+        session.exercises = session.exercises.filter(e => e.name !== exName);
+        saveGymLog();
+        if (session.exercises.length > 0) scheduleGymSync(dateStr);
+      }
+    }
+    closeLogModal();
+    openModal(dateStr);
+    renderGym();
+    return;
+  }
+
   if (!session) {
     let workoutName = 'Strength Session';
     for (const week of planData.weeks) {
