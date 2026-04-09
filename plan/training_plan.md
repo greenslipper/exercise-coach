@@ -92,7 +92,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 13 | Yasmin's program (morning) + Tennis (evening) | Gym in the morning — done before tennis. Watch calves: if any tightness after gym, shorten or skip tennis. No running today. |
+| Mon | Apr 13 | Tennis (17:30) → Gym after | Tennis first, gym straight after. Calves will be warm. Watch load — if calves tighten during tennis, cut the gym short. No running today. |
 | Tue | Apr 14 | Physio 08:30 + Easy run | Physio first. Easy 6 km @ 4:45/km after. Update Yasmin on calf response to training. |
 | Wed | Apr 15 | Rest / Active | Smart meter 08:00–12:00. Sam evening (tennis or cycling) — counts as cross-training. No run. |
 | Thu | Apr 16 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |

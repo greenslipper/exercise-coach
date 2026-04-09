@@ -92,8 +92,8 @@
         {
           "date": "2026-04-13",
           "type": "strength",
-          "name": "Gym (morning) + Tennis (evening)",
-          "description": "Gym in the morning before tennis. Watch calves — if any tightness after gym, shorten or skip tennis. No run.",
+          "name": "Tennis → Gym",
+          "description": "Tennis 17:30, gym straight after. Calves warm from tennis. Watch load — if calves tighten during tennis, cut gym short. No run.",
           "exercises": [
             {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
             {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 was completed."},
