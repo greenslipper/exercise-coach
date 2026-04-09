@@ -13,7 +13,11 @@
           "description": "6 km @ 4:42/km. Done — first run back after kiting.",
           "distance_km": 6,
           "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:42/km", "how_to": "Completed. Splits 5:01 → 4:34 — started easy, loosened up nicely."}
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:42/km",
+              "how_to": "Completed. Splits 5:01 → 4:34 — started easy, loosened up nicely."
+            }
           ]
         },
         {
@@ -22,15 +26,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. No run. Calf press → 30 kg, calf raise → 72.5 kg, leg press → 100 kg.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Back to 100 kg — felt easy at 90 on Apr 2."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ 30 kg", "how_to": "Step up from 27.5 kg — you noted it felt easy and you were ready. Increase again next session if all 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ 72.5 kg", "how_to": "Up from 70 kg. Yasmin's rule is +1.25–2.5 kg per session (not +5). 72.5 kg today, 75 kg next if completed."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 7.5 kg", "how_to": "Holding at 7.5 kg from Apr 2."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release. 1-second hold at peak."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "One leg at a time — not double leg."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes. Controlled descent."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop immediately if calf pain increases."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Back to 100 kg — felt easy at 90 on Apr 2."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ 30 kg",
+              "how_to": "Step up from 27.5 kg — you noted it felt easy and you were ready. Increase again next session if all 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ 72.5 kg",
+              "how_to": "Up from 70 kg. Yasmin's rule is +1.25–2.5 kg per session (not +5). 72.5 kg today, 75 kg next if completed."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 7.5 kg",
+              "how_to": "Holding at 7.5 kg from Apr 2."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release. 1-second hold at peak."
+            },
+            {
+              "name": "Leg extension (single leg)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "One leg at a time — not double leg."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes. Controlled descent."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop immediately if calf pain increases."
+            }
           ]
         },
         {
@@ -45,15 +85,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. Calf press → 32.5 kg (if Tue 3×8 complete) else 30 kg. Calf raise → 75 kg.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ 32.5 kg", "how_to": "32.5 kg if you completed all 3 × 8 on Tuesday (felt hard but complete). Drop to 30 kg if sets were incomplete."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ 75 kg", "how_to": "Up from 72.5 kg — felt easy on Tuesday. Increase to 77.5 kg next session if 3 × 8 completed today."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release. 1-second hold at peak."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ 32.5 kg",
+              "how_to": "32.5 kg if you completed all 3 × 8 on Tuesday (felt hard but complete). Drop to 30 kg if sets were incomplete."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ 75 kg",
+              "how_to": "Up from 72.5 kg — felt easy on Tuesday. Increase to 77.5 kg next session if 3 × 8 completed today."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release. 1-second hold at peak."
+            },
+            {
+              "name": "Leg extension (single leg)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Single leg only — full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -69,7 +145,11 @@
           "description": "6 km @ 4:45/km.",
           "distance_km": 6,
           "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:45/km", "how_to": "Fully conversational. HR < 145."}
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Fully conversational. HR < 145."
+            }
           ]
         },
         {
@@ -79,8 +159,16 @@
           "description": "10 km @ 4:45/km with 4 × 20s strides @ 3:24/km, one every 2.5 km.",
           "distance_km": 10,
           "exercises": [
-            {"name": "Long run", "detail": "10 km @ 4:45/km", "how_to": "Comfortable aerobic pace throughout. HR 140–150."},
-            {"name": "Strides", "detail": "4 × 20s @ 3:24/km", "how_to": "Insert at km 2.5, 5, 7.5, and 10. Short and sharp — not all-out. Jog gently back to 4:45 before the next one."}
+            {
+              "name": "Long run",
+              "detail": "10 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace throughout. HR 140–150."
+            },
+            {
+              "name": "Strides",
+              "detail": "4 × 20s @ 3:24/km",
+              "how_to": "Insert at km 2.5, 5, 7.5, and 10. Short and sharp — not all-out. Jog gently back to 4:45 before the next one."
+            }
           ]
         }
       ]
@@ -95,15 +183,51 @@
           "name": "Tennis → Gym",
           "description": "Tennis 17:30, gym straight after. Calves warm from tennis. Watch load — if calves tighten during tennis, cut gym short. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 was completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 was completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (double leg)",
+              "detail": "3 × 8 @ 60 kg",
+              "how_to": "Both legs — equivalent load to single-leg sessions. Full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -113,7 +237,11 @@
           "description": "6 km @ 4:45/km.",
           "distance_km": 6,
           "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:45/km", "how_to": "Conversational. HR < 145."}
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. HR < 145."
+            }
           ]
         },
         {
@@ -128,15 +256,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. Progressive calf weights. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (single leg)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Single leg only — full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -158,8 +322,16 @@
           "description": "12 km @ 4:45/km with 6 × 20s strides @ 3:24/km, one every 2 km.",
           "distance_km": 12,
           "exercises": [
-            {"name": "Long run", "detail": "12 km @ 4:45/km", "how_to": "Comfortable aerobic pace. HR 140–150."},
-            {"name": "Strides", "detail": "6 × 20s @ 3:24/km", "how_to": "Insert at km 2, 4, 6, 8, 10, 12. Sharp and controlled — not sprinting. Recover fully to 4:45 between each."}
+            {
+              "name": "Long run",
+              "detail": "12 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace. HR 140–150."
+            },
+            {
+              "name": "Strides",
+              "detail": "6 × 20s @ 3:24/km",
+              "how_to": "Insert at km 2, 4, 6, 8, 10, 12. Sharp and controlled — not sprinting. Recover fully to 4:45 between each."
+            }
           ]
         }
       ]
@@ -174,15 +346,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (double leg)",
+              "detail": "3 × 8 @ 60 kg",
+              "how_to": "Both legs — equivalent load to single-leg sessions. Full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -192,7 +400,11 @@
           "description": "6 km @ 4:45/km. Easy — preserving freshness for Wednesday intervals.",
           "distance_km": 6,
           "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:45/km", "how_to": "Conversational. Save the legs for tomorrow's intervals."}
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. Save the legs for tomorrow's intervals."
+            }
           ]
         },
         {
@@ -202,9 +414,21 @@
           "description": "2 km warmup + 4 × 1000 m @ 3:45/km (2 min jog recovery) + 2 km cooldown. ~9 km.",
           "distance_km": 9,
           "exercises": [
-            {"name": "Warmup", "detail": "2 km @ 4:45/km", "how_to": "Easy jogging. Don't rush — calves need to be fully warm before the first rep."},
-            {"name": "Intervals", "detail": "4 × 1000 m @ 3:45/km", "how_to": "2 min jog recovery between each rep. Consistent splits matter more than hitting pace exactly on rep 1. Stop if calf tightness builds during the session."},
-            {"name": "Cooldown", "detail": "2 km @ 4:45/km", "how_to": "Easy jog. Let heart rate come down gradually."}
+            {
+              "name": "Warmup",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jogging. Don't rush — calves need to be fully warm before the first rep."
+            },
+            {
+              "name": "Intervals",
+              "detail": "4 × 1000 m @ 3:45/km",
+              "how_to": "2 min jog recovery between each rep. Consistent splits matter more than hitting pace exactly on rep 1. Stop if calf tightness builds during the session."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jog. Let heart rate come down gradually."
+            }
           ]
         },
         {
@@ -213,15 +437,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. Progressive calf weights. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (single leg)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Single leg only — full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -243,8 +503,16 @@
           "description": "8 km @ 4:45/km + 2 × 20s strides @ 3:24/km. Run early morning before heading out to support London Marathon.",
           "distance_km": 8,
           "exercises": [
-            {"name": "Long run", "detail": "8 km @ 4:45/km", "how_to": "Comfortable pace. Shorter than last week — the interval session was the hard work this week."},
-            {"name": "Strides", "detail": "2 × 20s @ 3:24/km", "how_to": "At km 4 and km 7. Brief and sharp."}
+            {
+              "name": "Long run",
+              "detail": "8 km @ 4:45/km",
+              "how_to": "Comfortable pace. Shorter than last week — the interval session was the hard work this week."
+            },
+            {
+              "name": "Strides",
+              "detail": "2 × 20s @ 3:24/km",
+              "how_to": "At km 4 and km 7. Brief and sharp."
+            }
           ]
         }
       ]
@@ -259,15 +527,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (double leg)",
+              "detail": "3 × 8 @ 60 kg",
+              "how_to": "Both legs — equivalent load to single-leg sessions. Full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -277,7 +581,11 @@
           "description": "6 km @ 4:45/km.",
           "distance_km": 6,
           "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:45/km", "how_to": "Conversational. HR < 145."}
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. HR < 145."
+            }
           ]
         },
         {
@@ -287,9 +595,21 @@
           "description": "2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km.",
           "distance_km": 9,
           "exercises": [
-            {"name": "Warmup", "detail": "2 km @ 4:45/km", "how_to": "Easy jogging. Don't rush."},
-            {"name": "Intervals", "detail": "4 × 1000 m @ 3:40/km", "how_to": "2 min jog recovery. 5 sec/km faster than last week — should feel harder. Consistent splits."},
-            {"name": "Cooldown", "detail": "2 km @ 4:45/km", "how_to": "Easy jog. Let heart rate settle."}
+            {
+              "name": "Warmup",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jogging. Don't rush."
+            },
+            {
+              "name": "Intervals",
+              "detail": "4 × 1000 m @ 3:40/km",
+              "how_to": "2 min jog recovery. 5 sec/km faster than last week — should feel harder. Consistent splits."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jog. Let heart rate settle."
+            }
           ]
         },
         {
@@ -298,15 +618,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. Progressive calf weights. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (single leg)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Single leg only — full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -328,8 +684,16 @@
           "description": "13 km @ 4:45/km with 2 km @ 4:00/km inserted at km 7.",
           "distance_km": 13,
           "exercises": [
-            {"name": "Long run", "detail": "13 km @ 4:45/km", "how_to": "Comfortable aerobic pace."},
-            {"name": "Tempo insert", "detail": "2 km @ 4:00/km at km 7", "how_to": "Comfortably hard — you should be working but not gasping. Settle straight back to 4:45 after the 2 km is done."}
+            {
+              "name": "Long run",
+              "detail": "13 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace."
+            },
+            {
+              "name": "Tempo insert",
+              "detail": "2 km @ 4:00/km at km 7",
+              "how_to": "Comfortably hard — you should be working but not gasping. Settle straight back to 4:45 after the 2 km is done."
+            }
           ]
         }
       ]
@@ -344,15 +708,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (double leg)",
+              "detail": "3 × 8 @ 60 kg",
+              "how_to": "Both legs — equivalent load to single-leg sessions. Full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -362,7 +762,11 @@
           "description": "6 km @ 4:45/km.",
           "distance_km": 6,
           "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:45/km", "how_to": "Conversational. HR < 145."}
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. HR < 145."
+            }
           ]
         },
         {
@@ -372,9 +776,21 @@
           "description": "2 km warmup + 4 × 1000 m @ 3:35/km (2 min jog recovery) + 2 km cooldown. ~9 km. Hardest session of the block.",
           "distance_km": 9,
           "exercises": [
-            {"name": "Warmup", "detail": "2 km @ 4:45/km", "how_to": "Thorough warmup — don't rush. These are fast reps."},
-            {"name": "Intervals", "detail": "4 × 1000 m @ 3:35/km", "how_to": "2 min jog recovery. Final quality session before race week — controlled but genuinely demanding. HR 170–180 on reps."},
-            {"name": "Cooldown", "detail": "2 km @ 4:45/km", "how_to": "Easy jog. Let everything settle."}
+            {
+              "name": "Warmup",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Thorough warmup — don't rush. These are fast reps."
+            },
+            {
+              "name": "Intervals",
+              "detail": "4 × 1000 m @ 3:35/km",
+              "how_to": "2 min jog recovery. Final quality session before race week — controlled but genuinely demanding. HR 170–180 on reps."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jog. Let everything settle."
+            }
           ]
         },
         {
@@ -383,15 +799,51 @@
           "name": "Yasmin's Program",
           "description": "Full Ankle & Hips program. Progressive calf weights. No run.",
           "exercises": [
-            {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."},
-            {"name": "Single-leg seated calf raise", "detail": "3 × 8 @ progressive", "how_to": "Same progressive rule."},
-            {"name": "Cable hip abduction", "detail": "3 × 8 each @ 5 kg", "how_to": "Ankle cuff on lower cable. Outer leg to 45°."},
-            {"name": "Seated hamstring curl", "detail": "3 × 8 + 1s hold @ 40 kg", "how_to": "Slow controlled release."},
-            {"name": "Leg extension (single leg)", "detail": "3 × 8 each @ 30 kg", "how_to": "Single leg only — not double. Full extension; controlled lowering."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "3 × 8 each @ 30 kg", "how_to": "Rear foot on box; knee tracks toes."},
-            {"name": "Single-leg calf hops", "detail": "3 × 20 each", "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "3 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "4 × 8 @ 100 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Increase 1.25–2.5 kg from Monday if 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ progressive",
+              "how_to": "Same progressive rule."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 5 kg",
+              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 40 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (single leg)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Single leg only — full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 30 kg",
+              "how_to": "Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench, single leg. Minimal ground contact — stay light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -413,8 +865,16 @@
           "description": "14 km @ 4:45/km with 3 km @ 3:50/km inserted at km 7.",
           "distance_km": 14,
           "exercises": [
-            {"name": "Long run", "detail": "14 km @ 4:45/km", "how_to": "Comfortable aerobic pace. This is the long run peak."},
-            {"name": "Tempo insert", "detail": "3 km @ 3:50/km at km 7", "how_to": "Harder than last week's tempo. Working hard but in control. Settle back to 4:45 immediately after."}
+            {
+              "name": "Long run",
+              "detail": "14 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace. This is the long run peak."
+            },
+            {
+              "name": "Tempo insert",
+              "detail": "3 km @ 3:50/km at km 7",
+              "how_to": "Harder than last week's tempo. Working hard but in control. Settle back to 4:45 immediately after."
+            }
           ]
         }
       ]
@@ -429,15 +889,51 @@
           "name": "Yasmin's Program (Light)",
           "description": "2 sets each, weight −20%. Taper — don't add fatigue.",
           "exercises": [
-            {"name": "Leg press", "detail": "2 × 8 @ 80 kg", "how_to": "Weight reduced 20% for taper. 2 sets only."},
-            {"name": "Calf press (Gastrocnemius)", "detail": "2 × 8 @ −20%", "how_to": "Reduced weight. Taper."},
-            {"name": "Single-leg seated calf raise", "detail": "2 × 8 @ −20%", "how_to": "Reduced weight. Taper."},
-            {"name": "Cable hip abduction", "detail": "2 × 8 each @ 5 kg", "how_to": "Standard."},
-            {"name": "Seated hamstring curl", "detail": "2 × 8 + 1s hold @ 32 kg", "how_to": "Taper weight (~−20%)."},
-            {"name": "Leg extension (single leg)", "detail": "2 × 8 each @ 24 kg", "how_to": "Taper weight."},
-            {"name": "Bulgarian split squat (Smith)", "detail": "2 × 8 each @ 24 kg", "how_to": "Taper weight."},
-            {"name": "Single-leg calf hops", "detail": "2 × 20 each", "how_to": "Front foot on bench, single leg. Light and springy."},
-            {"name": "Pogo hops (single-leg)", "detail": "2 × 15 each", "how_to": "Stop if calf pain."}
+            {
+              "name": "Leg press",
+              "detail": "2 × 8 @ 80 kg",
+              "how_to": "Weight reduced 20% for taper. 2 sets only."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "2 × 8 @ −20%",
+              "how_to": "Reduced weight. Taper."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "2 × 8 @ −20%",
+              "how_to": "Reduced weight. Taper."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "2 × 8 each @ 5 kg",
+              "how_to": "Standard."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "2 × 8 + 1s hold @ 32 kg",
+              "how_to": "Taper weight (~−20%)."
+            },
+            {
+              "name": "Leg extension (double leg)",
+              "detail": "2 × 8 @ 48 kg",
+              "how_to": "Both legs — equivalent load to single-leg sessions. Full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "2 × 8 each @ 24 kg",
+              "how_to": "Taper weight."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "2 × 20 each",
+              "how_to": "Front foot on bench, single leg. Light and springy."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "2 × 15 each",
+              "how_to": "Stop if calf pain."
+            }
           ]
         },
         {
@@ -447,8 +943,16 @@
           "description": "5 km @ 4:45/km + 4 × 20s strides @ 3:24/km. Keep legs firing.",
           "distance_km": 5.5,
           "exercises": [
-            {"name": "Easy run", "detail": "5 km @ 4:45/km", "how_to": "Very relaxed. Race is in 4 days. Just moving."},
-            {"name": "Strides", "detail": "4 × 20s @ 3:24/km", "how_to": "Race pace — sharp and fast. Full jog recovery between each. You should feel good and quick, not gassed."}
+            {
+              "name": "Easy run",
+              "detail": "5 km @ 4:45/km",
+              "how_to": "Very relaxed. Race is in 4 days. Just moving."
+            },
+            {
+              "name": "Strides",
+              "detail": "4 × 20s @ 3:24/km",
+              "how_to": "Race pace — sharp and fast. Full jog recovery between each. You should feel good and quick, not gassed."
+            }
           ]
         },
         {
@@ -464,8 +968,16 @@
           "description": "3 km very easy jog + 2 sets each, weight −20%.",
           "distance_km": 3,
           "exercises": [
-            {"name": "Easy jog", "detail": "3 km very easy", "how_to": "Just to move the legs. HR should stay low. Two days to race."},
-            {"name": "Light gym", "detail": "2 sets each @ −20%", "how_to": "Same taper weights as Monday. Maintenance, not training. Keep it brief."}
+            {
+              "name": "Easy jog",
+              "detail": "3 km very easy",
+              "how_to": "Just to move the legs. HR should stay low. Two days to race."
+            },
+            {
+              "name": "Light gym",
+              "detail": "2 sets each @ −20%",
+              "how_to": "Same taper weights as Monday. Maintenance, not training. Keep it brief."
+            }
           ]
         },
         {
@@ -481,10 +993,26 @@
           "description": "sub-17:00. Target 3:24/km. Warm up 10 min easy + drills. Go get it.",
           "distance_km": 5,
           "exercises": [
-            {"name": "Warmup", "detail": "10 min easy + drills", "how_to": "Don't skip — calves need it. Easy jog then leg swings, high knees, ankle circles. Arrive at the start warm."},
-            {"name": "Km 1", "detail": "3:22–3:25/km", "how_to": "Should feel surprisingly easy. Resist the urge to go hard — you'll pay for it at km 3."},
-            {"name": "Km 2–4", "detail": "3:24/km", "how_to": "Settle and hold. Relaxed arms, tall posture. Pick someone to chase."},
-            {"name": "Km 5", "detail": "Everything you have", "how_to": "If there's anything left in the tank, use it now. The finish line is close."}
+            {
+              "name": "Warmup",
+              "detail": "10 min easy + drills",
+              "how_to": "Don't skip — calves need it. Easy jog then leg swings, high knees, ankle circles. Arrive at the start warm."
+            },
+            {
+              "name": "Km 1",
+              "detail": "3:22–3:25/km",
+              "how_to": "Should feel surprisingly easy. Resist the urge to go hard — you'll pay for it at km 3."
+            },
+            {
+              "name": "Km 2–4",
+              "detail": "3:24/km",
+              "how_to": "Settle and hold. Relaxed arms, tall posture. Pick someone to chase."
+            },
+            {
+              "name": "Km 5",
+              "detail": "Everything you have",
+              "how_to": "If there's anything left in the tank, use it now. The finish line is close."
+            }
           ]
         },
         {
