@@ -88,19 +88,19 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 ## Week 2: Apr 13–19 — Build
 
-*Focus: Extend the long run to 12 km. Two easy mid-week runs maintain aerobic base. Strides increase to 6 in the long run.*
+*Focus: Extend the long run to 12 km. Busy week — gym Mon morning before tennis, Wed is active with Sam (tennis/cycling), long run Sunday.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 13 | Yasmin's program | Full Ankle & Hips program. No run. |
-| Tue | Apr 14 | Easy run | 6 km @ 4:45/km. |
-| Wed | Apr 15 | Easy run | 6 km @ 4:45/km. |
+| Mon | Apr 13 | Yasmin's program (morning) + Tennis (evening) | Gym in the morning — done before tennis. Watch calves: if any tightness after gym, shorten or skip tennis. No running today. |
+| Tue | Apr 14 | Physio 08:30 + Easy run | Physio first. Easy 6 km @ 4:45/km after. Update Yasmin on calf response to training. |
+| Wed | Apr 15 | Rest / Active | Smart meter 08:00–12:00. Sam evening (tennis or cycling) — counts as cross-training. No run. |
 | Thu | Apr 16 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
-| Fri | Apr 17 | Rest | — |
+| Fri | Apr 17 | Rest | Ted's stag — rest day. |
 | Sat | Apr 18 | Rest | — |
 | Sun | Apr 19 | Long run | 12 km @ 4:45/km + 6 × 20s strides @ 3:24/km (every 2 km). |
 
-**Week target: ~24 km**
+**Week target: ~18 km**
 
 ---
 
@@ -116,7 +116,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 | Thu | Apr 23 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
 | Fri | Apr 24 | Rest | — |
 | Sat | Apr 25 | Rest | — |
-| Sun | Apr 26 | Long run | 8 km @ 4:45/km + 2 × 20s strides @ 3:24/km. Short long run — recovery week. |
+| Sun | Apr 26 | Long run | 8 km @ 4:45/km + 2 × 20s strides @ 3:24/km. Run early morning before heading out to support London Marathon. |
 
 **Week target: ~23 km**
 
@@ -189,5 +189,5 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 - **2026-03-09:** Race moved to 25 April. Bilateral calf tightness — Achilles risk. Yasmin Palfrey (Complete Physio) assigned Ankle & Hips program replacing all existing strength sessions.
 - **2026-03-28:** Bilateral calf tightness returning. Left calf tight before Sat tennis, worse after; right also flaring.
 - **2026-03-31:** Yasmin guidance: speed work reduced 25–30s/km below benchmark; rebuild gradually. Calf progressive loading: +1.25–2.5 kg per session when 3 × 8 completed.
-- **2026-04-09:** Leg extension confirmed single leg only (30 kg). Pogo jumps replaced with single-leg calf hops (front foot on bench, 3 × 20 each). Week 2 Sat easy run moved to Wed for better pre-long-run spacing.
+- **2026-04-09:** Leg extension confirmed single leg only (30 kg). Pogo jumps replaced with single-leg calf hops (front foot on bench, 3 × 20 each). Week 2 Sat easy run moved to Wed then removed (Sam = tennis/cycling); Mon now gym morning + tennis evening. May 16 race/wedding confirmed fine (parkrun 9am, wedding afternoon). Apr 26 long run: run early before London Marathon support.
 - **2026-04-07:** Race reset to 16 May 2026. Apr 25 plan retired — calf recovery + kiting Apr 3–6 disrupted final prep. New 6-week plan from Apr 6. Base pace 4:45/km per Yasmin. Intervals from Week 3 at 3:45/km stepping to 3:35/km. Long runs 10→12→8→13→14 km. Gym Mon+Thu throughout.

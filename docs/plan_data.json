@@ -92,8 +92,8 @@
         {
           "date": "2026-04-13",
           "type": "strength",
-          "name": "Yasmin's Program",
-          "description": "Full Ankle & Hips program. No run.",
+          "name": "Gym (morning) + Tennis (evening)",
+          "description": "Gym in the morning before tennis. Watch calves — if any tightness after gym, shorten or skip tennis. No run.",
           "exercises": [
             {"name": "Leg press", "detail": "4 × 8 @ 100 kg", "how_to": "Full extension; controlled return."},
             {"name": "Calf press (Gastrocnemius)", "detail": "3 × 8 @ progressive", "how_to": "Increase 1.25–2.5 kg from last session if 3 × 8 was completed."},
@@ -118,13 +118,9 @@
         },
         {
           "date": "2026-04-15",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km.",
-          "distance_km": 6,
-          "exercises": [
-            {"name": "Easy run", "detail": "6 km @ 4:45/km", "how_to": "Conversational. HR < 145."}
-          ]
+          "type": "rest",
+          "name": "Rest / Active",
+          "description": "Smart meter install 08:00–12:00. Evening with Sam (tennis or cycling) — counts as cross-training. No run."
         },
         {
           "date": "2026-04-16",
@@ -244,7 +240,7 @@
           "date": "2026-04-26",
           "type": "long",
           "name": "Long Run + Strides",
-          "description": "8 km @ 4:45/km + 2 × 20s strides @ 3:24/km. Recovery long run — short by design after first interval week.",
+          "description": "8 km @ 4:45/km + 2 × 20s strides @ 3:24/km. Run early morning before heading out to support London Marathon.",
           "distance_km": 8,
           "exercises": [
             {"name": "Long run", "detail": "8 km @ 4:45/km", "how_to": "Comfortable pace. Shorter than last week — the interval session was the hard work this week."},
