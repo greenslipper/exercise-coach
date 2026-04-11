@@ -140,10 +140,10 @@
         },
         {
           "date": "2026-04-11",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km.",
-          "distance_km": 6,
+          "type": "long",
+          "name": "Long Run ✓",
+          "description": "10 km in 50 min (~5:00/km, hilly — equivalent to 4:45 on flat). No strides. Calves fine. Done Saturday instead of Sunday.",
+          "distance_km": 10,
           "exercises": [
             {
               "name": "Easy run",
@@ -154,22 +154,9 @@
         },
         {
           "date": "2026-04-12",
-          "type": "long",
-          "name": "Long Run + Strides",
-          "description": "10 km @ 4:45/km with 4 × 20s strides @ 3:24/km, one every 2.5 km.",
-          "distance_km": 10,
-          "exercises": [
-            {
-              "name": "Long run",
-              "detail": "10 km @ 4:45/km",
-              "how_to": "Comfortable aerobic pace throughout. HR 140–150."
-            },
-            {
-              "name": "Strides",
-              "detail": "4 × 20s @ 3:24/km",
-              "how_to": "Insert at km 2.5, 5, 7.5, and 10. Short and sharp — not all-out. Jog gently back to 4:45 before the next one."
-            }
-          ]
+          "type": "rest",
+          "name": "Rest",
+          "description": "Long run done Saturday. Rest up."
         }
       ]
     },

@@ -79,8 +79,8 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 | Wed | Apr 8 | Rest | — |
 | Thu | Apr 9 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
 | Fri | Apr 10 | Rest | — |
-| Sat | Apr 11 | Easy run | 6 km @ 4:45/km. |
-| Sun | Apr 12 | Long run | 10 km @ 4:45/km + 4 × 20s strides @ 3:24/km (every 2.5 km). |
+| Sat | Apr 11 | Long run ✓ | 10 km in 50 min (~5:00/km avg, hilly — equivalent effort). No strides. Calves fine. |
+| Sun | Apr 12 | Rest | Long run done Saturday. |
 
 **Week target: ~22 km**
 
