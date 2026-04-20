@@ -23,9 +23,8 @@ Built on Yasmin's 31 March guidance:
 - **Base pace: 4:45/km** — all easy and long runs
 - **Intervals start Week 3** — two base-building weeks first to let the calves consolidate
 - **Interval progression:** 3:45 → 3:40 → 3:35/km (5 sec/km step per week, 4 × 1000 m format, 2 min jog recovery)
-- **Long runs:** 10 → 12 → 8 → 13 → 14 km — dip at Week 3 (first interval week), then build
-- **Strides and tempo inserts** in long runs — brief, Yasmin-approved
-- **Gym 2× per week** (Monday + Thursday) throughout; light taper in race week
+- **Long runs: removed** — Yasmin (Apr 20): no long runs for 4 weeks; prioritise calf loading
+- **Gym 2× per week (Monday + Saturday)** throughout — full Yasmin's program both days; light taper (2 sets, −20%) Mon + Thu in race week
 
 ### Calf Status
 
@@ -106,55 +105,55 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 ## Week 3: Apr 20–26 — First Intervals
 
-*Focus: First quality session of the block. Intervals Wednesday — arrive fresh. Long run cut back to 8 km (recovery week) — the interval session is the hard work. Two strides in the long run to stay sharp.*
+*Focus: First official interval session (already previewed Apr 19 — 3:39/km avg). Gym Mon + Sat. No long run.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 20 | Yasmin's program | Full Ankle & Hips program. No run. |
-| Tue | Apr 21 | Easy run | 6 km @ 4:45/km. Easy — preserve freshness for Wednesday. |
-| Wed | Apr 22 | Intervals | 2 km warmup + 4 × 1000 m @ 3:45/km (2 min jog recovery) + 2 km cooldown. ~9 km. Consistent splits matter more than hitting pace exactly. Stop if calf tightness builds. |
-| Thu | Apr 23 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
+| Mon | Apr 20 | Yasmin's program | Full session. Single-leg extension 30 kg. |
+| Tue | Apr 21 | Easy run | 6 km @ 4:45/km. |
+| Wed | Apr 22 | Rest | Tennis 08:00 in calendar. |
+| Thu | Apr 23 | Intervals | Physio 08:30 first. 2 km warmup + 4 × 1000 m @ 3:45/km (2 min jog recovery) + 2 km cooldown. ~9 km. Consistent splits — stop if calf tightness builds. |
 | Fri | Apr 24 | Rest | — |
-| Sat | Apr 25 | Rest | — |
-| Sun | Apr 26 | Long run | 8 km @ 4:45/km + 2 × 20s strides @ 3:24/km. Run early morning before heading out to support London Marathon. |
+| Sat | Apr 25 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. |
+| Sun | Apr 26 | Rest | No long run. Optional very easy 20 min jog before London Marathon spectating — keep it short. |
 
-**Week target: ~23 km**
+**Week target: ~15 km running**
 
 ---
 
 ## Week 4: Apr 27–May 3 — Sharpening
 
-*Focus: Step intervals up to 3:40/km. Long run expands to 13 km with a 2 km tempo insert — first sustained faster work since the reset.*
+*Focus: Intervals step to 3:40/km. Gym Mon + Sat. No long run. ⚠️ Flying to Ellie's wedding Fri May 1 — Sat gym may need to move to Tue Apr 28 if no gym at venue.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 27 | Yasmin's program | Full Ankle & Hips program. No run. |
-| Tue | Apr 28 | Easy run | 6 km @ 4:45/km. |
-| Wed | Apr 29 | Intervals | 2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
-| Thu | Apr 30 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
-| Fri | May 1 | Rest | — |
-| Sat | May 2 | Rest | — |
-| Sun | May 3 | Long run | 13 km @ 4:45/km with 2 km @ 4:00/km inserted at km 7. |
+| Mon | Apr 27 | Yasmin's program | Full session. Single-leg extension 30 kg. |
+| Tue | Apr 28 | Easy run | 6 km @ 4:45/km. **Alternative if Sat gym is impossible: do leg session 2 here instead of easy run.** |
+| Wed | Apr 29 | Rest | — |
+| Thu | Apr 30 | Intervals | Birthday. 2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
+| Fri | May 1 | Rest | Travel to Ellie's wedding. |
+| Sat | May 2 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. ⚠️ Only if gym accessible at venue. |
+| Sun | May 3 | Rest | Wedding weekend. No long run. |
 
-**Week target: ~28 km**
+**Week target: ~15 km running**
 
 ---
 
 ## Week 5: May 4–10 — Peak
 
-*Focus: Last hard week. Intervals at 3:35/km — closest to race pace stimulus in this block. Long run peaks at 14 km with a 3 km tempo insert.*
+*Focus: Hardest interval session — 3:35/km. Gym Mon + Sat. No long run. ⚠️ Forth folk festival Sat May 9 — do gym in the morning first.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | May 4 | Yasmin's program | Full Ankle & Hips program. No run. |
-| Tue | May 5 | Easy run | 6 km @ 4:45/km. |
-| Wed | May 6 | Intervals | 2 km warmup + 4 × 1000 m @ 3:35/km (2 min jog recovery) + 2 km cooldown. ~9 km. Hardest session of the block — controlled but genuinely demanding. |
-| Thu | May 7 | Yasmin's program | Full Ankle & Hips program. Progressive calf weights. No run. |
+| Mon | May 4 | Yasmin's program | Full session. Bank holiday — gym should be open. Single-leg extension 30 kg. |
+| Tue | May 5 | Easy run | 6 km @ 4:45/km. Dentist 17:30. |
+| Wed | May 6 | Rest | Pizza evening. |
+| Thu | May 7 | Intervals | 2 km warmup + 4 × 1000 m @ 3:35/km (2 min jog recovery) + 2 km cooldown. ~9 km. Hardest session of the block — controlled but genuinely demanding. |
 | Fri | May 8 | Rest | — |
-| Sat | May 9 | Rest | — |
-| Sun | May 10 | Long run | 14 km @ 4:45/km with 3 km @ 3:50/km inserted at km 7. |
+| Sat | May 9 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. Do in the morning if Forth festival is all day. |
+| Sun | May 10 | Rest | No long run. |
 
-**Week target: ~29 km**
+**Week target: ~15 km running**
 
 ---
 
@@ -191,4 +190,5 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 - **2026-03-31:** Yasmin guidance: speed work reduced 25–30s/km below benchmark; rebuild gradually. Calf progressive loading: +1.25–2.5 kg per session when 3 × 8 completed.
 - **2026-04-09:** Leg extension alternating single/double each session (30 kg single, 60 kg double). Both Apr 13 and Apr 16 were done as double (60 kg). Sequence from Apr 20: single → double → single → double. Pogo jumps replaced with single-leg calf hops (front foot on bench, 3 × 20 each). Week 2 Sat easy run moved to Wed then removed (Sam = tennis/cycling); Mon now tennis (17:30) → gym after. May 16 race/wedding confirmed fine (parkrun 9am, wedding afternoon). Apr 26 long run: run early before London Marathon support.
 - **2026-04-20:** Week 2 actuals — Apr 14 no run; Apr 16 full Yasmin's program done (not core/upper); Apr 19 intervals done a week early, avg 3:39/km (reps: 3:42, 3:41, 3:36, 3:38). All reps faster than 3:45/km Week 3 target. Long run not done. Week 2 run total ~15 km.
+- **2026-04-20:** Yasmin guidance — no long runs for 4 weeks (Weeks 3–6); keep 2 full leg sessions per week. Plan restructured: Mon + Sat gym (full Yasmin's program); long runs removed Weeks 3–5; intervals move to Thu (72 h after Mon gym). Sat May 2 gym may need to shift to Tue Apr 28 depending on wedding venue access.
 - **2026-04-07:** Race reset to 16 May 2026. Apr 25 plan retired — calf recovery + kiting Apr 3–6 disrupted final prep. New 6-week plan from Apr 6. Base pace 4:45/km per Yasmin. Intervals from Week 3 at 3:45/km stepping to 3:35/km. Long runs 10→12→8→13→14 km. Gym Mon+Thu throughout.
