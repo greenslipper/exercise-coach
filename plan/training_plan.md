@@ -109,15 +109,15 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 20 | Yasmin's program | Full session. Single-leg extension 30 kg. |
-| Tue | Apr 21 | Easy run | 6 km @ 4:45/km. |
+| Mon | Apr 20 | Easy run | 6 km @ 4:45/km. Tennis 17:30 — run in the morning. |
+| Tue | Apr 21 | Yasmin's program | Full session. Single-leg extension 30 kg. |
 | Wed | Apr 22 | Rest | Tennis 08:00 in calendar. |
 | Thu | Apr 23 | Intervals | Physio 08:30 first. 2 km warmup + 4 × 1000 m @ 3:45/km (2 min jog recovery) + 2 km cooldown. ~9 km. Consistent splits — stop if calf tightness builds. |
 | Fri | Apr 24 | Rest | — |
 | Sat | Apr 25 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. |
-| Sun | Apr 26 | Rest | No long run. Optional very easy 20 min jog before London Marathon spectating — keep it short. |
+| Sun | Apr 26 | Rest | No long run. |
 
-**Week target: ~15 km running**
+**Week target: ~15 km running | Gym gaps: Tue→Sat 96h, Sat→Tue 72h — both 48+h ✓**
 
 ---
 
@@ -127,13 +127,13 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 27 | Yasmin's program | Full session. Single-leg extension 30 kg. |
-| Tue | Apr 28 | Easy run | 6 km @ 4:45/km. **Alternative if Sat gym is impossible: do leg session 2 here instead of easy run.** |
+| Mon | Apr 27 | Easy run | 6 km @ 4:45/km. |
+| Tue | Apr 28 | Yasmin's program | Full session. Single-leg extension 30 kg. |
 | Wed | Apr 29 | Rest | — |
 | Thu | Apr 30 | Intervals | Birthday. 2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
 | Fri | May 1 | Rest | Travel to Ellie's wedding. |
-| Sat | May 2 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. ⚠️ Only if gym accessible at venue. |
-| Sun | May 3 | Rest | Wedding weekend. No long run. |
+| Sat | May 2 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. ⚠️ Only if gym accessible at venue — otherwise move to Tue Apr 28 instead of easy run. |
+| Sun | May 3 | Rest | Wedding weekend. |
 
 **Week target: ~15 km running**
 
@@ -145,8 +145,8 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | May 4 | Yasmin's program | Full session. Bank holiday — gym should be open. Single-leg extension 30 kg. |
-| Tue | May 5 | Easy run | 6 km @ 4:45/km. Dentist 17:30. |
+| Mon | May 4 | Easy run | 6 km @ 4:45/km. Bank holiday. |
+| Tue | May 5 | Yasmin's program | Full session. Single-leg extension 30 kg. Dentist 17:30 — gym in the morning. |
 | Wed | May 6 | Rest | Pizza evening. |
 | Thu | May 7 | Intervals | 2 km warmup + 4 × 1000 m @ 3:35/km (2 min jog recovery) + 2 km cooldown. ~9 km. Hardest session of the block — controlled but genuinely demanding. |
 | Fri | May 8 | Rest | — |
@@ -163,8 +163,8 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | May 11 | Yasmin's program (light) | 2 sets each, weight −20%. No run. |
-| Tue | May 12 | Easy + strides | 5 km @ 4:45/km + 4 × 20s strides @ 3:24/km. |
+| Mon | May 11 | Easy + strides | 5 km @ 4:45/km + 4 × 20s strides @ 3:24/km. |
+| Tue | May 12 | Yasmin's program (light) | 2 sets each, weight −20%. |
 | Wed | May 13 | Rest | — |
 | Thu | May 14 | Shakeout + gym (light) | 3 km very easy jog + 2 sets each, weight −20%. |
 | Fri | May 15 | Rest | Prep race kit. Pin number on. Vaporflys out. |

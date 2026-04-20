@@ -334,9 +334,23 @@
       "days": [
         {
           "date": "2026-04-20",
+          "type": "easy",
+          "name": "Easy Run",
+          "description": "6 km @ 4:45/km. Tennis at 17:30 \u2014 run in the morning.",
+          "distance_km": 6,
+          "exercises": [
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. HR < 145."
+            }
+          ]
+        },
+        {
+          "date": "2026-04-21",
           "type": "strength",
-          "name": "Yasmin's Program",
-          "description": "Full Ankle & Hips program. No run.",
+          "name": "Yasmin's Program \u2014 Leg Session 1",
+          "description": "Full Ankle & Hips program. Single-leg extension 30 kg.",
           "exercises": [
             {
               "name": "Leg press",
@@ -382,20 +396,6 @@
               "name": "Pogo hops (single-leg)",
               "detail": "3 \u00d7 15 each",
               "how_to": "Stop if calf pain."
-            }
-          ]
-        },
-        {
-          "date": "2026-04-21",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km. Easy \u2014 preserving freshness for Wednesday intervals.",
-          "distance_km": 6,
-          "exercises": [
-            {
-              "name": "Easy run",
-              "detail": "6 km @ 4:45/km",
-              "how_to": "Conversational. Save the legs for tomorrow's intervals."
             }
           ]
         },
@@ -503,9 +503,23 @@
       "days": [
         {
           "date": "2026-04-27",
+          "type": "easy",
+          "name": "Easy Run",
+          "description": "6 km @ 4:45/km.",
+          "distance_km": 6,
+          "exercises": [
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. HR < 145."
+            }
+          ]
+        },
+        {
+          "date": "2026-04-28",
           "type": "strength",
           "name": "Yasmin's Program \u2014 Leg Session 3",
-          "description": "Full Ankle & Hips program. Weights step up from Saturday.",
+          "description": "Full Ankle & Hips program. Single-leg extension 30 kg. If Sat May 2 gym is impossible (wedding venue), do second leg session here instead \u2014 shifts to 48 h before Thu intervals.",
           "exercises": [
             {
               "name": "Leg press",
@@ -551,20 +565,6 @@
               "name": "Pogo hops (single-leg)",
               "detail": "3 \u00d7 15 each",
               "how_to": "Stop if calf pain."
-            }
-          ]
-        },
-        {
-          "date": "2026-04-28",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km.",
-          "distance_km": 6,
-          "exercises": [
-            {
-              "name": "Easy run",
-              "detail": "6 km @ 4:45/km",
-              "how_to": "Conversational. HR < 145."
             }
           ]
         },
@@ -671,9 +671,23 @@
       "days": [
         {
           "date": "2026-05-04",
+          "type": "easy",
+          "name": "Easy Run",
+          "description": "6 km @ 4:45/km. Bank holiday.",
+          "distance_km": 6,
+          "exercises": [
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. HR < 145."
+            }
+          ]
+        },
+        {
+          "date": "2026-05-05",
           "type": "strength",
           "name": "Yasmin's Program \u2014 Leg Session 5",
-          "description": "Full Ankle & Hips program. Bank holiday \u2014 gym should be open.",
+          "description": "Full Ankle & Hips program. Single-leg extension 30 kg. Dentist 17:30 \u2014 do gym in the morning.",
           "exercises": [
             {
               "name": "Leg press",
@@ -719,20 +733,6 @@
               "name": "Pogo hops (single-leg)",
               "detail": "3 \u00d7 15 each",
               "how_to": "Stop if calf pain."
-            }
-          ]
-        },
-        {
-          "date": "2026-05-05",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km.",
-          "distance_km": 6,
-          "exercises": [
-            {
-              "name": "Easy run",
-              "detail": "6 km @ 4:45/km",
-              "how_to": "Conversational. HR < 145."
             }
           ]
         },
@@ -840,9 +840,28 @@
       "days": [
         {
           "date": "2026-05-11",
+          "type": "strides",
+          "name": "Easy + Strides",
+          "description": "5 km @ 4:45/km + 4 \u00d7 20s strides @ 3:24/km. Race week \u2014 keep it sharp, not tiring.",
+          "distance_km": 5,
+          "exercises": [
+            {
+              "name": "Easy run",
+              "detail": "5 km @ 4:45/km",
+              "how_to": "Conversational."
+            },
+            {
+              "name": "Strides",
+              "detail": "4 \u00d7 20s @ 3:24/km",
+              "how_to": "Sharp, relaxed. Full recovery between each."
+            }
+          ]
+        },
+        {
+          "date": "2026-05-12",
           "type": "strength",
           "name": "Yasmin's Program (Light) \u2014 Leg Session 7",
-          "description": "2 sets each at \u221220% weight. Taper: legs already done \u2014 just maintain stimulus.",
+          "description": "2 sets each at \u221220% weight. Taper \u2014 maintain stimulus only.",
           "exercises": [
             {
               "name": "Leg press",
@@ -888,25 +907,6 @@
               "name": "Pogo hops (single-leg)",
               "detail": "2 \u00d7 15 each",
               "how_to": "Stop if calf pain."
-            }
-          ]
-        },
-        {
-          "date": "2026-05-12",
-          "type": "strides",
-          "name": "Easy + Strides",
-          "description": "5 km @ 4:45/km + 4 \u00d7 20s strides @ 3:24/km. Keep legs firing.",
-          "distance_km": 5.5,
-          "exercises": [
-            {
-              "name": "Easy run",
-              "detail": "5 km @ 4:45/km",
-              "how_to": "Very relaxed. Race is in 4 days. Just moving."
-            },
-            {
-              "name": "Strides",
-              "detail": "4 \u00d7 20s @ 3:24/km",
-              "how_to": "Race pace \u2014 sharp and fast. Full jog recovery between each. You should feel good and quick, not gassed."
             }
           ]
         },
