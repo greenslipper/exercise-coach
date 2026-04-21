@@ -334,70 +334,70 @@
       "days": [
         {
           "date": "2026-04-20",
+          "type": "strength",
+          "name": "Yasmin's Program \u2713 \u2014 Leg Session 1",
+          "description": "Done. Calf press struggled at 35 kg \u2014 hold next session. Calf raise 75 kg felt easy \u2014 bumping to 80 kg Sat.",
+          "exercises": [
+            {
+              "name": "Leg press",
+              "detail": "4 \u00d7 8 @ 102.5 kg \u2713 \u2014 felt easy",
+              "how_to": "Done."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 \u00d7 8 @ 35 kg \u2014 didn't manage full sets",
+              "how_to": "Hold weight next session."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 \u00d7 8 @ 75 kg \u2713 \u2014 felt easy, targeting 80 kg Sat",
+              "how_to": "Done."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 \u00d7 8 each @ 7.5 kg \u2713",
+              "how_to": "Done."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 \u00d7 8 + 1s hold @ 42.5 kg \u2713",
+              "how_to": "Done."
+            },
+            {
+              "name": "Leg extension (single leg)",
+              "detail": "3 \u00d7 8 each @ 30 kg \u2713",
+              "how_to": "Done."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 \u00d7 8 each @ 32.5 kg \u2713",
+              "how_to": "Done."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 \u00d7 20 each \u2713",
+              "how_to": "Done."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 \u00d7 15 each \u2713",
+              "how_to": "Done."
+            }
+          ]
+        },
+        {
+          "date": "2026-04-21",
           "type": "easy",
           "name": "Easy Run",
-          "description": "6 km @ 4:45/km. Tennis at 17:30 \u2014 run in the morning.",
-          "distance_km": 6,
+          "description": "6 km @ 4:45/km. Gym done yesterday \u2014 this is the recovery run.",
           "exercises": [
             {
               "name": "Easy run",
               "detail": "6 km @ 4:45/km",
               "how_to": "Conversational. HR < 145."
             }
-          ]
-        },
-        {
-          "date": "2026-04-21",
-          "type": "strength",
-          "name": "Yasmin's Program \u2014 Leg Session 1",
-          "description": "Full Ankle & Hips program. Single-leg extension 30 kg.",
-          "exercises": [
-            {
-              "name": "Leg press",
-              "detail": "4 \u00d7 8 @ 102.5 kg",
-              "how_to": "Up from 100 kg. Full extension; controlled return."
-            },
-            {
-              "name": "Calf press (Gastrocnemius)",
-              "detail": "3 \u00d7 8 @ 35 kg",
-              "how_to": "Up from 32.5 kg (Apr 13). +1.25\u20132.5 kg next session if all 3 \u00d7 8 done."
-            },
-            {
-              "name": "Single-leg seated calf raise",
-              "detail": "3 \u00d7 8 @ 75 kg",
-              "how_to": "Up from 72.5 kg. +1.25\u20132.5 kg next session if all 3 \u00d7 8 done."
-            },
-            {
-              "name": "Cable hip abduction",
-              "detail": "3 \u00d7 8 each @ 7.5 kg",
-              "how_to": "Ankle cuff on lower cable. Outer leg to 45\u00b0."
-            },
-            {
-              "name": "Seated hamstring curl",
-              "detail": "3 \u00d7 8 + 1s hold @ 42.5 kg",
-              "how_to": "Nudge up from 40 kg (felt easy Apr 7). Slow controlled release."
-            },
-            {
-              "name": "Leg extension (single leg)",
-              "detail": "3 \u00d7 8 each @ 30 kg",
-              "how_to": "Single leg only \u2014 full extension, controlled lowering."
-            },
-            {
-              "name": "Bulgarian split squat (Smith)",
-              "detail": "3 \u00d7 8 each @ 32.5 kg",
-              "how_to": "Matched Apr 13. Rear foot on box; knee tracks toes. Progress to 35 kg next session if clean."
-            },
-            {
-              "name": "Single-leg calf hops",
-              "detail": "3 \u00d7 20 each",
-              "how_to": "Front foot on bench, single leg. Minimal ground contact \u2014 stay light and springy."
-            },
-            {
-              "name": "Pogo hops (single-leg)",
-              "detail": "3 \u00d7 15 each",
-              "how_to": "Stop if calf pain."
-            }
-          ]
+          ],
+          "distance_km": 6
         },
         {
           "date": "2026-04-22",
@@ -439,7 +439,7 @@
           "date": "2026-04-25",
           "type": "strength",
           "name": "Yasmin's Program \u2014 Leg Session 2",
-          "description": "Second full leg session of the week. Yasmin: 2 full leg sessions per week, no long runs for 4 weeks.",
+          "description": "Leg session 2. Calf press holds at 35 kg (struggled Mon). Calf raise jumps to 80 kg (felt very easy at 75).",
           "exercises": [
             {
               "name": "Leg press",
@@ -448,13 +448,13 @@
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "3 \u00d7 8 @ 37.5 kg",
-              "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25\u20132.5 kg each session all 3\u00d78 completed."
+              "detail": "3 \u00d7 8 @ 35 kg",
+              "how_to": "Hold \u2014 didn't complete full sets Mon. Increase next session if all 3\u00d78 done today."
             },
             {
               "name": "Single-leg seated calf raise",
-              "detail": "3 \u00d7 8 @ 77.5 kg",
-              "how_to": "On leg extension machine. Same progressive rule."
+              "detail": "3 \u00d7 8 @ 80 kg",
+              "how_to": "Jumped 5 kg \u2014 felt very easy at 75. Increase 2.5 kg/session from here if 3\u00d78 completed."
             },
             {
               "name": "Cable hip abduction",
@@ -469,7 +469,7 @@
             {
               "name": "Leg extension (double leg)",
               "detail": "3 \u00d7 8 @ 60 kg",
-              "how_to": "Full extension, controlled lowering. Alternate single/double each session."
+              "how_to": "Both legs. Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
@@ -479,7 +479,7 @@
             {
               "name": "Single-leg calf hops",
               "detail": "3 \u00d7 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact \u2014 stay light and springy."
+              "how_to": "Front foot on bench. Stay light and springy."
             },
             {
               "name": "Pogo hops (single-leg)",
@@ -528,13 +528,13 @@
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "3 \u00d7 8 @ 40 kg",
-              "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25\u20132.5 kg each session all 3\u00d78 completed."
+              "detail": "3 \u00d7 8 @ 37.5 kg",
+              "how_to": "Increase 1.25\u20132.5 kg if 3\u00d78 completed last session."
             },
             {
               "name": "Single-leg seated calf raise",
-              "detail": "3 \u00d7 8 @ 80 kg",
-              "how_to": "On leg extension machine. Same progressive rule."
+              "detail": "3 \u00d7 8 @ 82.5 kg",
+              "how_to": "Same progressive rule."
             },
             {
               "name": "Cable hip abduction",
@@ -549,7 +549,7 @@
             {
               "name": "Leg extension (single leg)",
               "detail": "3 \u00d7 8 each @ 30 kg",
-              "how_to": "Full extension, controlled lowering. Alternate single/double each session."
+              "how_to": "Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
@@ -559,7 +559,7 @@
             {
               "name": "Single-leg calf hops",
               "detail": "3 \u00d7 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact \u2014 stay light and springy."
+              "how_to": "Front foot on bench. Stay light and springy."
             },
             {
               "name": "Pogo hops (single-leg)",
@@ -617,13 +617,13 @@
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "3 \u00d7 8 @ 42.5 kg",
-              "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25\u20132.5 kg each session all 3\u00d78 completed."
+              "detail": "3 \u00d7 8 @ 40 kg",
+              "how_to": "Increase 1.25\u20132.5 kg if 3\u00d78 completed last session."
             },
             {
               "name": "Single-leg seated calf raise",
-              "detail": "3 \u00d7 8 @ 82.5 kg",
-              "how_to": "On leg extension machine. Same progressive rule."
+              "detail": "3 \u00d7 8 @ 85 kg",
+              "how_to": "Same progressive rule."
             },
             {
               "name": "Cable hip abduction",
@@ -637,8 +637,8 @@
             },
             {
               "name": "Leg extension (double leg)",
-              "detail": "3 \u00d7 8 @ 60 kg",
-              "how_to": "Full extension, controlled lowering. Alternate single/double each session."
+              "detail": "3 \u00d7 8 each @ 60 kg",
+              "how_to": "Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
@@ -648,7 +648,7 @@
             {
               "name": "Single-leg calf hops",
               "detail": "3 \u00d7 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact \u2014 stay light and springy."
+              "how_to": "Front foot on bench. Stay light and springy."
             },
             {
               "name": "Pogo hops (single-leg)",
@@ -696,13 +696,13 @@
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "3 \u00d7 8 @ 45 kg",
-              "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25\u20132.5 kg each session all 3\u00d78 completed."
+              "detail": "3 \u00d7 8 @ 42.5 kg",
+              "how_to": "Increase 1.25\u20132.5 kg if 3\u00d78 completed last session."
             },
             {
               "name": "Single-leg seated calf raise",
-              "detail": "3 \u00d7 8 @ 85 kg",
-              "how_to": "On leg extension machine. Same progressive rule."
+              "detail": "3 \u00d7 8 @ 87.5 kg",
+              "how_to": "Same progressive rule."
             },
             {
               "name": "Cable hip abduction",
@@ -717,7 +717,7 @@
             {
               "name": "Leg extension (single leg)",
               "detail": "3 \u00d7 8 each @ 30 kg",
-              "how_to": "Full extension, controlled lowering. Alternate single/double each session."
+              "how_to": "Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
@@ -727,7 +727,7 @@
             {
               "name": "Single-leg calf hops",
               "detail": "3 \u00d7 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact \u2014 stay light and springy."
+              "how_to": "Front foot on bench. Stay light and springy."
             },
             {
               "name": "Pogo hops (single-leg)",
@@ -785,13 +785,13 @@
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "3 \u00d7 8 @ 47.5 kg",
-              "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25\u20132.5 kg each session all 3\u00d78 completed."
+              "detail": "3 \u00d7 8 @ 45 kg",
+              "how_to": "Increase 1.25\u20132.5 kg if 3\u00d78 completed last session."
             },
             {
               "name": "Single-leg seated calf raise",
-              "detail": "3 \u00d7 8 @ 87.5 kg",
-              "how_to": "On leg extension machine. Same progressive rule."
+              "detail": "3 \u00d7 8 @ 90 kg",
+              "how_to": "Same progressive rule."
             },
             {
               "name": "Cable hip abduction",
@@ -805,8 +805,8 @@
             },
             {
               "name": "Leg extension (double leg)",
-              "detail": "3 \u00d7 8 @ 60 kg",
-              "how_to": "Full extension, controlled lowering. Alternate single/double each session."
+              "detail": "3 \u00d7 8 each @ 60 kg",
+              "how_to": "Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
@@ -816,7 +816,7 @@
             {
               "name": "Single-leg calf hops",
               "detail": "3 \u00d7 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact \u2014 stay light and springy."
+              "how_to": "Front foot on bench. Stay light and springy."
             },
             {
               "name": "Pogo hops (single-leg)",
@@ -865,18 +865,18 @@
           "exercises": [
             {
               "name": "Leg press",
-              "detail": "2 \u00d7 8 @ 94 kg",
+              "detail": "2 \u00d7 8 @ 92 kg",
               "how_to": "Full extension; controlled return."
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "2 \u00d7 8 @ 40 kg",
-              "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25\u20132.5 kg each session all 3\u00d78 completed."
+              "detail": "2 \u00d7 8 @ 36 kg",
+              "how_to": "Increase 1.25\u20132.5 kg if 3\u00d78 completed last session."
             },
             {
               "name": "Single-leg seated calf raise",
               "detail": "2 \u00d7 8 @ 72 kg",
-              "how_to": "On leg extension machine. Same progressive rule."
+              "how_to": "Same progressive rule."
             },
             {
               "name": "Cable hip abduction",
@@ -885,23 +885,23 @@
             },
             {
               "name": "Seated hamstring curl",
-              "detail": "2 \u00d7 8 + 1s hold @ 46 kg",
+              "detail": "2 \u00d7 8 + 1s hold @ 44 kg",
               "how_to": "Slow controlled release."
             },
             {
-              "name": "Leg extension (single leg)",
-              "detail": "2 \u00d7 8 each @ 24 kg",
+              "name": "Leg extension (double leg)",
+              "detail": "2 \u00d7 8 @ 48 kg",
               "how_to": "Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
-              "detail": "2 \u00d7 8 each @ 38 kg",
+              "detail": "2 \u00d7 8 each @ 36 kg",
               "how_to": "Rear foot on box; knee tracks toes."
             },
             {
               "name": "Single-leg calf hops",
               "detail": "2 \u00d7 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact \u2014 stay light and springy."
+              "how_to": "Front foot on bench. Stay light and springy."
             },
             {
               "name": "Pogo hops (single-leg)",
@@ -930,18 +930,18 @@
             },
             {
               "name": "Leg press",
-              "detail": "2 \u00d7 8 @ 96 kg",
+              "detail": "2 \u00d7 8 @ 92 kg",
               "how_to": "Full extension; controlled return."
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "2 \u00d7 8 @ 42 kg",
-              "how_to": "Balls of feet on weight plate; barbell on back. Increase 1.25\u20132.5 kg each session all 3\u00d78 completed."
+              "detail": "2 \u00d7 8 @ 36 kg",
+              "how_to": "Increase 1.25\u20132.5 kg if 3\u00d78 completed last session."
             },
             {
               "name": "Single-leg seated calf raise",
-              "detail": "2 \u00d7 8 @ 74 kg",
-              "how_to": "On leg extension machine. Same progressive rule."
+              "detail": "2 \u00d7 8 @ 72 kg",
+              "how_to": "Same progressive rule."
             },
             {
               "name": "Cable hip abduction",
@@ -950,23 +950,23 @@
             },
             {
               "name": "Seated hamstring curl",
-              "detail": "2 \u00d7 8 + 1s hold @ 48 kg",
+              "detail": "2 \u00d7 8 + 1s hold @ 44 kg",
               "how_to": "Slow controlled release."
             },
             {
-              "name": "Leg extension (double leg)",
-              "detail": "2 \u00d7 8 @ 48 kg",
+              "name": "Leg extension (single leg)",
+              "detail": "2 \u00d7 8 each @ 24 kg",
               "how_to": "Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
-              "detail": "2 \u00d7 8 each @ 40 kg",
+              "detail": "2 \u00d7 8 each @ 36 kg",
               "how_to": "Rear foot on box; knee tracks toes."
             },
             {
               "name": "Single-leg calf hops",
               "detail": "2 \u00d7 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact \u2014 stay light and springy."
+              "how_to": "Front foot on bench. Stay light and springy."
             },
             {
               "name": "Pogo hops (single-leg)",
