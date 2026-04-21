@@ -388,13 +388,13 @@
         {
           "date": "2026-04-21",
           "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km. Gym done yesterday \u2014 this is the recovery run.",
+          "name": "Easy Run (or Rest)",
+          "description": "6 km @ 4:45/km \u2014 or full rest if you need it.",
           "exercises": [
             {
               "name": "Easy run",
               "detail": "6 km @ 4:45/km",
-              "how_to": "Conversational. HR < 145."
+              "how_to": "Conversational. HR < 145. Skip if legs need rest."
             }
           ],
           "distance_km": 6
@@ -402,8 +402,9 @@
         {
           "date": "2026-04-22",
           "type": "rest",
-          "name": "Rest",
-          "description": "Recovery before tomorrow's intervals."
+          "name": "Rest / Tennis",
+          "description": "Rest day. Tennis in calendar.",
+          "exercises": []
         },
         {
           "date": "2026-04-23",
@@ -431,15 +432,9 @@
         },
         {
           "date": "2026-04-24",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Full rest."
-        },
-        {
-          "date": "2026-04-25",
           "type": "strength",
           "name": "Yasmin's Program \u2014 Leg Session 2",
-          "description": "Leg session 2. Calf press holds at 35 kg (struggled Mon). Calf raise jumps to 80 kg (felt very easy at 75).",
+          "description": "Full session. Note: 24 h after Thursday intervals \u2014 heavy calf loading on tired legs. If calves feel off after intervals, flag it.",
           "exercises": [
             {
               "name": "Leg press",
@@ -449,12 +444,12 @@
             {
               "name": "Calf press (Gastrocnemius)",
               "detail": "3 \u00d7 8 @ 35 kg",
-              "how_to": "Hold \u2014 didn't complete full sets Mon. Increase next session if all 3\u00d78 done today."
+              "how_to": "Hold \u2014 didn't complete full sets Mon. Progress next session if all 3\u00d78 done today."
             },
             {
               "name": "Single-leg seated calf raise",
               "detail": "3 \u00d7 8 @ 80 kg",
-              "how_to": "Jumped 5 kg \u2014 felt very easy at 75. Increase 2.5 kg/session from here if 3\u00d78 completed."
+              "how_to": "Jumped 5 kg from 75 \u2014 felt very easy. Increase 2.5 kg/session from here if 3\u00d78 completed."
             },
             {
               "name": "Cable hip abduction",
@@ -485,6 +480,20 @@
               "name": "Pogo hops (single-leg)",
               "detail": "3 \u00d7 15 each",
               "how_to": "Stop if calf pain."
+            }
+          ]
+        },
+        {
+          "date": "2026-04-25",
+          "type": "easy",
+          "name": "Easy Run",
+          "description": "6 km @ 4:45/km.",
+          "distance_km": 6,
+          "exercises": [
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. HR < 145."
             }
           ]
         },

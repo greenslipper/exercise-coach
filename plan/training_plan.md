@@ -109,15 +109,15 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 20 | Easy run | 6 km @ 4:45/km. Tennis 17:30 — run in the morning. |
-| Tue | Apr 21 | Yasmin's program | Full session. Single-leg extension 30 kg. |
-| Wed | Apr 22 | Rest | Tennis 08:00 in calendar. |
-| Thu | Apr 23 | Intervals | Physio 08:30 first. 2 km warmup + 4 × 1000 m @ 3:45/km (2 min jog recovery) + 2 km cooldown. ~9 km. Consistent splits — stop if calf tightness builds. |
-| Fri | Apr 24 | Rest | — |
-| Sat | Apr 25 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. |
-| Sun | Apr 26 | Rest | No long run. |
+| Mon | Apr 20 | Yasmin's program ✓ | Done. Calf press 35 kg — didn't complete. Calf raise 75 kg — felt easy, bumping to 80 Fri. |
+| Tue | Apr 21 | Easy run (or rest) | 6 km @ 4:45/km, or rest if needed. |
+| Wed | Apr 22 | Rest / Tennis | — |
+| Thu | Apr 23 | Intervals | Physio 08:30 first. 2 km warmup + 4 × 1000 m @ 3:45/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
+| Fri | Apr 24 | Yasmin's program | Full session — leg session 2. Double-leg ext 60 kg. Note: 24 h after intervals. |
+| Sat | Apr 25 | Easy run | 6 km @ 4:45/km. |
+| Sun | Apr 26 | Rest | — |
 
-**Week target: ~15 km running | Gym gaps: Tue→Sat 96h, Sat→Tue 72h — both 48+h ✓**
+**Week target: ~15–21 km running | Mon→Fri gym gap: 96h ✓**
 
 ---
 
