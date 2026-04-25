@@ -112,10 +112,10 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 | Mon | Apr 20 | Yasmin's program ✓ | Done. Calf press 35 kg — didn't complete. Calf raise 75 kg — felt easy, bumping to 80 Fri. |
 | Tue | Apr 21 | Easy run (or rest) | 6 km @ 4:45/km, or rest if needed. |
 | Wed | Apr 22 | Rest / Tennis | — |
-| Thu | Apr 23 | Intervals | Physio 08:30 first. 2 km warmup + 4 × 1000 m @ 3:45/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
-| Fri | Apr 24 | Yasmin's program | Full session — leg session 2. Double-leg ext 60 kg. Note: 24 h after intervals. |
-| Sat | Apr 25 | Easy run | 6 km @ 4:45/km. |
-| Sun | Apr 26 | Rest | — |
+| Thu | Apr 23 | Intervals — skipped | Not done. |
+| Fri | Apr 24 | Yasmin's program ✓ | Done (app date showed Apr 27 — confirmed Apr 24). Leg press 110, calf press 37.5, calf raise 80, hamstring curl 50, hip abduction 10, leg ext (double) 65, BSS 35 kg. |
+| Sat | Apr 25 | Tooting Parkrun ✓ | 5.18 km @ 4:54/km avg. Controlled effort, strong negative split (5:41 → 4:34). |
+| Sun | Apr 26 | Core + Upper Body | No leg load. Dead bugs, Copenhagen planks, lat pulldown + landmine press (superset), cable row + DB press (superset), face pulls, external rotation, Pallof press, reverse curls. ~55 min. |
 
 **Week target: ~15–21 km running | Mon→Fri gym gap: 96h ✓**
 
@@ -192,3 +192,4 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 - **2026-04-20:** Week 2 actuals — Apr 14 no run; Apr 16 full Yasmin's program done (not core/upper); Apr 19 intervals done a week early, avg 3:39/km (reps: 3:42, 3:41, 3:36, 3:38). All reps faster than 3:45/km Week 3 target. Long run not done. Week 2 run total ~15 km.
 - **2026-04-20:** Yasmin guidance — no long runs for 4 weeks (Weeks 3–6); keep 2 full leg sessions per week. Plan restructured: Mon + Sat gym (full Yasmin's program); long runs removed Weeks 3–5; intervals move to Thu (72 h after Mon gym). Sat May 2 gym may need to shift to Tue Apr 28 depending on wedding venue access.
 - **2026-04-07:** Race reset to 16 May 2026. Apr 25 plan retired — calf recovery + kiting Apr 3–6 disrupted final prep. New 6-week plan from Apr 6. Base pace 4:45/km per Yasmin. Intervals from Week 3 at 3:45/km stepping to 3:35/km. Long runs 10→12→8→13→14 km. Gym Mon+Thu throughout.
+- **2026-04-25:** Week 3 actuals — Apr 24 gym done (app date showed Apr 27, confirmed Apr 24): leg press 110, calf press 37.5, calf raise 80, hamstring curl 50, hip abduction 10, leg ext (double) 65, BSS 35 kg. Big jumps on leg press (+7.5) and hamstring curl (+7.5) — forward projections updated. Apr 25: Tooting Parkrun, 5.18 km @ 4:54/km avg, strong negative split (5:41 → 4:34), controlled effort. Apr 23 intervals: skipped.

@@ -490,6 +490,7 @@ function openModal(dateStr) {
             ${lastHint}
             ${sessionEx && sessionEx.note ? `<div class="ex-logged-note">${sessionEx.note}</div>` : ''}
             ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
+            ${ex.youtube_url ? '<a class="ex-yt-link" href="' + ex.youtube_url + '" target="_blank" rel="noopener noreferrer">▶ Watch</a>' : ''}
           </li>
         `;
       } else {
@@ -500,6 +501,7 @@ function openModal(dateStr) {
               <span class="exercise-sets">${metric}</span>
             </div>
             ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
+            ${ex.youtube_url ? '<a class="ex-yt-link" href="' + ex.youtube_url + '" target="_blank" rel="noopener noreferrer">▶ Watch</a>' : ''}
           </li>
         `;
       }
