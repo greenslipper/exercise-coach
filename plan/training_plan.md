@@ -123,19 +123,19 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 ## Week 4: Apr 27–May 3 — Sharpening
 
-*Focus: Intervals step to 3:40/km. Gym Mon + Sat. No long run. ⚠️ Flying to Ellie's wedding Fri May 1 — Sat gym may need to move to Tue Apr 28 if no gym at venue.*
+*Focus: Intervals today, legs Thu, upper Fri. Busy end of week — wedding travel Fri.*
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 27 | Easy run | 6 km @ 4:45/km. |
-| Tue | Apr 28 | Yasmin's program | Full session. Single-leg extension 30 kg. |
-| Wed | Apr 29 | Rest | — |
-| Thu | Apr 30 | Intervals | Birthday. 2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
-| Fri | May 1 | Rest | Travel to Ellie's wedding. |
-| Sat | May 2 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. ⚠️ Only if gym accessible at venue — otherwise move to Tue Apr 28 instead of easy run. |
+| Mon | Apr 27 | Intervals | 2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
+| Tue | Apr 28 | Rest | — |
+| Wed | Apr 29 | Tennis | — |
+| Thu | Apr 30 | Yasmin's program (legs) | Birthday. Full leg session. Single-leg extension 32.5 kg. |
+| Fri | May 1 | Core + Upper Body | Before travel to Ellie's wedding. No leg load. Same session as Apr 26. |
+| Sat | May 2 | Rest | Wedding weekend. |
 | Sun | May 3 | Rest | Wedding weekend. |
 
-**Week target: ~15 km running**
+**Week target: ~9 km running**
 
 ---
 
@@ -193,3 +193,4 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 - **2026-04-20:** Yasmin guidance — no long runs for 4 weeks (Weeks 3–6); keep 2 full leg sessions per week. Plan restructured: Mon + Sat gym (full Yasmin's program); long runs removed Weeks 3–5; intervals move to Thu (72 h after Mon gym). Sat May 2 gym may need to shift to Tue Apr 28 depending on wedding venue access.
 - **2026-04-07:** Race reset to 16 May 2026. Apr 25 plan retired — calf recovery + kiting Apr 3–6 disrupted final prep. New 6-week plan from Apr 6. Base pace 4:45/km per Yasmin. Intervals from Week 3 at 3:45/km stepping to 3:35/km. Long runs 10→12→8→13→14 km. Gym Mon+Thu throughout.
 - **2026-04-25:** Week 3 actuals — Apr 24 gym done (app date showed Apr 27, confirmed Apr 24): leg press 110, calf press 37.5, calf raise 80, hamstring curl 50, hip abduction 10, leg ext (double) 65, BSS 35 kg. Big jumps on leg press (+7.5) and hamstring curl (+7.5) — forward projections updated. Apr 25: Tooting Parkrun, 5.18 km @ 4:54/km avg, strong negative split (5:41 → 4:34), controlled effort. Apr 23 intervals: skipped.
+- **2026-04-27:** Week 4 restructured — intervals moved to Mon, tennis Wed, legs gym Thu, upper body Fri (before wedding travel). No easy run this week.

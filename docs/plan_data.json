@@ -573,23 +573,45 @@
       "days": [
         {
           "date": "2026-04-27",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km.",
-          "distance_km": 6,
+          "type": "intervals",
+          "name": "Intervals — 4 × 1000 m",
+          "description": "2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km.",
+          "distance_km": 9,
           "exercises": [
             {
-              "name": "Easy run",
-              "detail": "6 km @ 4:45/km",
-              "how_to": "Conversational. HR < 145."
+              "name": "Warmup",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jogging. Don't rush — calves need to be fully warm."
+            },
+            {
+              "name": "Intervals",
+              "detail": "4 × 1000 m @ 3:40/km",
+              "how_to": "2 min jog recovery. 5 sec/km faster than the Week 3 target — should feel hard. Consistent splits."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jog. Let heart rate settle."
             }
           ]
         },
         {
           "date": "2026-04-28",
+          "type": "rest",
+          "name": "Rest",
+          "description": "Full rest."
+        },
+        {
+          "date": "2026-04-29",
+          "type": "rest",
+          "name": "Tennis",
+          "description": "Tennis."
+        },
+        {
+          "date": "2026-04-30",
           "type": "strength",
-          "name": "Yasmin's Program — Leg Session 3",
-          "description": "Full Ankle & Hips program. Single-leg extension session. If Sat May 2 gym is impossible (wedding venue), do second leg session here instead — shifts to 48 h before Thu intervals.",
+          "name": "Yasmin's Program — Legs",
+          "description": "Birthday. Full leg session. Single-leg extension 32.5 kg.",
           "exercises": [
             {
               "name": "Leg press",
@@ -619,7 +641,7 @@
             {
               "name": "Leg extension (single leg)",
               "detail": "3 × 8 each @ 32.5 kg",
-              "how_to": "~8% up from 30 kg (Apr 20). Full extension, controlled lowering."
+              "how_to": "~8% up from 30 kg. Full extension, controlled lowering."
             },
             {
               "name": "Bulgarian split squat (Smith)",
@@ -639,99 +661,84 @@
           ]
         },
         {
-          "date": "2026-04-29",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Recovery before tomorrow's intervals."
-        },
-        {
-          "date": "2026-04-30",
-          "type": "intervals",
-          "name": "Intervals — 4 × 1000 m",
-          "description": "2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km.",
-          "exercises": [
-            {
-              "name": "Warmup",
-              "detail": "2 km @ 4:45/km",
-              "how_to": "Easy jogging. Don't rush."
-            },
-            {
-              "name": "Intervals",
-              "detail": "4 × 1000 m @ 3:40/km",
-              "how_to": "2 min jog recovery. 5 sec/km faster than last week — should feel harder. Consistent splits."
-            },
-            {
-              "name": "Cooldown",
-              "detail": "2 km @ 4:45/km",
-              "how_to": "Easy jog. Let heart rate settle."
-            }
-          ],
-          "distance_km": 9
-        },
-        {
           "date": "2026-05-01",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Full rest."
-        },
-        {
-          "date": "2026-05-02",
           "type": "strength",
-          "name": "Yasmin's Program — Leg Session 4",
-          "description": "Full leg session. ⚠️ Wedding weekend — flying Fri May 1. If gym isn't accessible at the venue, move this session to Tue Apr 28 instead (48 h before Thu intervals — tight but acceptable).",
+          "name": "Core + Upper Body",
+          "description": "Before travel to wedding. No leg load — zero recovery impact.",
           "exercises": [
             {
-              "name": "Leg press",
-              "detail": "4 × 8 @ 125 kg",
-              "how_to": "~6% up from 117.5 kg. Full extension; controlled return."
+              "name": "Dead bugs",
+              "detail": "3 × 10 each side",
+              "how_to": "Press lower back into floor. Opposite arm and leg extend slowly — no arch.",
+              "youtube_url": "https://www.youtube.com/results?search_query=dead+bug+exercise+how+to"
             },
             {
-              "name": "Calf press (Gastrocnemius)",
-              "detail": "3 × 8 @ 42.5 kg",
-              "how_to": "~6% up from 40 kg."
+              "name": "Copenhagen planks",
+              "detail": "3 × 20s each side",
+              "how_to": "Side plank with top foot on bench. Hip adductor stability.",
+              "youtube_url": "https://www.youtube.com/results?search_query=copenhagen+plank+how+to"
             },
             {
-              "name": "Single-leg seated calf raise",
-              "detail": "3 × 8 @ 90 kg",
-              "how_to": "~6% up from 85 kg."
+              "name": "Lat pulldown",
+              "detail": "3 × 8",
+              "how_to": "Full stretch at top, drive elbows down and back. Superset with landmine press.",
+              "youtube_url": "https://www.youtube.com/results?search_query=lat+pulldown+proper+form+jeff+nippard"
             },
             {
-              "name": "Cable hip abduction",
-              "detail": "3 × 8 each @ 15 kg",
-              "how_to": "~20% up from 12.5 kg."
+              "name": "Single-arm landmine press",
+              "detail": "3 × 8 each side",
+              "how_to": "Arc follows natural shoulder path. Rotational finish mirrors forehand mechanics. Superset with lat pulldown.",
+              "youtube_url": "https://www.youtube.com/results?search_query=single+arm+landmine+press+how+to"
             },
             {
-              "name": "Seated hamstring curl",
-              "detail": "3 × 8 + 1s hold @ 60 kg",
-              "how_to": "~9% up from 55 kg."
+              "name": "Cable row",
+              "detail": "3 × 8",
+              "how_to": "Full scapular retraction at end range. Controlled return. Superset with DB/cable press.",
+              "youtube_url": "https://www.youtube.com/results?search_query=seated+cable+row+proper+form"
             },
             {
-              "name": "Leg extension (double leg)",
-              "detail": "3 × 8 @ 70 kg",
-              "how_to": "~8% up from 65 kg (Apr 24). Full extension, controlled lowering."
+              "name": "DB or cable press",
+              "detail": "3 × 8",
+              "how_to": "Balanced push to match the row. Superset with cable row.",
+              "youtube_url": "https://www.youtube.com/results?search_query=dumbbell+chest+press+proper+form"
             },
             {
-              "name": "Bulgarian split squat (Smith)",
-              "detail": "3 × 8 each @ 40 kg",
-              "how_to": "~7% up from 37.5 kg."
+              "name": "Face pulls",
+              "detail": "3 × 15",
+              "how_to": "Light weight. Pull to forehead, elbows high, hold the squeeze.",
+              "youtube_url": "https://www.youtube.com/results?search_query=face+pulls+cable+athleanx"
             },
             {
-              "name": "Single-leg calf hops",
-              "detail": "3 × 20 each",
-              "how_to": "Front foot on bench. Stay light and springy."
+              "name": "External rotation — band or cable",
+              "detail": "3 × 15 each side",
+              "how_to": "Small movement, very light load. Balances the internal rotation tennis demands.",
+              "youtube_url": "https://www.youtube.com/results?search_query=shoulder+external+rotation+exercise+how+to"
             },
             {
-              "name": "Pogo hops (single-leg)",
-              "detail": "3 × 15 each",
-              "how_to": "Stop if calf pain."
+              "name": "Pallof press",
+              "detail": "3 × 10 each side",
+              "how_to": "Stand sideways to cable. Press straight out, hold 2s, resist rotation.",
+              "youtube_url": "https://www.youtube.com/results?search_query=pallof+press+how+to+cable"
+            },
+            {
+              "name": "Reverse curls or wrist roller",
+              "detail": "3 × 12–15",
+              "how_to": "Forearm extensor work. Direct tennis elbow prevention.",
+              "youtube_url": "https://www.youtube.com/results?search_query=reverse+curl+forearm+exercise+how+to"
             }
           ]
         },
         {
+          "date": "2026-05-02",
+          "type": "rest",
+          "name": "Rest — Wedding",
+          "description": "Wedding weekend."
+        },
+        {
           "date": "2026-05-03",
           "type": "rest",
-          "name": "Rest — Wedding Weekend",
-          "description": "Full rest."
+          "name": "Rest — Wedding",
+          "description": "Wedding weekend."
         }
       ]
     },
