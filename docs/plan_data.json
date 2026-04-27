@@ -748,15 +748,20 @@
       "days": [
         {
           "date": "2026-05-04",
-          "type": "easy",
-          "name": "Easy Run",
-          "description": "6 km @ 4:45/km. Bank holiday.",
-          "distance_km": 6,
+          "type": "long",
+          "name": "Long Run + Strides",
+          "description": "10 km @ 4:45/km + 4 × 20s strides. Bank holiday. ⚠️ Outside Yasmin's 4-week no-long-run window — monitor calves.",
+          "distance_km": 10,
           "exercises": [
             {
-              "name": "Easy run",
-              "detail": "6 km @ 4:45/km",
-              "how_to": "Conversational. HR < 145."
+              "name": "Long run",
+              "detail": "10 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace. HR ~140–150. If calves feel anything, cut short."
+            },
+            {
+              "name": "Strides",
+              "detail": "4 × 20s @ 3:24/km",
+              "how_to": "After the run. Sharp and relaxed — race pace. Full recovery between each."
             }
           ]
         },
@@ -815,9 +820,71 @@
         },
         {
           "date": "2026-05-06",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Recovery before tomorrow's intervals."
+          "type": "strength",
+          "name": "Core + Upper Body",
+          "description": "No leg load. Same session as Apr 26. Pizza evening.",
+          "exercises": [
+            {
+              "name": "Dead bugs",
+              "detail": "3 × 10 each side",
+              "how_to": "Press lower back into floor. Opposite arm and leg extend slowly — no arch.",
+              "youtube_url": "https://www.youtube.com/results?search_query=dead+bug+exercise+how+to"
+            },
+            {
+              "name": "Copenhagen planks",
+              "detail": "3 × 20s each side",
+              "how_to": "Side plank with top foot on bench. Hip adductor stability.",
+              "youtube_url": "https://www.youtube.com/results?search_query=copenhagen+plank+how+to"
+            },
+            {
+              "name": "Lat pulldown",
+              "detail": "3 × 8",
+              "how_to": "Full stretch at top, drive elbows down and back. Superset with landmine press.",
+              "youtube_url": "https://www.youtube.com/results?search_query=lat+pulldown+proper+form+jeff+nippard"
+            },
+            {
+              "name": "Single-arm landmine press",
+              "detail": "3 × 8 each side",
+              "how_to": "Arc follows natural shoulder path. Superset with lat pulldown.",
+              "youtube_url": "https://www.youtube.com/results?search_query=single+arm+landmine+press+how+to"
+            },
+            {
+              "name": "Cable row",
+              "detail": "3 × 8",
+              "how_to": "Full scapular retraction at end range. Superset with DB/cable press.",
+              "youtube_url": "https://www.youtube.com/results?search_query=seated+cable+row+proper+form"
+            },
+            {
+              "name": "DB or cable press",
+              "detail": "3 × 8",
+              "how_to": "Balanced push to match the row. Superset with cable row.",
+              "youtube_url": "https://www.youtube.com/results?search_query=dumbbell+chest+press+proper+form"
+            },
+            {
+              "name": "Face pulls",
+              "detail": "3 × 15",
+              "how_to": "Light weight. Pull to forehead, elbows high, hold the squeeze.",
+              "youtube_url": "https://www.youtube.com/results?search_query=face+pulls+cable+athleanx"
+            },
+            {
+              "name": "External rotation — band or cable",
+              "detail": "3 × 15 each side",
+              "how_to": "Small movement, very light load. Balances the internal rotation tennis demands.",
+              "youtube_url": "https://www.youtube.com/results?search_query=shoulder+external+rotation+exercise+how+to"
+            },
+            {
+              "name": "Pallof press",
+              "detail": "3 × 10 each side",
+              "how_to": "Stand sideways to cable. Press straight out, hold 2s, resist rotation.",
+              "youtube_url": "https://www.youtube.com/results?search_query=pallof+press+how+to+cable"
+            },
+            {
+              "name": "Reverse curls or wrist roller",
+              "detail": "3 × 12–15",
+              "how_to": "Forearm extensor work. Direct tennis elbow prevention.",
+              "youtube_url": "https://www.youtube.com/results?search_query=reverse+curl+forearm+exercise+how+to"
+            }
+          ]
         },
         {
           "date": "2026-05-07",

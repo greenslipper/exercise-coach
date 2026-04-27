@@ -145,9 +145,9 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | May 4 | Easy run | 6 km @ 4:45/km. Bank holiday. |
-| Tue | May 5 | Yasmin's program | Full session. Single-leg extension 30 kg. Dentist 17:30 — gym in the morning. |
-| Wed | May 6 | Rest | Pizza evening. |
+| Mon | May 4 | Long run + strides | 10 km @ 4:45/km + 4 × 20s strides @ 3:24/km. Bank holiday. ⚠️ Outside Yasmin's 4-week no-long-run window — monitor calves. |
+| Tue | May 5 | Yasmin's program (legs) | Full session. Single-leg extension 32.5 kg. Dentist 17:30 — gym in the morning. |
+| Wed | May 6 | Core + Upper Body | Same session as Apr 26. Pizza evening after. |
 | Thu | May 7 | Intervals | 2 km warmup + 4 × 1000 m @ 3:35/km (2 min jog recovery) + 2 km cooldown. ~9 km. Hardest session of the block — controlled but genuinely demanding. |
 | Fri | May 8 | Rest | — |
 | Sat | May 9 | Yasmin's program | Full session — leg session 2 of the week. Double-leg extension 60 kg. Do in the morning if Forth festival is all day. |
