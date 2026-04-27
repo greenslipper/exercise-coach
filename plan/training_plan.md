@@ -127,7 +127,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | Apr 27 | Intervals | 2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
+| Mon | Apr 27 | Intervals ✓ | 9 km. 4 × 1000 m: 3:48, 3:40, 3:35, 3:39. Avg 3:40/km — target hit. Rep 3 at 3:35 = Week 5 target. Max HR 177. |
 | Tue | Apr 28 | Rest | — |
 | Wed | Apr 29 | Tennis | — |
 | Thu | Apr 30 | Yasmin's program (legs) | Birthday. Full leg session. Single-leg extension 32.5 kg. |

@@ -574,8 +574,8 @@
         {
           "date": "2026-04-27",
           "type": "intervals",
-          "name": "Intervals — 4 × 1000 m",
-          "description": "2 km warmup + 4 × 1000 m @ 3:40/km (2 min jog recovery) + 2 km cooldown. ~9 km.",
+          "name": "Intervals ✓ — 4 × 1000 m",
+          "description": "9 km. Reps: 3:48, 3:40, 3:35, 3:39 — avg 3:40/km, target hit. Rep 3 hit the Week 5 pace (3:35). Max HR 177.",
           "distance_km": 9,
           "exercises": [
             {
@@ -585,8 +585,8 @@
             },
             {
               "name": "Intervals",
-              "detail": "4 × 1000 m @ 3:40/km",
-              "how_to": "2 min jog recovery. 5 sec/km faster than the Week 3 target — should feel hard. Consistent splits."
+              "detail": "4 × 1000 m — 3:48, 3:40, 3:35, 3:39 ✓",
+              "how_to": "Target was 3:40/km — nailed it. Rep 3 at 3:35 is already Week 5 pace. Max HR 177."
             },
             {
               "name": "Cooldown",
