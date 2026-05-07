@@ -131,7 +131,7 @@ async function loadFromWorker() {
         for (const local of gymLog) {
           if (!serverLogs.find(s => s.date === local.date)) serverLogs.push(local);
         }
-        serverLogs.sort((a, b) => b.date.localeCompare(a.date));
+        serverLogs.sort((a, b) => a.date.localeCompare(b.date));
         gymLog = serverLogs;
         saveGymLog();
       }
