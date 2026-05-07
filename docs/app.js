@@ -787,71 +787,88 @@ function closeLogModal() {
 }
 
 function buildWeightChart(log) {
-  const W = 320, H = 120, PL = 32, PR = 12, PT = 10, PB = 24;
-  const iW = W - PL - PR, iH = H - PT - PB;
+  const PL = 32, PR = 10, PT = 14, PB = 22, H = 130;
+  const iH = H - PT - PB;
 
   const all = [...log].sort((a, b) => a.date.localeCompare(b.date));
-  const sorted = all.slice(-6);
-  const n = sorted.length;
+  const n = all.length;
   if (n < 2) return '';
 
-  // 3-reading rolling average (undefined for first 2 points)
-  const rolling = sorted.map((_, i) =>
-    i < 2 ? null : (sorted[i].weight + sorted[i-1].weight + sorted[i-2].weight) / 3
-  );
+  const msOf = str => parseDate(str).getTime();
+  const t0 = msOf(all[0].date);
+  const t1 = msOf(all[n - 1].date);
+  const totalDays = Math.max(1, (t1 - t0) / 86400000);
+  // 6px per day — chart grows proportionally with data; scrollable when wide
+  const iW = Math.max(280, Math.ceil(totalDays * 6));
+  const W = PL + iW + PR;
 
-  const vals = sorted.map(e => e.weight);
-  const rawMin = Math.min(...vals);
-  const rawMax = Math.max(...vals);
-  // Round grid to nearest 0.5 kg
+  const toX = dateStr => PL + ((msOf(dateStr) - t0) / (t1 - t0)) * iW;
+  const vals = all.map(e => e.weight);
+  const rawMin = Math.min(...vals), rawMax = Math.max(...vals);
   const minV = Math.floor(rawMin * 2) / 2 - 0.5;
   const maxV = Math.ceil(rawMax * 2) / 2 + 0.5;
-
-  const toX = i => PL + (i / (n - 1)) * iW;
   const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
 
   // Horizontal gridlines every 0.5 kg
-  const gridStep = 0.5;
-  const gridVals = [];
-  for (let v = Math.ceil(minV / gridStep) * gridStep; v <= maxV; v = Math.round((v + gridStep) * 10) / 10) {
-    gridVals.push(v);
+  const gridHtml = [];
+  for (let v = Math.ceil(minV * 2) / 2; v <= maxV + 0.001; v = Math.round((v + 0.5) * 10) / 10) {
+    const y = toY(v).toFixed(1);
+    const whole = Number.isInteger(v);
+    gridHtml.push(
+      `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}" stroke="${whole ? '#2a2a3e' : '#22223a'}" stroke-width="${whole ? 1 : 0.5}"/>` +
+      (whole ? `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#666" font-size="8" text-anchor="end">${v}</text>` : '')
+    );
   }
-  const gridHtml = gridVals.map(v => {
-    const y = toY(v);
-    const isWhole = Number.isInteger(v);
-    return `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}"
-        stroke="#333355" stroke-width="${isWhole ? 1 : 0.5}"/>
-      <text x="${PL - 3}" y="${y + 3.5}" fill="${isWhole ? '#888' : '#555'}" font-size="8" text-anchor="end">${v % 1 === 0 ? v : ''}</text>`;
+
+  // Month boundary lines + labels — scale naturally as data grows
+  const d0 = parseDate(all[0].date);
+  const d1 = parseDate(all[n - 1].date);
+  const monthHtml = [];
+  let mCur = new Date(d0.getFullYear(), d0.getMonth(), 1);
+  while (mCur <= d1) {
+    const x = +(PL + ((mCur.getTime() - t0) / (t1 - t0)) * iW).toFixed(1);
+    if (x >= PL + 8 && x <= W - PR - 8) {
+      const yr = mCur.getMonth() === 0 ? ' \'' + String(mCur.getFullYear()).slice(2) : '';
+      monthHtml.push(
+        `<line x1="${x}" y1="${PT}" x2="${x}" y2="${PT + iH}" stroke="#2a2a3e" stroke-width="1" stroke-dasharray="3,3"/>` +
+        `<text x="${x + 3}" y="${H - 5}" fill="#777" font-size="8">${MONTH_NAMES[mCur.getMonth()]}${yr}</text>`
+      );
+    }
+    mCur = new Date(mCur.getFullYear(), mCur.getMonth() + 1, 1);
+  }
+
+  // Rolling 3-point trailing average
+  const rolling = all.map((_, i) =>
+    i < 2 ? null : (all[i].weight + all[i - 1].weight + all[i - 2].weight) / 3
+  );
+
+  const linePoints = all.map(e => `${toX(e.date).toFixed(1)},${toY(e.weight).toFixed(1)}`).join(' ');
+  const areaPoints = `${PL},${PT + iH} ${linePoints} ${toX(all[n-1].date).toFixed(1)},${PT + iH}`;
+  const avgPoints = rolling.map((v, i) => v !== null
+    ? `${toX(all[i].date).toFixed(1)},${toY(v).toFixed(1)}`
+    : null).filter(Boolean).join(' ');
+
+  // Dots: label on first, last, and local peaks/troughs
+  const dotsHtml = all.map((e, i) => {
+    const x = +toX(e.date).toFixed(1);
+    const y = +toY(e.weight).toFixed(1);
+    const isFirst = i === 0, isLast = i === n - 1;
+    const isHigh = i > 0 && i < n - 1 && e.weight > all[i-1].weight && e.weight > all[i+1].weight;
+    const isLow  = i > 0 && i < n - 1 && e.weight < all[i-1].weight && e.weight < all[i+1].weight;
+    const showLabel = isFirst || isLast || isHigh || isLow;
+    const anchor = isFirst ? 'start' : 'end';
+    const lx = (isFirst ? x + 2 : x - 2).toFixed(1);
+    return `<circle cx="${x}" cy="${y}" r="3" fill="#4fc3f7" stroke="#fff" stroke-width="1.5"/>` +
+      (showLabel ? `<text x="${lx}" y="${(y - 7).toFixed(1)}" fill="#aaa" font-size="8" text-anchor="${anchor}">${e.weight}</text>` : '');
   }).join('');
 
-  const points = sorted.map((e, i) => `${toX(i)},${toY(e.weight)}`).join(' ');
-  const areaPoints = `${PL},${PT + iH} ${points} ${toX(n - 1)},${PT + iH}`;
-
-  const avgPoints = rolling
-    .map((v, i) => v !== null ? `${toX(i)},${toY(v)}` : null)
-    .filter(Boolean).join(' ');
-
-  const dots = sorted.map((e, i) => {
-    const x = toX(i), y = toY(e.weight);
-    const label = i === 0 || i === n - 1 ? e.weight + ' kg' : '';
-    const anchor = i === 0 ? 'start' : 'end';
-    return `<circle cx="${x}" cy="${y}" r="3" fill="#4fc3f7" stroke="white" stroke-width="1"/>
-      ${label ? `<text x="${x}" y="${y - 7}" fill="#ccc" font-size="9" text-anchor="${anchor}">${label}</text>` : ''}`;
-  }).join('');
-
-  const tickHtml = [0, n - 1].map(i => {
-    const anchor = i === 0 ? 'start' : 'end';
-    return `<text x="${toX(i)}" y="${H - 4}" fill="#888" font-size="9" text-anchor="${anchor}">${sorted[i].date.slice(5).replace('-', '/')}</text>`;
-  }).join('');
-
-  return `<svg viewBox="0 0 ${W} ${H}" width="100%" class="weight-chart-svg">
-    ${gridHtml}
+  return `<div class="weight-chart-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" class="weight-chart-svg">
+    ${gridHtml.join('')}${monthHtml.join('')}
     <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.08"/>
-    <polyline points="${points}" fill="none" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity="0.5"/>
+    <polyline points="${linePoints}" fill="none" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity="0.55"/>
     ${avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5"/>` : ''}
-    ${dots}
-    ${tickHtml}
-  </svg>`;
+    ${dotsHtml}
+  </svg></div>`;
 }
 
 function renderWeightCard() {
@@ -963,6 +980,11 @@ function renderGym() {
   `;
 
   section.innerHTML = weightCard + syncBar + sessionsSection;
+  // Auto-scroll chart to show latest (rightmost) data
+  requestAnimationFrame(() => {
+    const sc = section.querySelector('.weight-chart-scroll');
+    if (sc) sc.scrollLeft = sc.scrollWidth;
+  });
 }
 
 function exportForClaude() {

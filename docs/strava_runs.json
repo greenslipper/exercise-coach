@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-26",
+  "updated": "2026-05-07",
   "run_dates": [
     "2016-09-13",
     "2016-09-20",
@@ -412,7 +412,17 @@
     "2026-03-13",
     "2026-03-15",
     "2026-03-18",
-    "2026-03-22"
+    "2026-03-22",
+    "2026-03-26",
+    "2026-03-29",
+    "2026-04-01",
+    "2026-04-06",
+    "2026-04-18",
+    "2026-04-19",
+    "2026-04-25",
+    "2026-04-27",
+    "2026-05-02",
+    "2026-05-05"
   ],
   "runs": {
     "2018-07-22": {
@@ -575,6 +585,11 @@
       "moving_time_min": 60.3,
       "avg_pace": "4:42"
     },
+    "2026-03-26": {
+      "distance_km": 3.63,
+      "moving_time_min": 16.0,
+      "avg_pace": "4:24"
+    },
     "2022-11-09": {
       "distance_km": 12.04,
       "moving_time_min": 53.8,
@@ -705,6 +720,11 @@
       "moving_time_min": 233.7,
       "avg_pace": "7:04"
     },
+    "2026-04-06": {
+      "distance_km": 6.01,
+      "moving_time_min": 28.2,
+      "avg_pace": "4:42"
+    },
     "2023-02-08": {
       "distance_km": 13.02,
       "moving_time_min": 57.4,
@@ -784,6 +804,11 @@
       "distance_km": 4.98,
       "moving_time_min": 19.6,
       "avg_pace": "3:56"
+    },
+    "2026-05-02": {
+      "distance_km": 7.4,
+      "moving_time_min": 37.0,
+      "avg_pace": "4:59"
     },
     "2023-02-22": {
       "distance_km": 14.15,
@@ -1130,6 +1155,11 @@
       "moving_time_min": 32.7,
       "avg_pace": "3:55"
     },
+    "2026-04-27": {
+      "distance_km": 9.04,
+      "moving_time_min": 43.1,
+      "avg_pace": "4:46"
+    },
     "2021-01-25": {
       "distance_km": 5.36,
       "moving_time_min": 22.9,
@@ -1244,6 +1274,11 @@
       "distance_km": 24.18,
       "moving_time_min": 95.4,
       "avg_pace": "3:56"
+    },
+    "2026-03-29": {
+      "distance_km": 7.93,
+      "moving_time_min": 39.0,
+      "avg_pace": "4:55"
     },
     "2025-06-25": {
       "distance_km": 7.27,
@@ -1365,6 +1400,11 @@
       "moving_time_min": 59.1,
       "avg_pace": "4:49"
     },
+    "2026-05-05": {
+      "distance_km": 6.72,
+      "moving_time_min": 31.9,
+      "avg_pace": "4:45"
+    },
     "2023-03-05": {
       "distance_km": 21.1,
       "moving_time_min": 81.3,
@@ -1449,6 +1489,11 @@
       "distance_km": 7.36,
       "moving_time_min": 34.4,
       "avg_pace": "4:40"
+    },
+    "2026-04-18": {
+      "distance_km": 6.53,
+      "moving_time_min": 36.7,
+      "avg_pace": "5:36"
     },
     "2020-08-04": {
       "distance_km": 4.71,
@@ -1985,6 +2030,11 @@
       "moving_time_min": 26.6,
       "avg_pace": "5:30"
     },
+    "2026-04-19": {
+      "distance_km": 8.81,
+      "moving_time_min": 42.5,
+      "avg_pace": "4:49"
+    },
     "2021-11-07": {
       "distance_km": 8.34,
       "moving_time_min": 35.6,
@@ -2164,6 +2214,16 @@
       "distance_km": 4.42,
       "moving_time_min": 18.1,
       "avg_pace": "4:05"
+    },
+    "2026-04-01": {
+      "distance_km": 10.65,
+      "moving_time_min": 49.0,
+      "avg_pace": "4:35"
+    },
+    "2026-04-25": {
+      "distance_km": 5.18,
+      "moving_time_min": 25.4,
+      "avg_pace": "4:54"
     },
     "2024-10-29": {
       "distance_km": 5.92,
