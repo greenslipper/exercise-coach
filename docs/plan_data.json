@@ -1018,13 +1018,13 @@
           "date": "2026-05-12",
           "type": "easy",
           "name": "Easy Run — with Miles",
-          "description": "~6 km easy with Miles.",
-          "distance_km": 6,
+          "description": "~10 km easy with Miles. Extended route — starting to build marathon mileage now.",
+          "distance_km": 10,
           "exercises": [
             {
               "name": "Easy run",
-              "detail": "~6 km @ easy",
-              "how_to": "Conversational pace. This is recovery — enjoy the company."
+              "detail": "~10 km @ 4:45/km",
+              "how_to": "Conversational pace throughout. Add an extra loop — the goal is easy mileage, not effort."
             }
           ]
         },
@@ -1115,13 +1115,13 @@
           "date": "2026-05-16",
           "type": "easy",
           "name": "Easy Run (morning — before wedding)",
-          "description": "4 km easy. Morning before Ted/Bethan UK Wedding — keep it short and gentle.",
-          "distance_km": 4,
+          "description": "8 km easy. Morning before Ted/Bethan UK Wedding — allow 90 min, stay fully conversational.",
+          "distance_km": 8,
           "exercises": [
             {
               "name": "Easy run",
-              "detail": "4 km @ 4:45–5:00/km",
-              "how_to": "Fully conversational. No targets — just get the legs moving."
+              "detail": "8 km @ 4:45–5:00/km",
+              "how_to": "Fully conversational — no targets. Extended from 4 km to build weekly mileage. Allow 90 min before you need to be anywhere."
             }
           ]
         },
@@ -1194,13 +1194,13 @@
           "date": "2026-05-19",
           "type": "easy",
           "name": "Easy Run",
-          "description": "6 km @ 4:45/km. Recovery day between gym and intervals.",
-          "distance_km": 6,
+          "description": "10 km @ 4:45/km. Easy day between gym and intervals — building mileage toward marathon block.",
+          "distance_km": 10,
           "exercises": [
             {
               "name": "Easy run",
-              "detail": "6 km @ 4:45/km",
-              "how_to": "Conversational. HR < 145."
+              "detail": "10 km @ 4:45/km",
+              "how_to": "Conversational throughout. HR < 145. No effort — save the legs for Thursday intervals."
             }
           ]
         },
@@ -1285,13 +1285,13 @@
           "date": "2026-05-22",
           "type": "long",
           "name": "Long Run",
-          "description": "10 km @ 4:45/km. First long run back — Yasmin's 4-week no-long-run ban lifts around May 18.",
-          "distance_km": 10,
+          "description": "14 km @ 4:45/km. First proper long run back — Yasmin's ban is lifted. Calves are the signal; cut short if anything tightens.",
+          "distance_km": 14,
           "exercises": [
             {
               "name": "Long run",
-              "detail": "10 km @ 4:45/km",
-              "how_to": "Comfortable aerobic pace. HR ~140–150. Monitor calves — first long run back. Cut short if anything feels off."
+              "detail": "14 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace. HR ~140–150. This is the first real long run in 4+ weeks — stay easy and let the legs tell you what they have. Cut short at any calf tightness."
             }
           ]
         },
@@ -1303,9 +1303,17 @@
         },
         {
           "date": "2026-05-24",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Full rest."
+          "type": "easy",
+          "name": "Easy Run (optional)",
+          "description": "6 km easy. Skip this if calves or legs are heavy — the Friday long run is the priority.",
+          "distance_km": 6,
+          "exercises": [
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45–5:00/km",
+              "how_to": "Gentle shakeout. Fully optional — if the 14 km on Friday left any calf tightness, skip this and rest."
+            }
+          ]
         }
       ]
     },
