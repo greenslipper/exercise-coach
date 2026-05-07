@@ -236,6 +236,27 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 ---
 
+## Post-5K Strength Evolution (for marathon block)
+
+**Build this into the marathon plan when writing it after June 6.**
+
+The current Yasmin program is calf rehab focused. For Abingdon it needs to evolve toward marathon-specific strength. Key changes:
+
+### Add
+- **Single-leg Romanian deadlift (RDL)** — highest transfer to marathon mechanics; hamstrings absorb landing shock before calves do. Start light (KB or DBs), 3 × 8 each side.
+- **Eccentric calf raises off a step** — 3 × 15 slow lower (straight-leg), daily on off-days. This is the #1 tendon maintenance tool for Achilles health at marathon mileage. Replaces seated calf raise machine as the primary stimulus.
+
+### Evolve
+- **Bulgarian split squat** — keep progressing load; this protects calves by building hip extension strength
+- **Plyos** — move from calf hops/pogos at end of gym sessions toward bounding and drop jumps as mileage builds and calves prove robust. Not before September.
+- **Daily off-day habit (10–15 min):** eccentric calf drops × 15 each leg + single-leg hip hinge × 10 + single-leg balance 1 min each side. Keeps Achilles healthy through high-mileage weeks.
+
+### Deprioritise
+- Seated calf raise (machine) — becomes maintenance not primary
+- Upper body volume can drop slightly if time is tight; legs and core are what matter for marathon
+
+---
+
 ## Race Day Strategy
 
 **Pacing:** First km should feel surprisingly easy. Aim 3:22–3:25 for km 1, then settle into 3:24. If you have anything left after km 4, empty the tank.
