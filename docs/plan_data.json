@@ -832,68 +832,53 @@
         {
           "date": "2026-05-07",
           "type": "strength",
-          "name": "Core + Upper Body",
-          "description": "No leg load. Same session as Apr 26.",
+          "name": "Upper Body",
+          "description": "No leg load. 4 supersets + 1 solo. All 3 × 8. Tennis injury prevention focus.",
           "exercises": [
             {
-              "name": "Dead bugs",
-              "detail": "3 × 10 each side",
-              "how_to": "Press lower back into floor. Opposite arm and leg extend slowly — no arch.",
-              "youtube_url": "https://www.youtube.com/results?search_query=dead+bug+exercise+how+to"
-            },
-            {
-              "name": "Copenhagen planks",
-              "detail": "3 × 20s each side",
-              "how_to": "Side plank with top foot on bench. Hip adductor stability.",
-              "youtube_url": "https://www.youtube.com/results?search_query=copenhagen+plank+how+to"
-            },
-            {
               "name": "Lat pulldown",
-              "detail": "3 × 8",
-              "how_to": "Full stretch at top, drive elbows down and back. Superset with landmine press.",
-              "youtube_url": "https://www.youtube.com/results?search_query=lat+pulldown+proper+form+jeff+nippard"
-            },
-            {
-              "name": "Single-arm landmine press",
-              "detail": "3 × 8 each side",
-              "how_to": "Arc follows natural shoulder path. Superset with lat pulldown.",
-              "youtube_url": "https://www.youtube.com/results?search_query=single+arm+landmine+press+how+to"
+              "detail": "3 × 8 @ 52.5 kg",
+              "how_to": "Full stretch at top, drive elbows down and back. Superset with cable row — try to stay on same cable station."
             },
             {
               "name": "Cable row",
-              "detail": "3 × 8",
-              "how_to": "Full scapular retraction at end range. Superset with DB/cable press.",
-              "youtube_url": "https://www.youtube.com/results?search_query=seated+cable+row+proper+form"
-            },
-            {
-              "name": "DB or cable press",
-              "detail": "3 × 8",
-              "how_to": "Balanced push to match the row. Superset with cable row.",
-              "youtube_url": "https://www.youtube.com/results?search_query=dumbbell+chest+press+proper+form"
+              "detail": "3 × 8 @ 52.5 kg",
+              "how_to": "Tall spine, row to lower chest, squeeze shoulder blades at end range. Superset with lat pulldown."
             },
             {
               "name": "Face pulls",
-              "detail": "3 × 15",
-              "how_to": "Light weight. Pull to forehead, elbows high, hold the squeeze.",
-              "youtube_url": "https://www.youtube.com/results?search_query=face+pulls+cable+athleanx"
+              "detail": "3 × 8 @ 10 kg",
+              "how_to": "Pull to forehead, elbows high and wide, hold the squeeze 1s. Superset with external rotation."
             },
             {
-              "name": "External rotation — band or cable",
-              "detail": "3 × 15 each side",
-              "how_to": "Small movement, very light load.",
-              "youtube_url": "https://www.youtube.com/results?search_query=shoulder+external+rotation+exercise+how+to"
+              "name": "External rotation (cable)",
+              "detail": "3 × 8 each side @ 5 kg",
+              "how_to": "Elbow pinned at 90°, rotate outward only — tiny controlled movement, no shoulder compensation. Superset with face pulls."
+            },
+            {
+              "name": "DB shoulder press",
+              "detail": "3 × 8 @ 15 kg each",
+              "how_to": "Press overhead, elbows slightly forward. Superset with rear delt fly."
+            },
+            {
+              "name": "DB rear delt fly",
+              "detail": "3 × 8 @ 8 kg each",
+              "how_to": "Hinge forward 45°, slight bend in elbows, raise arms to shoulder height. Key tennis shoulder balance exercise. Superset with shoulder press."
+            },
+            {
+              "name": "DB chest press",
+              "detail": "3 × 8 @ 20 kg each",
+              "how_to": "Controlled descent to chest, press up and slightly in. First time on DBs — conservative weight. Superset with reverse curl."
+            },
+            {
+              "name": "Reverse curl",
+              "detail": "3 × 8 @ 15 kg",
+              "how_to": "Overhand grip, curl to shoulder height. Loads forearm extensors — key tennis elbow prevention. Superset with chest press."
             },
             {
               "name": "Pallof press",
-              "detail": "3 × 10 each side",
-              "how_to": "Stand sideways to cable. Press straight out, hold 2s, resist rotation.",
-              "youtube_url": "https://www.youtube.com/results?search_query=pallof+press+how+to+cable"
-            },
-            {
-              "name": "Reverse curls or wrist roller",
-              "detail": "3 × 12–15",
-              "how_to": "Forearm extensor work.",
-              "youtube_url": "https://www.youtube.com/results?search_query=reverse+curl+forearm+exercise+how+to"
+              "detail": "3 × 8 each side @ 10 kg",
+              "how_to": "Stand sideways to cable. Press straight out, hold 2s, resist rotation. Anti-rotation core for groundstrokes."
             }
           ]
         },
@@ -978,9 +963,56 @@
       "days": [
         {
           "date": "2026-05-11",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Full rest."
+          "type": "strength",
+          "name": "Upper Body",
+          "description": "All 3 × 8. Progress cable lifts +5%. Hold DB weights — bed in the movement first.",
+          "exercises": [
+            {
+              "name": "Lat pulldown",
+              "detail": "3 × 8 @ 55 kg",
+              "how_to": "+5% from May 7. Drive elbows down and back. Superset with cable row."
+            },
+            {
+              "name": "Cable row",
+              "detail": "3 × 8 @ 55 kg",
+              "how_to": "Tall spine, full scapular retraction. Superset with lat pulldown."
+            },
+            {
+              "name": "Face pulls",
+              "detail": "3 × 8 @ 10 kg",
+              "how_to": "Hold weight — can't increment cleanly. Focus on form. Superset with external rotation."
+            },
+            {
+              "name": "External rotation (cable)",
+              "detail": "3 × 8 each side @ 5 kg",
+              "how_to": "Hold weight. Elbow at 90°, rotate out only. Superset with face pulls."
+            },
+            {
+              "name": "DB shoulder press",
+              "detail": "3 × 8 @ 17.5 kg each",
+              "how_to": "Progress from 15 kg if May 7 felt comfortable. Superset with rear delt fly."
+            },
+            {
+              "name": "DB rear delt fly",
+              "detail": "3 × 8 @ 8 kg each",
+              "how_to": "Hold weight — bed in the movement for one more session. Superset with shoulder press."
+            },
+            {
+              "name": "DB chest press",
+              "detail": "3 × 8 @ 22.5 kg each",
+              "how_to": "Progress from 20 kg if May 7 felt comfortable. Superset with reverse curl."
+            },
+            {
+              "name": "Reverse curl",
+              "detail": "3 × 8 @ 15 kg",
+              "how_to": "Hold weight — new exercise, bed in. Superset with chest press."
+            },
+            {
+              "name": "Pallof press",
+              "detail": "3 × 8 each side @ 10 kg",
+              "how_to": "Hold weight. Press out, hold 2s, resist rotation."
+            }
+          ]
         },
         {
           "date": "2026-05-12",
@@ -1174,9 +1206,56 @@
         },
         {
           "date": "2026-05-20",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Full rest."
+          "type": "strength",
+          "name": "Upper Body",
+          "description": "All 3 × 8. Final upper body session before taper — push everything forward.",
+          "exercises": [
+            {
+              "name": "Lat pulldown",
+              "detail": "3 × 8 @ 57.5 kg",
+              "how_to": "+5% from May 11. Drive elbows down and back. Superset with cable row."
+            },
+            {
+              "name": "Cable row",
+              "detail": "3 × 8 @ 57.5 kg",
+              "how_to": "Full scapular retraction. Superset with lat pulldown."
+            },
+            {
+              "name": "Face pulls",
+              "detail": "3 × 8 @ 12.5 kg",
+              "how_to": "First progression — elbows high, hold the squeeze. Superset with external rotation."
+            },
+            {
+              "name": "External rotation (cable)",
+              "detail": "3 × 8 each side @ 5 kg",
+              "how_to": "Hold weight — delicate movement, don't rush progression. Superset with face pulls."
+            },
+            {
+              "name": "DB shoulder press",
+              "detail": "3 × 8 @ 20 kg each",
+              "how_to": "+5% from May 11. Superset with rear delt fly."
+            },
+            {
+              "name": "DB rear delt fly",
+              "detail": "3 × 8 @ 10 kg each",
+              "how_to": "First progression. Hinge forward, arms to shoulder height. Superset with shoulder press."
+            },
+            {
+              "name": "DB chest press",
+              "detail": "3 × 8 @ 25 kg each",
+              "how_to": "+5% from May 11. Superset with reverse curl."
+            },
+            {
+              "name": "Reverse curl",
+              "detail": "3 × 8 @ 17.5 kg",
+              "how_to": "First progression from 15 kg. Superset with chest press."
+            },
+            {
+              "name": "Pallof press",
+              "detail": "3 × 8 each side @ 12.5 kg",
+              "how_to": "First progression. Press out, hold 2s, resist rotation."
+            }
+          ]
         },
         {
           "date": "2026-05-21",
@@ -1338,8 +1417,8 @@
         {
           "date": "2026-06-02",
           "type": "strength",
-          "name": "Yasmin's Program (Light) — Leg Session 9",
-          "description": "2 sets each at −20% of May 18 peak. Taper — maintain stimulus only.",
+          "name": "Legs + Upper Body (Light)",
+          "description": "2 sets each at −20%. Legs first, then upper body. Taper — maintain stimulus only, no new fatigue.",
           "exercises": [
             {
               "name": "Leg press",
@@ -1385,6 +1464,51 @@
               "name": "Pogo hops (single-leg)",
               "detail": "2 × 15 each",
               "how_to": "Stop if calf pain."
+            },
+            {
+              "name": "Lat pulldown",
+              "detail": "2 × 8 @ 45 kg",
+              "how_to": "−20% taper. Superset with cable row."
+            },
+            {
+              "name": "Cable row",
+              "detail": "2 × 8 @ 45 kg",
+              "how_to": "−20% taper. Superset with lat pulldown."
+            },
+            {
+              "name": "Face pulls",
+              "detail": "2 × 8 @ 10 kg",
+              "how_to": "Superset with external rotation."
+            },
+            {
+              "name": "External rotation (cable)",
+              "detail": "2 × 8 each side @ 5 kg",
+              "how_to": "Superset with face pulls."
+            },
+            {
+              "name": "DB shoulder press",
+              "detail": "2 × 8 @ 15 kg each",
+              "how_to": "−20% taper. Superset with rear delt fly."
+            },
+            {
+              "name": "DB rear delt fly",
+              "detail": "2 × 8 @ 7.5 kg each",
+              "how_to": "Superset with shoulder press."
+            },
+            {
+              "name": "DB chest press",
+              "detail": "2 × 8 @ 20 kg each",
+              "how_to": "−20% taper. Superset with reverse curl."
+            },
+            {
+              "name": "Reverse curl",
+              "detail": "2 × 8 @ 12.5 kg",
+              "how_to": "Superset with chest press."
+            },
+            {
+              "name": "Pallof press",
+              "detail": "2 × 8 each side @ 10 kg",
+              "how_to": "Press out, hold 2s, resist rotation."
             }
           ]
         },
@@ -1397,8 +1521,8 @@
         {
           "date": "2026-06-04",
           "type": "strength",
-          "name": "Shakeout + Gym (Light)",
-          "description": "3 km very easy jog + 2 sets each at −20%. Keep legs firing without fatiguing them.",
+          "name": "Shakeout + Upper Body (Light)",
+          "description": "3 km very easy jog + upper body only at −20%. No legs — leave them completely fresh for Saturday.",
           "distance_km": 3,
           "exercises": [
             {
@@ -1407,49 +1531,49 @@
               "how_to": "Pure shakeout. No pace targets."
             },
             {
-              "name": "Leg press",
-              "detail": "2 × 8 @ 105 kg",
-              "how_to": "2 sets only."
+              "name": "Lat pulldown",
+              "detail": "2 × 8 @ 45 kg",
+              "how_to": "−20% taper. Superset with cable row."
             },
             {
-              "name": "Calf press (Gastrocnemius)",
-              "detail": "2 × 8 @ 37.5 kg",
-              "how_to": "2 sets only."
+              "name": "Cable row",
+              "detail": "2 × 8 @ 45 kg",
+              "how_to": "−20% taper. Superset with lat pulldown."
             },
             {
-              "name": "Single-leg seated calf raise",
-              "detail": "2 × 8 @ 75 kg",
-              "how_to": "2 sets only."
+              "name": "Face pulls",
+              "detail": "2 × 8 @ 10 kg",
+              "how_to": "Superset with external rotation."
             },
             {
-              "name": "Cable hip abduction",
-              "detail": "2 × 8 each @ 15 kg",
-              "how_to": "2 sets only."
+              "name": "External rotation (cable)",
+              "detail": "2 × 8 each side @ 5 kg",
+              "how_to": "Superset with face pulls."
             },
             {
-              "name": "Seated hamstring curl",
-              "detail": "2 × 8 + 1s hold @ 55 kg",
-              "how_to": "2 sets only."
+              "name": "DB shoulder press",
+              "detail": "2 × 8 @ 15 kg each",
+              "how_to": "−20% taper. Superset with rear delt fly."
             },
             {
-              "name": "Leg extension (single leg)",
-              "detail": "2 × 8 each @ 30 kg",
-              "how_to": "−20% of 37.5 kg peak. 2 sets only."
+              "name": "DB rear delt fly",
+              "detail": "2 × 8 @ 7.5 kg each",
+              "how_to": "Superset with shoulder press."
             },
             {
-              "name": "Bulgarian split squat (Smith)",
-              "detail": "2 × 8 each @ 35 kg",
-              "how_to": "2 sets only."
+              "name": "DB chest press",
+              "detail": "2 × 8 @ 20 kg each",
+              "how_to": "−20% taper. Superset with reverse curl."
             },
             {
-              "name": "Single-leg calf hops",
-              "detail": "2 × 20 each",
-              "how_to": "Front foot on bench. Stay light and springy."
+              "name": "Reverse curl",
+              "detail": "2 × 8 @ 12.5 kg",
+              "how_to": "Superset with chest press."
             },
             {
-              "name": "Pogo hops (single-leg)",
-              "detail": "2 × 15 each",
-              "how_to": "Stop if calf pain."
+              "name": "Pallof press",
+              "detail": "2 × 8 each side @ 10 kg",
+              "how_to": "Press out, hold 2s, resist rotation."
             }
           ]
         },

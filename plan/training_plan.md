@@ -158,7 +158,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 | Mon | May 4 | Long run + strides — Missed | Not done. Wedding weekend recovery — no run logged. |
 | Tue | May 5 | Intervals ✓ | 4 × 1000 m @ 3:26, 3:26, 3:27, 3:30/km — avg ~3:27/km (target 3:35/km). Max HR 177. 4 Strava segment PRs at Wandsworth Common. |
 | Wed | May 6 | Yasmin's program ✓ (logged as May 5 in app) | Leg press 122.5, calf press 40 (held), BSS 37.5, ham curl 60, hip abduction 12.5, leg ext (double) 65. |
-| Thu | May 7 | Core + Upper Body | Same session as Apr 26. No leg load. |
+| Thu | May 7 | Upper Body | SS1 (cable): lat pulldown 52.5 kg + cable row 52.5 kg. SS2 (cable): face pulls 10 kg + ext rotation 5 kg. SS3 (DBs): shoulder press 15 kg + rear delt fly 8 kg. SS4 (DBs): chest press 20 kg + reverse curl 15 kg. Solo: Pallof press 10 kg. All 3 × 8. |
 | Fri | May 8 | Rest | — |
 | Sat | May 9 | Long easy run | ~10 km @ 4:45/km. Forth folk festival — run in the morning. ⚠️ Still ~9 days inside Yasmin's no-long-run window — keep it easy and cut short if calves flag. |
 | Sun | May 10 | Yasmin's program (legs) | Full session — leg session 2 of the week. Single-leg extension ~35 kg. |
@@ -173,7 +173,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
-| Mon | May 11 | Rest | — |
+| Mon | May 11 | Upper Body | SS1 (cable): lat pulldown 55 kg + cable row 55 kg. SS2 (cable): face pulls 10 kg + ext rotation 5 kg. SS3 (DBs): shoulder press 17.5 kg + rear delt fly 8 kg. SS4 (DBs): chest press 22.5 kg + reverse curl 15 kg. Solo: Pallof press 10 kg. All 3 × 8. Progress DB moves only if May 7 felt solid. |
 | Tue | May 12 | Easy run with Miles | ~6 km @ easy pace. |
 | Wed | May 13 | Intervals | 2 km warmup + 4 × 1000 m @ 3:27/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
 | Thu | May 14 | Yasmin's program (legs) | Full session. Double-leg extension (May 10 single → May 14 double, ~67.5 kg). Leg press ~127.5 kg. |
@@ -193,7 +193,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 |-----|------|---------|--------|
 | Mon | May 18 | Yasmin's program (legs) | Full session. Single-leg extension (~37.5 kg). Leg press ~130 kg. Renata in calendar. |
 | Tue | May 19 | Easy run | 6 km @ 4:45/km. |
-| Wed | May 20 | Rest | — |
+| Wed | May 20 | Upper Body | SS1 (cable): lat pulldown 57.5 kg + cable row 57.5 kg. SS2 (cable): face pulls 12.5 kg + ext rotation 5 kg. SS3 (DBs): shoulder press 20 kg + rear delt fly 10 kg. SS4 (DBs): chest press 25 kg + reverse curl 17.5 kg. Solo: Pallof press 12.5 kg. All 3 × 8. Final session before taper. |
 | Thu | May 21 | Intervals | 2 km warmup + 4 × 1000 m @ 3:24/km (2 min jog recovery) + 2 km cooldown. Race pace — final quality session before La Manga. |
 | Fri | May 22 | Long run | 10 km @ 4:45/km. First long run back after Yasmin's ban. |
 | Sat | May 23 | Rest | Ted and Bethan wedding. |
@@ -228,9 +228,9 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 | Day | Date | Session | Detail |
 |-----|------|---------|--------|
 | Mon | June 1 | Easy + strides | 5 km @ 4:45/km + 4 × 20s strides @ 3:24/km. Renata in calendar. |
-| Tue | June 2 | Yasmin's program (light) | 2 sets each, weight −20%. |
+| Tue | June 2 | Legs + Upper Body (light) | 2 sets each, −20%. Legs: leg press 105 kg, calf press 37.5 kg, BSS 35 kg, ham curl 55 kg, hip abduction, calf raise. Upper: lat pulldown 45 kg + cable row 45 kg, face pulls 10 kg + ext rotation 5 kg, DB shoulder press 15 kg + rear delt fly 7.5 kg, DB chest press 20 kg + reverse curl 12.5 kg, Pallof press 10 kg. |
 | Wed | June 3 | Rest | — |
-| Thu | June 4 | Shakeout + gym (light) | 3 km very easy jog + 2 sets each, weight −20%. |
+| Thu | June 4 | Shakeout + Upper Body (light) | 3 km easy jog + upper body only, 2 sets each at −20%. Lat pulldown 45 kg + cable row 45 kg, face pulls 10 kg + ext rotation 5 kg, DB shoulder press 15 kg + rear delt fly 7.5 kg, DB chest press 20 kg + reverse curl 12.5 kg, Pallof press 10 kg. No legs — leave them fresh for race. |
 | Fri | June 5 | Rest | Prep race kit. Pin number on. Vaporflys out. |
 | **Sat** | **June 6** | **RACE 🏁** | **Battersea Park Run — sub 17:00. Target 3:24/km. Go get it.** |
 
