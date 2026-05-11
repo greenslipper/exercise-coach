@@ -964,8 +964,8 @@
         {
           "date": "2026-05-11",
           "type": "strength",
-          "name": "Upper Body",
-          "description": "All 3 × 8. Progress cable lifts +5%. Hold DB weights — bed in the movement first.",
+          "name": "Yasmin's Program — Legs ✓",
+          "description": "Done (swapped with Thu). Leg press 122.5, calf press 45 (didn't complete — hold), BSS dropped to 40 after 2 sets, ham curl 65, leg ext double 67.5, calf raise 90, hip abduction 12.5.",
           "exercises": [
             {
               "name": "Lat pulldown",
@@ -1055,53 +1055,53 @@
         {
           "date": "2026-05-14",
           "type": "strength",
-          "name": "Yasmin's Program — Leg Session 7",
-          "description": "Full session. Double-leg extension (May 10 single → May 14 double).",
+          "name": "Upper Body",
+          "description": "Swapped with Mon. All 3 × 8. Progress cable lifts +5%. Hold DB weights if May 7 felt tough.",
           "exercises": [
             {
-              "name": "Leg press",
-              "detail": "4 × 8 @ 127.5 kg",
-              "how_to": "Small step from 125 kg. Full extension; controlled return."
+              "name": "Lat pulldown",
+              "detail": "3 × 8 @ 55 kg",
+              "how_to": "Drive elbows down and back. Superset with cable row."
             },
             {
-              "name": "Calf press (Gastrocnemius)",
-              "detail": "3 × 8 @ 45 kg",
-              "how_to": "Up from 42.5 kg if full sets completed May 9."
+              "name": "Cable row",
+              "detail": "3 × 8 @ 55 kg",
+              "how_to": "Tall spine, full scapular retraction. Superset with lat pulldown."
             },
             {
-              "name": "Single-leg seated calf raise",
-              "detail": "3 × 8 @ 90 kg",
-              "how_to": "Up from 87.5 kg."
+              "name": "Face pulls",
+              "detail": "3 × 8 @ 10 kg",
+              "how_to": "Hold weight. Focus on form. Superset with external rotation."
             },
             {
-              "name": "Cable hip abduction",
-              "detail": "3 × 8 each @ 15 kg",
-              "how_to": "Ankle cuff on lower cable. Outer leg to 45°."
+              "name": "External rotation (cable)",
+              "detail": "3 × 8 each side @ 5 kg",
+              "how_to": "Elbow at 90°, rotate out only. Superset with face pulls."
             },
             {
-              "name": "Seated hamstring curl",
-              "detail": "3 × 8 + 1s hold @ 65 kg",
-              "how_to": "Up from 62.5 kg. Slow controlled release."
+              "name": "DB shoulder press",
+              "detail": "3 × 8 @ 17.5 kg each",
+              "how_to": "Progress from 15 kg if May 7 felt comfortable. Superset with rear delt fly."
             },
             {
-              "name": "Leg extension (double leg)",
-              "detail": "3 × 8 @ 67.5 kg",
-              "how_to": "Double leg — up from 65 kg. Full extension, controlled lowering."
+              "name": "DB rear delt fly",
+              "detail": "3 × 8 @ 8 kg each",
+              "how_to": "Hinge forward, arms to shoulder height. Superset with shoulder press."
             },
             {
-              "name": "Bulgarian split squat (Smith)",
-              "detail": "3 × 8 each @ 42.5 kg",
-              "how_to": "Up from 40 kg. Rear foot on box; knee tracks toes."
+              "name": "DB chest press",
+              "detail": "3 × 8 @ 22.5 kg each",
+              "how_to": "Progress from 20 kg if May 7 felt comfortable. Superset with reverse curl."
             },
             {
-              "name": "Single-leg calf hops",
-              "detail": "3 × 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact."
+              "name": "Reverse curl",
+              "detail": "3 × 8 @ 15 kg",
+              "how_to": "Superset with chest press."
             },
             {
-              "name": "Pogo hops (single-leg)",
-              "detail": "3 × 15 each",
-              "how_to": "Stop if calf pain."
+              "name": "Pallof press",
+              "detail": "3 × 8 each side @ 10 kg",
+              "how_to": "Press out, hold 2s, resist rotation."
             }
           ]
         },
