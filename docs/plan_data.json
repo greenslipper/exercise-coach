@@ -1020,33 +1020,9 @@
         },
         {
           "date": "2026-05-13",
-          "type": "intervals",
-          "name": "Intervals — 4 × 1000 m",
-          "description": "2 km warmup + 4 × 1000 m @ 3:27/km (2 min jog recovery) + 2 km cooldown. ~9 km. Consolidate the pace from May 5.",
-          "distance_km": 9,
-          "exercises": [
-            {
-              "name": "Warmup",
-              "detail": "2 km @ 4:45/km",
-              "how_to": "Easy jogging. Don't rush."
-            },
-            {
-              "name": "Intervals",
-              "detail": "4 × 1000 m @ 3:27/km",
-              "how_to": "2 min jog recovery. Same pace as May 5 — the goal is to hit it feeling more controlled, not faster."
-            },
-            {
-              "name": "Cooldown",
-              "detail": "2 km @ 4:45/km",
-              "how_to": "Easy jog. Let heart rate settle."
-            }
-          ]
-        },
-        {
-          "date": "2026-05-14",
           "type": "strength",
           "name": "Upper Body",
-          "description": "Swapped with Mon. All 3 × 8. Progress cable lifts +5%. Hold DB weights if May 7 felt tough.",
+          "description": "All 3 × 8. Progress cable lifts to 55 kg. DB moves: hold if May 7 felt tough, progress if it felt comfortable.",
           "exercises": [
             {
               "name": "Lat pulldown",
@@ -1096,77 +1072,69 @@
           ]
         },
         {
-          "date": "2026-05-15",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Full rest. Minimum couples event 17:00."
-        },
-        {
-          "date": "2026-05-16",
-          "type": "easy",
-          "name": "Easy Run (morning — before wedding)",
-          "description": "8 km easy. Morning before Ted/Bethan UK Wedding — allow 90 min, stay fully conversational.",
-          "distance_km": 8,
+          "date": "2026-05-14",
+          "type": "intervals",
+          "name": "Intervals — 4 × 1000 m",
+          "description": "2 km warmup + 4 × 1000 m @ 3:27/km (2 min jog recovery) + 2 km cooldown. ~9 km. Consolidate the pace from May 5.",
+          "distance_km": 9,
           "exercises": [
             {
-              "name": "Easy run",
-              "detail": "8 km @ 4:45–5:00/km",
-              "how_to": "Fully conversational — no targets. Extended from 4 km to build weekly mileage. Allow 90 min before you need to be anywhere."
+              "name": "Warmup",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jogging. Don't rush."
+            },
+            {
+              "name": "Intervals",
+              "detail": "4 × 1000 m @ 3:27/km",
+              "how_to": "2 min jog recovery. Same pace as May 5 — the goal is to hit it feeling more controlled, not faster."
+            },
+            {
+              "name": "Cooldown",
+              "detail": "2 km @ 4:45/km",
+              "how_to": "Easy jog. Let heart rate settle."
             }
           ]
         },
         {
-          "date": "2026-05-17",
-          "type": "rest",
-          "name": "Rest",
-          "description": "Full rest."
-        }
-      ]
-    },
-    {
-      "label": "Week 7 — Final Sharp Week",
-      "phase": "Quality",
-      "days": [
-        {
-          "date": "2026-05-18",
+          "date": "2026-05-15",
           "type": "strength",
-          "name": "Yasmin's Program — Leg Session 8",
-          "description": "Full session. Single-leg extension. Last heavy leg session before race week.",
+          "name": "Yasmin's Program — Legs",
+          "description": "Full session. Single-leg extension (~35 kg). Hold calf press at 45 kg and BSS at 42.5 kg — both hit their limit Monday.",
           "exercises": [
             {
               "name": "Leg press",
-              "detail": "4 × 8 @ 130 kg",
-              "how_to": "Up from 127.5 kg. Full extension; controlled return."
+              "detail": "4 × 8 @ 125 kg",
+              "how_to": "Small step up from 122.5 kg. Full extension; controlled return."
             },
             {
               "name": "Calf press (Gastrocnemius)",
-              "detail": "3 × 8 @ 47.5 kg",
-              "how_to": "Up from 45 kg."
+              "detail": "3 × 8 @ 45 kg",
+              "how_to": "Hold — didn't complete full sets Monday. Get all 3 × 8 before progressing."
             },
             {
               "name": "Single-leg seated calf raise",
-              "detail": "3 × 8 @ 92.5 kg",
-              "how_to": "Up from 90 kg. Stop if calf tightness."
+              "detail": "3 × 8 @ 90 kg",
+              "how_to": "Hold from Monday."
             },
             {
               "name": "Cable hip abduction",
-              "detail": "3 × 8 each @ 17.5 kg",
-              "how_to": "Up from 15 kg."
+              "detail": "3 × 8 each @ 12.5 kg",
+              "how_to": "Ankle cuff, lower cable. Outer leg to 45°."
             },
             {
               "name": "Seated hamstring curl",
               "detail": "3 × 8 + 1s hold @ 67.5 kg",
-              "how_to": "Up from 65 kg. Slow controlled release."
+              "how_to": "Small step up from 65 kg. Slow controlled release."
             },
             {
               "name": "Leg extension (single leg)",
-              "detail": "3 × 8 each @ 37.5 kg",
-              "how_to": "Single leg — up from 35 kg. Full extension, controlled lowering."
+              "detail": "3 × 8 each @ 35 kg",
+              "how_to": "Single leg — alternates with double each session."
             },
             {
               "name": "Bulgarian split squat (Smith)",
-              "detail": "3 × 8 each @ 45 kg",
-              "how_to": "Up from 42.5 kg."
+              "detail": "3 × 8 each @ 42.5 kg",
+              "how_to": "Hold — had to drop Monday. Rear foot on box; knee tracks toes."
             },
             {
               "name": "Single-leg calf hops",
@@ -1181,29 +1149,54 @@
           ]
         },
         {
-          "date": "2026-05-19",
+          "date": "2026-05-16",
           "type": "easy",
-          "name": "Easy Run",
-          "description": "10 km @ 4:45/km. Easy day between gym and intervals — building mileage toward marathon block.",
-          "distance_km": 10,
+          "name": "Easy Run (morning — before wedding)",
+          "description": "8 km easy. Morning before Ted/Bethan UK Wedding — allow 90 min, stay fully conversational.",
+          "distance_km": 8,
           "exercises": [
             {
               "name": "Easy run",
-              "detail": "10 km @ 4:45/km",
-              "how_to": "Conversational throughout. HR < 145. No effort — save the legs for Thursday intervals."
+              "detail": "8 km @ 4:45–5:00/km",
+              "how_to": "Fully conversational — no targets. Allow 90 min before you need to be anywhere."
             }
           ]
         },
         {
-          "date": "2026-05-20",
-          "type": "strength",
-          "name": "Upper Body",
-          "description": "All 3 × 8. Final upper body session before taper — push everything forward.",
+          "date": "2026-05-17",
+          "type": "easy",
+          "name": "Cycle",
+          "description": "Easy cycle — active recovery.",
           "exercises": [
+            {
+              "name": "Cycle",
+              "detail": "Easy pace",
+              "how_to": "Active recovery. No targets — just keep it easy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Week 7 — Final Sharp Week",
+      "phase": "Quality",
+      "days": [
+        {
+          "date": "2026-05-18",
+          "type": "strength",
+          "name": "Easy Run + Upper Body",
+          "description": "6 km easy then upper body. Renata in calendar. All 3 × 8 — push everything forward.",
+          "distance_km": 6,
+          "exercises": [
+            {
+              "name": "Easy run",
+              "detail": "6 km @ 4:45/km",
+              "how_to": "Conversational. Do this before upper body to get the legs moving."
+            },
             {
               "name": "Lat pulldown",
               "detail": "3 × 8 @ 57.5 kg",
-              "how_to": "+5% from May 11. Drive elbows down and back. Superset with cable row."
+              "how_to": "Drive elbows down and back. Superset with cable row."
             },
             {
               "name": "Cable row",
@@ -1213,45 +1206,65 @@
             {
               "name": "Face pulls",
               "detail": "3 × 8 @ 12.5 kg",
-              "how_to": "First progression — elbows high, hold the squeeze. Superset with external rotation."
+              "how_to": "Elbows high, hold the squeeze. Superset with external rotation."
             },
             {
               "name": "External rotation (cable)",
               "detail": "3 × 8 each side @ 5 kg",
-              "how_to": "Hold weight — delicate movement, don't rush progression. Superset with face pulls."
+              "how_to": "Elbow at 90°, rotate out only. Superset with face pulls."
             },
             {
               "name": "DB shoulder press",
               "detail": "3 × 8 @ 20 kg each",
-              "how_to": "+5% from May 11. Superset with rear delt fly."
+              "how_to": "Superset with rear delt fly."
             },
             {
               "name": "DB rear delt fly",
               "detail": "3 × 8 @ 10 kg each",
-              "how_to": "First progression. Hinge forward, arms to shoulder height. Superset with shoulder press."
+              "how_to": "Hinge forward, arms to shoulder height. Superset with shoulder press."
             },
             {
               "name": "DB chest press",
               "detail": "3 × 8 @ 25 kg each",
-              "how_to": "+5% from May 11. Superset with reverse curl."
+              "how_to": "Superset with reverse curl."
             },
             {
               "name": "Reverse curl",
               "detail": "3 × 8 @ 17.5 kg",
-              "how_to": "First progression from 15 kg. Superset with chest press."
+              "how_to": "Superset with chest press."
             },
             {
               "name": "Pallof press",
               "detail": "3 × 8 each side @ 12.5 kg",
-              "how_to": "First progression. Press out, hold 2s, resist rotation."
+              "how_to": "Press out, hold 2s, resist rotation."
             }
           ]
+        },
+        {
+          "date": "2026-05-19",
+          "type": "long",
+          "name": "Long Run",
+          "description": "14 km @ 4:45/km. First proper long run back — Yasmin's ban is lifted. Stay easy; calves are the signal.",
+          "distance_km": 14,
+          "exercises": [
+            {
+              "name": "Long run",
+              "detail": "14 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace. HR ~140–150. First real long run in 4+ weeks — stay easy and let the legs tell you what they have. Cut short at any calf tightness."
+            }
+          ]
+        },
+        {
+          "date": "2026-05-20",
+          "type": "rest",
+          "name": "Rest / Tennis",
+          "description": "Active rest. Tennis if on."
         },
         {
           "date": "2026-05-21",
           "type": "intervals",
           "name": "Intervals — 4 × 1000 m @ Race Pace",
-          "description": "2 km warmup + 4 × 1000 m @ 3:24/km (2 min jog recovery) + 2 km cooldown. ~9 km. Race pace reps — final quality session before La Manga.",
+          "description": "2 km warmup + 4 × 1000 m @ 3:24/km (2 min jog recovery) + 2 km cooldown. ~9 km. Race pace — final quality session before La Manga.",
           "distance_km": 9,
           "exercises": [
             {
@@ -1262,7 +1275,7 @@
             {
               "name": "Intervals",
               "detail": "4 × 1000 m @ 3:24/km",
-              "how_to": "2 min jog recovery. This is the most important session of the block — controlled but genuinely hard. HR 170–180 on reps."
+              "how_to": "2 min jog recovery. Most important session of the block — controlled but genuinely hard. HR 170–180 on reps."
             },
             {
               "name": "Cooldown",
@@ -1273,37 +1286,76 @@
         },
         {
           "date": "2026-05-22",
-          "type": "long",
-          "name": "Long Run",
-          "description": "14 km @ 4:45/km. First proper long run back — Yasmin's ban is lifted. Calves are the signal; cut short if anything tightens.",
-          "distance_km": 14,
+          "type": "strength",
+          "name": "Yasmin's Program — Legs",
+          "description": "Full session. Double-leg extension. Calf press and BSS hold until full sets completed.",
           "exercises": [
             {
-              "name": "Long run",
-              "detail": "14 km @ 4:45/km",
-              "how_to": "Comfortable aerobic pace. HR ~140–150. This is the first real long run in 4+ weeks — stay easy and let the legs tell you what they have. Cut short at any calf tightness."
+              "name": "Leg press",
+              "detail": "4 × 8 @ 127.5 kg",
+              "how_to": "Full extension; controlled return."
+            },
+            {
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ 45 kg",
+              "how_to": "Hold until full 3 × 8 completed."
+            },
+            {
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ 92.5 kg",
+              "how_to": "Up from 90 kg."
+            },
+            {
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 15 kg",
+              "how_to": "Ankle cuff, lower cable. Outer leg to 45°."
+            },
+            {
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 67.5 kg",
+              "how_to": "Slow controlled release."
+            },
+            {
+              "name": "Leg extension (double leg)",
+              "detail": "3 × 8 @ 67.5 kg",
+              "how_to": "Full extension, controlled lowering."
+            },
+            {
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 42.5 kg",
+              "how_to": "Hold — hit limit last session. Rear foot on box; knee tracks toes."
+            },
+            {
+              "name": "Single-leg calf hops",
+              "detail": "3 × 20 each",
+              "how_to": "Front foot on bench. Minimal ground contact."
+            },
+            {
+              "name": "Pogo hops (single-leg)",
+              "detail": "3 × 15 each",
+              "how_to": "Stop if calf pain."
             }
           ]
         },
         {
           "date": "2026-05-23",
-          "type": "rest",
-          "name": "Rest — Wedding",
-          "description": "Ted and Bethan wedding. Full rest."
-        },
-        {
-          "date": "2026-05-24",
           "type": "easy",
-          "name": "Easy Run (optional)",
-          "description": "6 km easy. Skip this if calves or legs are heavy — the Friday long run is the priority.",
+          "name": "Easy Run (morning — before wedding)",
+          "description": "6 km easy. Morning before Ted and Bethan wedding.",
           "distance_km": 6,
           "exercises": [
             {
               "name": "Easy run",
               "detail": "6 km @ 4:45–5:00/km",
-              "how_to": "Gentle shakeout. Fully optional — if the 14 km on Friday left any calf tightness, skip this and rest."
+              "how_to": "Fully conversational. Allow enough time before you need to be ready for the wedding."
             }
           ]
+        },
+        {
+          "date": "2026-05-24",
+          "type": "rest",
+          "name": "Rest",
+          "description": "Full rest."
         }
       ]
     },
