@@ -127,9 +127,10 @@ async function loadFromWorker() {
           }
           return { date: s.date, name, exercises: s.exercises || [] };
         });
-        // Preserve local-only sessions not yet synced to worker
-        for (const local of gymLog) {
-          if (!serverLogs.find(s => s.date === local.date)) serverLogs.push(local);
+        // Preserve any session currently pending a sync to the worker
+        if (pendingGymDate && !serverLogs.find(s => s.date === pendingGymDate)) {
+          const pending = gymLog.find(s => s.date === pendingGymDate);
+          if (pending) serverLogs.push(pending);
         }
         serverLogs.sort((a, b) => a.date.localeCompare(b.date));
         gymLog = serverLogs;

@@ -968,49 +968,39 @@
           "description": "Done (swapped with Thu). Leg press 122.5, calf press 45 (didn't complete — hold), BSS dropped to 40 after 2 sets, ham curl 65, leg ext double 67.5, calf raise 90, hip abduction 12.5.",
           "exercises": [
             {
-              "name": "Lat pulldown",
-              "detail": "3 × 8 @ 55 kg",
-              "how_to": "+5% from May 7. Drive elbows down and back. Superset with cable row."
+              "name": "Leg press",
+              "detail": "4 × 8 @ 122.5 kg",
+              "how_to": "Done. Full extension; controlled return."
             },
             {
-              "name": "Cable row",
-              "detail": "3 × 8 @ 55 kg",
-              "how_to": "Tall spine, full scapular retraction. Superset with lat pulldown."
+              "name": "Calf press (Gastrocnemius)",
+              "detail": "3 × 8 @ 45 kg",
+              "how_to": "Didn't complete full sets — hold at 45 kg next session."
             },
             {
-              "name": "Face pulls",
-              "detail": "3 × 8 @ 10 kg",
-              "how_to": "Hold weight — can't increment cleanly. Focus on form. Superset with external rotation."
+              "name": "Bulgarian split squat (Smith)",
+              "detail": "3 × 8 each @ 42.5 kg",
+              "how_to": "Had to drop to 40 kg after 2 sets. Hold at 42.5 kg next session."
             },
             {
-              "name": "External rotation (cable)",
-              "detail": "3 × 8 each side @ 5 kg",
-              "how_to": "Hold weight. Elbow at 90°, rotate out only. Superset with face pulls."
+              "name": "Seated hamstring curl",
+              "detail": "3 × 8 + 1s hold @ 65 kg",
+              "how_to": "Done. Slow controlled release."
             },
             {
-              "name": "DB shoulder press",
-              "detail": "3 × 8 @ 17.5 kg each",
-              "how_to": "Progress from 15 kg if May 7 felt comfortable. Superset with rear delt fly."
+              "name": "Leg extension (double leg)",
+              "detail": "3 × 8 @ 67.5 kg",
+              "how_to": "Done. Full extension, controlled lowering."
             },
             {
-              "name": "DB rear delt fly",
-              "detail": "3 × 8 @ 8 kg each",
-              "how_to": "Hold weight — bed in the movement for one more session. Superset with shoulder press."
+              "name": "Single-leg seated calf raise",
+              "detail": "3 × 8 @ 90 kg",
+              "how_to": "Done."
             },
             {
-              "name": "DB chest press",
-              "detail": "3 × 8 @ 22.5 kg each",
-              "how_to": "Progress from 20 kg if May 7 felt comfortable. Superset with reverse curl."
-            },
-            {
-              "name": "Reverse curl",
-              "detail": "3 × 8 @ 15 kg",
-              "how_to": "Hold weight — new exercise, bed in. Superset with chest press."
-            },
-            {
-              "name": "Pallof press",
-              "detail": "3 × 8 each side @ 10 kg",
-              "how_to": "Hold weight. Press out, hold 2s, resist rotation."
+              "name": "Cable hip abduction",
+              "detail": "3 × 8 each @ 12.5 kg",
+              "how_to": "Done. Ankle cuff, outer leg to 45°."
             }
           ]
         },
