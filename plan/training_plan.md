@@ -175,7 +175,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 |-----|------|---------|--------|
 | Mon | May 11 | Yasmin's program (legs) ✓ | Leg press 122.5, calf press 45 (didn't complete — hold), BSS 42.5 → dropped to 40 after 2 sets, ham curl 65, leg ext double 67.5, calf raise 90, hip abduction 12.5. |
 | Tue | May 12 | Easy run with Miles | ~10 km @ easy pace. Run with Miles — 18:00. |
-| Wed | May 13 | Upper Body | SS1 (cable): lat pulldown 55 kg + cable row 55 kg. SS2 (cable): face pulls 10 kg + ext rotation 5 kg. SS3 (DBs): shoulder press 17.5 kg + rear delt fly 8 kg. SS4 (DBs): chest press 22.5 kg + reverse curl 15 kg. Solo: Pallof press 10 kg. All 3 × 8. |
+| Wed | May 13 | Upper Body ✓ | Lat pulldown 60 kg, cable row 55 kg, face pulls 12.5 kg, ext rotation 5 kg (felt easy), DB shoulder press 16 kg, rear delt fly 6 kg, chest press 24 kg, reverse curl 10 kg, Pallof press 10 kg. |
 | Thu | May 14 | Intervals | 2 km warmup + 4 × 1000 m @ 3:27/km (2 min jog recovery) + 2 km cooldown. ~9 km. |
 | Fri | May 15 | Yasmin's program (legs) | Full session. Single-leg extension (~35 kg). Leg press ~125 kg. Calf press 45 kg (hold). BSS 42.5 kg. |
 | Sat | May 16 | Easy run | 8 km easy (morning before Ted/Bethan UK Wedding — allow 90 min). |

@@ -1021,53 +1021,53 @@
         {
           "date": "2026-05-13",
           "type": "strength",
-          "name": "Upper Body",
-          "description": "All 3 × 8. Progress cable lifts to 55 kg. DB moves: hold if May 7 felt tough, progress if it felt comfortable.",
+          "name": "Upper Body ✓",
+          "description": "Done. Lat pulldown 60 kg, cable row 55 kg, face pulls 12.5 kg, ext rotation 5 kg, shoulder press 16 kg, rear delt fly 6 kg, chest press 24 kg, reverse curl 10 kg, Pallof press 10 kg.",
           "exercises": [
             {
               "name": "Lat pulldown",
-              "detail": "3 × 8 @ 55 kg",
-              "how_to": "Drive elbows down and back. Superset with cable row."
+              "detail": "3 × 8 @ 60 kg",
+              "how_to": "Done — up from 55 kg."
             },
             {
               "name": "Cable row",
               "detail": "3 × 8 @ 55 kg",
-              "how_to": "Tall spine, full scapular retraction. Superset with lat pulldown."
+              "how_to": "Done."
             },
             {
               "name": "Face pulls",
-              "detail": "3 × 8 @ 10 kg",
-              "how_to": "Hold weight. Focus on form. Superset with external rotation."
+              "detail": "3 × 8 @ 12.5 kg",
+              "how_to": "Done."
             },
             {
               "name": "External rotation (cable)",
               "detail": "3 × 8 each side @ 5 kg",
-              "how_to": "Elbow at 90°, rotate out only. Superset with face pulls."
+              "how_to": "Done — felt easy, progress next session."
             },
             {
               "name": "DB shoulder press",
-              "detail": "3 × 8 @ 17.5 kg each",
-              "how_to": "Progress from 15 kg if May 7 felt comfortable. Superset with rear delt fly."
+              "detail": "3 × 8 @ 16 kg each",
+              "how_to": "Done."
             },
             {
               "name": "DB rear delt fly",
-              "detail": "3 × 8 @ 8 kg each",
-              "how_to": "Hinge forward, arms to shoulder height. Superset with shoulder press."
+              "detail": "3 × 8 @ 6 kg each",
+              "how_to": "Done."
             },
             {
               "name": "DB chest press",
-              "detail": "3 × 8 @ 22.5 kg each",
-              "how_to": "Progress from 20 kg if May 7 felt comfortable. Superset with reverse curl."
+              "detail": "3 × 8 @ 24 kg each",
+              "how_to": "Done."
             },
             {
               "name": "Reverse curl",
-              "detail": "3 × 8 @ 15 kg",
-              "how_to": "Superset with chest press."
+              "detail": "3 × 8 @ 10 kg",
+              "how_to": "Done."
             },
             {
               "name": "Pallof press",
               "detail": "3 × 8 each side @ 10 kg",
-              "how_to": "Press out, hold 2s, resist rotation."
+              "how_to": "Done."
             }
           ]
         },
