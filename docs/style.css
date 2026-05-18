@@ -1235,3 +1235,96 @@ body {
   scrollbar-width: none;
 }
 .weight-chart-scroll::-webkit-scrollbar { display: none; }
+
+/* Progress tab */
+.progress-section-title {
+  padding: 0.75rem 1rem 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--light);
+}
+
+.run-chart-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  margin: 0 1rem 0.75rem;
+  padding: 1rem 1rem 0.75rem;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--orange);
+}
+
+.run-chart-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+  margin-bottom: 0.25rem;
+}
+
+.run-chart-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.run-chart-scroll::-webkit-scrollbar { display: none; }
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0 1rem 0.75rem;
+}
+
+.strength-card {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.65rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.strength-card-name {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mid);
+  margin-bottom: 0.35rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.strength-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.strength-card-weight {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1;
+}
+
+.strength-card-unit {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.strength-card-gain {
+  font-size: 0.67rem;
+  color: var(--green);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.strength-sparkline {
+  display: block;
+  flex-shrink: 0;
+}

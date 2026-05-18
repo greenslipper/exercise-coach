@@ -872,6 +872,144 @@ function buildWeightChart(log) {
   </svg></div>`;
 }
 
+// ── Weekly run chart ────────────────────────────────────────────────────────
+
+const KEY_EXERCISES = [
+  { name: 'leg press',                     short: 'Leg Press'     },
+  { name: 'bulgarian split squat (smith)', short: 'Split Squat'   },
+  { name: 'single-leg seated calf raise',  short: 'SL Calf Raise' },
+  { name: 'calf press (gastrocnemius)',    short: 'Calf Press'    },
+  { name: 'seated hamstring curl',         short: 'Ham Curl'      },
+  { name: 'cable hip abduction',           short: 'Hip Abduction' },
+];
+
+function getWeekMonday(dateStr) {
+  const d = parseDate(dateStr);
+  const day = d.getDay();
+  const mon = new Date(d);
+  mon.setDate(d.getDate() - ((day + 6) % 7));
+  return dateKey(mon);
+}
+
+function getWeeklyRunKm(numWeeks) {
+  const todayMon = getWeekMonday(today());
+  const weeks = [];
+  for (let i = numWeeks - 1; i >= 0; i--) {
+    const d = parseDate(todayMon);
+    d.setDate(d.getDate() - i * 7);
+    const wStart = dateKey(d);
+    const wEnd = new Date(d); wEnd.setDate(d.getDate() + 6);
+    const wEndStr = dateKey(wEnd);
+    let km = 0;
+    for (const [date, stats] of Object.entries(stravaRunStats)) {
+      if (date >= wStart && date <= wEndStr) km += stats.distance_km || 0;
+    }
+    weeks.push({ weekStart: wStart, km: +km.toFixed(1) });
+  }
+  return weeks;
+}
+
+function buildWeeklyRunChart() {
+  const weeks = getWeeklyRunKm(12);
+  if (!weeks.some(w => w.km > 0)) return '';
+
+  const PL = 26, PR = 10, PT = 14, PB = 22, H = 110;
+  const iH = H - PT - PB;
+  const barW = 14, barGap = 4, n = weeks.length;
+  const iW = n * (barW + barGap) - barGap;
+  const W = PL + iW + PR;
+
+  const maxKm = Math.max(...weeks.map(w => w.km), 1);
+  const roundedMax = Math.ceil(maxKm / 10) * 10;
+  const step = roundedMax <= 30 ? 10 : roundedMax <= 60 ? 20 : 30;
+
+  const toY = km => PT + iH - (km / roundedMax) * iH;
+  const todayMon = getWeekMonday(today());
+
+  const gridHtml = [];
+  for (let v = 0; v <= roundedMax; v += step) {
+    const y = toY(v).toFixed(1);
+    gridHtml.push(
+      `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}" stroke="#ebebeb" stroke-width="1"/>` +
+      `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>`
+    );
+  }
+
+  const barsHtml = weeks.map(({ weekStart, km }, i) => {
+    const x = PL + i * (barW + barGap);
+    const bh = ((km / roundedMax) * iH).toFixed(1);
+    const y = toY(km).toFixed(1);
+    const isCurrent = weekStart === todayMon;
+    const d = parseDate(weekStart);
+    const label = `${d.getDate()}/${d.getMonth() + 1}`;
+    return `
+      <rect x="${x}" y="${y}" width="${barW}" height="${bh}" rx="2"
+            fill="var(--orange)" fill-opacity="${isCurrent ? '1' : '0.45'}"/>
+      ${km > 0 ? `<text x="${(x + barW / 2).toFixed(1)}" y="${(+y - 3).toFixed(1)}"
+            fill="${isCurrent ? 'var(--orange)' : '#aaa'}" font-size="7" text-anchor="middle">${km.toFixed(0)}</text>` : ''}
+      <text x="${(x + barW / 2).toFixed(1)}" y="${H - 4}" fill="#ccc" font-size="7" text-anchor="middle">${label}</text>`;
+  }).join('');
+
+  return `<div class="run-chart-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" class="run-chart-svg">
+    ${gridHtml.join('')}${barsHtml}
+  </svg></div>`;
+}
+
+// ── Strength progression ─────────────────────────────────────────────────────
+
+function getExerciseHistory(exerciseName) {
+  const lower = exerciseName.toLowerCase();
+  const history = [];
+  for (const session of gymLog) {
+    const ex = session.exercises.find(e => e.name.toLowerCase() === lower);
+    if (ex && ex.weight != null) history.push({ date: session.date, weight: ex.weight });
+  }
+  return history.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+function buildStrengthSparkline(history) {
+  if (history.length < 2) return `<div style="width:72px;height:34px"></div>`;
+  const W = 72, H = 34, PT = 3, PB = 3;
+  const iH = H - PT - PB;
+  const n = history.length;
+  const vals = history.map(h => h.weight);
+  const minV = Math.min(...vals), maxV = Math.max(...vals);
+  const range = maxV - minV || 1;
+  const toX = i => (i / (n - 1)) * W;
+  const toY = v => PT + iH - ((v - minV) / range) * iH;
+  const pts = history.map((h, i) => `${toX(i).toFixed(1)},${toY(h.weight).toFixed(1)}`).join(' ');
+  const area = `0,${PT + iH} ${pts} ${W},${PT + iH}`;
+  const lx = toX(n - 1).toFixed(1), ly = toY(history[n - 1].weight).toFixed(1);
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" class="strength-sparkline">
+    <polygon points="${area}" fill="var(--purple)" fill-opacity="0.12"/>
+    <polyline points="${pts}" fill="none" stroke="var(--purple)" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="${lx}" cy="${ly}" r="2.5" fill="var(--purple)"/>
+  </svg>`;
+}
+
+function buildStrengthProgressionSection() {
+  const cards = KEY_EXERCISES.map(({ name, short }) => {
+    const history = getExerciseHistory(name);
+    if (history.length === 0) return '';
+    const latest = history[history.length - 1];
+    const gain = +(latest.weight - history[0].weight).toFixed(1);
+    const gainStr = gain > 0 ? `+${gain} kg` : '';
+    return `
+      <div class="strength-card">
+        <div class="strength-card-name">${short}</div>
+        <div class="strength-card-bottom">
+          <div>
+            <div class="strength-card-weight">${latest.weight}<span class="strength-card-unit"> kg</span></div>
+            ${gainStr ? `<div class="strength-card-gain">${gainStr}</div>` : ''}
+          </div>
+          ${buildStrengthSparkline(history)}
+        </div>
+      </div>`;
+  }).filter(Boolean).join('');
+  if (!cards) return '';
+  return `<div class="progress-section-title">Strength Progression</div><div class="strength-grid">${cards}</div>`;
+}
+
 function renderWeightCard() {
   const sorted = [...weightLog].sort((a, b) => a.date < b.date ? -1 : 1);
   const latest = sorted.length ? sorted[sorted.length - 1] : null;
@@ -934,57 +1072,29 @@ function renderGym() {
   const section = document.getElementById('gym-section');
   if (!section) return;
 
-  const weightCard = renderWeightCard();
-
-  const sessionsHtml = [...gymLog].reverse().map(session => {
-    const exRows = session.exercises
-      .filter(ex => ex.weight != null || ex.note)
-      .map(ex => `
-        <div class="gym-log-ex">
-          <span class="gym-log-ex-name">${ex.name}</span>
-          <span class="gym-log-ex-weight">${ex.weight != null ? (ex.weight > 0 ? ex.weight + ' kg' : 'BW') : '—'}</span>
-        </div>
-        ${ex.note ? `<div class="gym-log-ex-note">${ex.note}</div>` : ''}
-      `).join('');
-    const skipped = session.exercises.filter(ex => ex.weight == null && !ex.note).length;
-    const skipNote = skipped > 0 ? `<div class="gym-log-skip">${skipped} exercise${skipped > 1 ? 's' : ''} not logged</div>` : '';
-    return `
-      <div class="gym-log-card">
-        <div class="gym-log-header">
-          <div class="gym-log-name">${session.name}</div>
-          <div class="gym-log-date">${formatDayLabel(session.date)}</div>
-        </div>
-        <div class="gym-log-exercises">${exRows}${skipNote}</div>
-      </div>
-    `;
-  }).join('');
+  const runChartCard = (() => {
+    const chart = buildWeeklyRunChart();
+    return chart ? `
+      <div class="run-chart-card">
+        <div class="run-chart-title">Weekly Distance</div>
+        ${chart}
+      </div>` : '';
+  })();
 
   const configured = isWorkerConfigured();
   const syncBar = `
     <div class="worker-status">
-      <span class="worker-badge${configured ? ' connected' : ''}">
-        ${configured ? '☁ Cloud sync active' : '☁ Cloud sync'}
-      </span>
-      <button class="worker-settings-btn" onclick="openSettings()">
-        ${configured ? '⚙' : 'Configure →'}
-      </button>
-    </div>
-  `;
+      <span class="worker-badge${configured ? ' connected' : ''}">${configured ? '☁ Cloud sync active' : '☁ Cloud sync'}</span>
+      <button class="worker-settings-btn" onclick="openSettings()">${configured ? '⚙' : 'Configure →'}</button>
+    </div>`;
 
-  const sessionsSection = gymLog.length > 0 ? `
-    <div class="gym-log-list">${sessionsHtml}</div>
-  ` : `
-    <div class="gym-empty">
-      <p>No sessions logged yet.</p>
-      <p>Tap a strength day, then log each exercise.</p>
-    </div>
-  `;
+  section.innerHTML = renderWeightCard() + runChartCard + buildStrengthProgressionSection() + syncBar;
 
-  section.innerHTML = weightCard + syncBar + sessionsSection;
-  // Auto-scroll chart to show latest (rightmost) data
   requestAnimationFrame(() => {
-    const sc = section.querySelector('.weight-chart-scroll');
-    if (sc) sc.scrollLeft = sc.scrollWidth;
+    const wsc = section.querySelector('.weight-chart-scroll');
+    if (wsc) wsc.scrollLeft = wsc.scrollWidth;
+    const rsc = section.querySelector('.run-chart-scroll');
+    if (rsc) rsc.scrollLeft = rsc.scrollWidth;
   });
 }
 
