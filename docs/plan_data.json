@@ -1263,19 +1263,39 @@
         {
           "date": "2026-05-21",
           "type": "intervals",
-          "name": "Intervals — 4 × 1000 m @ Race Pace",
-          "description": "2 km warmup + 4 × 1000 m @ 3:24/km (2 min jog recovery) + 2 km cooldown. ~9 km. Race pace — final quality session before La Manga.",
+          "name": "Intervals — 2 × 2km + 1km @ Race Pace",
+          "description": "2 km warmup + 2km @ 3:24/km + 90s jog + 2km @ 3:24/km + 90s jog + 1km @ 3:24/km (or faster) + 2km cooldown. ~9 km. Race simulation — the final quality session before La Manga.",
           "distance_km": 9,
           "exercises": [
             {
               "name": "Warmup",
               "detail": "2 km @ 4:45/km",
-              "how_to": "Thorough warmup. These are race-pace reps."
+              "how_to": "Thorough warmup. These are race-pace reps — don't rush into them."
             },
             {
-              "name": "Intervals",
-              "detail": "4 × 1000 m @ 3:24/km",
-              "how_to": "2 min jog recovery. Most important session of the block — controlled but genuinely hard. HR 170–180 on reps."
+              "name": "Rep 1",
+              "detail": "2 km @ 3:24/km",
+              "how_to": "Start controlled. The first km should feel manageable — the second km is where the work happens. HR will climb to 170–175 by the end."
+            },
+            {
+              "name": "Recovery",
+              "detail": "90s jog",
+              "how_to": "Short recovery by design — you won't be fully rested for rep 2. That's the point."
+            },
+            {
+              "name": "Rep 2",
+              "detail": "2 km @ 3:24/km",
+              "how_to": "This is the hardest rep. Hold form when it gets uncomfortable. HR 175–180 expected."
+            },
+            {
+              "name": "Recovery",
+              "detail": "90s jog",
+              "how_to": "Short recovery again. Prepare mentally for the final rep."
+            },
+            {
+              "name": "Rep 3",
+              "detail": "1 km @ 3:24/km or faster",
+              "how_to": "You're running on empty — this is race finish simulation. If you have anything left, empty it here."
             },
             {
               "name": "Cooldown",
@@ -1325,16 +1345,6 @@
               "detail": "3 × 8 each @ 42.5 kg",
               "how_to": "Hold — hit limit last session. Rear foot on box; knee tracks toes."
             },
-            {
-              "name": "Single-leg calf hops",
-              "detail": "3 × 20 each",
-              "how_to": "Front foot on bench. Minimal ground contact."
-            },
-            {
-              "name": "Pogo hops (single-leg)",
-              "detail": "3 × 15 each",
-              "how_to": "Stop if calf pain."
-            }
           ]
         },
         {

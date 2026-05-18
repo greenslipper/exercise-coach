@@ -194,8 +194,8 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 | Mon | May 18 | Easy run + Upper Body | 6 km @ 4:45/km easy, then upper body. Renata in calendar. SS1: lat pulldown 57.5 kg + cable row 57.5 kg. SS2: face pulls 12.5 kg + ext rotation 5 kg. SS3: shoulder press 20 kg + rear delt fly 10 kg. SS4: chest press 25 kg + reverse curl 17.5 kg. Pallof press 12.5 kg. All 3 × 8. |
 | Tue | May 19 | Long run | 14 km @ 4:45/km. First proper long run back — Yasmin's ban is lifted. Keep it easy; calves are the signal. |
 | Wed | May 20 | Rest / Tennis | Active rest. Tennis if on. |
-| Thu | May 21 | Intervals | 2 km warmup + 4 × 1000 m @ 3:24/km (2 min jog recovery) + 2 km cooldown. ~9 km. Race pace — final quality session before La Manga. |
-| Fri | May 22 | Yasmin's program (legs) | Full session. Double-leg extension (~67.5 kg). Leg press ~127.5 kg. Calf press 45 kg (hold until full sets). BSS 42.5 kg. |
+| Thu | May 21 | Intervals | 2 km warmup + 2km @ 3:24/km + 90s jog + 2km @ 3:24/km + 90s jog + 1km @ 3:24/km (or faster) + 2 km cooldown. ~9 km. Race simulation — sustained efforts build the specific endurance 1km reps can't. Drop plyos from Friday legs. |
+| Fri | May 22 | Yasmin's program (legs) | Full session. Double-leg extension (~67.5 kg). Leg press ~127.5 kg. Calf press 45 kg (hold until full sets). BSS 42.5 kg. No plyos — hard intervals the day before. |
 | Sat | May 23 | Easy run | 6 km easy. Morning before Ted and Bethan wedding. |
 | Sun | May 24 | Rest | — |
 
