@@ -567,6 +567,12 @@ function showTab(name) {
   document.getElementById('tab-week').classList.toggle('active', name === 'week');
   document.getElementById('tab-plan').classList.toggle('active', name === 'plan');
   document.getElementById('tab-gym').classList.toggle('active', name === 'gym');
+  // Scroll charts to most recent (rightmost) data — must happen after section is visible
+  if (name === 'gym') {
+    document.querySelectorAll('.weight-chart-scroll, .strength-chart-scroll').forEach(sc => {
+      sc.scrollLeft = sc.scrollWidth;
+    });
+  }
 }
 
 // ── Plan overview ───────────────────────────────────────────────────────────
@@ -1169,11 +1175,6 @@ function renderGym() {
     </div>`;
 
   section.innerHTML = renderWeightCard() + runChartCard + buildStrengthProgressionSection() + syncBar;
-
-  // Reading scrollWidth forces a synchronous reflow, giving the correct value to scroll to
-  section.querySelectorAll('.weight-chart-scroll, .strength-chart-scroll').forEach(sc => {
-    sc.scrollLeft = sc.scrollWidth;
-  });
 }
 
 function exportForClaude() {
