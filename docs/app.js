@@ -817,15 +817,15 @@ function buildWeightChart(log) {
     gridVals.push(v);
   }
 
-  // Fixed axis SVG: labels + short gridline stubs
-  const axisHtml = gridVals.map(v => {
-    const y = toY(v).toFixed(1);
-    const whole = Number.isInteger(v);
-    return `<line x1="0" y1="${y}" x2="${PL}" y2="${y}" stroke="#ebebeb" stroke-width="${whole ? 1 : 0.5}"/>` +
-      (whole ? `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>` : '');
-  }).join('');
+  // Fixed axis SVG: labels only — no gridlines so they don't bleed left of the axis
+  const axisHtml = gridVals
+    .filter(v => Number.isInteger(v))
+    .map(v => {
+      const y = toY(v).toFixed(1);
+      return `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>`;
+    }).join('');
 
-  // Scrolling data SVG: gridlines (full data width)
+  // Scrolling data SVG: gridlines start at x=0 (the axis boundary)
   const dataGridHtml = gridVals.map(v => {
     const y = toY(v).toFixed(1);
     const whole = Number.isInteger(v);
@@ -1015,14 +1015,13 @@ function buildStrengthChart(history) {
     gridVals.push(v);
   }
 
-  // Fixed axis SVG: labels + short gridline stubs
+  // Fixed axis SVG: labels only — no gridlines so they don't bleed left of the axis
   const axisHtml = gridVals.map(v => {
     const y = toY(v).toFixed(1);
-    return `<line x1="0" y1="${y}" x2="${PL}" y2="${y}" stroke="#ebebeb" stroke-width="1"/>` +
-      `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>`;
+    return `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>`;
   }).join('');
 
-  // Scrolling data SVG: gridlines (full data width)
+  // Scrolling data SVG: gridlines start at x=0 (the axis boundary)
   const dataGridHtml = gridVals.map(v => {
     const y = toY(v).toFixed(1);
     return `<line x1="0" y1="${y}" x2="${dW}" y2="${y}" stroke="#ebebeb" stroke-width="1"/>`;
