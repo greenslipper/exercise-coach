@@ -1250,7 +1250,7 @@ body {
   background: var(--white);
   border-radius: var(--radius);
   margin: 0 1rem 0.75rem;
-  padding: 1rem 1rem 0.75rem;
+  padding: 0.85rem 1rem 0.75rem;
   box-shadow: var(--shadow);
   border-left: 4px solid var(--orange);
 }
@@ -1264,67 +1264,52 @@ body {
   margin-bottom: 0.25rem;
 }
 
-.run-chart-scroll {
+.strength-full-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  margin: 0 1rem 0.5rem;
+  padding: 0.85rem 1rem 0.75rem;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--purple);
+}
+
+.strength-full-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.35rem;
+}
+
+.strength-full-name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--purple);
+}
+
+.strength-full-right {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.strength-full-weight {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.strength-full-gain {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.strength-chart-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  margin-top: 4px;
 }
-.run-chart-scroll::-webkit-scrollbar { display: none; }
-
-.strength-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-  padding: 0 1rem 0.75rem;
-}
-
-.strength-card {
-  background: var(--white);
-  border-radius: var(--radius-sm);
-  padding: 0.75rem 0.65rem;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.strength-card-name {
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--mid);
-  margin-bottom: 0.35rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.strength-card-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.strength-card-weight {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--dark);
-  line-height: 1;
-}
-
-.strength-card-unit {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--light);
-}
-
-.strength-card-gain {
-  font-size: 0.67rem;
-  color: var(--green);
-  font-weight: 600;
-  margin-top: 0.2rem;
-}
-
-.strength-sparkline {
-  display: block;
-  flex-shrink: 0;
-}
+.strength-chart-scroll::-webkit-scrollbar { display: none; }

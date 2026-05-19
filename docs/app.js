@@ -913,9 +913,12 @@ function buildWeeklyRunChart() {
   const weeks = getWeeklyRunKm(12);
   if (!weeks.some(w => w.km > 0)) return '';
 
-  const PL = 26, PR = 10, PT = 14, PB = 22, H = 110;
+  // Fixed logical dimensions — SVG scales to 100% container width
+  const PL = 26, PR = 6, PT = 14, PB = 22, H = 120;
   const iH = H - PT - PB;
-  const barW = 14, barGap = 4, n = weeks.length;
+  const n = weeks.length;
+  const barGap = 4;
+  const barW = 26;
   const iW = n * (barW + barGap) - barGap;
   const W = PL + iW + PR;
 
@@ -937,22 +940,22 @@ function buildWeeklyRunChart() {
 
   const barsHtml = weeks.map(({ weekStart, km }, i) => {
     const x = PL + i * (barW + barGap);
-    const bh = ((km / roundedMax) * iH).toFixed(1);
+    const bh = Math.max(0, ((km / roundedMax) * iH)).toFixed(1);
     const y = toY(km).toFixed(1);
     const isCurrent = weekStart === todayMon;
     const d = parseDate(weekStart);
     const label = `${d.getDate()}/${d.getMonth() + 1}`;
     return `
       <rect x="${x}" y="${y}" width="${barW}" height="${bh}" rx="2"
-            fill="var(--orange)" fill-opacity="${isCurrent ? '1' : '0.45'}"/>
+            fill="var(--orange)" fill-opacity="${isCurrent ? '1' : '0.4'}"/>
       ${km > 0 ? `<text x="${(x + barW / 2).toFixed(1)}" y="${(+y - 3).toFixed(1)}"
-            fill="${isCurrent ? 'var(--orange)' : '#aaa'}" font-size="7" text-anchor="middle">${km.toFixed(0)}</text>` : ''}
-      <text x="${(x + barW / 2).toFixed(1)}" y="${H - 4}" fill="#ccc" font-size="7" text-anchor="middle">${label}</text>`;
+            fill="${isCurrent ? 'var(--orange)' : '#bbb'}" font-size="8" text-anchor="middle" font-weight="${isCurrent ? '700' : '400'}">${km.toFixed(0)}</text>` : ''}
+      <text x="${(x + barW / 2).toFixed(1)}" y="${H - 4}" fill="#ccc" font-size="7.5" text-anchor="middle">${label}</text>`;
   }).join('');
 
-  return `<div class="run-chart-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" class="run-chart-svg">
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" class="run-chart-svg" preserveAspectRatio="xMidYMid meet" style="display:block">
     ${gridHtml.join('')}${barsHtml}
-  </svg></div>`;
+  </svg>`;
 }
 
 // ── Strength progression ─────────────────────────────────────────────────────
@@ -967,24 +970,80 @@ function getExerciseHistory(exerciseName) {
   return history.sort((a, b) => a.date.localeCompare(b.date));
 }
 
-function buildStrengthSparkline(history) {
-  if (history.length < 2) return `<div style="width:72px;height:34px"></div>`;
-  const W = 72, H = 34, PT = 3, PB = 3;
+function buildStrengthChart(history) {
+  const PL = 36, PR = 10, PT = 16, PB = 22, H = 120;
   const iH = H - PT - PB;
-  const n = history.length;
-  const vals = history.map(h => h.weight);
-  const minV = Math.min(...vals), maxV = Math.max(...vals);
-  const range = maxV - minV || 1;
-  const toX = i => (i / (n - 1)) * W;
-  const toY = v => PT + iH - ((v - minV) / range) * iH;
-  const pts = history.map((h, i) => `${toX(i).toFixed(1)},${toY(h.weight).toFixed(1)}`).join(' ');
-  const area = `0,${PT + iH} ${pts} ${W},${PT + iH}`;
-  const lx = toX(n - 1).toFixed(1), ly = toY(history[n - 1].weight).toFixed(1);
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" class="strength-sparkline">
-    <polygon points="${area}" fill="var(--purple)" fill-opacity="0.12"/>
-    <polyline points="${pts}" fill="none" stroke="var(--purple)" stroke-width="1.5" stroke-linejoin="round"/>
-    <circle cx="${lx}" cy="${ly}" r="2.5" fill="var(--purple)"/>
-  </svg>`;
+
+  const all = [...history];
+  const n = all.length;
+  if (n < 2) return '';
+
+  const msOf = str => parseDate(str).getTime();
+  const t0 = msOf(all[0].date);
+  const t1 = msOf(all[n - 1].date);
+  const totalDays = Math.max(1, (t1 - t0) / 86400000);
+  // 7px per day — generous spacing so dots/labels don't crowd
+  const iW = Math.max(300, Math.ceil(totalDays * 7));
+  const W = PL + iW + PR;
+
+  const toX = dateStr => PL + ((msOf(dateStr) - t0) / (t1 - t0)) * iW;
+  const vals = all.map(e => e.weight);
+  const rawMin = Math.min(...vals), rawMax = Math.max(...vals);
+  const range = rawMax - rawMin;
+  const step = range <= 15 ? 2.5 : range <= 40 ? 5 : 10;
+  const minV = Math.floor(rawMin / step) * step - step;
+  const maxV = Math.ceil(rawMax / step) * step + step;
+  const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
+
+  // Gridlines
+  const gridHtml = [];
+  for (let v = Math.ceil(minV / step) * step; v <= maxV + 0.001; v = Math.round((v + step) * 100) / 100) {
+    const y = toY(v).toFixed(1);
+    gridHtml.push(
+      `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}" stroke="#ebebeb" stroke-width="1"/>` +
+      `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>`
+    );
+  }
+
+  // Month markers
+  const d0 = parseDate(all[0].date), d1 = parseDate(all[n - 1].date);
+  const monthHtml = [];
+  let mCur = new Date(d0.getFullYear(), d0.getMonth(), 1);
+  while (mCur <= d1) {
+    const x = +(PL + ((mCur.getTime() - t0) / (t1 - t0)) * iW).toFixed(1);
+    if (x >= PL + 8 && x <= W - PR - 8) {
+      monthHtml.push(
+        `<line x1="${x}" y1="${PT}" x2="${x}" y2="${PT + iH}" stroke="#ebebeb" stroke-width="1" stroke-dasharray="3,3"/>` +
+        `<text x="${x + 3}" y="${H - 5}" fill="#ccc" font-size="8">${MONTH_NAMES[mCur.getMonth()]}</text>`
+      );
+    }
+    mCur = new Date(mCur.getFullYear(), mCur.getMonth() + 1, 1);
+  }
+
+  const linePoints = all.map(e => `${toX(e.date).toFixed(1)},${toY(e.weight).toFixed(1)}`).join(' ');
+  const areaPoints = `${PL},${PT + iH} ${linePoints} ${toX(all[n-1].date).toFixed(1)},${PT + iH}`;
+
+  // Label every point — dataset is small enough
+  const dotsHtml = all.map((e, i) => {
+    const x = +toX(e.date).toFixed(1);
+    const y = +toY(e.weight).toFixed(1);
+    const isFirst = i === 0, isLast = i === n - 1;
+    const isHigh = i > 0 && i < n - 1 && e.weight > all[i-1].weight && e.weight > all[i+1].weight;
+    const isLow  = i > 0 && i < n - 1 && e.weight < all[i-1].weight && e.weight < all[i+1].weight;
+    const showLabel = isFirst || isLast || isHigh || isLow;
+    const anchor = isFirst ? 'start' : 'end';
+    const lx = (isFirst ? x + 2 : x - 2).toFixed(1);
+    const labelY = isLow ? (y + 14).toFixed(1) : (y - 6).toFixed(1);
+    return `<circle cx="${x}" cy="${y}" r="3.5" fill="var(--purple)" stroke="#fff" stroke-width="1.5"/>` +
+      (showLabel ? `<text x="${lx}" y="${labelY}" fill="#999" font-size="8.5" font-weight="600" text-anchor="${anchor}">${e.weight}</text>` : '');
+  }).join('');
+
+  return `<div class="strength-chart-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+    ${gridHtml.join('')}${monthHtml.join('')}
+    <polygon points="${areaPoints}" fill="var(--purple)" fill-opacity="0.1"/>
+    <polyline points="${linePoints}" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linejoin="round"/>
+    ${dotsHtml}
+  </svg></div>`;
 }
 
 function buildStrengthProgressionSection() {
@@ -993,21 +1052,22 @@ function buildStrengthProgressionSection() {
     if (history.length === 0) return '';
     const latest = history[history.length - 1];
     const gain = +(latest.weight - history[0].weight).toFixed(1);
-    const gainStr = gain > 0 ? `+${gain} kg` : '';
+    const gainStr = gain > 0 ? `+${gain} kg` : gain < 0 ? `${gain} kg` : '';
+    const chart = buildStrengthChart(history);
     return `
-      <div class="strength-card">
-        <div class="strength-card-name">${short}</div>
-        <div class="strength-card-bottom">
-          <div>
-            <div class="strength-card-weight">${latest.weight}<span class="strength-card-unit"> kg</span></div>
-            ${gainStr ? `<div class="strength-card-gain">${gainStr}</div>` : ''}
+      <div class="strength-full-card">
+        <div class="strength-full-header">
+          <div class="strength-full-name">${short}</div>
+          <div class="strength-full-right">
+            <span class="strength-full-weight">${latest.weight} kg</span>
+            ${gainStr ? `<span class="strength-full-gain">${gainStr}</span>` : ''}
           </div>
-          ${buildStrengthSparkline(history)}
         </div>
+        ${chart}
       </div>`;
   }).filter(Boolean).join('');
   if (!cards) return '';
-  return `<div class="progress-section-title">Strength Progression</div><div class="strength-grid">${cards}</div>`;
+  return `<div class="progress-section-title">Strength Progression</div>${cards}`;
 }
 
 function renderWeightCard() {
@@ -1091,10 +1151,9 @@ function renderGym() {
   section.innerHTML = renderWeightCard() + runChartCard + buildStrengthProgressionSection() + syncBar;
 
   requestAnimationFrame(() => {
-    const wsc = section.querySelector('.weight-chart-scroll');
-    if (wsc) wsc.scrollLeft = wsc.scrollWidth;
-    const rsc = section.querySelector('.run-chart-scroll');
-    if (rsc) rsc.scrollLeft = rsc.scrollWidth;
+    section.querySelectorAll('.weight-chart-scroll, .strength-chart-scroll').forEach(sc => {
+      sc.scrollLeft = sc.scrollWidth;
+    });
   });
 }
 
