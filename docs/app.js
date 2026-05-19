@@ -801,34 +801,45 @@ function buildWeightChart(log) {
   const totalDays = Math.max(1, (t1 - t0) / 86400000);
   // 7px per day — generous spacing so dots/labels don't crowd
   const iW = Math.max(300, Math.ceil(totalDays * 7));
-  const W = PL + iW + PR;
+  const dW = iW + PR;  // data SVG width (no left padding)
 
-  const toX = dateStr => PL + ((msOf(dateStr) - t0) / (t1 - t0)) * iW;
+  // toX maps into the data SVG coordinate space (no PL offset)
+  const toX = dateStr => ((msOf(dateStr) - t0) / (t1 - t0)) * iW;
   const vals = all.map(e => e.weight);
   const rawMin = Math.min(...vals), rawMax = Math.max(...vals);
   const minV = Math.floor(rawMin * 2) / 2 - 0.5;
   const maxV = Math.ceil(rawMax * 2) / 2 + 0.5;
   const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
 
-  // Horizontal gridlines every 0.5 kg
-  const gridHtml = [];
+  // Shared grid values
+  const gridVals = [];
   for (let v = Math.ceil(minV * 2) / 2; v <= maxV + 0.001; v = Math.round((v + 0.5) * 10) / 10) {
-    const y = toY(v).toFixed(1);
-    const whole = Number.isInteger(v);
-    gridHtml.push(
-      `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}" stroke="#ebebeb" stroke-width="${whole ? 1 : 0.5}"/>` +
-      (whole ? `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>` : '')
-    );
+    gridVals.push(v);
   }
 
-  // Month boundary lines + labels — scale naturally as data grows
+  // Fixed axis SVG: labels + short gridline stubs
+  const axisHtml = gridVals.map(v => {
+    const y = toY(v).toFixed(1);
+    const whole = Number.isInteger(v);
+    return `<line x1="0" y1="${y}" x2="${PL}" y2="${y}" stroke="#ebebeb" stroke-width="${whole ? 1 : 0.5}"/>` +
+      (whole ? `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>` : '');
+  }).join('');
+
+  // Scrolling data SVG: gridlines (full data width)
+  const dataGridHtml = gridVals.map(v => {
+    const y = toY(v).toFixed(1);
+    const whole = Number.isInteger(v);
+    return `<line x1="0" y1="${y}" x2="${dW}" y2="${y}" stroke="#ebebeb" stroke-width="${whole ? 1 : 0.5}"/>`;
+  }).join('');
+
+  // Month boundary lines + labels
   const d0 = parseDate(all[0].date);
   const d1 = parseDate(all[n - 1].date);
   const monthHtml = [];
   let mCur = new Date(d0.getFullYear(), d0.getMonth(), 1);
   while (mCur <= d1) {
-    const x = +(PL + ((mCur.getTime() - t0) / (t1 - t0)) * iW).toFixed(1);
-    if (x >= PL + 8 && x <= W - PR - 8) {
+    const x = +((mCur.getTime() - t0) / (t1 - t0) * iW).toFixed(1);
+    if (x >= 8 && x <= dW - 8) {
       const yr = mCur.getMonth() === 0 ? ' \'' + String(mCur.getFullYear()).slice(2) : '';
       monthHtml.push(
         `<line x1="${x}" y1="${PT}" x2="${x}" y2="${PT + iH}" stroke="#ebebeb" stroke-width="1" stroke-dasharray="3,3"/>` +
@@ -844,7 +855,7 @@ function buildWeightChart(log) {
   );
 
   const linePoints = all.map(e => `${toX(e.date).toFixed(1)},${toY(e.weight).toFixed(1)}`).join(' ');
-  const areaPoints = `${PL},${PT + iH} ${linePoints} ${toX(all[n-1].date).toFixed(1)},${PT + iH}`;
+  const areaPoints = `0,${PT + iH} ${linePoints} ${toX(all[n-1].date).toFixed(1)},${PT + iH}`;
   const avgPoints = rolling.map((v, i) => v !== null
     ? `${toX(all[i].date).toFixed(1)},${toY(v).toFixed(1)}`
     : null).filter(Boolean).join(' ');
@@ -864,13 +875,14 @@ function buildWeightChart(log) {
       (showLabel ? `<text x="${lx}" y="${labelY}" fill="#999" font-size="8.5" font-weight="600" text-anchor="${anchor}">${e.weight}</text>` : '');
   }).join('');
 
-  return `<div class="weight-chart-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" class="weight-chart-svg">
-    ${gridHtml.join('')}${monthHtml.join('')}
-    <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.1"/>
-    <polyline points="${linePoints}" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.55"/>
-    ${avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5" stroke-linejoin="round"/>` : ''}
-    ${dotsHtml}
-  </svg></div>`;
+  return `<div class="chart-wrap">` +
+    `<svg width="${PL}" height="${H}" viewBox="0 0 ${PL} ${H}" class="chart-axis-svg">${axisHtml}</svg>` +
+    `<div class="weight-chart-scroll"><svg width="${dW}" height="${H}" viewBox="0 0 ${dW} ${H}" overflow="visible">` +
+    `${dataGridHtml}${monthHtml.join('')}` +
+    `<polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.1"/>` +
+    `<polyline points="${linePoints}" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.55"/>` +
+    (avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5" stroke-linejoin="round"/>` : '') +
+    `${dotsHtml}</svg></div></div>`;
 }
 
 // ── Weekly run chart ────────────────────────────────────────────────────────
@@ -985,9 +997,10 @@ function buildStrengthChart(history) {
   const totalDays = Math.max(1, (t1 - t0) / 86400000);
   // 7px per day — generous spacing so dots/labels don't crowd
   const iW = Math.max(300, Math.ceil(totalDays * 7));
-  const W = PL + iW + PR;
+  const dW = iW + PR;  // data SVG width (no left padding)
 
-  const toX = dateStr => PL + ((msOf(dateStr) - t0) / (t1 - t0)) * iW;
+  // toX maps into the data SVG coordinate space (no PL offset)
+  const toX = dateStr => ((msOf(dateStr) - t0) / (t1 - t0)) * iW;
   const vals = all.map(e => e.weight);
   const rawMin = Math.min(...vals), rawMax = Math.max(...vals);
   const range = rawMax - rawMin;
@@ -996,23 +1009,32 @@ function buildStrengthChart(history) {
   const maxV = Math.ceil(rawMax / step) * step + step;
   const toY = v => PT + iH - ((v - minV) / (maxV - minV)) * iH;
 
-  // Gridlines
-  const gridHtml = [];
+  // Shared grid values
+  const gridVals = [];
   for (let v = Math.ceil(minV / step) * step; v <= maxV + 0.001; v = Math.round((v + step) * 100) / 100) {
-    const y = toY(v).toFixed(1);
-    gridHtml.push(
-      `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}" stroke="#ebebeb" stroke-width="1"/>` +
-      `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>`
-    );
+    gridVals.push(v);
   }
+
+  // Fixed axis SVG: labels + short gridline stubs
+  const axisHtml = gridVals.map(v => {
+    const y = toY(v).toFixed(1);
+    return `<line x1="0" y1="${y}" x2="${PL}" y2="${y}" stroke="#ebebeb" stroke-width="1"/>` +
+      `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>`;
+  }).join('');
+
+  // Scrolling data SVG: gridlines (full data width)
+  const dataGridHtml = gridVals.map(v => {
+    const y = toY(v).toFixed(1);
+    return `<line x1="0" y1="${y}" x2="${dW}" y2="${y}" stroke="#ebebeb" stroke-width="1"/>`;
+  }).join('');
 
   // Month markers
   const d0 = parseDate(all[0].date), d1 = parseDate(all[n - 1].date);
   const monthHtml = [];
   let mCur = new Date(d0.getFullYear(), d0.getMonth(), 1);
   while (mCur <= d1) {
-    const x = +(PL + ((mCur.getTime() - t0) / (t1 - t0)) * iW).toFixed(1);
-    if (x >= PL + 8 && x <= W - PR - 8) {
+    const x = +((mCur.getTime() - t0) / (t1 - t0) * iW).toFixed(1);
+    if (x >= 8 && x <= dW - 8) {
       monthHtml.push(
         `<line x1="${x}" y1="${PT}" x2="${x}" y2="${PT + iH}" stroke="#ebebeb" stroke-width="1" stroke-dasharray="3,3"/>` +
         `<text x="${x + 3}" y="${H - 5}" fill="#ccc" font-size="8">${MONTH_NAMES[mCur.getMonth()]}</text>`
@@ -1022,9 +1044,8 @@ function buildStrengthChart(history) {
   }
 
   const linePoints = all.map(e => `${toX(e.date).toFixed(1)},${toY(e.weight).toFixed(1)}`).join(' ');
-  const areaPoints = `${PL},${PT + iH} ${linePoints} ${toX(all[n-1].date).toFixed(1)},${PT + iH}`;
+  const areaPoints = `0,${PT + iH} ${linePoints} ${toX(all[n-1].date).toFixed(1)},${PT + iH}`;
 
-  // Label every point — dataset is small enough
   const dotsHtml = all.map((e, i) => {
     const x = +toX(e.date).toFixed(1);
     const y = +toY(e.weight).toFixed(1);
@@ -1039,12 +1060,13 @@ function buildStrengthChart(history) {
       (showLabel ? `<text x="${lx}" y="${labelY}" fill="#999" font-size="8.5" font-weight="600" text-anchor="${anchor}">${e.weight}</text>` : '');
   }).join('');
 
-  return `<div class="strength-chart-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
-    ${gridHtml.join('')}${monthHtml.join('')}
-    <polygon points="${areaPoints}" fill="var(--purple)" fill-opacity="0.1"/>
-    <polyline points="${linePoints}" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linejoin="round"/>
-    ${dotsHtml}
-  </svg></div>`;
+  return `<div class="chart-wrap">` +
+    `<svg width="${PL}" height="${H}" viewBox="0 0 ${PL} ${H}" class="chart-axis-svg">${axisHtml}</svg>` +
+    `<div class="strength-chart-scroll"><svg width="${dW}" height="${H}" viewBox="0 0 ${dW} ${H}" overflow="visible">` +
+    `${dataGridHtml}${monthHtml.join('')}` +
+    `<polygon points="${areaPoints}" fill="var(--purple)" fill-opacity="0.1"/>` +
+    `<polyline points="${linePoints}" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linejoin="round"/>` +
+    `${dotsHtml}</svg></div></div>`;
 }
 
 function buildStrengthProgressionSection() {
@@ -1076,14 +1098,12 @@ function renderWeightCard() {
   const latest = sorted.length ? sorted[sorted.length - 1] : null;
   const first = sorted.length ? sorted[0] : null;
 
-  let trendHtml = '';
-  if (latest && first && weightLog.length > 1) {
-    const diff = (latest.weight - first.weight).toFixed(1);
-    const sign = diff >= 0 ? '+' : '';
-    const arrow = diff >= 0 ? '↑' : '↓';
-    trendHtml = `<div class="weight-trend">${arrow} ${sign}${diff} kg since ${formatDayLabel(first.date)}</div>`;
-  } else if (latest) {
-    trendHtml = `<div class="weight-trend">Baseline set</div>`;
+  let rightHtml = '';
+  if (latest) {
+    const gainStr = (first && weightLog.length > 1)
+      ? (() => { const d = (latest.weight - first.weight).toFixed(1); return `<span class="weight-gain">${d >= 0 ? '+' : ''}${d} kg</span>`; })()
+      : '';
+    rightHtml = `<span class="weight-current">${latest.weight} kg</span>${gainStr}`;
   }
 
   const chartSvg = weightLog.length >= 2 ? buildWeightChart(weightLog) : '';
@@ -1092,17 +1112,17 @@ function renderWeightCard() {
     <div class="weight-card">
       <div class="weight-card-header">
         <div class="weight-card-title">Body Weight</div>
-        <button class="weight-log-btn" onclick="toggleWeightForm()">+ Log</button>
+        <div class="weight-card-right">
+          ${rightHtml}
+          <button class="weight-log-btn" onclick="toggleWeightForm()">+ Log</button>
+        </div>
       </div>
       <div id="weight-form" class="weight-form" style="display:none">
         <input type="number" id="weight-input" class="weight-input"
                placeholder="kg" step="0.1" min="30" max="200" inputmode="decimal">
         <button class="weight-save-btn" onclick="saveBodyWeight()">Save</button>
       </div>
-      ${latest
-        ? `<div class="weight-current">${latest.weight} <span class="weight-unit">kg</span></div>${trendHtml}`
-        : `<div class="weight-empty">No data yet — tap + Log to start</div>`
-      }
+      ${!latest ? `<div class="weight-empty">No data yet — tap + Log to start</div>` : ''}
       ${chartSvg}
     </div>
   `;
