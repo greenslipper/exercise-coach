@@ -1235,15 +1235,17 @@ body {
   flex-shrink: 0;
 }
 
-/* Scrollable weight chart container */
+/* Scrollable weight chart container — direction:rtl makes scroll start at the right end natively */
 .weight-chart-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   flex: 1;
   min-width: 0;
+  direction: rtl;
 }
 .weight-chart-scroll::-webkit-scrollbar { display: none; }
+.weight-chart-scroll svg { direction: ltr; }
 
 /* Progress tab */
 .progress-section-title {
@@ -1321,5 +1323,7 @@ body {
   scrollbar-width: none;
   flex: 1;
   min-width: 0;
+  direction: rtl;
 }
 .strength-chart-scroll::-webkit-scrollbar { display: none; }
+.strength-chart-scroll svg { direction: ltr; }
