@@ -1170,6 +1170,10 @@ function renderGym() {
 
   section.innerHTML = renderWeightCard() + runChartCard + buildStrengthProgressionSection() + syncBar;
 
+  // Reading scrollWidth forces a synchronous reflow, giving the correct value to scroll to
+  section.querySelectorAll('.weight-chart-scroll, .strength-chart-scroll').forEach(sc => {
+    sc.scrollLeft = sc.scrollWidth;
+  });
 }
 
 function exportForClaude() {
