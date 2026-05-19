@@ -881,7 +881,7 @@ function buildWeightChart(log) {
     `${dataGridHtml}${monthHtml.join('')}` +
     `<polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.1"/>` +
     `<polyline points="${linePoints}" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.55"/>` +
-    (avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5" stroke-linejoin="round"/>` : '') +
+    (avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="5,3"/>` : '') +
     `${dotsHtml}</svg></div></div>`;
 }
 
