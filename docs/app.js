@@ -788,7 +788,7 @@ function closeLogModal() {
 }
 
 function buildWeightChart(log) {
-  const PL = 32, PR = 10, PT = 14, PB = 22, H = 130;
+  const PL = 36, PR = 10, PT = 16, PB = 22, H = 120;
   const iH = H - PT - PB;
 
   const all = [...log].sort((a, b) => a.date.localeCompare(b.date));
@@ -799,8 +799,8 @@ function buildWeightChart(log) {
   const t0 = msOf(all[0].date);
   const t1 = msOf(all[n - 1].date);
   const totalDays = Math.max(1, (t1 - t0) / 86400000);
-  // 6px per day — chart grows proportionally with data; scrollable when wide
-  const iW = Math.max(280, Math.ceil(totalDays * 6));
+  // 7px per day — generous spacing so dots/labels don't crowd
+  const iW = Math.max(300, Math.ceil(totalDays * 7));
   const W = PL + iW + PR;
 
   const toX = dateStr => PL + ((msOf(dateStr) - t0) / (t1 - t0)) * iW;
@@ -816,8 +816,8 @@ function buildWeightChart(log) {
     const y = toY(v).toFixed(1);
     const whole = Number.isInteger(v);
     gridHtml.push(
-      `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}" stroke="${whole ? '#2a2a3e' : '#22223a'}" stroke-width="${whole ? 1 : 0.5}"/>` +
-      (whole ? `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#666" font-size="8" text-anchor="end">${v}</text>` : '')
+      `<line x1="${PL}" y1="${y}" x2="${W - PR}" y2="${y}" stroke="#ebebeb" stroke-width="${whole ? 1 : 0.5}"/>` +
+      (whole ? `<text x="${PL - 4}" y="${(+y + 3.5).toFixed(1)}" fill="#bbb" font-size="8" text-anchor="end">${v}</text>` : '')
     );
   }
 
@@ -831,8 +831,8 @@ function buildWeightChart(log) {
     if (x >= PL + 8 && x <= W - PR - 8) {
       const yr = mCur.getMonth() === 0 ? ' \'' + String(mCur.getFullYear()).slice(2) : '';
       monthHtml.push(
-        `<line x1="${x}" y1="${PT}" x2="${x}" y2="${PT + iH}" stroke="#2a2a3e" stroke-width="1" stroke-dasharray="3,3"/>` +
-        `<text x="${x + 3}" y="${H - 5}" fill="#777" font-size="8">${MONTH_NAMES[mCur.getMonth()]}${yr}</text>`
+        `<line x1="${x}" y1="${PT}" x2="${x}" y2="${PT + iH}" stroke="#ebebeb" stroke-width="1" stroke-dasharray="3,3"/>` +
+        `<text x="${x + 3}" y="${H - 5}" fill="#ccc" font-size="8">${MONTH_NAMES[mCur.getMonth()]}${yr}</text>`
       );
     }
     mCur = new Date(mCur.getFullYear(), mCur.getMonth() + 1, 1);
@@ -859,15 +859,16 @@ function buildWeightChart(log) {
     const showLabel = isFirst || isLast || isHigh || isLow;
     const anchor = isFirst ? 'start' : 'end';
     const lx = (isFirst ? x + 2 : x - 2).toFixed(1);
-    return `<circle cx="${x}" cy="${y}" r="3" fill="#4fc3f7" stroke="#fff" stroke-width="1.5"/>` +
-      (showLabel ? `<text x="${lx}" y="${(y - 7).toFixed(1)}" fill="#aaa" font-size="8" text-anchor="${anchor}">${e.weight}</text>` : '');
+    const labelY = isLow ? (y + 14).toFixed(1) : (y - 6).toFixed(1);
+    return `<circle cx="${x}" cy="${y}" r="3.5" fill="#4fc3f7" stroke="#fff" stroke-width="1.5"/>` +
+      (showLabel ? `<text x="${lx}" y="${labelY}" fill="#999" font-size="8.5" font-weight="600" text-anchor="${anchor}">${e.weight}</text>` : '');
   }).join('');
 
   return `<div class="weight-chart-scroll"><svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" class="weight-chart-svg">
     ${gridHtml.join('')}${monthHtml.join('')}
-    <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.08"/>
-    <polyline points="${linePoints}" fill="none" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity="0.55"/>
-    ${avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5"/>` : ''}
+    <polygon points="${areaPoints}" fill="#4fc3f7" fill-opacity="0.1"/>
+    <polyline points="${linePoints}" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.55"/>
+    ${avgPoints ? `<polyline points="${avgPoints}" fill="none" stroke="#4fc3f7" stroke-width="2.5" stroke-linejoin="round"/>` : ''}
     ${dotsHtml}
   </svg></div>`;
 }
