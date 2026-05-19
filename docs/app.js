@@ -1170,9 +1170,12 @@ function renderGym() {
 
   section.innerHTML = renderWeightCard() + runChartCard + buildStrengthProgressionSection() + syncBar;
 
+  // Double rAF: first waits for DOM paint, second waits for flex layout to resolve scrollWidth
   requestAnimationFrame(() => {
-    section.querySelectorAll('.weight-chart-scroll, .strength-chart-scroll').forEach(sc => {
-      sc.scrollLeft = sc.scrollWidth;
+    requestAnimationFrame(() => {
+      section.querySelectorAll('.weight-chart-scroll, .strength-chart-scroll').forEach(sc => {
+        sc.scrollLeft = sc.scrollWidth;
+      });
     });
   });
 }
