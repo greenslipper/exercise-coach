@@ -1256,51 +1256,49 @@
         },
         {
           "date": "2026-05-20",
-          "type": "rest",
-          "name": "Rest / Tennis",
-          "description": "Active rest. Tennis if on."
-        },
-        {
-          "date": "2026-05-21",
           "type": "intervals",
-          "name": "Intervals — 2 × 2km + 1km @ Race Pace",
-          "description": "2 km warmup + 2km @ 3:24/km + 90s jog + 2km @ 3:24/km + 90s jog + 1km @ 3:24/km (or faster) + 2km cooldown. ~9 km. Race simulation — the final quality session before La Manga.",
-          "distance_km": 9,
+          "name": "Intervals ✓ — 2 × 2km Near Race Pace",
+          "description": "Done. Rep 1: 2.01 km @ 3:28/km, HR 170 avg / 177 max. Rep 2: 2.02 km @ 3:26/km, HR 175 avg / 183 max. 3 min recovery. 9.4 km total. Tennis cancelled.",
+          "distance_km": 9.4,
           "exercises": [
             {
               "name": "Warmup",
-              "detail": "2 km @ 4:45/km",
-              "how_to": "Thorough warmup. These are race-pace reps — don't rush into them."
+              "detail": "1.86 km @ 5:07/km",
+              "how_to": "Completed."
             },
             {
               "name": "Rep 1",
-              "detail": "2 km @ 3:24/km",
-              "how_to": "Start controlled. The first km should feel manageable — the second km is where the work happens. HR will climb to 170–175 by the end."
+              "detail": "2.01 km @ 3:28/km",
+              "how_to": "HR avg 170, max 177. Controlled start."
             },
             {
               "name": "Recovery",
-              "detail": "90s jog",
-              "how_to": "Short recovery by design — you won't be fully rested for rep 2. That's the point."
+              "detail": "0.33 km / 3 min",
+              "how_to": "Short — ran rep 2 on partial recovery."
             },
             {
               "name": "Rep 2",
-              "detail": "2 km @ 3:24/km",
-              "how_to": "This is the hardest rep. Hold form when it gets uncomfortable. HR 175–180 expected."
-            },
-            {
-              "name": "Recovery",
-              "detail": "90s jog",
-              "how_to": "Short recovery again. Prepare mentally for the final rep."
-            },
-            {
-              "name": "Rep 3",
-              "detail": "1 km @ 3:24/km or faster",
-              "how_to": "You're running on empty — this is race finish simulation. If you have anything left, empty it here."
+              "detail": "2.02 km @ 3:26/km",
+              "how_to": "HR avg 175, max 183. Faster than rep 1 despite short recovery."
             },
             {
               "name": "Cooldown",
-              "detail": "2 km @ 4:45/km",
-              "how_to": "Easy jog. Let everything settle."
+              "detail": "3.03 km @ 5:06/km",
+              "how_to": "Completed."
+            }
+          ]
+        },
+        {
+          "date": "2026-05-21",
+          "type": "long",
+          "name": "Long Run",
+          "description": "10–12 km @ 4:45/km. Physio at 08:30 first. Long run moved from Tuesday — intervals done today instead.",
+          "distance_km": 11,
+          "exercises": [
+            {
+              "name": "Long run",
+              "detail": "10–12 km @ 4:45/km",
+              "how_to": "Comfortable aerobic pace throughout. HR ~140–150. Physio first — calves should feel good after. Cut to 10 km if anything feels off."
             }
           ]
         },

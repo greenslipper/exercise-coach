@@ -3,7 +3,7 @@
 **Athlete:** Freddie
 **Goal:** sub-17:00 5K — Battersea Park Run
 **Race Date:** Saturday 6 June 2026
-**Generated:** 2026-04-07 | **Updated:** 2026-05-07
+**Generated:** 2026-04-07 | **Updated:** 2026-05-20
 **Weeks remaining:** 4
 
 ---
@@ -193,8 +193,8 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 |-----|------|---------|--------|
 | Mon | May 18 | Easy run + Upper Body | 6 km @ 4:45/km easy, then upper body. Renata in calendar. SS1: lat pulldown 57.5 kg + cable row 57.5 kg. SS2: face pulls 12.5 kg + ext rotation 5 kg. SS3: shoulder press 20 kg + rear delt fly 10 kg. SS4: chest press 25 kg + reverse curl 17.5 kg. Pallof press 12.5 kg. All 3 × 8. |
 | Tue | May 19 | Long run | 14 km @ 4:45/km. First proper long run back — Yasmin's ban is lifted. Keep it easy; calves are the signal. |
-| Wed | May 20 | Rest / Tennis | Active rest. Tennis if on. |
-| Thu | May 21 | Intervals | 2 km warmup + 2km @ 3:24/km + 90s jog + 2km @ 3:24/km + 90s jog + 1km @ 3:24/km (or faster) + 2 km cooldown. ~9 km. Race simulation — sustained efforts build the specific endurance 1km reps can't. Drop plyos from Friday legs. |
+| Wed | May 20 | Intervals ✓ | 2 × 2km: rep 1 @ 3:28/km HR 170/177, rep 2 @ 3:26/km HR 175/183 max. 3 min recovery. 9.4 km total. Tennis cancelled. |
+| Thu | May 21 | Long run | 10–12 km @ 4:45/km. Physio 08:30 first. Moved from Tue — intervals done today instead. |
 | Fri | May 22 | Yasmin's program (legs) | Full session. Double-leg extension (~67.5 kg). Leg press ~127.5 kg. Calf press 45 kg (hold until full sets). BSS 42.5 kg. No plyos — hard intervals the day before. |
 | Sat | May 23 | Easy run | 6 km easy. Morning before Ted and Bethan wedding. |
 | Sun | May 24 | Rest | — |
@@ -281,4 +281,5 @@ The current Yasmin program is calf rehab focused. For Abingdon it needs to evolv
 - **2026-04-27:** Week 4 restructured — intervals moved to Mon, tennis Wed, legs gym Thu, upper body Fri (before wedding travel). No easy run this week.
 - **2026-05-07:** Week 5 actuals — May 2: bonus easy run in Mallorca 7.4 km @ 5:00/km, HR 133, suffer score 12. May 4: long run missed (wedding recovery). May 5: intervals 4 × 1000 m at Wandsworth Common @ 3:26, 3:26, 3:27, 3:30/km avg ~3:27/km (target was 3:35 — beat by 8 sec/km). Max HR 177, 4 Strava segment PRs. May 6: legs gym done (logged as May 5 in app — confirmed May 6): leg press 122.5, calf press 40, BSS 37.5, ham curl 60, hip abduction 12.5, leg ext double 65. Thu May 7 changed to rest. Sat May 9 gym: single-leg extension ~35 kg.
 - **2026-05-07:** Race moved to 6 June 2026. Interval data (3:27/km avg with recovery vs 3:24/km target) showed gap was tighter than ideal. Extended plan: Week 6 intervals @ 3:27/km, Week 7 intervals @ 3:24/km + 10 km long run (Yasmin ban lifts), Week 8 La Manga maintenance (2 easy + 3 × 1000 m @ 3:30–3:35/km in morning heat), Week 9 race week.
+- **2026-05-20:** Week 7 restructured — intervals done today (Wed): 2 × 2 km @ 3:28/3:26 per km, max HR 183. Long run moved to Thu May 21. Tennis cancelled. La Manga session under discussion — likely 3 × 1 km @ 3:24/km rather than 2 × 2.5 km, given heat.
 - **2026-05-07:** Marathon mileage build starts now. Abingdon (Oct 18) is the primary goal — 5K is a test on the way. Extended easy runs in Weeks 6–7 to build base before the post-5K marathon block: Week 6 Tue 6→10 km + Sat 4→8 km (→27 km week); Week 7 Tue 6→10 km + Fri long run 10→14 km + Sun easy 6 km added (→37 km week). All additions at 4:45/km. Calves are the governor — drop Sunday if anything feels off.
