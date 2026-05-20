@@ -17,7 +17,7 @@ Race moved to **6 June 2026**. Interval data from May 5 (3:27/km avg with recove
 Extended block structure:
 - **Week 6**: Second quality week — consolidate 3:27/km intervals
 - **Week 7**: Final sharp week — race-pace intervals (3:24/km) + first long run back (Yasmin ban lifts ~May 18)
-- **Week 8**: La Manga (May 25–31) — maintenance: 2 easy runs + 1 modified interval session (3 × 1000 m @ 3:30–3:35/km, morning), no gym
+- **Week 8**: La Manga (May 25–31) — maintenance: 2 easy runs + 1 sharpness session (3 × 1000 m @ 3:24/km, morning pre-heat), no gym. Heat rules out longer reps — 1 km keeps fatigue low while confirming race pace is accessible
 - **Week 9**: Race week → June 6
 
 ### Plan Revision (2026-04-07)
@@ -211,7 +211,7 @@ Monday and Thursday. Same program both days (except taper reductions in race wee
 |-----|------|---------|--------|
 | Mon | May 25 | Easy run | 4–5 km easy (morning). Spring Bank Holiday. |
 | Tue | May 26 | Tennis / rest | Cross-training. |
-| Wed | May 27 | Modified intervals | 3 × 1000 m @ 3:30–3:35/km (morning, pre-heat). One rep fewer, adjusted pace — heat provides the extra cardiovascular stimulus. |
+| Wed | May 27 | Sharpness intervals | 3 × 1000 m @ 3:24/km (morning, pre-heat). Race pace — goal is confidence and sharpness, not fitness. Heat rules out longer reps (2 × 2.5 km would exceed what's sensible 11 days out in Spain). 90s jog recovery. |
 | Thu | May 28 | Rest | — |
 | Fri | May 29 | Easy run (optional) | 4–5 km easy if legs allow. |
 | Sat | May 30 | Rest | Jack Blakey event evening. |

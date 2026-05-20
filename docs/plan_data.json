@@ -1394,19 +1394,19 @@
         {
           "date": "2026-05-27",
           "type": "intervals",
-          "name": "Modified Intervals — La Manga",
-          "description": "3 × 1000 m @ 3:30–3:35/km. Early morning, pre-heat. One rep fewer — heat provides the extra cardiovascular stimulus.",
+          "name": "Sharpness Intervals — La Manga",
+          "description": "3 × 1000 m @ 3:24/km. Early morning, pre-heat. Race pace — goal is confidence and feel, not fitness. Heat rules out longer reps. 90s jog recovery.",
           "distance_km": 6,
           "exercises": [
             {
               "name": "Warmup",
               "detail": "1.5 km easy",
-              "how_to": "Before 8am. Short warmup — don't overheat before the reps start."
+              "how_to": "Before 8am if possible. Short warmup — don't overheat before the reps start."
             },
             {
               "name": "Intervals",
-              "detail": "3 × 1000 m @ 3:30–3:35/km",
-              "how_to": "Heat adds ~5–10 sec/km to perceived effort. If 3:35 feels hard in the heat, that's the right stimulus. 2 min jog recovery."
+              "detail": "3 × 1000 m @ 3:24/km",
+              "how_to": "Race pace. The goal is to feel it in your legs and confirm it's accessible — not to accumulate fatigue. 90s jog between reps. If the heat makes 3:24 genuinely dangerous, back off to 3:30 and cut to 2 reps. Arriving fresh matters more than this session."
             },
             {
               "name": "Cooldown",
