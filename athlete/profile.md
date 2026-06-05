@@ -3,14 +3,14 @@
 ## Personal
 
 - **Name**: Freddie
-- **Goal**: Sub-2:50 marathon — Abingdon, 18 October 2026
+- **Goal**: Sub-2:50 marathon — Frankfurt, 25 October 2026
 
 ## Target Races
 
 | Race | Date | Goal |
 |------|------|------|
-| Battersea Park Run (5K) | 25 April 2026 | Fitness test — no pressure, sub-17 would be great but not the focus |
-| Abingdon Marathon | 18 October 2026 | Sub-2:50 (previous PB: sub-3:00) |
+| ~~Battersea Park Run (5K)~~ | ~~6 June 2026~~ | Skipped — calf tightness, pivoted to marathon training |
+| Frankfurt Marathon | 25 October 2026 | Sub-2:50 (previous PB: sub-3:00) |
 
 ## Marathon History
 
@@ -62,4 +62,4 @@
 
 - Interval training confirmed aerobic fitness well above sub-3 level (3:19/km 1km reps in Mar 2026)
 - Sub-2:50 is realistic given current fitness — the limiting factor is calf health, not engine
-- Full marathon plan to be built after Yasmin assessment 31 March 2026
+- Full marathon plan to be built after Yasmin assessment 23 June 2026 — awaiting sense-check on mileage ramp, long run progression, and strength evolution
