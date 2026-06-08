@@ -241,13 +241,31 @@ function getLastLogged(exerciseName) {
 // ── Data loading ───────────────────────────────────────────────────────────
 
 async function loadPlan() {
-  try {
-    const res = await fetch('plan_data.json?v=' + Date.now());
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    planData = await res.json();
-  } catch (e) {
-    console.warn('Could not load plan_data.json:', e);
-    planData = { generated: null, goal: null, weeks: [] };
+  planData = null;
+
+  // Worker is the source of truth — load the plan from GET /plan using the
+  // same bearer secret used for /gym-log and /weight.
+  const { url, secret } = getWorkerConfig();
+  if (url && secret) {
+    try {
+      const res = await fetch(url + '/plan', { headers: { 'Authorization': 'Bearer ' + secret } });
+      if (res.ok) planData = await res.json();
+      else throw new Error(`HTTP ${res.status}`);
+    } catch (e) {
+      console.warn('Could not load plan from worker, falling back to static file:', e);
+    }
+  }
+
+  // Fallback: static GitHub Pages file (for unconfigured clients or worker errors).
+  if (!planData) {
+    try {
+      const res = await fetch('plan_data.json?v=' + Date.now());
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      planData = await res.json();
+    } catch (e) {
+      console.warn('Could not load plan_data.json:', e);
+      planData = { generated: null, goal: null, weeks: [] };
+    }
   }
   try {
     const res = await fetch('strava_runs.json?v=' + Date.now());

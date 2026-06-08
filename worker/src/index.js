@@ -1,6 +1,6 @@
 /**
  * Exercise Coach Worker
- * Persistent storage for gym logs and weight entries.
+ * Persistent storage for gym logs, weight entries, and the training plan.
  *
  * Routes:
  *   POST   /gym-log          Save a gym session
@@ -9,9 +9,15 @@
  *   POST   /weight           Save a weight entry
  *   GET    /weight           Get all weight entries
  *   DELETE /weight?date=     Delete weight entry for a date
+ *   GET    /plan             Get the current training plan (KV plan:current, else bundled default)
+ *   POST   /plan             Replace the current training plan (replace-on-write)
  *
  * Auth: Authorization: Bearer <secret>
  */
+
+// Bundled at deploy time from docs/plan_data.json — used as the default
+// response for GET /plan when KV key plan:current has not been seeded yet.
+import DEFAULT_PLAN from "../../docs/plan_data.json";
 
 const CORS_HEADERS = (origin) => ({
   "Access-Control-Allow-Origin": origin,
@@ -176,6 +182,25 @@ async function deleteWeightEntry(request, env, origin) {
   return jsonResponse({ ok: true, deleted: before - filtered.length }, 200, origin);
 }
 
+// --- Plan handlers ---
+
+async function getPlan(env, origin) {
+  const value = await env.COACH_DATA.get("plan:current");
+  const plan = value ? JSON.parse(value) : DEFAULT_PLAN;
+  return jsonResponse(plan, 200, origin);
+}
+
+async function postPlan(request, env, origin) {
+  const body = await request.json();
+
+  if (!body || typeof body !== "object" || !Array.isArray(body.weeks)) {
+    return jsonResponse({ error: "a plan object with a weeks array is required" }, 400, origin);
+  }
+
+  await env.COACH_DATA.put("plan:current", JSON.stringify(body));
+  return jsonResponse({ ok: true }, 200, origin);
+}
+
 // --- Main handler ---
 
 export default {
@@ -204,6 +229,11 @@ export default {
       if (method === "GET") return getWeightEntries(env, origin);
       if (method === "POST") return postWeightEntry(request, env, origin);
       if (method === "DELETE") return deleteWeightEntry(request, env, origin);
+    }
+
+    if (url.pathname === "/plan") {
+      if (method === "GET") return getPlan(env, origin);
+      if (method === "POST") return postPlan(request, env, origin);
     }
 
     return jsonResponse({ error: "Not found" }, 404, origin);
