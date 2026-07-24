@@ -9,3 +9,12 @@ kv_namespaces = [
 
 [vars]
 ALLOWED_ORIGIN = "https://greenslipper.github.io"
+# Dead-man's-switch tunables (non-secret). Alert if the Air's daily /ping stops arriving for this
+# many hours (must exceed the ~24h normal cadence); re-alert at most this often while still down.
+DEADMAN_MAX_AGE_H = "27"
+DEADMAN_REALERT_H = "12"
+
+# Cron for the dead-man's-switch scheduled() handler. Every 15 min → alert latency ≤15 min once the
+# 27h window trips. (Telegram creds set out-of-band via `wrangler secret put`.)
+[triggers]
+crons = ["*/15 * * * *"]

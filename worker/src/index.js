@@ -39,6 +39,20 @@ function unauthorized(origin) {
   return jsonResponse({ error: "Unauthorized" }, 401, origin);
 }
 
+// One-way Telegram self-notification (same closed loop as the coach's notify_telegram.py: only ever
+// to Freddie's own chat). Used by the dead-man's-switch below. No-op if creds aren't configured, so
+// a half-set-up Worker never throws.
+async function sendTelegram(env, text) {
+  const token = env.TELEGRAM_BOT_TOKEN;
+  const chatId = env.TELEGRAM_CHAT_ID;
+  if (!token || !chatId) return;
+  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ chat_id: chatId, text }),
+  });
+}
+
 function isAuthorized(request, env) {
   const header = request.headers.get("Authorization") || "";
   const token = header.replace(/^Bearer\s+/, "");
@@ -201,6 +215,52 @@ async function postPlan(request, env, origin) {
   return jsonResponse({ ok: true }, 200, origin);
 }
 
+// --- Dead-man's-switch (external liveness observer) ---
+//
+// The Air's daily coach job POSTs /ping when it completes. This always-on Worker is the ONE observer
+// that survives the Air being off/asleep/crashed (the on-box watchdog can't run then). Its cron
+// (see wrangler.toml [triggers]) checks how long since the last ping and alerts Telegram if the
+// engine has gone dark. KV keys: deadman:last_ping (epoch ms, Worker-stamped) and deadman:last_alert
+// (epoch ms of the last alert sent — throttles re-alerts, cleared on recovery).
+
+async function postPing(env, origin) {
+  const now = Date.now();
+  const wasAlerted = await env.COACH_DATA.get("deadman:last_alert");
+  await env.COACH_DATA.put("deadman:last_ping", String(now));
+  // If we'd alerted that the engine was down, this ping means it's back — confirm + clear alert state.
+  if (wasAlerted) {
+    await env.COACH_DATA.delete("deadman:last_alert");
+    await sendTelegram(env, "✅ Coach engine recovered — a daily run just completed. (Dead-man's switch cleared.)");
+  }
+  return jsonResponse({ ok: true, at: now }, 200, origin);
+}
+
+async function deadmanCheck(env) {
+  const maxAgeH = parseFloat(env.DEADMAN_MAX_AGE_H || "27");
+  const realertH = parseFloat(env.DEADMAN_REALERT_H || "12");
+  const now = Date.now();
+
+  const lastPingRaw = await env.COACH_DATA.get("deadman:last_ping");
+  // Never pinged yet → not armed. Stay silent (don't alarm before the first run ever records a ping).
+  if (!lastPingRaw) return;
+  const ageMs = now - parseInt(lastPingRaw, 10);
+  if (ageMs < maxAgeH * 3600000) return; // engine is alive within the window
+
+  // Stale — but throttle: only (re-)alert if we haven't in the last realertH hours.
+  const lastAlertRaw = await env.COACH_DATA.get("deadman:last_alert");
+  if (lastAlertRaw && now - parseInt(lastAlertRaw, 10) < realertH * 3600000) return;
+
+  const ageH = Math.round(ageMs / 3600000);
+  const lastStr = new Date(parseInt(lastPingRaw, 10)).toISOString().replace("T", " ").slice(0, 16) + " UTC";
+  await sendTelegram(
+    env,
+    `🔴 DEAD-MAN'S SWITCH — the coach engine has gone dark. No completed daily run in ${ageH}h ` +
+      `(last: ${lastStr}). The Air may be OFF, asleep, wedged, or crashed — and no brief has gone ` +
+      `out. Check it: .coachapp/automation.log on the Air, or re-run .coachapp/daily_coach.sh.`
+  );
+  await env.COACH_DATA.put("deadman:last_alert", String(now));
+}
+
 // --- Main handler ---
 
 export default {
@@ -236,6 +296,17 @@ export default {
       if (method === "POST") return postPlan(request, env, origin);
     }
 
+    // Liveness ping from the Air's daily job (authenticated above via the shared bearer).
+    if (url.pathname === "/ping") {
+      if (method === "POST") return postPing(env, origin);
+    }
+
     return jsonResponse({ error: "Not found" }, 404, origin);
+  },
+
+  // Cron trigger (wrangler.toml [triggers]) — the dead-man's-switch. Runs on Cloudflare's schedule,
+  // independent of the Air, so it fires even when the engine is powered off.
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(deadmanCheck(env));
   },
 };
