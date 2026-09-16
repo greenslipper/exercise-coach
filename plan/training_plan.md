@@ -62,8 +62,8 @@ Two running slots (Wed + Sun) through the block; add a 3rd short easy run only o
 | 1 | Sep 21–27 | 10 km | 6 km easy | Ease back in. Genuinely easy. |
 | 2 | Sep 28–Oct 4 | 12 km | 6 km easy | |
 | 3 | Oct 5–11 | 14 km | 7 km easy | |
-| 4 | Oct 12–18 | 12 km | 7 km easy | Cutback week. |
-| 5 | Oct 19–25 | 16 km | 7 km easy | |
+| 4 | Oct 12–18 | 12 km | 7 km easy | Cutback. Possible Cornwall from Fri Oct 16 — run the (light) long run there. |
+| 5 | Oct 19–25 | 16 km | 7 km easy | Newquay Sat Oct 24 — run Sun there or shift long run to Fri Oct 23. Clocks back Sun. |
 | 6 | Oct 26–Nov 1 | 16 km | **4 × 1 km @ 4:00/km** | Speed introduced; hold long-run distance. |
 | 7 | Nov 2–8 | 18 km | 4 × 1 km | Back to 18 km — where you were in July. |
 | 8 | Nov 9–15 | 20 km | 4 × 1 km | Consolidate; half-marathon-capable long run. |
@@ -94,6 +94,16 @@ Wrist flexion (dumbbell) · wrist extension (with weight) · forearm supination/
 Resume full upper-body strength (rotator cuff, face pulls, chest, shoulder press, rows, core) once the elbow is cleared. Reintroduce gradually and keep it off heavy-leg days.
 
 ---
+
+## Calendar check (Sep 21 – Oct 27)
+
+Reconciled against your calendar. Most events are evenings and don't touch training. Real ones:
+- **Tue Sep 29 — Physio (Yasmin).** Iso day, no clash. Likely program update + home program handover.
+- **Fri Oct 16 – Sun Oct 18 — possible Cornwall (‘Chy kernyk’).** Week 4 is a cutback (12 km long run) — run it there.
+- **Sat Oct 24 – Sun Oct 25 — Newquay.** Week 5 long run (16 km): run in Cornwall or move to Fri Oct 23. Clocks go back Sun.
+- Saturdays (‘Hold for Holly Sam’) already align with the rest/tennis slot.
+
+**Not yet checked: Weeks 7–8 (Nov 2–15)** — calendar sync only reaches ~Oct 27. I'll re-sync and reconcile those closer to the time.
 
 ## Notes & Adjustments
 

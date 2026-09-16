@@ -317,7 +317,7 @@
           "date": "2026-09-29",
           "type": "strength",
           "name": "Iso + elbow (home)",
-          "description": "Home isometric tendon work (lunge heel-raise iso hold) plus daily elbow set. Plyos are done as run-day warm-ups (per Yasmin), not here.",
+          "description": "Home isometric tendon work (lunge heel-raise iso hold) plus daily elbow set. Plyos are done as run-day warm-ups (per Yasmin), not here. Physio with Yasmin today — she may update the Ankle & Hips program (current one expires Oct 12) and hand over the home program. Iso fits fine around it.",
           "exercises": [
             {
               "name": "Lunge heel-raise isometric hold",
@@ -915,7 +915,7 @@
           "date": "2026-10-16",
           "type": "strength",
           "name": "Iso + elbow (home)",
-          "description": "Home isometric tendon work (lunge heel-raise iso hold) plus daily elbow set. Or rest/tennis if the week is loaded.",
+          "description": "Home isometric tendon work (lunge heel-raise iso hold) plus daily elbow set. Or rest/tennis if the week is loaded. Possible Cornwall trip from today (‘Chy kernyk’) — iso travels easily; take a band.",
           "exercises": [
             {
               "name": "Lunge heel-raise isometric hold",
@@ -956,7 +956,7 @@
           "date": "2026-10-18",
           "type": "long",
           "name": "Long run (+ plyo warm-up) + elbow",
-          "description": "Plyo warm-up, then 12 km easy long run — the week's key durability session. Plus daily elbow set.",
+          "description": "Plyo warm-up, then 12 km easy long run — the week's key durability session. Plus daily elbow set. If in Cornwall this weekend, run the long run there — it's a cutback (12 km), coastal is perfect.",
           "distance_km": 12,
           "exercises": [
             {
@@ -1182,7 +1182,7 @@
           "date": "2026-10-24",
           "type": "rest",
           "name": "Rest / tennis + elbow",
-          "description": "Full rest or tennis. Keep the day before the long run light. Still do the elbow set.",
+          "description": "Full rest or tennis. Keep the day before the long run light. Still do the elbow set. Newquay — travel/rest day, no gym needed.",
           "exercises": [
             {
               "name": "Rest / tennis",
@@ -1200,7 +1200,7 @@
           "date": "2026-10-25",
           "type": "long",
           "name": "Long run (+ plyo warm-up) + elbow",
-          "description": "Plyo warm-up, then 16 km easy long run — the week's key durability session. Plus daily elbow set.",
+          "description": "Plyo warm-up, then 16 km easy long run — the week's key durability session. Plus daily elbow set. If in Cornwall, run the 16 km long run there, or move it to Fri Oct 23. Clocks go back today (+1 hr) — easy daylight run.",
           "distance_km": 16,
           "exercises": [
             {
