@@ -261,6 +261,40 @@ async function deadmanCheck(env) {
   await env.COACH_DATA.put("deadman:last_alert", String(now));
 }
 
+// --- Personal-agent (PA) liveness: separate key, secret and threshold from the coach's daily ping ---
+// The PA health check on the Air POSTs /pa-ping every 15 min with its own bearer (PA_PING_SECRET, which can
+// do nothing else). If no ping for PA_MAX_AGE_MIN (default 45), alert once per 6h; confirm on recovery.
+
+async function postPaPing(env, origin) {
+  const now = Date.now();
+  const wasAlerted = await env.COACH_DATA.get("pa:last_alert");
+  await env.COACH_DATA.put("pa:last_ping", String(now));
+  if (wasAlerted) {
+    await env.COACH_DATA.delete("pa:last_alert");
+    await sendTelegram(env, "✅ Personal agent (Air) is back: its health check is reporting again.");
+  }
+  return jsonResponse({ ok: true, at: now }, 200, origin);
+}
+
+async function paDeadmanCheck(env) {
+  const maxAgeMin = parseFloat(env.PA_MAX_AGE_MIN || "45");
+  const now = Date.now();
+  const lastRaw = await env.COACH_DATA.get("pa:last_ping");
+  if (!lastRaw) return; // not armed until the first ping
+  const ageMs = now - parseInt(lastRaw, 10);
+  if (ageMs < maxAgeMin * 60000) return;
+  const lastAlertRaw = await env.COACH_DATA.get("pa:last_alert");
+  if (lastAlertRaw && now - parseInt(lastAlertRaw, 10) < 6 * 3600000) return;
+  await sendTelegram(env, `🔴 Personal agent silent for ${Math.round(ageMs / 60000)} min: the Air may be off, asleep ` +
+    `or off the network. Email triage, urgent pushes and digests are paused until it's back.`);
+  await env.COACH_DATA.put("pa:last_alert", String(now));
+}
+
+function isPaAuthorized(request, env) {
+  const token = (request.headers.get("Authorization") || "").replace(/^Bearer\s+/, "");
+  return Boolean(env.PA_PING_SECRET) && token === env.PA_PING_SECRET;
+}
+
 // --- Main handler ---
 
 export default {
@@ -272,6 +306,11 @@ export default {
     // CORS preflight
     if (method === "OPTIONS") {
       return new Response(null, { status: 204, headers: CORS_HEADERS(origin) });
+    }
+
+    // PA liveness ping has its own narrow secret (checked before the main bearer).
+    if (url.pathname === "/pa-ping" && method === "POST") {
+      return isPaAuthorized(request, env) ? postPaPing(env, origin) : unauthorized(origin);
     }
 
     // Auth check for all non-OPTIONS requests
@@ -307,6 +346,6 @@ export default {
   // Cron trigger (wrangler.toml [triggers]) — the dead-man's-switch. Runs on Cloudflare's schedule,
   // independent of the Air, so it fires even when the engine is powered off.
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(deadmanCheck(env));
+    ctx.waitUntil(Promise.all([deadmanCheck(env), paDeadmanCheck(env)]));
   },
 };
