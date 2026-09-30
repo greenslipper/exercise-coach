@@ -367,6 +367,29 @@ function renderEmpty() {
   `;
 }
 
+// ── Text helpers ───────────────────────────────────────────────────────────
+// Plan text is shown as text with tappable links (Freddie: "links in the app aren't clickable").
+function escapeHtml(t) {
+  return String(t == null ? '' : t).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+}
+function linkify(t) {
+  return escapeHtml(t).replace(/https?:\/\/[^\s<]+[^\s<.,;:!?)]/g,
+    u => '<a href="' + u + '" target="_blank" rel="noopener noreferrer">' + u.replace(/^https?:\/\/(www\.)?/, '').slice(0, 40) + '</a>');
+}
+// Target load from a plan detail like "4 × 8 @ 55 kg" or "@ 60–65 kg" (a range means start at the low end:
+// the return-from-layoff rule, broken twice when the rack default was the old max).
+function targetWeight(detail) {
+  const m = String(detail || '').match(/@\s*([\d.]+)(?:\s*[–-]\s*[\d.]+)?\s*kg/i);
+  return m ? parseFloat(m[1]) : null;
+}
+function planExercise(dateStr, exName) {
+  for (const week of planData.weeks || []) {
+    const day = (week.days || []).find(d => d.date === dateStr);
+    if (day) return (day.exercises || []).find(e => e.name === exName) || null;
+  }
+  return null;
+}
+
 function renderToday() {
   const t = today();
   let todayWorkout = null;
@@ -388,7 +411,7 @@ function renderToday() {
         todayWorkout ? (todayWorkout.name || titleCase(todayWorkout.type) || 'Rest Day') : 'Rest Day'
       }</div>
       <div class="today-workout-desc">${
-        todayWorkout ? (todayWorkout.description || '') : 'No workout scheduled — recover and recharge.'
+        todayWorkout ? linkify(todayWorkout.description || '') : 'No workout scheduled — recover and recharge.'
       }</div>
       ${todayWorkout ? '<div class="today-arrow">›</div>' : ''}
     </div>
@@ -508,7 +531,7 @@ function openModal(dateStr) {
             </div>
             ${lastHint}
             ${sessionEx && sessionEx.note ? `<div class="ex-logged-note">${sessionEx.note}</div>` : ''}
-            ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
+            ${ex.how_to ? '<p class="exercise-cue">' + linkify(ex.how_to) + '</p>' : ''}
             ${ex.youtube_url ? '<a class="ex-yt-link" href="' + ex.youtube_url + '" target="_blank" rel="noopener noreferrer">▶ Watch</a>' : ''}
           </li>
         `;
@@ -519,14 +542,14 @@ function openModal(dateStr) {
               <span class="exercise-name">${ex.name}</span>
               <span class="exercise-sets">${metric}</span>
             </div>
-            ${ex.how_to ? '<p class="exercise-cue">' + ex.how_to + '</p>' : ''}
+            ${ex.how_to ? '<p class="exercise-cue">' + linkify(ex.how_to) + '</p>' : ''}
             ${ex.youtube_url ? '<a class="ex-yt-link" href="' + ex.youtube_url + '" target="_blank" rel="noopener noreferrer">▶ Watch</a>' : ''}
           </li>
         `;
       }
     }).join('');
 
-    descEl.innerHTML = `<p class="modal-desc-text">${descText}</p><ul class="exercise-list">${items}</ul>`;
+    descEl.innerHTML = `<p class="modal-desc-text">${linkify(descText)}</p><ul class="exercise-list">${items}</ul>`;
   } else {
     descEl.innerHTML = `<p class="modal-desc-text">${descText}</p>`;
   }
@@ -684,17 +707,6 @@ function renderPlan() {
 
 // ── Gym logging ─────────────────────────────────────────────────────────────
 
-// Prescribed weights — fallback when plan detail has no target weight
-const PRESCRIBED_WEIGHTS = {
-  'Leg Press': 100,
-  'Calf Press (Gastrocnemius)': 30,
-  'Single-Leg Seated Calf Raise': 70,
-  'Cable Hip Abduction': 5,
-  'Seated Hamstring Curl': 40,
-  'Leg Extension (Single Leg)': 30,
-  'Bulgarian Split Squat (Smith)': 30,
-};
-
 function openExerciseLog(dateStr, exName, target) {
   const isBodyweight = !target.includes('kg');
   const session = gymLog.find(s => s.date === dateStr);
@@ -707,14 +719,12 @@ function openExerciseLog(dateStr, exName, target) {
   }
 
   const last = getLastLogged(exName);
-  const prescribed = PRESCRIBED_WEIGHTS[exName];
-  const planWeightMatch = target.match(/@\s*([\d.]+)\s*kg/i);
-  const planWeight = planWeightMatch ? parseFloat(planWeightMatch[1]) : null;
+  const planWeight = targetWeight(target);
 
+  // Default = today's plan target. Never a hard-coded or last-session number: those put 85 kg on the
+  // rack when the re-entry target was 55–60 (22 Sep).
   const defaultWeight = existing && existing.weight != null ? existing.weight
     : planWeight != null ? planWeight
-    : prescribed != null ? prescribed
-    : last ? last.weight
     : '';
 
   // Show/hide weight row for bodyweight exercises
@@ -723,6 +733,13 @@ function openExerciseLog(dateStr, exName, target) {
 
   document.getElementById('log-modal-date').textContent = target;
   document.getElementById('log-modal-title').textContent = exName;
+  const planEx = planExercise(dateStr, exName);
+  const cueEl = document.getElementById('log-modal-cue');
+  if (cueEl) {
+    const lastLine = last ? (last.weight > 0 ? 'Last time: ' + last.weight + ' kg' : 'Last time: bodyweight') : '';
+    cueEl.innerHTML = [planEx && planEx.how_to ? linkify(planEx.how_to) : '', escapeHtml(lastLine)].filter(Boolean).join('<br>');
+    cueEl.style.display = cueEl.innerHTML ? '' : 'none';
+  }
   document.getElementById('log-weight-field').value = defaultWeight;
   document.getElementById('log-notes-field').value = existing ? (existing.note || '') : '';
 
